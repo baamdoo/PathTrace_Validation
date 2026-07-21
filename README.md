@@ -30,3 +30,9 @@ Radiance SSIM summary:
 | `gallery_white_room` | 0.963415 | 0.957984 |
 | `gallery_grey_white_room` | 0.995586 | 0.995602 |
 | `gallery_breakfast_room` | 0.993141 | 0.992991 |
+
+## N-Layer Shader Ball
+
+[N=1/N=2/N=3 representative renders and PBRT/Mitsuba/Guo cross-validation](usd_shaderball_nlayer_showcase/README.md)
+
+![N-layer shader ball showcase](usd_shaderball_nlayer_showcase/visual_compare_radiance.png)

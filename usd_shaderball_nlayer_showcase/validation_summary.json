@@ -1,0 +1,143 @@
+{
+    "status":  "PASS",
+    "generatedAt":  "2026-07-21T17:19:27.9650057+09:00",
+    "engine":  {
+                   "renderer":  "Baamboo PathTracer",
+                   "resolution":  [
+                                      512,
+                                      512
+                                  ],
+                   "samplesPerPixel":  8192,
+                   "samplesPerFrame":  8,
+                   "maxDepth":  16,
+                   "scenes":  [
+                                  "gallery_nlayer_shaderball_n1",
+                                  "gallery_nlayer_shaderball_n2",
+                                  "gallery_nlayer_shaderball_n3"
+                              ],
+                   "radianceNonfinitePixels":  [
+                                                   0,
+                                                   0,
+                                                   0
+                                               ],
+                   "radianceNegativePixels":  [
+                                                  0,
+                                                  0,
+                                                  0
+                                              ]
+               },
+    "materials":  {
+                      "n1":  "diffuse substrate",
+                      "n2":  "GGX rough dielectric interface alpha=0.09, IOR 1.32 + diffuse substrate",
+                      "n3":  "N2 coat + RGB Beer slab (t=0.22, sigmaA=0.08/0.55/1.35) + GGX rough interface alpha=0.28, IOR 1.58 + RGB Beer slab (t=0.08, sigmaA=0.35/0.04/0.18) + diffuse substrate"
+                  },
+    "structure":  {
+                      "stackValidation":  "PASS",
+                      "matchingStackCounts":  [
+                                                  1,
+                                                  1
+                                              ],
+                      "geometryAovBitwiseIdentity":  "PASS",
+                      "geometryHashes":  {
+                                             "primary_id.exr":  "4597E605DA76E8DE1481E0902895A26E374694BB993BCCC2029AAA9B0E2D3DE9",
+                                             "depth.exr":  "F8CE4B9B93D02E6D563536DDEA0B90C5DC1CC1991B5BADC6847CC9CD28C3E205",
+                                             "geometric_normal.exr":  "BF5529A25C4CC5FF7722B97C27AB641810BAD6C37B9E54BA3C31F56258DB718C"
+                                         }
+                  },
+    "references":  {
+                       "samplesPerPixel":  4096,
+                       "pbrt":  "PBRT-v4 path: N=1 diffuse, N=2 coateddiffuse",
+                       "guo":  "Guo et al. 2018 multilayered plugin: N=2 and N=3; N=3 bidirectional and unidirectional estimators",
+                       "mitsubaDiffuse":  "Mitsuba 0.6 stock diffuse for N=1",
+                       "openPBR":  "Unavailable as arbitrary-N image oracle: local manifest marks arbitrary_n_ground_truth=false and homogeneous volume deferred"
+                   },
+    "thresholds":  {
+                       "blurredFullImageSSIMMinimum":  0.99,
+                       "meanRatio":  [
+                                         0.85,
+                                         1.15
+                                     ],
+                       "medianRatio":  [
+                                           0.75,
+                                           1.25
+                                       ],
+                       "p99_9RatioMaximum":  1.35,
+                       "top1PercentEnergyRatioMaximum":  1.35,
+                       "top0_1PercentEnergyRatioMaximum":  1.5,
+                       "darkFractionAbsoluteDeltaMaximum":  0.02
+                   },
+    "comparisons":  [
+                        {
+                            "name":  "n1_pbrt",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.995359,
+                            "meanRatio":  0.97888840811570077,
+                            "medianRatio":  0.97943600007232279,
+                            "p99_9Ratio":  0.97737043179358518,
+                            "top1PercentEnergyRatio":  0.995734543077956,
+                            "top0_1PercentEnergyRatio":  0.99758618183471925,
+                            "darkFractionAbsoluteDelta":  0
+                        },
+                        {
+                            "name":  "n1_mitsuba_diffuse",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.999802,
+                            "meanRatio":  1.0013839317474011,
+                            "medianRatio":  1.0012533149016003,
+                            "p99_9Ratio":  1.0038878311460759,
+                            "top1PercentEnergyRatio":  1.000171679385256,
+                            "top0_1PercentEnergyRatio":  1.0007696907166352,
+                            "darkFractionAbsoluteDelta":  1.153948233882228E-05
+                        },
+                        {
+                            "name":  "n2_pbrt",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.998432,
+                            "meanRatio":  0.98510782824825438,
+                            "medianRatio":  0.98143166250161684,
+                            "p99_9Ratio":  1.002793205102875,
+                            "top1PercentEnergyRatio":  1.0144097990406269,
+                            "top0_1PercentEnergyRatio":  1.0157829149269046,
+                            "darkFractionAbsoluteDelta":  5.7697411694111419E-06
+                        },
+                        {
+                            "name":  "n2_guo_bidir",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.999967,
+                            "meanRatio":  1.0016775485569931,
+                            "medianRatio":  1.001028494645247,
+                            "p99_9Ratio":  1.0009098770328368,
+                            "top1PercentEnergyRatio":  1.0017765869808071,
+                            "top0_1PercentEnergyRatio":  1.0020984165906439,
+                            "darkFractionAbsoluteDelta":  1.153948233882228E-05
+                        },
+                        {
+                            "name":  "n3_guo_bidir",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.999969,
+                            "meanRatio":  1.004941039338193,
+                            "medianRatio":  1.0072057768295684,
+                            "p99_9Ratio":  1.0030551963056196,
+                            "top1PercentEnergyRatio":  0.99906985863008757,
+                            "top0_1PercentEnergyRatio":  0.99733380230297841,
+                            "darkFractionAbsoluteDelta":  0.0001269343057270448
+                        },
+                        {
+                            "name":  "n3_guo_unidir",
+                            "status":  "PASS",
+                            "blurredFullImageSSIM":  0.999679,
+                            "meanRatio":  1.0210444129638083,
+                            "medianRatio":  1.0423943085336211,
+                            "p99_9Ratio":  1.0060186154415129,
+                            "top1PercentEnergyRatio":  0.98724648697572559,
+                            "top0_1PercentEnergyRatio":  0.98659589183265461,
+                            "darkFractionAbsoluteDelta":  0.0017713105390092191
+                        }
+                    ],
+    "notes":  [
+                  "Guo camera output was horizontally reflected into the engine screen convention before comparison.",
+                  "Guo logged isolated zero-density/invalid samples; Mitsuba ImageBlock discarded them. Final reference EXRs are finite and nonnegative.",
+                  "PBRT spectral-to-RGB output contains small negative RGB components; comparisons use the raw PBRT output while engine nonnegative is enforced."
+              ],
+    "assetAttribution":  "USD Shader Ball geometry by Chris Rydalch; glTF conversion by Eric Chadwick and contributors; CC BY 4.0."
+}
