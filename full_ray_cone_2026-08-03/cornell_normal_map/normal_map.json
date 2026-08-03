@@ -1,0 +1,18 @@
+{
+  "scene": "cornell_normal_map",
+  "mesh": "floor",
+  "normal_texture": "normal_map.exr",
+  "pixels": 39886,
+  "sample_u_flip": false,
+  "sample_v_flip": true,
+  "normal_scale": 1.0,
+  "world_determinant_sign": 1.0,
+  "dot_mean": 0.9999994090500178,
+  "dot_p1": 0.9999942755843303,
+  "dot_p5": 0.9999971842996792,
+  "dot_min": 0.9999713711064226,
+  "angular_p95_deg": 0.13596619602385457,
+  "dot_mean_gate": 0.999,
+  "dot_p1_gate": 0.995,
+  "status": "pass"
+}

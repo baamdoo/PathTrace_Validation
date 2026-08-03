@@ -1,0 +1,181 @@
+{
+  "inputs": {
+    "engine": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\radiance.exr",
+    "reference": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\reference_guo_bidir_4096_flipped.exr",
+    "referenceResized": false,
+    "emission": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\emission.exr",
+    "primaryId": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\primary_id.exr"
+  },
+  "resolution": [
+    512,
+    512
+  ],
+  "mask": {
+    "finitePixelCount": 262144,
+    "validPixelCount": 262144,
+    "excludedEmissionPixels": 0,
+    "emissionThreshold": 1e-06,
+    "emissionDilatePixels": 1,
+    "referenceLocalEligiblePixels": 173842,
+    "excludedPrimaryBoundaryPixels": 88302,
+    "primaryIdChannel": 1,
+    "primaryIdErodePixels": 1
+  },
+  "freshness": {
+    "enabled": true,
+    "slackSeconds": 1.0,
+    "engine": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\radiance.exr",
+      "modifiedUtc": "2026-08-03T16:16:35.957070+00:00",
+      "modifiedNanoseconds": 1785773795957069800
+    },
+    "checks": [
+      {
+        "name": "pathTracerBinaryAfterSource",
+        "pass": true,
+        "newestSource": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+          "modifiedUtc": "2026-08-03T15:24:43.869633+00:00",
+          "modifiedNanoseconds": 1785770683869633300
+        },
+        "newestShaderBinary": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+          "modifiedUtc": "2026-08-03T15:29:17.285512+00:00",
+          "modifiedNanoseconds": 1785770957285512000
+        }
+      },
+      {
+        "name": "renderAfterPathTracerBinary",
+        "pass": true,
+        "engine": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\radiance.exr",
+          "modifiedUtc": "2026-08-03T16:16:35.957070+00:00",
+          "modifiedNanoseconds": 1785773795957069800
+        },
+        "newestShaderBinary": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+          "modifiedUtc": "2026-08-03T15:29:17.285512+00:00",
+          "modifiedNanoseconds": 1785770957285512000
+        }
+      }
+    ],
+    "pass": true
+  },
+  "engine": {
+    "pixelCount": 262144,
+    "mean": 0.15789510349999042,
+    "median": 0.10206069424748421,
+    "scaledMAD": 0.13838177224472165,
+    "p99": 1.079631189107898,
+    "p99_9": 7.060722123146285,
+    "p99_99": 10.583816828345885,
+    "max": 11.20210075378418
+  },
+  "reference": {
+    "pixelCount": 262144,
+    "mean": 0.15769427550507753,
+    "median": 0.10184523835778236,
+    "scaledMAD": 0.13781655525555833,
+    "p99": 1.0877435934543642,
+    "p99_9": 6.997083079815054,
+    "p99_99": 10.537758498763955,
+    "max": 11.193957328796387
+  },
+  "engineOverReference": {
+    "p99": 0.9925419883920406,
+    "p99_9": 1.0090950818512954,
+    "p99_99": 1.0043707900107346,
+    "max": 1.0007274840120075,
+    "maxOverReferenceP99_99": 1.0630439818010775
+  },
+  "strictCandidate": {
+    "definition": {
+      "globalTail": "engine > reference p99.99",
+      "local": "engine > 10 * engine 3x3 median",
+      "reference": "engine > 5 * reference 3x3 max envelope",
+      "ratioFloor": 0.0001
+    },
+    "count": 0,
+    "fraction": 0.0,
+    "maxLuminance": null,
+    "maxLocalMedianRatio": null,
+    "maxReferenceEnvelopeRatio": null,
+    "spatial": {
+      "componentCount": 0,
+      "largestComponentPixels": 0,
+      "largestComponentFraction": 0.0,
+      "isolatedPixelCount": 0,
+      "isolatedPixelFraction": 0.0,
+      "smallComponentMaxPixels": 4,
+      "smallComponentCount": 0,
+      "smallComponentPixelCount": 0,
+      "smallComponentPixelFraction": 0.0
+    },
+    "topPixels": []
+  },
+  "referenceLocalCandidate": {
+    "enabledAsGate": true,
+    "definition": {
+      "luminanceFloor": 0.25,
+      "localResidual": "engine - engine 5x5 median > 0.05",
+      "local": "engine > 2 * engine 5x5 median",
+      "reference": "engine > 1.5 * reference 3x3 max envelope",
+      "ratioFloor": 0.0001,
+      "primaryInteriorMask": true
+    },
+    "count": 0,
+    "fractionOfEligiblePixels": 0.0,
+    "isolatedFractionOfEligiblePixels": 0.0,
+    "maxLuminance": null,
+    "maxLocalResidual": null,
+    "maxLocalMedianRatio": null,
+    "maxReferenceEnvelopeRatio": null,
+    "spatial": {
+      "componentCount": 0,
+      "largestComponentPixels": 0,
+      "largestComponentFraction": 0.0,
+      "isolatedPixelCount": 0,
+      "isolatedPixelFraction": 0.0,
+      "smallComponentMaxPixels": 4,
+      "smallComponentCount": 0,
+      "smallComponentPixelCount": 0,
+      "smallComponentPixelFraction": 0.0
+    },
+    "topPixels": []
+  },
+  "gate": {
+    "mode": "representative-zero-candidate",
+    "maximumCandidateFraction": 0.0,
+    "checks": {
+      "allPixelsFinite": {
+        "pass": true,
+        "nonfiniteEnginePixels": 0,
+        "nonfiniteReferencePixels": 0
+      },
+      "candidateFraction": {
+        "pass": true,
+        "actual": 0.0,
+        "maximum": 0.0
+      },
+      "referenceLocalCandidateFraction": {
+        "enabled": true,
+        "pass": true,
+        "actual": 0.0,
+        "maximum": 0.001,
+        "eligiblePixels": 173842
+      },
+      "referenceLocalIsolatedFraction": {
+        "enabled": true,
+        "pass": true,
+        "actual": 0.0,
+        "maximum": 0.0005,
+        "isolatedPixels": 0
+      },
+      "freshness": {
+        "enabled": true,
+        "pass": true
+      }
+    }
+  },
+  "status": "PASS"
+}

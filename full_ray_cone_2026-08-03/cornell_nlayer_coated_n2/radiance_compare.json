@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:17:15.085894+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.0478300236124385
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_nlayer_coated_n2\\engine_aov\\radiance.exr",
+      "size_bytes": 2993621,
+      "mtime_ns": 1785772324733314500,
+      "mtime_utc": "2026-08-03T15:52:04.733315+00:00",
+      "sha256": "d2b55a67c60f025e2a8bd412c79bda2bdc0373e1b652c5f804e633cb4eea0aaa",
+      "label": "Engine",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 4.0016388084040955e-05,
+      "max": 17.0,
+      "mean": 0.2241089127542687
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_nlayer_coated_n2\\full_pbrt.exr",
+      "size_bytes": 868240,
+      "mtime_ns": 1784546003365571600,
+      "mtime_utc": "2026-07-20T11:13:23.365571+00:00",
+      "sha256": "161c165cd691f965136370086fd28d4039352ae0e982c787e7957c7febe1c754",
+      "label": "PBRT",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.0004782676696777344,
+      "max": 17.015625,
+      "mean": 0.2103052214421647
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_nlayer_coated_n2\\full_mitsuba.exr",
+      "size_bytes": 2827852,
+      "mtime_ns": 1784546034397575700,
+      "mtime_utc": "2026-07-20T11:13:54.397576+00:00",
+      "sha256": "0e0d811d3a6420060404f75acfceac560940ea75d587023767bbe6439b6b0af0",
+      "label": "Mitsuba",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 4.085395630681887e-05,
+      "max": 17.00006103515625,
+      "mean": 0.21313745919849914
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9958511138563294,
+      "mae": 0.015777533077312916,
+      "rmse": 0.2141789023357276,
+      "max_abs": 11.211058616638184,
+      "luminance_mae": 0.016548664056049007,
+      "luminance_p95": 0.015917267618295726,
+      "luminance_p99_5": 0.144312803238189,
+      "luminance_max": 8.10493444417715,
+      "ssim_data_range": 17.016103267669678
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9963984181820225,
+      "mae": 0.013276388576070173,
+      "rmse": 0.21379376896929977,
+      "max_abs": 11.210774397826754,
+      "luminance_mae": 0.014941512906350325,
+      "luminance_p95": 0.015719723942121476,
+      "luminance_p99_5": 0.14267016481640882,
+      "luminance_max": 8.104808252995184,
+      "ssim_data_range": 17.000021018768166
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9993258239881827,
+      "mae": 0.004279202065490974,
+      "rmse": 0.007764362770376998,
+      "max_abs": 0.15207672119140625,
+      "luminance_mae": 0.0033333956789267255,
+      "luminance_p95": 0.006984271036605349,
+      "luminance_p99_5": 0.026304066291485913,
+      "luminance_max": 0.09558229570388793,
+      "ssim_data_range": 17.016103267669678
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\cornell_nlayer_coated_n2\\radiance_compare.png",
+    "size_bytes": 2520633,
+    "mtime_ns": 1785773835576117000,
+    "mtime_utc": "2026-08-03T16:17:15.576117+00:00",
+    "sha256": "4f383e906c7485477ba6272fa952058eb27af379160ae4cf242e1f9cb597710f",
+    "width": 1536,
+    "height": 1124
+  }
+}

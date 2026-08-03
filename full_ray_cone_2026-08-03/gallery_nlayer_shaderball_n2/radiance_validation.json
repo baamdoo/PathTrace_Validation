@@ -1,0 +1,63 @@
+{
+  "scene": "gallery_nlayer_shaderball_n2",
+  "engine_radiance": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\engine_aov\\radiance.exr",
+  "ssim_gate": 0.99,
+  "blur": 2.0,
+  "roi": null,
+  "references": [
+    {
+      "reference": "Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\reference_pbrt_4096.exr",
+      "ssim": 0.998437881717503,
+      "full": {
+        "pixels": 262144,
+        "mean_abs_rgb": 0.012531044892966747,
+        "p95_abs_rgb": 0.03506750240921974,
+        "p99_abs_rgb": 0.05060797557234764,
+        "max_abs_rgb": 0.4461142122745514,
+        "mean_abs_lum": 0.004373731557279825,
+        "p95_abs_lum": 0.012549478560686111,
+        "p99_abs_lum": 0.030216876417398453,
+        "max_abs_lum": 0.3895397186279297,
+        "signed_mean_lum": -0.002404274884611368,
+        "engine_mean_lum": 0.15789511799812317,
+        "reference_mean_lum": 0.1602993756532669,
+        "engine_p99_lum": 1.0796312093734741,
+        "reference_p99_lum": 1.086661458015442,
+        "p99_lum_ratio": 0.9935304150247428,
+        "tail_percentile": 99.0,
+        "engine_tail_lum": 1.0796312093734741,
+        "reference_tail_lum": 1.086661458015442,
+        "tail_lum_ratio": 0.9935304150247428,
+        "engine_max_lum": 11.20210075378418,
+        "reference_max_lum": 11.219078063964844
+      }
+    },
+    {
+      "reference": "Output\\References\\Generated\\gallery_nlayer_shaderball_n2\\reference_guo_bidir_4096_flipped.exr",
+      "ssim": 0.9999847136006331,
+      "full": {
+        "pixels": 262144,
+        "mean_abs_rgb": 0.003781442530453205,
+        "p95_abs_rgb": 0.011974924243986607,
+        "p99_abs_rgb": 0.03226049616932869,
+        "max_abs_rgb": 0.9284140467643738,
+        "mean_abs_lum": 0.0029166615568101406,
+        "p95_abs_lum": 0.009303433820605278,
+        "p99_abs_lum": 0.02783791907131672,
+        "max_abs_lum": 0.9136781692504883,
+        "signed_mean_lum": 0.00020082798437215388,
+        "engine_mean_lum": 0.15789511799812317,
+        "reference_mean_lum": 0.1576942801475525,
+        "engine_p99_lum": 1.0796312093734741,
+        "reference_p99_lum": 1.0877436399459839,
+        "p99_lum_ratio": 0.9925419646003054,
+        "tail_percentile": 99.0,
+        "engine_tail_lum": 1.0796312093734741,
+        "reference_tail_lum": 1.0877436399459839,
+        "tail_lum_ratio": 0.9925419646003054,
+        "engine_max_lum": 11.20210075378418,
+        "reference_max_lum": 11.193957328796387
+      }
+    }
+  ]
+}

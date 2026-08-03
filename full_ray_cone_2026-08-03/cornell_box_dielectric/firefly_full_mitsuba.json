@@ -1,0 +1,342 @@
+{
+  "inputs": {
+    "engine": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\radiance.exr",
+    "reference": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\full_mitsuba.exr",
+    "referenceResized": false,
+    "emission": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\emission.exr",
+    "primaryId": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\primary_id.exr"
+  },
+  "resolution": [
+    512,
+    512
+  ],
+  "mask": {
+    "finitePixelCount": 262144,
+    "validPixelCount": 259040,
+    "excludedEmissionPixels": 3104,
+    "emissionThreshold": 1e-06,
+    "emissionDilatePixels": 1,
+    "referenceLocalEligiblePixels": 253956,
+    "excludedPrimaryBoundaryPixels": 5084,
+    "primaryIdChannel": 1,
+    "primaryIdErodePixels": 1
+  },
+  "freshness": {
+    "enabled": true,
+    "slackSeconds": 1.0,
+    "engine": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\radiance.exr",
+      "modifiedUtc": "2026-08-03T15:41:02.107334+00:00",
+      "modifiedNanoseconds": 1785771662107333600
+    },
+    "checks": [
+      {
+        "name": "pathTracerBinaryAfterSource",
+        "pass": true,
+        "newestSource": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+          "modifiedUtc": "2026-08-03T15:24:43.869633+00:00",
+          "modifiedNanoseconds": 1785770683869633300
+        },
+        "newestShaderBinary": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+          "modifiedUtc": "2026-08-03T15:29:17.285512+00:00",
+          "modifiedNanoseconds": 1785770957285512000
+        }
+      },
+      {
+        "name": "renderAfterPathTracerBinary",
+        "pass": true,
+        "engine": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\radiance.exr",
+          "modifiedUtc": "2026-08-03T15:41:02.107334+00:00",
+          "modifiedNanoseconds": 1785771662107333600
+        },
+        "newestShaderBinary": {
+          "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+          "modifiedUtc": "2026-08-03T15:29:17.285512+00:00",
+          "modifiedNanoseconds": 1785770957285512000
+        }
+      }
+    ],
+    "pass": true
+  },
+  "engine": {
+    "pixelCount": 259040,
+    "mean": 0.1307810627682787,
+    "median": 0.11434445157647133,
+    "scaledMAD": 0.0679532581396401,
+    "p99": 0.2946844002604483,
+    "p99_9": 1.1355040104389644,
+    "p99_99": 8.023967837524289,
+    "max": 8.11445140838623
+  },
+  "reference": {
+    "pixelCount": 259040,
+    "mean": 0.1185685325363678,
+    "median": 0.10583079233765602,
+    "scaledMAD": 0.06270701099485158,
+    "p99": 0.27490874826908107,
+    "p99_9": 0.8114473783970267,
+    "p99_99": 0.9960099579572033,
+    "max": 1.0671910047531128
+  },
+  "engineOverReference": {
+    "p99": 1.071935331690539,
+    "p99_9": 1.3993563115356848,
+    "p99_99": 8.056112063358572,
+    "max": 7.603560536254194,
+    "maxOverReferenceP99_99": 8.146958113781121
+  },
+  "strictCandidate": {
+    "definition": {
+      "globalTail": "engine > reference p99.99",
+      "local": "engine > 10 * engine 3x3 median",
+      "reference": "engine > 5 * reference 3x3 max envelope",
+      "ratioFloor": 0.0001
+    },
+    "count": 0,
+    "fraction": 0.0,
+    "maxLuminance": null,
+    "maxLocalMedianRatio": null,
+    "maxReferenceEnvelopeRatio": null,
+    "spatial": {
+      "componentCount": 0,
+      "largestComponentPixels": 0,
+      "largestComponentFraction": 0.0,
+      "isolatedPixelCount": 0,
+      "isolatedPixelFraction": 0.0,
+      "smallComponentMaxPixels": 4,
+      "smallComponentCount": 0,
+      "smallComponentPixelCount": 0,
+      "smallComponentPixelFraction": 0.0
+    },
+    "topPixels": []
+  },
+  "referenceLocalCandidate": {
+    "enabledAsGate": true,
+    "definition": {
+      "luminanceFloor": 0.25,
+      "localResidual": "engine - engine 5x5 median > 0.05",
+      "local": "engine > 2 * engine 5x5 median",
+      "reference": "engine > 1.5 * reference 3x3 max envelope",
+      "ratioFloor": 0.0001,
+      "primaryInteriorMask": true
+    },
+    "count": 63,
+    "fractionOfEligiblePixels": 0.00024807446959315785,
+    "isolatedFractionOfEligiblePixels": 0.00024807446959315785,
+    "maxLuminance": 0.7463890910148621,
+    "maxLocalResidual": 0.6867317222058773,
+    "maxLocalMedianRatio": 12.511264005033548,
+    "maxReferenceEnvelopeRatio": 12.670370820771721,
+    "spatial": {
+      "componentCount": 63,
+      "largestComponentPixels": 1,
+      "largestComponentFraction": 0.015873015873015872,
+      "isolatedPixelCount": 63,
+      "isolatedPixelFraction": 1.0,
+      "smallComponentMaxPixels": 4,
+      "smallComponentCount": 63,
+      "smallComponentPixelCount": 63,
+      "smallComponentPixelFraction": 1.0
+    },
+    "topPixels": [
+      {
+        "x": 46,
+        "y": 29,
+        "luminance": 0.7463890910148621,
+        "localMedian": 0.059657368808984756,
+        "localResidual": 0.6867317222058773,
+        "referenceEnvelope": 0.05890822783112526,
+        "localRatio": 12.511264005033548,
+        "referenceEnvelopeRatio": 12.670370820771721
+      },
+      {
+        "x": 209,
+        "y": 318,
+        "luminance": 0.6341761350631714,
+        "localMedian": 0.1223493218421936,
+        "localResidual": 0.5118268132209778,
+        "referenceEnvelope": 0.13213862478733063,
+        "localRatio": 5.1833236630533435,
+        "referenceEnvelopeRatio": 4.799324467647826
+      },
+      {
+        "x": 197,
+        "y": 424,
+        "luminance": 0.5957213044166565,
+        "localMedian": 0.10292564332485199,
+        "localResidual": 0.4927956610918045,
+        "referenceEnvelope": 0.10213100910186768,
+        "localRatio": 5.787880310220185,
+        "referenceEnvelopeRatio": 5.832913134369123
+      },
+      {
+        "x": 255,
+        "y": 417,
+        "luminance": 0.5821350812911987,
+        "localMedian": 0.1450970619916916,
+        "localResidual": 0.43703801929950714,
+        "referenceEnvelope": 0.14640063047409058,
+        "localRatio": 4.012039067507324,
+        "referenceEnvelopeRatio": 3.9763153984109567
+      },
+      {
+        "x": 174,
+        "y": 162,
+        "luminance": 0.631659209728241,
+        "localMedian": 0.20383965969085693,
+        "localResidual": 0.42781955003738403,
+        "referenceEnvelope": 0.19767503440380096,
+        "localRatio": 3.0988042792369983,
+        "referenceEnvelopeRatio": 3.19544251823889
+      },
+      {
+        "x": 256,
+        "y": 339,
+        "luminance": 0.5777102708816528,
+        "localMedian": 0.15224777162075043,
+        "localResidual": 0.4254624992609024,
+        "referenceEnvelope": 0.15071611106395721,
+        "localRatio": 3.794540075901607,
+        "referenceEnvelopeRatio": 3.8331022928033107
+      },
+      {
+        "x": 241,
+        "y": 324,
+        "luminance": 0.5996623039245605,
+        "localMedian": 0.2052660882472992,
+        "localResidual": 0.39439621567726135,
+        "referenceEnvelope": 0.21031448245048523,
+        "localRatio": 2.921390031080551,
+        "referenceEnvelopeRatio": 2.8512649102314684
+      },
+      {
+        "x": 300,
+        "y": 326,
+        "luminance": 0.526012122631073,
+        "localMedian": 0.1395893096923828,
+        "localResidual": 0.3864228129386902,
+        "referenceEnvelope": 0.14021657407283783,
+        "localRatio": 3.7682837159253944,
+        "referenceEnvelopeRatio": 3.7514261499345096
+      },
+      {
+        "x": 312,
+        "y": 431,
+        "luminance": 0.45490920543670654,
+        "localMedian": 0.08835801482200623,
+        "localResidual": 0.3665511906147003,
+        "referenceEnvelope": 0.09146801382303238,
+        "localRatio": 5.148476981438565,
+        "referenceEnvelopeRatio": 4.973423893480857
+      },
+      {
+        "x": 267,
+        "y": 305,
+        "luminance": 0.5785293579101562,
+        "localMedian": 0.21929095685482025,
+        "localResidual": 0.359238401055336,
+        "referenceEnvelope": 0.23098325729370117,
+        "localRatio": 2.6381815566301112,
+        "referenceEnvelopeRatio": 2.5046376291011483
+      },
+      {
+        "x": 339,
+        "y": 34,
+        "luminance": 0.4365892708301544,
+        "localMedian": 0.07747887820005417,
+        "localResidual": 0.35911039263010025,
+        "referenceEnvelope": 0.07897665351629257,
+        "localRatio": 5.634945690654685,
+        "referenceEnvelopeRatio": 5.528080152700921
+      },
+      {
+        "x": 243,
+        "y": 450,
+        "luminance": 0.5560491681098938,
+        "localMedian": 0.20222945511341095,
+        "localResidual": 0.35381971299648285,
+        "referenceEnvelope": 0.20845621824264526,
+        "localRatio": 2.749595343556949,
+        "referenceEnvelopeRatio": 2.6674626106027053
+      },
+      {
+        "x": 380,
+        "y": 157,
+        "luminance": 0.48937132954597473,
+        "localMedian": 0.14056670665740967,
+        "localResidual": 0.34880462288856506,
+        "referenceEnvelope": 0.13082894682884216,
+        "localRatio": 3.4814170523228842,
+        "referenceEnvelopeRatio": 3.740543216221086
+      },
+      {
+        "x": 274,
+        "y": 467,
+        "luminance": 0.680639386177063,
+        "localMedian": 0.3333342969417572,
+        "localResidual": 0.3473050892353058,
+        "referenceEnvelope": 0.42731016874313354,
+        "localRatio": 2.041912255719638,
+        "referenceEnvelopeRatio": 1.5928462179569889
+      },
+      {
+        "x": 66,
+        "y": 28,
+        "luminance": 0.40970781445503235,
+        "localMedian": 0.06816531717777252,
+        "localResidual": 0.3415424972772598,
+        "referenceEnvelope": 0.06495895236730576,
+        "localRatio": 6.010502575474418,
+        "referenceEnvelopeRatio": 6.307180142597879
+      },
+      {
+        "x": 273,
+        "y": 405,
+        "luminance": 0.475730299949646,
+        "localMedian": 0.1403927505016327,
+        "localResidual": 0.3353375494480133,
+        "referenceEnvelope": 0.14192898571491241,
+        "localRatio": 3.388567417119686,
+        "referenceEnvelopeRatio": 3.3518896619555085
+      }
+    ]
+  },
+  "gate": {
+    "mode": "representative-zero-candidate",
+    "maximumCandidateFraction": 0.0,
+    "checks": {
+      "allPixelsFinite": {
+        "pass": true,
+        "nonfiniteEnginePixels": 0,
+        "nonfiniteReferencePixels": 0
+      },
+      "candidateFraction": {
+        "pass": true,
+        "actual": 0.0,
+        "maximum": 0.0
+      },
+      "referenceLocalCandidateFraction": {
+        "enabled": true,
+        "pass": true,
+        "actual": 0.00024807446959315785,
+        "maximum": 0.001,
+        "eligiblePixels": 253956
+      },
+      "referenceLocalIsolatedFraction": {
+        "enabled": true,
+        "pass": true,
+        "actual": 0.00024807446959315785,
+        "maximum": 0.0005,
+        "isolatedPixels": 63
+      },
+      "freshness": {
+        "enabled": true,
+        "pass": true
+      }
+    }
+  },
+  "status": "PASS"
+}

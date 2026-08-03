@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:17:16.715779+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.0656924036767478
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\engine_aov\\radiance.exr",
+      "size_bytes": 2995295,
+      "mtime_ns": 1785772833044574800,
+      "mtime_utc": "2026-08-03T16:00:33.044575+00:00",
+      "sha256": "ab3db5c5e83dba7b5917f235297e1c5505b0b41c6fae2c18d6c65d54db2effd7",
+      "label": "Engine",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.004238063003867865,
+      "max": 17.0,
+      "mean": 0.38993912549828497
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\full_pbrt.exr",
+      "size_bytes": 872952,
+      "mtime_ns": 1783249373654469200,
+      "mtime_utc": "2026-07-05T11:02:53.654469+00:00",
+      "sha256": "d5bc62d3d0496564c094f9ada59c2a320f12a568c48d2f0c7cd6effffaf3e5fe",
+      "label": "PBRT",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.00189971923828125,
+      "max": 17.0,
+      "mean": 0.3764642472063618
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\full_mitsuba.exr",
+      "size_bytes": 2892434,
+      "mtime_ns": 1783249679464801800,
+      "mtime_utc": "2026-07-05T11:07:59.464802+00:00",
+      "sha256": "0916cec60b7766d9719bb0e2a4eadc497e734301c0045d33e944dddf19438c19",
+      "label": "Mitsuba",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0046548862010240555,
+      "max": 17.000141143798828,
+      "mean": 0.3795690152769744
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9967750942611623,
+      "mae": 0.017660038018045537,
+      "rmse": 0.21443655023261746,
+      "max_abs": 11.246843338012695,
+      "luminance_mae": 0.01772984857848387,
+      "luminance_p95": 0.019875032865889347,
+      "luminance_p99_5": 0.14754804539105446,
+      "luminance_max": 8.126936580753327,
+      "ssim_data_range": 16.99810028076172
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9970269431966482,
+      "mae": 0.014839811169133318,
+      "rmse": 0.21394941606444864,
+      "max_abs": 11.244602382183075,
+      "luminance_mae": 0.01593255044124504,
+      "luminance_p95": 0.01789515141822394,
+      "luminance_p99_5": 0.15091876601411794,
+      "luminance_max": 8.12424693404585,
+      "ssim_data_range": 16.99590308079496
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9995362731198819,
+      "mae": 0.007206115032520444,
+      "rmse": 0.011699272757634434,
+      "max_abs": 0.15532636642456055,
+      "luminance_mae": 0.006070925044356981,
+      "luminance_p95": 0.014932710229307401,
+      "luminance_p99_5": 0.025476113561600445,
+      "luminance_max": 0.11178969345092772,
+      "ssim_data_range": 16.998241424560547
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\complex_room_envmap_mis\\radiance_compare.png",
+    "size_bytes": 2830807,
+    "mtime_ns": 1785773837193324500,
+    "mtime_utc": "2026-08-03T16:17:17.193325+00:00",
+    "sha256": "4fc66ee5e2beabb761c579e61355844238e5e241d6a988ad1a5011812925404d",
+    "width": 1536,
+    "height": 1124
+  }
+}

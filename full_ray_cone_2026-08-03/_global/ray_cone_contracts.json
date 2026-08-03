@@ -1,0 +1,119 @@
+{
+  "transmission": {
+    "normal_air_glass": {
+      "ok": true,
+      "radius": 0.01,
+      "tanHalfAngle": 0.0066664814891971725
+    },
+    "oblique_air_glass": {
+      "ok": true,
+      "radius": 0.0124732095427055,
+      "tanHalfAngle": 0.005344979409151928
+    },
+    "near_critical_glass_air": {
+      "ok": true,
+      "radius": 0.0034620600634021753,
+      "tanHalfAngle": 0.004332664741081383
+    },
+    "one_boundary_tir": {
+      "ok": true,
+      "radius": 0.0011798465078153247,
+      "tanHalfAngle": 0.08955181955117805
+    },
+    "rough_forward": {
+      "radius": 0.010361548970473693,
+      "tan_half_angle": 0.006433905885219817
+    },
+    "rough_reverse": {
+      "radius": 0.010361548970473693,
+      "tan_half_angle": 0.006433905885219817
+    }
+  },
+  "signed": {
+    "r+1_t+1": {
+      "radius": 0.0124732095427055,
+      "tan_half_angle": 0.005344979409151928
+    },
+    "r-1_t+1": {
+      "radius": -0.0124732095427055,
+      "tan_half_angle": 0.005344979409151928
+    },
+    "r+1_t-1": {
+      "radius": 0.0124732095427055,
+      "tan_half_angle": -0.005344979409151928
+    },
+    "r-1_t-1": {
+      "radius": -0.0124732095427055,
+      "tan_half_angle": -0.005344979409151928
+    },
+    "focus_propagation": {
+      "3.0": -0.004,
+      "5.0": 0.0,
+      "8.0": 0.006
+    }
+  },
+  "footprint": {
+    "normal": {
+      "gradient0": [
+        0.009999999999999998,
+        0.0
+      ],
+      "gradient1": [
+        0.0,
+        0.006666666666666666
+      ]
+    },
+    "x_oblique": {
+      "gradient0": [
+        0.012499999999999999,
+        0.0
+      ],
+      "gradient1": [
+        0.0,
+        0.006666666666666666
+      ]
+    },
+    "y_oblique": {
+      "gradient0": [
+        0.0,
+        0.008333333333333335
+      ],
+      "gradient1": [
+        -0.009999999999999998,
+        0.0
+      ]
+    },
+    "skew": {
+      "gradient0": [
+        0.01,
+        0.0
+      ],
+      "gradient1": [
+        -0.003333333333333333,
+        0.006666666666666666
+      ]
+    },
+    "grazing": {
+      "gradient0": [
+        100.0,
+        0.0
+      ],
+      "gradient1": [
+        0.0,
+        0.006666666666666666
+      ]
+    }
+  },
+  "known_degenerate_fallback": {
+    "update_ok": false,
+    "radius": 0.01,
+    "tan_half_angle": 1.0
+  },
+  "status": "PASS",
+  "failures": [],
+  "known_limitations": [
+    "max-width/critical auxiliary refraction can fall back to the previous finite cone",
+    "inner coincident layers share the root surface UV gradients",
+    "AnyHit alpha coverage remains mip-0 by design"
+  ]
+}

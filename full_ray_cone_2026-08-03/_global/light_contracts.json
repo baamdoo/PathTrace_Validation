@@ -1,0 +1,78 @@
+{
+  "contracts": [
+    {
+      "name": "direct_light_count_includes_all_supported_local_lights",
+      "description": "The direct-light selection domain must include every supported analytic light array.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "direct_light_selection_pdf_is_inverse_count",
+      "description": "Uniform light selection PDF must be exactly 1 / DirectLightCount().",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "sample_one_light_draws_one_selected_light",
+      "description": "The shared direct-light sampler must draw one discrete light index from the direct-light count.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "delta_lights_are_divided_by_selection_pdf",
+      "description": "Delta directional/spot contributions must divide by the probability of selecting the sampled light.",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "finite_light_pdfs_include_selection_pdf",
+      "description": "Area-to-solid-angle light PDFs in direct lighting must include the discrete light selection PDF.",
+      "passed": true,
+      "detail": "matches=4"
+    },
+    {
+      "name": "emissive_hit_pdf_uses_same_selection_pdf",
+      "description": "BSDF-hit emitter MIS must use the same discrete selection probability as direct lighting.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "environment_distribution_descriptor_is_bound",
+      "description": "Environment importance sampling must bind a sidecar CDF distribution buffer.",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "environment_pdf_uses_cdf_and_solid_angle",
+      "description": "Environment PDF must convert the CDF texel probability to solid-angle density.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "environment_direct_lighting_uses_mis",
+      "description": "Explicit environment NEE must sample the CDF and MIS against the BSDF PDF.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "environment_direct_mis_is_max_depth_gated",
+      "description": "Direct envmap NEE must not MIS against a BSDF env-hit technique when maxDepth prevents that technique from existing.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "environment_bsdf_miss_uses_mis",
+      "description": "BSDF-sampled envmap hits must MIS against the environment PDF, excluding delta samples.",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "tube_emissive_hit_pdf_is_represented",
+      "description": "Tube light geometry hits must have a matching area-to-solid-angle PDF expression.",
+      "passed": true,
+      "detail": "ok"
+    }
+  ],
+  "path_tracer": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+  "path_sampling": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli"
+}

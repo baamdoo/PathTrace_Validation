@@ -1,0 +1,859 @@
+{
+  "contracts": [
+    {
+      "name": "principled_main_specular_uses_dielectric_fresnel",
+      "description": "Principled main dielectric specular must use true dielectric Fresnel so eta=1 has zero reflection.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "non_principled_conductor_uses_conductor_wrapper",
+      "description": "The non-principled conductor branch should use the material-model wrapper over the reflection lobe.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "non_principled_dielectric_uses_dielectric_wrapper",
+      "description": "Non-principled non-metals should retain dielectric reflection independently of their BTDF coefficient.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "smooth_conductor_is_layer_composite_helper",
+      "description": "Smooth conductor routing should live in LayerComposite and consume the canonical material smooth flag.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "lobe_context_does_not_cache_smooth_flag",
+      "description": "LobeContext should not cache smooth/delta state; conductor smoothness is derived by IsSmoothConductor where needed.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "path_sampling_uses_layer_composite_smooth_conductor_helper",
+      "description": "Direct-light sampling should skip smooth conductor surfaces through LayerComposite after the global PathSurface helper is removed.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "principled_clearcoat_has_disney_energy_scale",
+      "description": "Disney/Mitsuba principled clearcoat contribution adapts the standard BxDF BRDF convention with clearcoat * 0.25 and 4*NoV*NoL.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "non_principled_clearcoat_uses_bxdf_without_disney_adapter",
+      "description": "Non-principled clearcoat should use the BxDF clearcoat BRDF directly instead of the Disney/Mitsuba denominator adapter.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "principled_diffuse_uses_burley_and_sheen",
+      "description": "Principled diffuse path must use Burley diffuse plus the additive sheen term.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "sheen_eval_separates_physical_and_principled_models",
+      "description": "Non-principled sheen should use the BxDF sheen model while principled keeps its Disney-compatible additive sheen term.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "composite_eval_drops_principled_evaluate_wrappers",
+      "description": "Principled diffuse/specular/clearcoat should be handled inside the generic Evaluate*BRDF helpers.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "boundary_eval_sums_physical_components",
+      "description": "The boundary evaluator should sum reflection-side closures and the independently weighted BTDF-only transmission closure.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "boundary_marginal_pdf_uses_resolved_lobe_mixture",
+      "description": "The boundary PDF should marginalize distinct reflection and BTDF-only transmission proposals in solid angle.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "path_surface_lobes_file_removed",
+      "description": "PathSurfaceLobes.hlsli helpers should be absorbed into PathComposite so the extra wrapper file stays removed.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "sample_flags_accumulate_full_history",
+      "description": "Path continuation diagnostics should accumulate every sampled layer event and publish the history flags only when the walk escapes.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "boundary_marginal_pdf_excludes_delta_specular_mass",
+      "description": "The solid-angle boundary PDF should exclude the smooth reflection atom and include only continuous reflection density.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "production_path_uses_layer_composite_sampling",
+      "description": "The production path tracer loop should sample BSDF histories through LayerComposite.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "production_direct_lighting_uses_directional_composite_queries",
+      "description": "Direct-light NEE should obtain BSDF value and direction PDF from DirectionalComposite.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "production_environment_lighting_uses_directional_composite_queries",
+      "description": "Environment NEE should obtain BSDF value and direction PDF from DirectionalComposite.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "validation_header_does_not_control_production_lighting",
+      "description": "PathValidation must not define macros that alter production lighting signatures or estimators.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathValidation.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "validation_header_does_not_own_validation_default",
+      "description": "PathValidation may consume PT_VALIDATION but must not provide its fallback definition.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathValidation.hlsli",
+      "passed": true,
+      "detail": "matches=0"
+    },
+    {
+      "name": "validation_lobe_instrumentation_does_not_supply_radiance",
+      "description": "Validation-only lobe classification must remain separate from the DirectionalComposite value used for production radiance.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "passed": true,
+      "detail": "matches=2"
+    },
+    {
+      "name": "path_composite_precedes_sampling_in_include_graph",
+      "description": "PathTracer should include the unified composite API before PathSampling consumes it.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "directional_composite_namespace_owns_direction_queries",
+      "description": "Evaluate and MarginalPDF should expose the same direction-query inputs under BxDF::DirectionalComposite.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "directional_evaluate_does_not_dispatch_by_layer_count",
+      "description": "DirectionalComposite::Evaluate should be one generic implementation rather than a one-layer/N-layer dispatcher.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_marginal_pdf_does_not_dispatch_by_layer_count",
+      "description": "DirectionalComposite::MarginalPDF should be one generic implementation rather than a one-layer/N-layer dispatcher.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_evaluate_owns_physical_prefix_and_delta_suffix",
+      "description": "Evaluate must accumulate physical Radiance prefixes and Importance-mode exact-delta suffixes before evaluating the continuous connection.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_marginal_pdf_is_probability_only",
+      "description": "MarginalPDF may sample proposal transitions and compensated query RR, but must not accumulate physical event weights or Beer attenuation.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_marginal_pdf_maps_exact_delta_tail",
+      "description": "MarginalPDF must terminate reverse suffixes at non-delta events and push continuous density through exact transmission with the solid-angle Jacobian.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_query_rng_streams_are_separate",
+      "description": "Physical evaluation and PDF proxy queries must derive independent endpoint-only random streams.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "distinct values and use sites verified"
+    },
+    {
+      "name": "directional_pdf_preserves_zero_measure_without_floor",
+      "description": "A query with no reachable continuous stratum must return zero, and continuous queries must return the estimator itself without a positive PDF floor.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "directional_pdf_has_no_positive_floor",
+      "description": "DirectionalComposite::MarginalPDF must not invent continuous density where the estimator is zero.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_continuous_mis_uses_generalized_power_strategy_ratios",
+      "description": "Every continuous split must compare collapsed BoundaryMarginalPDF densities through the generalized power-strategy ratio recurrence.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_pdf_uses_generalized_power_mis_and_log_density_ratio",
+      "description": "The directional PDF estimator must convert reverse proposals to the forward measure in log space and use the same generalized split MIS recurrence as Evaluate.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "directional_endpoint_mis_excludes_layer_event_joint_pdf",
+      "description": "Endpoint connection MIS must compare direction-space marginals rather than LayerEvent's lobe-label joint PDF or PMF.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "layer_and_directional_composites_share_one_header",
+      "description": "PathComposite should own LayerComposite sampling helpers and DirectionalComposite direction queries without a second fixed-endpoint header.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "legacy_bsdf_wrappers_removed",
+      "description": "PathTracerLIB should not keep old global BSDF wrapper names once production uses the composite APIs directly.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "surface_lobe_aovs_use_composite_mixture",
+      "description": "Surface lobe AOVs should expose the same four-slot proposal mixture without a second Fresnel split.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "surface_lobe_mask_uses_composite_mixture",
+      "description": "Surface lobe mask AOV should be based on the composite lobe PMF, not a duplicated BSDF-type branch table.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "production_aovs_use_layer_composite_lobe_api",
+      "description": "Validation AOV writes should call the LayerComposite lobe helper API directly.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathValidation.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "raygen_routes_aovs_through_validation_helper",
+      "description": "Ray-generation should keep validation AOV writes behind the PathValidation helper route.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "lobe_mixture_uses_btdf_only_transmission_slot",
+      "description": "Composite routing should keep reflection in the specular slot and assign (1-M)T to the BTDF-only slot.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "dielectric_specular_eligibility_is_parameter_derived",
+      "description": "Non-principled dielectric reflection eligibility should be independent of transmission and derive from metallic, strength, tint, and relative eta.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "surface_material_no_half_threshold_transmission",
+      "description": "Partial transmission should be routed as a mixed dielectric BSDF, not as a binary glass switch.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "boundary_pdf_mixes_reflection_and_btdf_proposals",
+      "description": "The direction marginal must combine reflection and BTDF proposal densities with their resolved slot PMFs.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "smooth_reflection_atom_has_no_continuous_pdf",
+      "description": "An exact smooth reflection is an atom and must not enter the solid-angle boundary marginal PDF.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "sampling_uses_resolved_layer_event_route",
+      "description": "Each boundary should resolve and sample one lobe in SampleLayerEvent, while SampleRay composes those events into a history walk.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "layer_event_is_history_conditioned",
+      "description": "A sampled LayerEvent must retain the selected lobe's C/q weight and the matching slot-times-event mixed density or mass.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "history_sample_has_no_external_pdf_field",
+      "description": "PathBSDFSample must contain only sampled-history state, not a fixed-endpoint direction PDF.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "history_sample_does_not_query_external_pdf",
+      "description": "SampleRay must not evaluate the independent fixed-endpoint marginal PDF internally.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "trace_path_assembles_continuation_marginal_pdf",
+      "description": "TracePath must query the independent DirectionalComposite PDF after LayerComposite has produced wi.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "trace_path_continuation_marginal_pdf_is_layer_agnostic",
+      "description": "Continuous continuation samples must use the same marginal-PDF validity rule for every layer count.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "sampling_no_bsdf_type_specific_dispatch_functions",
+      "description": "LayerComposite sampling should not be split into one SampleXXX function per bsdfType.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "legacy_lobe_sample_stack_removed",
+      "description": "Terminal LayerEvent sampling should replace the old finalized per-lobe sampler stack.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "component_lobe_mixture_weights_are_explicit_and_normalized",
+      "description": "LayerComposite should explicitly derive diffuse/specular/clearcoat/BTDF proposal weights and normalize them once.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "clearcoat_boundary_evaluation_is_enabled",
+      "description": "Clearcoat must contribute to the glossy boundary value used by direct lighting and fixed-endpoint queries.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "clearcoat_boundary_marginal_pdf_is_enabled",
+      "description": "The direction-space mixture PDF must include the clearcoat proposal with its slot probability.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "clearcoat_is_a_continuous_directional_proposal",
+      "description": "The fixed-endpoint marginal-PDF estimator must remain active for clearcoat even when the base lobe is smooth.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "surface_weight_helpers_removed",
+      "description": "PathSurface should only classify and assemble surface data; composite lobe weights are resolved in PathComposite.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "composite_weight_context_removed",
+      "description": "LayerComposite lobe routing should not carry precomputed diffuse/conductor or principled helper weights through a context object.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "composite_main_flow_avoids_bsdf_type_routing",
+      "description": "Composite evaluation/PDF/sampling should derive lobe weights from material parameters rather than the validation/classification bsdfType field.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "btdf_sampling_is_layer_event_handler",
+      "description": "The generic layer-event switch should sample direction through Transmission and evaluate material response through Dielectric.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "emissive_hit_uses_delta_aware_mis_helper",
+      "description": "Emitter hits should pass the previous sample's delta state to the shared MIS helper.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "emissive_surface_accumulates_then_continues",
+      "description": "An emissive hit should add EDF radiance with emitter-hit MIS and still continue through its BSDF closure.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "emission is accumulated with MIS before BSDF continuation"
+    },
+    {
+      "name": "dielectric_reflection_is_not_disabled_by_transmission",
+      "description": "Transmission controls the BTDF coefficient and must not disable the dielectric reflection closure.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "rough_dielectric_slots_use_fresnel_safety_mixture",
+      "description": "Separate rough dielectric reflection/transmission slots should mix their Fresnel-guided proposal with a uniform safety proposal without changing either physical closure.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "transmissive_dielectric_support_is_independent_of_reflection_scale",
+      "description": "An active dielectric BTDF must retain proposal support even when the separately tinted or scaled reflection closure is disabled.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "rough_dielectric_proposal_safety_mix_is_twenty_percent",
+      "description": "The rough dielectric proposal should reserve twenty percent for the symmetric safety proposal, bounding both reflection and transmission slot weights away from zero.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "transmission_slot_does_not_sample_reflection",
+      "description": "The BTDF-only slot should not make a second Fresnel reflection decision after slot selection.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "smooth_layer_events_use_unit_conditional_mass",
+      "description": "Selected smooth reflection and transmission atoms should use conditional mass one before multiplication by slot PMF.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "delta_bounce_mis_weight_is_unity",
+      "description": "The shared MIS helper should return unity for a previous delta BSDF sample.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "bxdf_diffuse_is_burley",
+      "description": "BxDF diffuse EvaluateBRDF should be Disney/Burley diffuse, not Lambert only.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "bxdf_clearcoat_uses_gtr1_fixed_f0",
+      "description": "BxDF clearcoat should use GTR1 distribution and fixed F0=0.04 Schlick Fresnel.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "bxdf_reflection_and_transmission_are_lobe_namespaces",
+      "description": "Reflection and Transmission should expose separate direction/PDF/value lobe APIs.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "bxdf_dielectric_wrapper_assembles_fresnel_lobes",
+      "description": "Dielectric should remain a material-model wrapper that composes Fresnel with Reflection and Transmission lobes.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "reflection_pdf_excludes_smooth_atom",
+      "description": "Reflection::EvaluatePDF should describe only continuous solid-angle density.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "reflection_brdf_excludes_smooth_atom",
+      "description": "Reflection::EvaluateBRDF should exclude the exact-delta reflection atom.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "transmission_pdf_excludes_smooth_atom",
+      "description": "Transmission::EvaluatePDF should describe only continuous solid-angle density.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "transmission_btdf_excludes_smooth_atom",
+      "description": "Transmission::EvaluateBTDF should exclude the exact-delta transmission atom.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "transmission_lobe_does_not_own_fresnel",
+      "description": "Transmission receives the physical one-minus-F coefficient from the dielectric wrapper rather than evaluating Fresnel itself.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "conductor_wrapper_composes_reflection_lobe",
+      "description": "Conductor should provide smooth and rough material-model reflection wrappers over Fresnel and Reflection.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "authoring_material_preserves_opacity_and_flags",
+      "description": "The authoring material should preserve base-color alpha and imported material-mode flags.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\MaterialTypes.h",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "authoring_material_flag_bits_are_stable",
+      "description": "Authoring material flags must retain the CPU/GPU bit assignments used by the shader.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\MaterialTypes.h",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "material_render_view_carries_opacity",
+      "description": "The game-thread render view should carry opacity independently from RGB tint.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\SceneRenderView.h",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "gpu_material_uses_128_byte_root_and_semantic_span",
+      "description": "The shared C++ GPU material should keep opacity while replacing fixed texture IDs with one compact semantic-table span.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\ShaderTypes.h",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "shader_material_opacity_matches_cpp_slot",
+      "description": "The shader MaterialData layout should place opacity immediately after alphaCutoff like ShaderTypes.h.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\Common.bsh",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "gpu_cpp_material_flag_bits_are_stable",
+      "description": "ShaderTypes.h material flags must match the authoring and shader definitions.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\ShaderTypes.h",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "shader_material_flag_bits_match_cpp",
+      "description": "Common.bsh material flags must match ShaderTypes.h exactly.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\Common.bsh",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "mesh_system_preserves_imported_flags_and_alpha",
+      "description": "MeshSystem should forward tint alpha and OR face-normal state into imported flags instead of overwriting them.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MeshSystem.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "dx12_scene_resource_copies_opacity",
+      "description": "The D3D12 material upload should copy render-view opacity into the shared GPU struct.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "vulkan_scene_resource_copies_opacity",
+      "description": "The Vulkan material upload should copy render-view opacity into the shared GPU struct.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\VkRenderer\\RenderResource\\VkSceneResource.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "read_opacity_multiplies_factor_and_texture_alpha",
+      "description": "Coverage should be base-color factor alpha times texture alpha, saturated once at the boundary.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "read_opacity_is_independent_of_alpha_mode",
+      "description": "ReadOpacity should evaluate coverage only; alpha mode and cutoff routing belong to callers.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "trace_path_uses_post_jitter_forwarded_rng",
+      "description": "TracePath must continue the caller's post-jitter RNG stream while validation uses a separately salted stream.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "forwarded RNG verified across 3 TracePath calls"
+    },
+    {
+      "name": "primary_alpha_blend_is_topology_only_null_loop",
+      "description": "Primary ALPHA_BLEND null events should re-trace from a later TMin without consuming depth or mutating transport state.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "null traversal changes only the ray segment minimum"
+    },
+    {
+      "name": "alpha_mask_and_shadow_blend_are_separate",
+      "description": "Any-hit should keep MASK deterministic while enabling stochastic BLEND only for shadow visibility.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "deterministic MASK and stochastic shadow BLEND are separate"
+    },
+    {
+      "name": "shadow_payload_carries_alpha_seed",
+      "description": "Both finite and infinite shadow queries must initialize their stochastic alpha seed and force any-hit execution.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "both shadow visibility queries initialize their alpha seed"
+    },
+    {
+      "name": "nee_consumes_fresh_shadow_alpha_seed",
+      "description": "Direct and environment NEE should consume exactly one fresh random seed for each visibility query.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "passed": true,
+      "detail": "each NEE visibility query consumes one fresh alpha seed"
+    },
+    {
+      "name": "shadow_alpha_hash_identifies_each_candidate",
+      "description": "Shadow alpha sampling should distinguish each instance, primitive, and ray distance before its unit-float comparison.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "shadow candidates derive independent normalized alpha variates"
+    },
+    {
+      "name": "path_composite_excludes_alpha_coverage",
+      "description": "Opacity coverage is a topology decision and must not enter BSDF evaluation, sampling, or MIS.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "BSDF composite is independent of alpha coverage"
+    },
+    {
+      "name": "rng_unit_float_conversion_is_strictly_half_open",
+      "description": "Random uint conversion must guarantee [0,1) in float32 instead of rounding large uints to one.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "passed": true,
+      "detail": "24-bit conversion guarantees a strict half-open unit interval"
+    },
+    {
+      "name": "alpha_probability_sanity",
+      "description": "Deterministic Monte Carlo probes should recover surface coverage and independent one/two-blocker visibility.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "accept=0.300735, one-pass=0.700882, two-pass=0.480133"
+    },
+    {
+      "name": "anisotropy_texture_uses_khr_direction_and_strength",
+      "description": "KHR anisotropy textures must decode RG as a direction, multiply strength by B, and combine the uniform rotation.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_texture_binding_preserves_rgb",
+      "description": "The material texture table must retain all RGB channels of the linear KHR anisotropy texture.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MeshSystem.cpp",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "model_loader_imports_khr_anisotropy",
+      "description": "ModelLoader must retain the KHR anisotropy factor, rotation, and packed RGB texture.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "microfacet_roughness_parameterization_is_model_specific",
+      "description": "Analytic materials author GGX alpha directly; Principled materials square perceptual roughness exactly once before anisotropy maps the resolved alpha.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "analytic alpha=r; Principled alpha=r^2; anisotropy maps resolved alpha"
+    },
+    {
+      "name": "reference_scene_roughness_helpers_route_by_material_model",
+      "description": "Reference emitters must keep analytic alpha direct, reserve perceptual r^2 for Principled pbrt_equiv, and route conductors through the OpenPBR axis mapping.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\scene_gen.py",
+      "passed": true,
+      "detail": "analytic dielectric/plastic/nested interfaces use direct alpha; Principled pbrt_equiv alone uses r^2; conductors use OpenPBR alpha axes"
+    },
+    {
+      "name": "reference_scene_roughness_helpers_numeric_sanity",
+      "description": "The actual scene_gen helper functions must numerically distinguish analytic alpha, Principled perceptual r^2, and OpenPBR anisotropic authored-alpha axes.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\scene_gen.py",
+      "passed": true,
+      "detail": "scene_gen r=0.4 -> analytic=0.4, perceptual=0.16, OpenPBR(0.75)=(0.54879547,0.13719887)"
+    },
+    {
+      "name": "cornell_material_map_uses_raw_alpha_texture",
+      "description": "The non-Principled material-map scene must pass its raw linear roughness map directly as the conductor GGX alpha texture.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\scenes\\cornell_material_maps.py",
+      "passed": true,
+      "detail": "raw linear roughness_map is passed directly to conductor alpha_texture"
+    },
+    {
+      "name": "anisotropy_alpha_models_match_openpbr_and_khr",
+      "description": "Analytic materials apply the OpenPBR axis mapping to authored GGX alpha while Principled materials apply the KHR mapping to perceptual r^2.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_smooth_classification_uses_final_alpha_pair",
+      "description": "Delta classification must use the resolved anisotropic alpha pair rather than base roughness alone.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_payload_keeps_world_tangent_sign",
+      "description": "The 64-byte DXR payload should carry tangent xyz plus world-space frame parity without duplicating materialID.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "anisotropy_backface_orientation_preserves_frame_parity",
+      "description": "Opaque backface orientation must flip both N and tangent-frame parity.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_normal_map_hemisphere_fix_preserves_frame_parity",
+      "description": "Normal-map hemisphere correction must flip both the normal and signed tangent-frame parity.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_geometric_hemisphere_fix_preserves_frame_parity",
+      "description": "Resolved path-surface hemisphere correction must flip both the shading normal and tangent parity.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "anisotropy_nlayer_queries_share_signed_surface_parameterization",
+      "description": "Every internal layer should load its own anisotropy data while sharing the root surface tangent parity.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "passed": true,
+      "detail": "matches=2"
+    },
+    {
+      "name": "roughness_parameterization_numeric_sanity",
+      "description": "Deterministic probes distinguish analytic GGX alpha from Principled perceptual r^2 and verify anisotropy is layered on the model-specific base alpha.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "r=0.4: analytic isotropic alpha=0.4, Principled isotropic alpha=0.16; anisotropic analytic=(0.54879547,0.13719887), Principled=(0.63250000,0.16000000)"
+    },
+    {
+      "name": "anisotropy_numeric_sanity",
+      "description": "Deterministic probes verify OpenPBR conservation, KHR directional roughness, B-channel strength, and mirrored-frame parity.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "passed": true,
+      "detail": "OpenPBR=(0.30508511,0.06101702), KHR=(0.65742400,0.04840000), parity=+/-1.297295"
+    },
+    {
+      "name": "model_loader_imports_gltf_material_semantics",
+      "description": "ModelLoader should retain glTF base RGBA/opacity, principled roughness mode, IOR, alpha mode, sidedness, emission, and base-color texture semantics.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "plain_gltf_principled_derives_dielectric_f0_from_final_ior",
+      "description": "A plain metallic-roughness glTF has no explicit specular color, so its Principled F0 must be derived from the final imported IOR.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "cornell_principled_glass_uses_principled_transmission",
+      "description": "The Principled glass reference scene must use perceptual roughness 0.4, IOR 1.5, full transmission, and the Principled material tag.",
+      "file": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "passed": true,
+      "detail": "matches=1"
+    }
+  ],
+  "path_tracer": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+  "bxdf": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+  "path_composite": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+  "path_surface": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+  "path_sampling": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+  "path_validation": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathValidation.hlsli",
+  "path_utils": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+  "sampling": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli"
+}

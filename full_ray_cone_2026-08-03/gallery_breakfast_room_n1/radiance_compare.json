@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:29:46.834099+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.2829623866375685
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_breakfast_room_n1\\engine_aov\\radiance.exr",
+      "size_bytes": 2659912,
+      "mtime_ns": 1785774480371950300,
+      "mtime_utc": "2026-08-03T16:28:00.371950+00:00",
+      "sha256": "0bcd2920b3e9dc6ebadfba70a884dc3e56b125446a7d1650d03c0fe28aa316fa",
+      "label": "Engine",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0,
+      "max": 7.841070652008057,
+      "mean": 0.12715483455040552
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_breakfast_room_n1\\full_pbrt.exr",
+      "size_bytes": 923557,
+      "mtime_ns": 1785771576867506700,
+      "mtime_utc": "2026-08-03T15:39:36.867507+00:00",
+      "sha256": "2d900a4e1e16848e8f4061db4ff1125a3fe13d289cb2067594e759aac6c17ae6",
+      "label": "PBRT",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.005886077880859375,
+      "max": 40.6875,
+      "mean": 0.12353869740480419
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_breakfast_room_n1\\full_mitsuba.exr",
+      "size_bytes": 2672119,
+      "mtime_ns": 1785771022471154900,
+      "mtime_utc": "2026-08-03T15:30:22.471155+00:00",
+      "sha256": "c14b05b0a3ba8ef71ca884f133b615e08ef37cff0cc95ddf9b5cebb200ebadb8",
+      "label": "Mitsuba",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0,
+      "max": 5.792088031768799,
+      "mean": 0.11960161453514713
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9968441375477775,
+      "mae": 0.012686682624220706,
+      "rmse": 0.12697886398263303,
+      "max_abs": 38.559492111206055,
+      "luminance_mae": 0.01306291647083645,
+      "luminance_p95": 0.04032847613096237,
+      "luminance_p99_5": 0.3059184569074521,
+      "luminance_max": 26.50175935151577,
+      "ssim_data_range": 40.69338607788086
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9924905853323581,
+      "mae": 0.011511798022748397,
+      "rmse": 0.05558408968211384,
+      "max_abs": 6.027824521064758,
+      "luminance_mae": 0.011832369214249535,
+      "luminance_p95": 0.03271243967369195,
+      "luminance_p99_5": 0.37176212071746645,
+      "luminance_max": 4.639484884941578,
+      "ssim_data_range": 7.841070652008057
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9977584835869232,
+      "mae": 0.009746906129398,
+      "rmse": 0.1246938759776368,
+      "max_abs": 39.02555763721466,
+      "luminance_mae": 0.010002437531822499,
+      "luminance_p95": 0.035504192696213716,
+      "luminance_p99_5": 0.16833864639788887,
+      "luminance_max": 26.871337836003303,
+      "ssim_data_range": 40.69338607788086
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\gallery_breakfast_room_n1\\radiance_compare.png",
+    "size_bytes": 2022297,
+    "mtime_ns": 1785774587181632600,
+    "mtime_utc": "2026-08-03T16:29:47.181633+00:00",
+    "sha256": "f7824a13561fc32da43f2b623e2fd36bef112dc05e82ef04b90b95cf7bdc05a2",
+    "width": 1920,
+    "height": 820
+  }
+}

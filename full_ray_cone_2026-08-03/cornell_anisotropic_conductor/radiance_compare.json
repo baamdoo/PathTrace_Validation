@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:17:12.649692+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.06501741040593668
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_anisotropic_conductor\\engine_aov\\radiance.exr",
+      "size_bytes": 2990782,
+      "mtime_ns": 1785771537165790400,
+      "mtime_utc": "2026-08-03T15:38:57.165790+00:00",
+      "sha256": "bfc2ce6565b974378f850559c48121714819c0aac8157a38a5d0a34803283419",
+      "label": "Engine",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0004598458472173661,
+      "max": 17.0,
+      "mean": 0.2343955903791556
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_anisotropic_conductor\\full_pbrt.exr",
+      "size_bytes": 813070,
+      "mtime_ns": 1785765724120107900,
+      "mtime_utc": "2026-08-03T14:02:04.120108+00:00",
+      "sha256": "5436161e371aac4a1d9438911ca308ac3d47fcbfb11f6ec2897de69b3b74e315",
+      "label": "PBRT",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.0004544258117675781,
+      "max": 17.0,
+      "mean": 0.21985407928999243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_anisotropic_conductor\\full_mitsuba.exr",
+      "size_bytes": 2807219,
+      "mtime_ns": 1785767491404955100,
+      "mtime_utc": "2026-08-03T14:31:31.404955+00:00",
+      "sha256": "36b1c54595215841e07c66d332195b042e8b138f9ceaf1ba3acd077524bcc014",
+      "label": "Mitsuba",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0001066844561137259,
+      "max": 17.000141143798828,
+      "mean": 0.21853743583798332
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9957050019855903,
+      "mae": 0.016598474353905452,
+      "rmse": 0.21427303352128518,
+      "max_abs": 11.210572242736816,
+      "luminance_mae": 0.01738132911185197,
+      "luminance_p95": 0.017374826384037728,
+      "luminance_p99_5": 0.14443733807300171,
+      "luminance_max": 8.104668178427218,
+      "ssim_data_range": 17.000454425811768
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9952126123547221,
+      "mae": 0.017037429535772187,
+      "rmse": 0.21407581114514673,
+      "max_abs": 11.210332040907815,
+      "luminance_mae": 0.019032406081153905,
+      "luminance_p95": 0.023953054679585622,
+      "luminance_p99_5": 0.14606224081043734,
+      "luminance_max": 8.104587576386262,
+      "ssim_data_range": 17.000034459342714
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9991188592347039,
+      "mae": 0.004503116296546271,
+      "rmse": 0.0076249351072597525,
+      "max_abs": 0.10602116584777832,
+      "luminance_mae": 0.004156921770795622,
+      "luminance_p95": 0.011104764292128378,
+      "luminance_p99_5": 0.030432695402443883,
+      "luminance_max": 0.07604854869842528,
+      "ssim_data_range": 17.000595569610596
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\cornell_anisotropic_conductor\\radiance_compare.png",
+    "size_bytes": 2408286,
+    "mtime_ns": 1785773833126239200,
+    "mtime_utc": "2026-08-03T16:17:13.126239+00:00",
+    "sha256": "205dd89e02815430ac71cc970468f5b02abaa2c8a5e38d0dfae7496450fe43b7",
+    "width": 1536,
+    "height": 1124
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:17:13.451833+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.08679144884685873
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\engine_aov\\radiance.exr",
+      "size_bytes": 3000057,
+      "mtime_ns": 1785771662107333600,
+      "mtime_utc": "2026-08-03T15:41:02.107334+00:00",
+      "sha256": "87117b59de081115f95a33cceb448f6ba151b1d3119e4d96e939efc2759d0568",
+      "label": "Engine",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.00040645498665980995,
+      "max": 17.0,
+      "mean": 0.23943496091085115
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\full_pbrt.exr",
+      "size_bytes": 903841,
+      "mtime_ns": 1783246601871394600,
+      "mtime_utc": "2026-07-05T10:16:41.871395+00:00",
+      "sha256": "e1ef8ed44f2e06f0b8e48c84470037c30fe704e76fdc485338cbaa3cb13fed50",
+      "label": "PBRT",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.0005173683166503906,
+      "max": 17.0,
+      "mean": 0.22522918180667753
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\cornell_box_dielectric\\full_mitsuba.exr",
+      "size_bytes": 2860704,
+      "mtime_ns": 1783246776550834100,
+      "mtime_utc": "2026-07-05T10:19:36.550834+00:00",
+      "sha256": "e67234ce8b72263335ffa941f74ce712f81196559a582b752c04aefe07f0d0aa",
+      "label": "Mitsuba",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.00010602525435388088,
+      "max": 17.000141143798828,
+      "mean": 0.2264650453609608
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9955055345621204,
+      "mae": 0.017406361814955845,
+      "rmse": 0.21438729988974523,
+      "max_abs": 11.223072052001953,
+      "luminance_mae": 0.01845572445585879,
+      "luminance_p95": 0.02306874746013432,
+      "luminance_p99_5": 0.17778553570450942,
+      "luminance_max": 8.11359165855646,
+      "ssim_data_range": 17.00051736831665
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9960751068842623,
+      "mae": 0.015197205438586714,
+      "rmse": 0.21401108767958976,
+      "max_abs": 11.22270085872151,
+      "luminance_mae": 0.017108963544519976,
+      "luminance_p95": 0.02249526761822401,
+      "luminance_p99_5": 0.18231736336227883,
+      "luminance_max": 8.113420850805714,
+      "ssim_data_range": 17.000035118544474
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9995342220710333,
+      "mae": 0.0043904962351979755,
+      "rmse": 0.0071145236283850916,
+      "max_abs": 0.2368466854095459,
+      "luminance_mae": 0.0038379885223050855,
+      "luminance_p95": 0.008083215448549015,
+      "luminance_p99_5": 0.020677937917422527,
+      "luminance_max": 0.15996573439836503,
+      "ssim_data_range": 17.00065851211548
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\cornell_box_dielectric\\radiance_compare.png",
+    "size_bytes": 2764164,
+    "mtime_ns": 1785773833919980100,
+    "mtime_utc": "2026-08-03T16:17:13.919980+00:00",
+    "sha256": "6599d4a6f487f7b9251f40f21ee1e00e71f29e2c21b43ccba332747c377f5ee8",
+    "width": 1536,
+    "height": 1124
+  }
+}

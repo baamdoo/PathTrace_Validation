@@ -1,0 +1,139 @@
+{
+  "inputs": {
+    "engineRadiance": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\engine_aov\\radiance.exr",
+    "referenceRadiance": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\reference_guo_diffuse_4096_flipped.exr",
+    "enginePrimaryId": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\engine_aov\\primary_id.exr",
+    "referenceFlipX": false
+  },
+  "resolution": [
+    512,
+    512
+  ],
+  "foregroundMask": {
+    "channel": 0,
+    "threshold": 0.5,
+    "value": 4.0,
+    "valueTolerance": 0.25,
+    "erodePixels": 1,
+    "pixelCount": 173318,
+    "pixelFraction": 0.6611557006835938
+  },
+  "engine": {
+    "foregroundPixelCount": 173318,
+    "finiteCount": 173318,
+    "mean": 0.26563995458381506,
+    "median": 0.2320861335281283,
+    "darkThreshold": 0.01,
+    "darkCount": 2,
+    "darkFraction": 1.153948233882228e-05,
+    "p99": 0.7419810825515089,
+    "p99_9": 0.8240033639807984,
+    "max": 0.8946452354550362,
+    "top1PercentEnergyFraction": 0.029463424774786053,
+    "top0_1PercentEnergyFraction": 0.0031849983991866742,
+    "nonfiniteCount": 0,
+    "nonfiniteFraction": 0.0,
+    "negativeCount": 0,
+    "negativeFraction": 0.0
+  },
+  "reference": {
+    "foregroundPixelCount": 173318,
+    "finiteCount": 173318,
+    "mean": 0.2655958530164206,
+    "median": 0.23206287841796874,
+    "darkThreshold": 0.01,
+    "darkCount": 0,
+    "darkFraction": 0.0,
+    "p99": 0.7414090454101563,
+    "p99_9": 0.8227136969482504,
+    "max": 0.8914202880859375,
+    "top1PercentEnergyFraction": 0.029459086755679948,
+    "top0_1PercentEnergyFraction": 0.003184828057616855,
+    "nonfiniteCount": 0,
+    "nonfiniteFraction": 0.0,
+    "negativeCount": 0,
+    "negativeFraction": 0.0
+  },
+  "engineOverReference": {
+    "mean": 1.0001660476505698,
+    "median": 1.0001002103840049,
+    "darkFraction": null,
+    "p99": 1.0007715540360531,
+    "p99_9": 1.001567576955789,
+    "max": 1.0036177630374816,
+    "top1PercentEnergyFraction": 1.000147255722558,
+    "top0_1PercentEnergyFraction": 1.0000534853269116,
+    "nonfiniteFraction": null,
+    "negativeFraction": null
+  },
+  "thresholds": {
+    "meanRatio": [
+      0.85,
+      1.15
+    ],
+    "medianRatio": [
+      0.75,
+      1.25
+    ],
+    "maxDarkFractionAbsoluteDelta": 0.02,
+    "maxP99_9Ratio": 1.35,
+    "maxTop1PercentEnergyRatio": 1.35,
+    "maxTop0_1PercentEnergyRatio": 1.5
+  },
+  "checks": {
+    "engineHasNoNonfiniteForegroundPixels": {
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    "engineHasNoNegativeForegroundPixels": {
+      "pass": true,
+      "actual": 0,
+      "expected": 0
+    },
+    "meanRatio": {
+      "pass": true,
+      "actual": 1.0001660476505698,
+      "minimum": 0.85,
+      "maximum": 1.15
+    },
+    "medianRatio": {
+      "pass": true,
+      "actual": 1.0001002103840049,
+      "minimum": 0.75,
+      "maximum": 1.25
+    },
+    "darkFractionAbsoluteDelta": {
+      "pass": true,
+      "actual": 1.153948233882228e-05,
+      "minimum": null,
+      "maximum": 0.02
+    },
+    "p99_9Ratio": {
+      "pass": true,
+      "actual": 1.001567576955789,
+      "minimum": 0.0,
+      "maximum": 1.35
+    },
+    "top1PercentEnergyRatio": {
+      "pass": true,
+      "actual": 1.000147255722558,
+      "minimum": null,
+      "maximum": 1.35
+    },
+    "top0_1PercentEnergyRatio": {
+      "pass": true,
+      "actual": 1.0000534853269116,
+      "minimum": null,
+      "maximum": 1.5
+    }
+  },
+  "status": "PASS",
+  "preview": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\gallery_nlayer_shaderball_n1\\noise_guo.png",
+    "exposure": 3.104403980885665,
+    "exposureSource": "auto-p99-foreground",
+    "toneMap": "1-exp(-radiance*exposure), then gamma 1/2.2",
+    "difference": "toneMap(abs(engine-reference), shared exposure)"
+  }
+}

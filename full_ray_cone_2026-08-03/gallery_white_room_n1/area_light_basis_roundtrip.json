@@ -1,0 +1,14 @@
+{
+  "scene": "gallery_white_room_n1",
+  "status": "pass",
+  "contract": {
+    "runtime": "R = Ry(-rotation.y) Rx(-rotation.x) Rz(-rotation.z)",
+    "plane": "R.x == baked OBJ tangent; R.z == -baked OBJ front normal",
+    "minimumDot": 0.999999
+  },
+  "lights": [
+    { "name": "shape_0181", "tangentDot": 1.0, "backNormalDot": 1.0 },
+    { "name": "shape_0182", "tangentDot": 1.0, "backNormalDot": 1.0 },
+    { "name": "shape_0183", "tangentDot": 1.0, "backNormalDot": 1.0 },
+    { "name": "shape_0184", "tangentDot": 1.0, "backNormalDot": 1.0 }
+  ]

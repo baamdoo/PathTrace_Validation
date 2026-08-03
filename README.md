@@ -7,6 +7,11 @@ Each scene folder contains:
 - `visual_compare_radiance.png`: engine / Mitsuba / PBRT radiance comparison.
 - `visual_compare_aovs.png`: geometry and material AOV comparison.
 
+## Full Ray-Cone / Material Validation (2026-08-03)
+
+[Open the 14-scene Engine / PBRT / Mitsuba-or-Guo comparison package](full_ray_cone_2026-08-03/README.md).
+Each scene includes a single beauty-and-difference sheet plus provenance and gate reports.
+
 ## Gallery Architecture Set
 
 Updated: 2026-07-05 KST

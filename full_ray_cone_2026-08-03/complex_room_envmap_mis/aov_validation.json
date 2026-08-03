@@ -1,0 +1,95 @@
+{
+  "scene": "complex_room_envmap_mis",
+  "reference_scene": "complex_room_envmap_mis",
+  "engine_dir": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\engine_aov",
+  "reference_dir": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\aov",
+  "geometry": {
+    "shading_vs_geometric_dot": {
+      "surface_pixels": 262144,
+      "mean": 0.9998650550842285,
+      "p1": 0.997639000415802,
+      "p50": 1.0,
+      "p99": 1.0
+    }
+  },
+  "material": {
+    "albedo": {
+      "ssim": 0.9901558831191891,
+      "rmse": 0.014476573058149434,
+      "mean_abs": 0.0013502425130677012,
+      "p99_abs": 0.03976892709732059,
+      "data_range": 0.800000011920929,
+      "pixels": 245178,
+      "source": "reference",
+      "p50": 0.0,
+      "p95": 1.430511474609375e-06,
+      "p99": 0.0935401447117329,
+      "max": 0.6449999809265137,
+      "bad_fraction": 0.024194666731925378,
+      "bad_threshold": 0.02,
+      "max_bad_component_area": 4130,
+      "reference": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\complex_room_envmap_mis\\aov\\albedo_primary_eval_mitsuba.exr",
+      "reference_source": "mitsuba_primary_eval",
+      "ssim_gate": 0.985,
+      "bad_fraction_gate": 0.03,
+      "component_area_gate": 5000,
+      "mask": "primary_diffuse_or_plastic"
+    },
+    "material_extra": {
+      "source": "material_table",
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0,
+      "bad_fraction": 0.0,
+      "channels": [
+        "ior",
+        "anisotropy"
+      ]
+    },
+    "material_bsdf_class": {
+      "source": "semantic_bsdf_class",
+      "surface_pixels": 262144,
+      "allowed_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "identity_check": true,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0,
+      "bad_fraction": 0.0,
+      "identity_bad_fraction": 0.0
+    },
+    "material_specular_color": {
+      "source": "material_table",
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 4.76837158203125e-07,
+      "max": 4.76837158203125e-07,
+      "bad_fraction": 0.0
+    },
+    "emission": {
+      "source": "material_table",
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0,
+      "bad_fraction": 0.0
+    },
+    "material_params": {
+      "source": "material_table",
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "max": 0.0,
+      "bad_fraction": 0.0
+    }
+  }
+}

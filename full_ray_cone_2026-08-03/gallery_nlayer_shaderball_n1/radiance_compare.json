@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:19:44.510425+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 0.04559528437902517
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\engine_aov\\radiance.exr",
+      "size_bytes": 3031978,
+      "mtime_ns": 1785772940378652700,
+      "mtime_utc": "2026-08-03T16:02:20.378653+00:00",
+      "sha256": "60d61fc12d36dbe60079f9acaad828a3c2832cc25d845ff63189673bf1852ec4",
+      "label": "Engine",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 1.8942805581900757e-06,
+      "max": 3.0910634994506836,
+      "mean": 0.23621305414011476
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\reference_pbrt_4096.exr",
+      "size_bytes": 823350,
+      "mtime_ns": 1784619634508449400,
+      "mtime_utc": "2026-07-21T07:40:34.508449+00:00",
+      "sha256": "ab8e603e160a527f5bc6b3fb491190e8946c0cad5d1298084893520805dc6294",
+      "label": "PBRT",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.023681640625,
+      "max": 3.13671875,
+      "mean": 0.24235151619132012
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_nlayer_shaderball_n1\\reference_guo_diffuse_4096_flipped.exr",
+      "size_bytes": 1524199,
+      "mtime_ns": 1784621801698652500,
+      "mtime_utc": "2026-07-21T08:16:41.698653+00:00",
+      "sha256": "f8ec5e6d88f4241f47e7a0b0d0b7b133980d4debd7276a71b3dab62e92895c97",
+      "label": "Guo diffuse",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 6.473064422607422e-05,
+      "max": 3.009765625,
+      "mean": 0.2361558316144207
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9916733409833681,
+      "mae": 0.007862905321364322,
+      "rmse": 0.015592432733603537,
+      "max_abs": 0.24711230397224426,
+      "luminance_mae": 0.006671267456779534,
+      "luminance_p95": 0.021258119023442254,
+      "luminance_p99_5": 0.03796859502590356,
+      "luminance_max": 0.22753671222925187,
+      "ssim_data_range": 3.160400390625
+    },
+    "engine_vs_guo_diffuse": {
+      "left": "Engine",
+      "right": "Guo diffuse",
+      "space": "linear_rgb",
+      "ssim": 0.9944994248725215,
+      "mae": 0.003614438250989871,
+      "rmse": 0.016651330597766512,
+      "max_abs": 0.6668164730072021,
+      "luminance_mae": 0.002785799502463834,
+      "luminance_p95": 0.008473739380277668,
+      "luminance_p99_5": 0.05317788136389487,
+      "luminance_max": 0.19749309581518174,
+      "ssim_data_range": 3.0910616051701254
+    },
+    "pbrt_vs_guo_diffuse": {
+      "left": "PBRT",
+      "right": "Guo diffuse",
+      "space": "linear_rgb",
+      "ssim": 0.9915368437290241,
+      "mae": 0.008598008844880193,
+      "rmse": 0.022158147795767226,
+      "max_abs": 0.716796875,
+      "luminance_mae": 0.0072536874368595815,
+      "luminance_p95": 0.022169979858398418,
+      "luminance_p99_5": 0.06147389483642581,
+      "luminance_max": 0.214545751953125,
+      "ssim_data_range": 3.160400390625
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Guo diffuse"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Guo diffuse|",
+      "|PBRT - Guo diffuse|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\gallery_nlayer_shaderball_n1\\radiance_compare.png",
+    "size_bytes": 2392263,
+    "mtime_ns": 1785773984989223500,
+    "mtime_utc": "2026-08-03T16:19:44.989223+00:00",
+    "sha256": "697a66f5e3749a85e142bf0b087ad8b0e98faab3b626b32a262f30bef94a23c7",
+    "width": 1536,
+    "height": 1124
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "generated_at_utc": "2026-08-03T16:23:26.688002+00:00",
+  "exposure": 1.0,
+  "diff_scale": {
+    "method": "combined_abs_rgb_bt709_luminance_percentile",
+    "percentile": 99.5,
+    "value": 3.543108521576168
+  },
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_grey_white_room_n1\\engine_aov\\radiance.exr",
+      "size_bytes": 2678039,
+      "mtime_ns": 1785774087027483000,
+      "mtime_utc": "2026-08-03T16:21:27.027483+00:00",
+      "sha256": "a632b9445b5cf1851b5f9299ab1dc6d1e30f3d45648da3f7261f22978481645e",
+      "label": "Engine",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0,
+      "max": 89.4375,
+      "mean": 1.7882353540256453
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_grey_white_room_n1\\full_pbrt.exr",
+      "size_bytes": 1006420,
+      "mtime_ns": 1785770293194646300,
+      "mtime_utc": "2026-08-03T15:18:13.194646+00:00",
+      "sha256": "5dd8996c082fa239bcefdcf23344bb3ab205e58825098fae18811bf21f467ab5",
+      "label": "PBRT",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": -0.0095062255859375,
+      "max": 89.5,
+      "mean": 1.6844746516262077
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\References\\Generated\\gallery_grey_white_room_n1\\full_mitsuba.exr",
+      "size_bytes": 2664025,
+      "mtime_ns": 1785770230229550100,
+      "mtime_utc": "2026-08-03T15:17:10.229550+00:00",
+      "sha256": "1e68362f301594199b9f5cf5abc2ab0c117ebca646c0a9cc05583ef9204f96aa",
+      "label": "Mitsuba",
+      "shape": [
+        360,
+        640,
+        3
+      ],
+      "dtype": "float32",
+      "nonfinite_values": 0,
+      "min": 0.0,
+      "max": 89.43753051757812,
+      "mean": 1.606296801302002
+    }
+  ],
+  "comparisons": {
+    "engine_vs_pbrt": {
+      "left": "Engine",
+      "right": "PBRT",
+      "space": "linear_rgb",
+      "ssim": 0.9627914435540404,
+      "mae": 0.22575870647411825,
+      "rmse": 0.5165118153774751,
+      "max_abs": 37.05624961853027,
+      "luminance_mae": 0.2326078204322265,
+      "luminance_p95": 0.8864013169908521,
+      "luminance_p99_5": 2.8416720253584415,
+      "luminance_max": 11.448256877851486,
+      "ssim_data_range": 89.50950622558594
+    },
+    "engine_vs_mitsuba": {
+      "left": "Engine",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9652889491389876,
+      "mae": 0.22253359469324516,
+      "rmse": 0.6032322162089835,
+      "max_abs": 21.09296417236328,
+      "luminance_mae": 0.22863996316145002,
+      "luminance_p95": 0.9565009746882293,
+      "luminance_p99_5": 3.428090346797885,
+      "luminance_max": 18.573254245758054,
+      "ssim_data_range": 89.43753051757812
+    },
+    "pbrt_vs_mitsuba": {
+      "left": "PBRT",
+      "right": "Mitsuba",
+      "space": "linear_rgb",
+      "ssim": 0.9822212236756784,
+      "mae": 0.16607316649971615,
+      "rmse": 0.6762690682346875,
+      "max_abs": 43.6585693359375,
+      "luminance_mae": 0.1758840061380762,
+      "luminance_p95": 0.8223668864330609,
+      "luminance_p99_5": 4.138836136554779,
+      "luminance_max": 18.32461075553894,
+      "ssim_data_range": 89.50950622558594
+    }
+  },
+  "errors": [],
+  "layout": [
+    [
+      "Engine",
+      "PBRT",
+      "Mitsuba"
+    ],
+    [
+      "|Engine - PBRT|",
+      "|Engine - Mitsuba|",
+      "|PBRT - Mitsuba|"
+    ]
+  ],
+  "output": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Validation\\FullRayCone\\2026-08-03\\gallery_grey_white_room_n1\\radiance_compare.png",
+    "size_bytes": 2292925,
+    "mtime_ns": 1785774207038544500,
+    "mtime_utc": "2026-08-03T16:23:27.038544+00:00",
+    "sha256": "dc8a8cd49f3d3b42847561a99902720a48998e86a3fa2e169795cec2c25e4b49",
+    "width": 1920,
+    "height": 820
+  }
+}
