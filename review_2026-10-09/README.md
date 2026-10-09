@@ -4,7 +4,7 @@
 
 레퍼런스 지정: **Mitsuba gallery → Mitsuba renderer**, **N-layered → Guo renderer**. 앞서 생성한 PBRT gallery/layered 비교는 보조 진단으로 분리했습니다.
 
-현재 Guo의 실제 독립 seed 및 film 설정을 검증하는 별도 실행이 진행 중입니다. Guo 결과는 생성 후 이 폴더에 추가합니다. 다른 회귀 씬의 원인 수정과 재검증도 계속합니다.
+Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layered 목록에 추가했습니다. 다른 회귀 씬의 원인 수정과 재검증도 계속합니다.
 
 ## 원본 Mitsuba gallery 재검증
 
@@ -14,6 +14,12 @@
 | [gallery_glass_of_water](gallery-mitsuba/gallery_glass_of_water/README.md) | Mitsuba | PASS | OPEN |
 | [gallery_grey_white_room](gallery-mitsuba/gallery_grey_white_room/README.md) | Mitsuba | PASS | OPEN |
 | [gallery_white_room](gallery-mitsuba/gallery_white_room/README.md) | Mitsuba | PASS | OPEN |
+
+## N-layered: Guo renderer
+
+[N2 이미지·중앙 표면 ROI·독립 seed 노이즈 비교](layered-guo/gallery_nlayer_sphere_alpha01_n2/README.md)
+
+128 SPP 평균 Y 차이 +0.04379%; 테스트한 RGB/Y 평균 차이 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS. 전체 단계와 사용자 육안 승인은 별도입니다.
 
 ## 다른 회귀 및 보충 비교
 

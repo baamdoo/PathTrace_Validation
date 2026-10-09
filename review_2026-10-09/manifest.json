@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T04:58:32.432091+00:00",
+  "generated_utc": "2026-10-09T05:02:18.948325+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 155,
+  "images": 160,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1103,6 +1103,43 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched"
+    },
+    {
+      "scene": "gallery_nlayer_sphere_alpha01_n2",
+      "category": "layered-guo",
+      "reference": "Guo EfficientComplexLayered Mitsuba 0.6 fork / multilayered_guo2018",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "지정된 Guo renderer로 카메라 방향, 독립 seed, tent pixel sampling을 검증하여 재렌더했습니다. 원본 Guo BSDF/core binary 47개는 변경하지 않았으며 sampling/camera adapter만 별도로 사용했습니다. 128 SPP x 4의 global Y 차이 +0.04379%, 중앙64x64 표면 ROI +0.18022%; global/4quadrants/center ROI의 RGB/Y 평균 차이 95% 구간이 모두 0을 포함합니다. 관측된 N-layer 엔진 결함은 없습니다. Engine/Guo Y variance ratio는 global 0.09979, 중앙 0.26184이며 양쪽 수렴 검사는 통과했습니다. Guo 환경맵 EWA 및 separable G와 엔진의 필터/G 모델 차이는 남습니다. 실패한 seed adapter 및 카메라 방향 시도는 최종 결과에서 제외했습니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "785f271b8ec359f92102e6bac5d8c35137c1c9fa30b820730c752cf75bed2897",
+          "bytes": 276951
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "eb5def7c84f729e555586a487cda5ff91d8e814b512cb34d7785b2ef8af5fce8",
+          "bytes": 3010458
+        },
+        {
+          "file": "noise_stddev.png",
+          "sha256": "863cc22f977c7c715c4013de04b24b35c83a8359314983aae936e30bf58e218c",
+          "bytes": 2664069
+        },
+        {
+          "file": "radiance_uncertainty.png",
+          "sha256": "6b34747db6fc7437de5490e176b1fad2cbf10cdcaf0fdc56be1ef3b58e69f680",
+          "bytes": 269716
+        },
+        {
+          "file": "surface_roi.png",
+          "sha256": "cc5b849b08f5ca5d798fb2e715fe4fe9c94b8c651e278129aacd4197f37e20e3",
+          "bytes": 231240
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_camera_matched"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."
