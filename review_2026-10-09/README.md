@@ -1,10 +1,23 @@
 # PathTracing 회귀 검증 · 2026-10-09
 
-**진행 중입니다. 미통과·불확실 결과도 육안 확인을 위해 게시합니다. 단계 통과 또는 사용자 승인으로 간주하지 않습니다.**
+**기존 277개 이미지는 사용자 육안 승인을 받았습니다. 수치상 미통과·불확실 판정은 그대로 보존하며, 새 Shaderball/Killeroo 이미지는 이 승인에 포함되지 않습니다.**
 
 레퍼런스 지정: **Mitsuba gallery → Mitsuba renderer**, **N-layered → Guo renderer**. 앞서 생성한 PBRT gallery/layered 비교는 보조 진단으로 분리했습니다.
 
-Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layered 목록에 추가했습니다. 다른 회귀 씬의 원인 수정과 재검증도 계속합니다.
+Guo의 독립 seed·film·카메라를 검증한 비교를 아래 N-layered 목록에 추가했습니다. 사용자의 후속 요청에 따라 기존 Shaderball N3와 Killeroo N4 대표 씬을 추가 검증합니다.
+
+## 추가 요청: Shaderball · Killeroo
+
+| Scene / 이미지 종류 | 밝기·씬 매칭 판정 | 분산 수렴 | 사용자 육안 확인 |
+|---|---|---|---|
+| [gallery_nlayer_shaderball_n3 (반복 검증)](layered-showcase-regression/gallery_nlayer_shaderball_n3/README.md) | OPEN: 작은 밝기 잔차 | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_nlayer_shaderball_n3 (1024 SPP 대표)](layered-showcase-hero/gallery_nlayer_shaderball_n3/README.md) | OPEN: 작은 밝기 잔차 | NOT_APPLICABLE_SINGLE_SEED | 대기 |
+| [gallery_nlayer_killeroo_n4_alpha01_bright10x (반복 검증)](layered-showcase-regression/gallery_nlayer_killeroo_n4_alpha01_bright10x/README.md) | 미통과: 구형 광원·노멀 | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_nlayer_killeroo_n4_alpha01_bright10x (1024 SPP 대표)](layered-showcase-hero/gallery_nlayer_killeroo_n4_alpha01_bright10x/README.md) | 미통과: 구형 광원·노멀 | NOT_APPLICABLE_SINGLE_SEED | 대기 |
+
+새 비교의 수치 결과·씬 매칭 한계는 각 링크에 명시했습니다. 아래 기존 277개 이미지의 육안 승인은 새 이미지에 자동 적용하지 않습니다.
+
+[N3/N4 소스 계약 감사](nlayer-source-contract.md): Killeroo의 구형 광원 MIS 기여 누락과 노멀 처리 차이, 정확한 수정에 필요한 범위를 기록했습니다. [추가 렌더 시간](nlayer-timings.md)도 원래 측정 범위를 구분해 기록했습니다.
 
 ## 엔진 수정 후 새 렌더
 
@@ -31,7 +44,7 @@ White 바닥 분포만 맞춘 진단: 동일 engine 대비 native Y -0.1818% / G
 
 - [Many-lights: 발광체 차폐 조건 수정 전후](corrected-many-lights/cornell_many_lights_matched/README.md) — PBRT 평균 Y −0.0147%, 기존 SSIM 기준·분산 수렴 PASS.
 - [Many-lights: Mitsuba spot 감쇠식 교정 전후](corrected-many-lights-spot/cornell_many_lights_matched/README.md) — 평균 Y +0.4742% → +0.0192%; 노이즈 차이는 별도 표시.
-- [Normal-map: 필터링 원인 대조](normal-map-filter-diagnostic/cornell_normal_map/README.md) — 평균 Y +2.4576% → +0.0758%; production 기본 필터 선택 대기.
+- [Normal-map: 필터링 원인 대조](normal-map-filter-diagnostic/cornell_normal_map/README.md) — Mitsuba 대비 평균 Y +2.4576% → +0.0758%. normal 샘플링만 LOD0로 바꾼 진단이며 전체 PASS는 아닙니다. 사용자가 현 ray-cone 설정을 유지하고 다음 검증으로 진행하도록 승인했습니다.
 - [N-layered: 최종 엔진 / 지정 Guo 레퍼런스](layered-guo-surface-fixes/gallery_nlayer_sphere_alpha01_n2/README.md) — 평균 Y +0.04379%, 양쪽 분산 수렴 PASS.
 
 아래 7개 RGB 보충 비교는 기존 전체 영상 SSIM .99 기준과 양쪽 분산 감소 검사를 통과했습니다. 재질 모델의 정확한 동등성 및 전체 단계 승인을 뜻하지 않습니다.
@@ -59,7 +72,7 @@ White 바닥 분포만 맞춘 진단: 동일 engine 대비 native Y -0.1818% / G
 
 [최종 N2 이미지·중앙 표면 ROI·독립 seed 노이즈 비교](layered-guo-surface-fixes/gallery_nlayer_sphere_alpha01_n2/README.md) · [수정 전 엔진 baseline](layered-guo/gallery_nlayer_sphere_alpha01_n2/README.md)
 
-128 SPP 평균 Y 차이 +0.04379%; 테스트한 RGB/Y 평균 차이 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS. 전체 단계와 사용자 육안 승인은 별도입니다.
+128 SPP 평균 Y 차이 +0.04379%; 테스트한 RGB/Y 평균 차이 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS. 이 기존 N2 비교 이미지는 사용자 육안 승인을 받았으며 새 대표 씬 검증과 구분합니다.
 
 ## 다른 회귀 및 보충 비교
 

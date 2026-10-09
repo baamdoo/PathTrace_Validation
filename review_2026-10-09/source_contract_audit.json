@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-09T06:55:07.731668+00:00",
+  "status": "SOURCE_AUDIT_COMPLETE_RENDER_ACCEPTANCE_OPEN",
+  "stage_pass": false,
+  "radiance_status": "OPEN",
+  "publication_ready": false,
+  "scope": "Read-only source/asset audit of authored N3 shaderball and N4 alpha01 bright10x baseline. This file is evidence of known limits, not a numerical pass receipt.",
+  "decision": "Preserve authored baselines and publish measured results with confirmed N4 source-contract failures. No analytic intersection/shadow implementation or asset repair is authorized or performed by this audit.",
+  "sources": {
+    "manifest_loader": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "ca7aef9155af504fd192c831f65b03030ef199da2ba240cb32503748e89cbcfd",
+      "bytes": 96028,
+      "relative_path": "Projects/Application/Applications/RayTracingApp.cpp",
+      "anchors": [
+        {
+          "line_start": 301,
+          "line_end": 314,
+          "excerpt": "301: \t\telse if (tokens[0] == \"areaLight\" || tokens[0] == \"sphereLight\")\n302: \t\t{\n303: \t\t\tauto values = ParseKeyValues(tokens, 1);\n304: \t\t\tGalleryLightEntry light = {};\n305: \t\t\tlight.type = tokens[0] == \"sphereLight\" ? eLightType::Sphere : eLightType::Area;\n306: \t\t\tif (auto it = values.find(\"name\"); it != values.end())\n307: \t\t\t\tlight.name = it->second;\n308: \t\t\tlight.position = ParseFloat3Value(values, \"position\", light.position);\n309: \t\t\tlight.rotation = ParseFloat3Value(values, \"rotation\", light.rotation);\n310: \t\t\tlight.scale = ParseFloat3Value(values, \"scale\", light.scale);\n311: \t\t\tlight.color = ParseFloat3Value(values, \"color\", light.color);\n312: \t\t\tlight.luminousFluxLm = ParseFloat(values, \"flux\", light.luminousFluxLm);\n313: \t\t\tlight.radiusM = ParseFloat(values, \"radius\", light.radiusM);\n314: \t\t\tdata.lights.push_back(light);"
+        },
+        {
+          "line_start": 936,
+          "line_end": 978,
+          "excerpt": "936: \t\tif (IsGalleryScene(m_PathTracerReferenceScene))\n937: \t\t{\n938: \t\t\tconst auto gallery = LoadGallerySceneManifest(m_PathTracerReferenceScene);\n939: \t\t\tif (gallery.bValid)\n940: \t\t\t{\n941: \t\t\t\tfor (const auto& meshEntry : gallery.meshes)\n942: \t\t\t\t{\n943: \t\t\t\t\tconst fs::path meshPath = meshEntry.path;\n944: \t\t\t\t\tauto entity = m_pScene->ImportModel(meshPath, descriptor);\n945: \t\t\t\t\tUNUSED(entity);\n946: \t\t\t\t\tforEachMaterialByMeshPath(meshPath, [&](baamboo::MaterialData&, MaterialComponent& materialComponent)\n947: \t\t\t\t\t{\n948: \t\t\t\t\t\tmaterialComponent.bFaceNormals = meshEntry.bFaceNormals;\n949: \t\t\t\t\t\tmaterialComponent.layers = meshEntry.layers;\n950: \t\t\t\t\t});\n951: \t\t\t\t\tif (meshEntry.medium)\n952: \t\t\t\t\t{\n953: \t\t\t\t\t\t// MediumSystem binds density to mesh draws, not the imported model root.\n954: \t\t\t\t\t\tauto& registry = m_pScene->Registry();\n955: \t\t\t\t\t\tfor (auto meshEntity : registry.view< StaticMeshComponent >())\n956: \t\t\t\t\t\t{\n957: \t\t\t\t\t\t\tif (registry.get< StaticMeshComponent >(meshEntity).path == meshPath.string())\n958: \t\t\t\t\t\t\t\tregistry.emplace_or_replace< MediumComponent >(meshEntity, *meshEntry.medium);\n959: \t\t\t\t\t\t}\n960: \t\t\t\t\t}\n961: \t\t\t\t}\n962: \n963: \t\t\t\tfor (const auto& lightEntry : gallery.lights)\n964: \t\t\t\t{\n965: \t\t\t\t\tauto lightEntity = m_pScene->CreateEntity(lightEntry.name.empty() ? \"Gallery Light\" : lightEntry.name);\n966: \t\t\t\t\tlightEntity.AttachComponent< LightComponent >();\n967: \n968: \t\t\t\t\tauto& light = lightEntity.GetComponent< LightComponent >();\n969: \t\t\t\t\tlight.type = lightEntry.type;\n970: \t\t\t\t\tlight.color = lightEntry.color;\n971: \t\t\t\t\tlight.temperatureK = 0.0f;\n972: \t\t\t\t\tlight.luminousFluxLm = lightEntry.luminousFluxLm;\n973: \t\t\t\t\tlight.radiusM = lightEntry.radiusM;\n974: \n975: \t\t\t\t\tauto& transformComponent = lightEntity.GetComponent< TransformComponent >();\n976: \t\t\t\t\ttransformComponent.transform.position = lightEntry.position;\n977: \t\t\t\t\ttransformComponent.transform.rotation = lightEntry.rotation;\n978: \t\t\t\t\ttransformComponent.transform.scale = lightEntry.scale;"
+        },
+        {
+          "line_start": 2270,
+          "line_end": 2291,
+          "excerpt": "2270: \t\t\tauto lightEntity = loadWall(\"ceiling_light.ply\", float3(0.0f));\n2271: \t\t\tUNUSED(lightEntity);\n2272: \t\t\tforEachMaterialByMeshPath(meshDir / \"ceiling_light.ply\", [](baamboo::MaterialData& mat, MaterialComponent&)\n2273: \t\t\t{\n2274: \t\t\t\tmat.emissionColor = float3(17.0f, 12.0f, 4.0f);\n2275: \t\t\t\tmat.emissivePower = 1.0f;\n2276: \t\t\t});\n2277: \n2278: \t\t\t{\n2279: \t\t\t\tauto areaLight = m_pScene->CreateEntity(\"Cornell Area Light\");\n2280: \t\t\t\tareaLight.AttachComponent< LightComponent >();\n2281: \n2282: \t\t\t\tauto& light = areaLight.GetComponent< LightComponent >();\n2283: \t\t\t\tlight.type           = eLightType::Area;\n2284: \t\t\t\tlight.color          = float3(17.0f, 12.0f, 4.0f);\n2285: \t\t\t\tlight.temperatureK   = 0.0f;\n2286: \t\t\t\tlight.luminousFluxLm = 3.14159265358979323846f * 0.25f;\n2287: \n2288: \t\t\t\tauto& transformComponent = areaLight.GetComponent< TransformComponent >();\n2289: \t\t\t\ttransformComponent.transform.position = float3(0.0f, 1.99f, 0.0f);\n2290: \t\t\t\ttransformComponent.transform.rotation = float3(90.0f, 0.0f, 0.0f);\n2291: \t\t\t\ttransformComponent.transform.scale    = float3(0.5f, 0.5f, 1.0f);"
+        }
+      ]
+    },
+    "sphere_light_upload": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\LightSystem.cpp",
+      "sha256": "02358fc237e2ec544a898a38ebdd67883e06b0656bd5eb475414fbd251ac770e",
+      "bytes": 12658,
+      "relative_path": "Projects/BaambooEngine/BaambooScene/Systems/LightSystem.cpp",
+      "anchors": [
+        {
+          "line_start": 218,
+          "line_end": 234,
+          "excerpt": "218:                 case eLightType::Sphere:\n219:                     if (m_SphereLights.size() < MAX_SPHERE_LIGHT)\n220:                     {\n221:                         // Sphere is isotropic; only world-scale (incl. parent) matters for radius scaling.\n222:                         const float wsX = glm::length(float3(mWorld[0]));\n223:                         const float wsY = glm::length(float3(mWorld[1]));\n224:                         const float wsZ = glm::length(float3(mWorld[2]));\n225:                         const float maxScale = std::max({ wsX, wsY, wsZ });\n226: \n227:                         SphereLight light;\n228:                         light.position       = position;\n229:                         light.radius         = lightComponent.radiusM * maxScale;\n230:                         light.color          = lightComponent.color;\n231:                         light.luminousFluxLm = lightComponent.luminousFluxLm;\n232:                         light.temperatureK   = lightComponent.temperatureK;\n233: \n234:                         m_SphereLights.push_back(light);"
+        }
+      ]
+    },
+    "path_integrator": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "b3513c25f35fa0872d081e7ee87be01a9982521fe8b291918c9f6689d782bdf4",
+      "bytes": 28551,
+      "relative_path": "Assets/Shader/HLSL/PathTracerLIB.hlsl",
+      "anchors": [
+        {
+          "line_start": 280,
+          "line_end": 295,
+          "excerpt": "280:         // ── Case B: miss — the path escapes to the environment ─────────\n281:         if (hp.hitKind == 0u)\n282:         {\n283:             float misWeight = (depth > 0u)\n284:                 ? CalculateMISWeight(prevMarginalPDF, EnvironmentPDF(ray.Direction), wasDelta)\n285:                 : 1.0; // depth 0: camera ray looked straight at the sky\n286: \n287:             float3 environmentContribution = beta * EvaluateEnvironmentRadiance(ray.Direction) * misWeight;\n288:             if (IsPathFinite3(environmentContribution))\n289:             {\n290:                 L += environmentContribution;\n291: #if PT_VALIDATION\n292:                 AccumulatePathContribution(contribution, prevBSDFFlags, environmentContribution);\n293: #endif\n294:             }\n295:             break;"
+        },
+        {
+          "line_start": 332,
+          "line_end": 349,
+          "excerpt": "332:         // ── Case A: the random walk hit an emitter ─────────────────────\n333:         if (any(sm.emission > 0.0) && dot(hp.geometricNormal, -ray.Direction) > 0.0)\n334:         {\n335:             float3 emittedContribution = beta * sm.emission;\n336:             if (depth == 0u)\n337:             {\n338:                 if (IsPathFinite3(emittedContribution))\n339:                     L += emittedContribution;\n340:             }\n341:             else\n342:             {\n343:                 float pdfLight  = AreaLightPDFAtHit(prevVertexPositionWS, surfacePosition, ray.Direction);\n344:                 float misWeight = CalculateMISWeight(prevMarginalPDF, pdfLight, wasDelta);\n345:                 emittedContribution *= misWeight;\n346: \n347:                 if (IsPathFinite3(emittedContribution))\n348:                 {\n349:                     L += emittedContribution;"
+        },
+        {
+          "line_start": 412,
+          "line_end": 414,
+          "excerpt": "412:         if (!SampleLd(surfacePosition, woWS, hp, sm, boundaryPair,\n413:                 media, hostStack, airStack, canChangePathMedium, depth, directionalQuerySeed,\n414:                 (depth + 1u) < maxDepth, rng, directLighting"
+        }
+      ]
+    },
+    "light_sampling": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "sha256": "d4f3cc8ec02a7d61a87a5e10aa764f415aa8abb20a037ff08dae26a1c91d9217",
+      "bytes": 25847,
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "anchors": [
+        {
+          "line_start": 142,
+          "line_end": 146,
+          "excerpt": "142: float3 SphereLightRadiance(SphereLight light)\n143: {\n144:     float3 lightColor = float3(light.colorR, light.colorG, light.colorB);\n145:     float  area       = max(4.0 * PI * light.radius * light.radius, EPSILON_MIN);\n146:     return lightColor * light.luminousFluxLm / (PI * area);"
+        },
+        {
+          "line_start": 356,
+          "line_end": 381,
+          "excerpt": "356:     if (lightIndex < g_Lights.numSpheres)\n357:     {\n358:         SphereLight light = g_Lights.spheres[lightIndex];\n359: \n360:         float3 y;\n361:         float3 lightNormal;\n362:         float  pdfA;\n363:         SampleSphereLight(NextFloat2(rng), light, y, lightNormal, pdfA);\n364: \n365:         float3 toLight = y - p;\n366:         float  dist2   = dot(toLight, toLight);\n367:         if (dist2 <= EPSILON_MIN || pdfA <= 0.0)\n368:             return ls;\n369: \n370:         float dist = sqrt(dist2);\n371:         ls.wiWS = toLight / dist;\n372: \n373:         float cosLight = saturate(dot(lightNormal, -ls.wiWS));\n374:         if (cosLight <= 0.0)\n375:             return ls;\n376: \n377:         ls.shadowTarget = y;\n378:         ls.Le           = SphereLightRadiance(light);\n379:         ls.pdfW         = PdfAreaToSolidAngle(selectionPdf * pdfA, dist2, cosLight);\n380:         ls.valid        = 1u;\n381:         return ls;"
+        },
+        {
+          "line_start": 448,
+          "line_end": 454,
+          "excerpt": "448:         frame = MakeSurfaceFrame(surface);\n449:         wo = BxDF::ToLocal(frame, woWS);\n450:         bHasTransmission = HasTransmissionLobe(material);\n451:         if ((!bHasTransmission && wo.z <= 0.0) || (bHasTransmission && wo.z == 0.0) ||\n452:             BxDF::LayerComposite::IsSmoothConductor(material))\n453:             return true;\n454:     }"
+        },
+        {
+          "line_start": 560,
+          "line_end": 571,
+          "excerpt": "560:             if (bUseMIS && ls.isDelta == 0u)\n561:             {\n562: #if PT_VALIDATION\n563:                 BxDF::MarginalPDFAudit marginalAudit;\n564: #endif\n565:                 scatterPDF = BxDF::DirectionalComposite::MarginalPDF(\n566:                     material, surface.uv, surface.ddxUV, surface.ddyUV, wo, wi,\n567:                     boundaryPair, directionalQuerySeed\n568: #if PT_VALIDATION\n569:                     , marginalAudit\n570: #endif\n571:                 );"
+        },
+        {
+          "line_start": 599,
+          "line_end": 607,
+          "excerpt": "599:         else\n600:         {\n601:             if (ls.pdfW <= 0.0)\n602:                 return false;\n603:             float misWeight = bUseMIS ? PowerHeuristic(ls.pdfW, scatterPDF) : 1.0;\n604:             lightScale = misWeight * ls.Le / ls.pdfW;\n605:         }\n606:         lightScale *= transmittance;\n607:         direct += response * lightScale;"
+        },
+        {
+          "line_start": 618,
+          "line_end": 628,
+          "excerpt": "618: float AreaLightPDFAtHit(float3 refP, float3 hitP, float3 wiWS)\n619: {\n620:     float pdfW = 0.0;\n621:     if (DirectLightCount() == 0u)\n622:         return pdfW;\n623: \n624:     // Per-light selection PMF (power CDF)\n625:     uint areaBase   = g_Lights.numDirectionals + g_Lights.numSpots;\n626:     uint diskBase   = areaBase + g_Lights.numAreas;\n627:     uint sphereBase = diskBase + g_Lights.numDisks;\n628:     uint tubeBase   = sphereBase + g_Lights.numSpheres;"
+        },
+        {
+          "line_start": 689,
+          "line_end": 707,
+          "excerpt": "689:     for (uint i = 0u; i < g_Lights.numSpheres; ++i)\n690:     {\n691:         SphereLight light = g_Lights.spheres[i];\n692:         float3 center = float3(light.posX, light.posY, light.posZ);\n693:         float3 local = hitP - center;\n694:         float distToCenter = length(local);\n695:         if (abs(distToCenter - light.radius) > 1.0e-3)\n696:             continue;\n697: \n698:         float3 normal = local / max(distToCenter, EPSILON_MIN);\n699:         float cosLight = saturate(dot(normal, -wiWS));\n700:         if (cosLight <= 0.0)\n701:             continue;\n702: \n703:         float3 toLight = hitP - refP;\n704:         float dist2 = dot(toLight, toLight);\n705:         float pdfA = 1.0 / max(4.0 * PI * light.radius * light.radius, EPSILON_MIN);\n706:         float selectionPdf = LightSelectionPMF(sphereBase + i);\n707:         pdfW += PdfAreaToSolidAngle(selectionPdf * pdfA, dist2, cosLight);"
+        }
+      ]
+    },
+    "analytic_helpers": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "69b232a4c93c6fb70912fb4b983dc7c12a9567ba2172646da83567cc8e2dbfac",
+      "bytes": 12305,
+      "relative_path": "Assets/Shader/HLSL/Sampling.hlsli",
+      "anchors": [
+        {
+          "line_start": 294,
+          "line_end": 356,
+          "excerpt": "294: bool IntersectRayAreaLight(float3 origin, float3 dir, AreaLight light, out float tHit, out float3 normalAtHit)\n295: {\n296:     float3 lpos    = float3(light.posX,     light.posY,     light.posZ);\n297:     float3 ltan    = float3(light.tangentX, light.tangentY, light.tangentZ);\n298:     float3 lnorm   = float3(light.normalX,  light.normalY,  light.normalZ);\n299:     float3 lbitan  = cross(ltan, lnorm);\n300: \n301:     // Single-sided: ray must approach from the front hemisphere\n302:     // (i.e. dot(lnorm, -dir) > 0  =>  dot(lnorm, dir) < 0).\n303:     float denom = dot(lnorm, dir);\n304:     if (denom >= -1e-6) { tHit = -1.0; normalAtHit = float3(0, 0, 0); return false; }\n305: \n306:     // Plane intersection: t = dot(lpos - origin, lnorm) / dot(lnorm, dir).\n307:     float t = dot(lpos - origin, lnorm) / denom;\n308:     if (t <= 0.001) { tHit = -1.0; normalAtHit = float3(0, 0, 0); return false; }\n309: \n310:     // Bounds check in the rectangle's tangent / bitangent frame.\n311:     float3 p = origin + t * dir;\n312:     float3 d = p - lpos;\n313:     float  u = dot(d, ltan);\n314:     float  v = dot(d, lbitan);\n315:     if (abs(u) > light.halfWidth || abs(v) > light.halfHeight)\n316:     {\n317:         tHit = -1.0; normalAtHit = float3(0, 0, 0); return false;\n318:     }\n319: \n320:     tHit        = t;\n321:     normalAtHit = lnorm;\n322:     return true;\n323: }\n324: \n325: bool IntersectRaySphereLight(float3 origin, float3 dir, SphereLight light, out float tHit, out float3 normalAtHit)\n326: {\n327:     float3 c  = float3(light.posX, light.posY, light.posZ);\n328:     float3 oc = origin - c;\n329:     float  b  = dot(oc, dir);                              // half-b form\n330:     float  cc = dot(oc, oc) - light.radius * light.radius;\n331:     float  disc = b * b - cc;\n332:     if (disc < 0.0) { tHit = -1.0; normalAtHit = float3(0, 0, 0); return false; }\n333: \n334:     float s = sqrt(disc);\n335:     float t = -b - s;              // entry point (front face for external rays)\n336:     if (t <= 0.001) t = -b + s;    // origin inside the sphere -> exit point\n337:     if (t <= 0.001) { tHit = -1.0; normalAtHit = float3(0, 0, 0); return false; }\n338: \n339:     float3 p = origin + t * dir;\n340:     tHit        = t;\n341:     normalAtHit = normalize(p - c);\n342:     return true;\n343: }\n344: \n345: \n346: // BSDF pdf evaluator for cross-evaluation\n347: float EvaluateBSDFPdf(float3 dir, float3 n, uint strategy)\n348: {\n349:     float c = dot(dir, n);\n350:     if (c <= 0.0) \n351:         return 0.0;\n352: \n353:     if (strategy == 1u)\n354:         return c / PI;\n355:     else\n356:         return 1.0 / (2.0 * PI);"
+        }
+      ]
+    },
+    "shadow_epsilon": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "sha256": "d4068ff7f52e46e5096bf613da08e3eaacf6697a961dc282b4a2e0314757cbc8",
+      "bytes": 28558,
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "anchors": [
+        {
+          "line_start": 8,
+          "line_end": 11,
+          "excerpt": "8: #define PT_MAX_DEPTH_LIMIT 64u\n9: \n10: #define PT_RAY_EPS          1.0e-4\n11: "
+        },
+        {
+          "line_start": 511,
+          "line_end": 513,
+          "excerpt": "511: float3 OffsetRay(float3 p, float3 n, float3 w)\n512: {\n513:     return p + n * ((dot(n, w) >= 0.0) ? PT_RAY_EPS : -PT_RAY_EPS);"
+        },
+        {
+          "line_start": 833,
+          "line_end": 850,
+          "excerpt": "833:     float3 toTarget      = targetWS - originWS;\n834:     float  segmentLength = length(toTarget);\n835:     if (!isfinite(segmentLength) || segmentLength <= PT_RAY_EPS)\n836:         return false;\n837: \n838:     RayDesc ray;\n839:     ray.Origin    = originWS;\n840:     ray.Direction = toTarget / segmentLength;\n841:     ray.TMin      = PT_RAY_EPS;\n842:     ray.TMax      = max(PT_RAY_EPS, segmentLength - PT_RAY_EPS);\n843: \n844:     if (!TraceShadowVisibility(ray, alphaSeed))\n845:         return true;\n846: \n847:     if (shadowStartMedium.mediumID == INVALID_INDEX)\n848:     {\n849:         estimatedT = 1.0;\n850:         return true;"
+        }
+      ]
+    },
+    "engine_normal_alpha": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+      "bytes": 14745,
+      "relative_path": "Assets/Shader/HLSL/PathSurface.hlsli",
+      "anchors": [
+        {
+          "line_start": 99,
+          "line_end": 105,
+          "excerpt": "99: float2 ResolveMicrofacetAlpha2(float perceptualRoughness, float anisotropy, uint isPrincipled)\n100: {\n101:     float r        = saturate(perceptualRoughness);\n102:     float alpha    = isPrincipled != 0u ? r * r : r;\n103:     float strength = saturate(anisotropy);\n104: \n105:     float2 alpha2;"
+        },
+        {
+          "line_start": 252,
+          "line_end": 266,
+          "excerpt": "252:     float3 shadingNormal =\n253:         float3(v0.normalX, v0.normalY, v0.normalZ) * bary.x +\n254:         float3(v1.normalX, v1.normalY, v1.normalZ) * bary.y +\n255:         float3(v2.normalX, v2.normalY, v2.normalZ) * bary.z;\n256: \n257:     float3 shadingNormalWS = mul(normalTransform, shadingNormal);\n258:     float shadingNormalLen2 = dot(shadingNormalWS, shadingNormalWS);\n259:     shadingNormalWS = (shadingNormalLen2 > EPSILON_MIN)\n260:         ? shadingNormalWS * rsqrt(shadingNormalLen2)\n261:         : geometricNormalWS;\n262: \n263:     if (bUseFaceNormals)\n264:         shadingNormalWS = geometricNormalWS;\n265:     else if (dot(shadingNormalWS, geometricNormalWS) < 0.0)\n266:         shadingNormalWS = -shadingNormalWS;"
+        }
+      ]
+    },
+    "engine_mesh_loader": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+      "bytes": 33307,
+      "relative_path": "Projects/BaambooEngine/BaambooScene/ModelLoader.cpp",
+      "anchors": [
+        {
+          "line_start": 104,
+          "line_end": 118,
+          "excerpt": "104: \ti32 importFlags = \n105: \t\taiProcess_CalcTangentSpace |\n106: \t\taiProcess_Triangulate |\n107: \t\taiProcess_SortByPType |\n108: \t\taiProcess_PreTransformVertices |\n109: \t\taiProcess_GenSmoothNormals |\n110: \t\t//aiProcess_GenUVCoords |\n111: \t\taiProcess_RemoveRedundantMaterials |\n112: \t\t//aiProcess_FindDegenerates |\n113: \t\taiProcess_GenBoundingBoxes |\n114: \t\taiProcess_ValidateDataStructure |\n115: \t\taiProcess_JoinIdenticalVertices;\n116: \timportFlags |= (descriptor.bOptimize ? aiProcess_OptimizeMeshes | aiProcess_ImproveCacheLocality : 0);\n117: \timportFlags |= descriptor.bConvertToLeftHanded ? aiProcess_MakeLeftHanded | aiProcess_FlipWindingOrder : 0;\n118: \t//importFlags |= (descriptor.bWindingCW ? aiProcess_FlipWindingOrder : 0);"
+        },
+        {
+          "line_start": 220,
+          "line_end": 222,
+          "excerpt": "220:                 vertex.normal.x = mesh->mNormals[i].x;\n221:                 vertex.normal.y = mesh->mNormals[i].y;\n222:                 vertex.normal.z = mesh->mNormals[i].z;"
+        },
+        {
+          "line_start": 252,
+          "line_end": 254,
+          "excerpt": "252:             vertex.normal.x = mesh->mNormals[i].x;\n253:             vertex.normal.y = mesh->mNormals[i].y;\n254:             vertex.normal.z = mesh->mNormals[i].z;"
+        }
+      ]
+    },
+    "assimp_pretransform": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\ThirdParties\\assimp\\code\\PostProcessing\\PretransformVertices.cpp",
+      "sha256": "d9c3e699e7cd4e24e73c2e468d17cf5b29a6ec7a6bfc688f23905a9c454161bb",
+      "bytes": 25624,
+      "relative_path": "Projects/ThirdParties/assimp/code/PostProcessing/PretransformVertices.cpp",
+      "anchors": [
+        {
+          "line_start": 163,
+          "line_end": 171,
+          "excerpt": "163: \t\t\t\t::memcpy(pcMeshOut->mVertices + aiCurrent[AI_PTVS_VERTEX],\n164: \t\t\t\t\t\tpcMesh->mVertices,\n165: \t\t\t\t\t\tpcMesh->mNumVertices * sizeof(aiVector3D));\n166: \n167: \t\t\t\tif (iVFormat & 0x2) {\n168: \t\t\t\t\t// copy normals without modifying them\n169: \t\t\t\t\t::memcpy(pcMeshOut->mNormals + aiCurrent[AI_PTVS_VERTEX],\n170: \t\t\t\t\t\t\tpcMesh->mNormals,\n171: \t\t\t\t\t\t\tpcMesh->mNumVertices * sizeof(aiVector3D));"
+        },
+        {
+          "line_start": 295,
+          "line_end": 298,
+          "excerpt": "295: void PretransformVertices::ApplyTransform(aiMesh *mesh, const aiMatrix4x4 &mat) const {\n296: \t// Check whether we need to transform the coordinates at all\n297: \tif (mat.IsIdentity()) {\n298: \t\treturn;"
+        },
+        {
+          "line_start": 315,
+          "line_end": 321,
+          "excerpt": "315: \tif (mesh->HasNormals() || mesh->HasTangentsAndBitangents()) {\n316: \t\tconst aiMatrix3x3 m = aiMatrix3x3(mat).Inverse().Transpose();\n317: \n318: \t\tif (mesh->HasNormals()) {\n319: \t\t\tfor (unsigned int i = 0; i < mesh->mNumVertices; ++i) {\n320:                 mesh->mNormals[i] = (m * mesh->mNormals[i]).Normalize();\n321:             }"
+        }
+      ]
+    },
+    "assimp_keep_normals": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\ThirdParties\\assimp\\code\\PostProcessing\\GenVertexNormalsProcess.cpp",
+      "sha256": "45a6f4b8d990ca947eab8460d1c08a095b487253cc58a933f781936767ee8f05",
+      "bytes": 9629,
+      "relative_path": "Projects/ThirdParties/assimp/code/PostProcessing/GenVertexNormalsProcess.cpp",
+      "anchors": [
+        {
+          "line_start": 104,
+          "line_end": 110,
+          "excerpt": "104: bool GenVertexNormalsProcess::GenMeshVertexNormals(aiMesh *pMesh, unsigned int meshIndex) {\n105:     if (nullptr != pMesh->mNormals) {\n106:         if (!force_) {\n107:             return false;\n108:         }\n109:         delete[] pMesh->mNormals;\n110:         pMesh->mNormals = nullptr;"
+        }
+      ]
+    },
+    "guo_ply_normalize": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\shapes\\ply.cpp",
+      "sha256": "6239362c31432400c7010da52706d260f7ff728b4d6f934ca27298e25fab6354",
+      "bytes": 21926,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/shapes/ply.cpp",
+      "anchors": [
+        {
+          "line_start": 205,
+          "line_end": 211,
+          "excerpt": "205:     void vertex_end_callback() {\n206:         Point p = m_objectToWorld(m_position);\n207:         m_aabb.expandBy(p);\n208:         m_positions[m_vertexCtr] = p;\n209:         if (m_normals)\n210:             m_normals[m_vertexCtr] = normalize(m_objectToWorld(m_normal));\n211:         if (m_texcoords)"
+        }
+      ]
+    },
+    "guo_flip_normals": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\librender\\trimesh.cpp",
+      "sha256": "c5320ce8d96a84c29beca99bb8953172e2e6e7ca3624b92b6ea4f964555b39cd",
+      "bytes": 42989,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/librender/trimesh.cpp",
+      "anchors": [
+        {
+          "line_start": 607,
+          "line_end": 629,
+          "excerpt": "607: void TriMesh::computeNormals(bool force) {\n608:     int invalidNormals = 0;\n609:     if (m_faceNormals) {\n610:         if (m_normals) {\n611:             delete[] m_normals;\n612:             m_normals = NULL;\n613:         }\n614: \n615:         if (m_flipNormals) {\n616:             /* Change the winding order */\n617:             for (size_t i=0; i<m_triangleCount; ++i) {\n618:                 Triangle &t = m_triangles[i];\n619:                 std::swap(t.idx[0], t.idx[1]);\n620:             }\n621:         }\n622:     } else {\n623:         if (m_normals && !force) {\n624:             if (m_flipNormals) {\n625:                 for (size_t i=0; i<m_vertexCount; i++)\n626:                     m_normals[i] *= -1;\n627:             } else {\n628:                 /* Do nothing */\n629:             }"
+        }
+      ]
+    },
+    "guo_hit_frame": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\include\\mitsuba\\render\\skdtree.h",
+      "sha256": "5b360af870b69224ee3e21ea230bd3208ef5552d31c8976fe5e12bfb18708b75",
+      "bytes": 18245,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/include/mitsuba/render/skdtree.h",
+      "anchors": [
+        {
+          "line_start": 367,
+          "line_end": 396,
+          "excerpt": "367:             Vector side1(p1-p0), side2(p2-p0);\n368:             Normal faceNormal(cross(side1, side2));\n369:             Float length = faceNormal.length();\n370:             if (!faceNormal.isZero())\n371:                 faceNormal /= length;\n372: \n373:             if (EXPECT_NOT_TAKEN(vertexTangents)) {\n374:                 const TangentSpace &ts = vertexTangents[cache->primIndex];\n375:                 its.dpdu = ts.dpdu;\n376:                 its.dpdv = ts.dpdv;\n377:             } else {\n378:                 its.dpdu = side1;\n379:                 its.dpdv = side2;\n380:             }\n381: \n382:             if (EXPECT_TAKEN(vertexNormals)) {\n383:                 const Normal\n384:                     &n0 = vertexNormals[idx0],\n385:                     &n1 = vertexNormals[idx1],\n386:                     &n2 = vertexNormals[idx2];\n387: \n388:                 its.shFrame.n = normalize(n0 * b.x + n1 * b.y + n2 * b.z);\n389: \n390:                 /* Ensure that the geometric & shading normals face the same direction */\n391:                 if (dot(faceNormal, its.shFrame.n) < 0)\n392:                     faceNormal = -faceNormal;\n393:             } else {\n394:                 its.shFrame.n = faceNormal;\n395:             }\n396:             its.geoFrame = Frame(faceNormal);"
+        }
+      ]
+    },
+    "n3_manifest": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_nlayer_shaderball_n3\\scene.baamboo",
+      "sha256": "8351df68a1828ee4e165ac7ab174fadc0fe9518618217d6d3c60afaba4867c12",
+      "bytes": 1745,
+      "relative_path": "Assets/Generated/gallery_nlayer_shaderball_n3/scene.baamboo",
+      "anchors": [
+        {
+          "line_start": 1,
+          "line_end": 14,
+          "excerpt": "1: # Generated by Tools/generate_nlayer_shaderball_showcase.py; do not hand-edit.\n2: scene gallery_nlayer_shaderball_n3\n3: resolution 512 512\n4: camera pos=0,1.1,4 target=0,1.05,0 up=0,1,0 fovY=34\n5: pathtracer spp=8 dumpSamples=8192 maxDepth=16\n6: environment path=Texture/studio_small.exr\n7: \n8: mesh path=Generated/gallery_nlayer_shaderball_shared/meshes/base.ply name=shaderball_base faceNormals=0 tint=0.18,0.18,0.18,1 metallic=0 roughness=1 ior=1 transmission=0 specularColor=0,0,0 specularStrength=0 thickness=0 sigmaA=0,0,0 sigmaS=0,0,0 phaseG=0\n9: mesh path=Generated/gallery_nlayer_shaderball_shared/meshes/core.ply name=shaderball_core faceNormals=0 tint=0.18,0.18,0.18,1 metallic=0 roughness=1 ior=1 transmission=0 specularColor=0,0,0 specularStrength=0 thickness=0 sigmaA=0,0,0 sigmaS=0,0,0 phaseG=0\n10: mesh path=Generated/gallery_nlayer_shaderball_shared/meshes/sss_bars.ply name=shaderball_sss_bars faceNormals=0 tint=0.18,0.18,0.18,1 metallic=0 roughness=1 ior=1 transmission=0 specularColor=0,0,0 specularStrength=0 thickness=0 sigmaA=0,0,0 sigmaS=0,0,0 phaseG=0\n11: \n12: mesh path=Generated/gallery_nlayer_shaderball_shared/meshes/material_surface.ply name=shaderball_material_surface faceNormals=0 tint=1,1,1,1 metallic=0 roughness=0.09 ior=1.32 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.22 sigmaA=0.08,0.55,1.35 sigmaS=0,0,0 phaseG=0\n13: layer name=shaderball_internal_rough_interface tint=1,1,1,1 metallic=0 roughness=0.28 ior=1.58 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.08 sigmaA=0.35,0.04,0.18 sigmaS=0,0,0 phaseG=0\n14: layer name=shaderball_colored_substrate tint=0.55,0.055,0.02,1 metallic=0 roughness=1 ior=1.58 transmission=0 specularColor=0,0,0 specularStrength=0 thickness=0 sigmaA=0,0,0 sigmaS=0,0,0 phaseG=0"
+        }
+      ]
+    },
+    "n3_reference": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_nlayer_shaderball_n3\\reference_guo_bidir.xml",
+      "sha256": "1604ea74a46e8a808d95bf304a442e9c214ac156889009490ab38b14baa2c4cd",
+      "bytes": 3301,
+      "relative_path": "Assets/Generated/gallery_nlayer_shaderball_n3/reference_guo_bidir.xml",
+      "anchors": [
+        {
+          "line_start": 21,
+          "line_end": 59,
+          "excerpt": "21:     <emitter type=\"envmap\">\n22:         <string name=\"filename\" value=\"../../Texture/studio_small.exr\"/>\n23:         <float name=\"scale\" value=\"1\"/>\n24:     </emitter>\n25:     <bsdf type=\"diffuse\" id=\"shaderball_neutral\">\n26:         <spectrum name=\"reflectance\" value=\"0.18,0.18,0.18\"/>\n27:     </bsdf>\n28:     <bsdf type=\"multilayered_guo2018\" id=\"shaderball_layered\">\n29:         <boolean name=\"bidir\" value=\"true\"/>\n30:         <string name=\"pdf\" value=\"bidirStochTRT\"/>\n31:         <integer name=\"stochPdfDepth\" value=\"5\"/>\n32:         <integer name=\"pdfRepetitive\" value=\"1\"/>\n33:         <float name=\"diffusePdf\" value=\"0.1\"/>\n34:         <float name=\"maxSurvivalProb\" value=\"1\"/>\n35:         <integer name=\"nbLayers\" value=\"3\"/>\n36: \n37:         <bsdf type=\"roughdielectric\" name=\"surface_0\">\n38:             <float name=\"extIOR\" value=\"1\"/>\n39:             <float name=\"intIOR\" value=\"1.32\"/>\n40:             <float name=\"alpha\" value=\"0.09\"/>\n41:             <string name=\"distribution\" value=\"ggx\"/>\n42:         </bsdf>\n43:         <spectrum name=\"sigmaT_0\" value=\"0.0176,0.121,0.297\"/>\n44:         <spectrum name=\"albedo_0\" value=\"0\"/>\n45:         <phase type=\"hg\" name=\"phase_0\"><float name=\"g\" value=\"0\"/></phase>\n46: \n47:         <bsdf type=\"roughdielectric\" name=\"surface_1\">\n48:             <float name=\"extIOR\" value=\"1.32\"/>\n49:             <float name=\"intIOR\" value=\"1.58\"/>\n50:             <float name=\"alpha\" value=\"0.28\"/>\n51:             <string name=\"distribution\" value=\"ggx\"/>\n52:         </bsdf>\n53:         <spectrum name=\"sigmaT_1\" value=\"0.028,0.0032,0.0144\"/>\n54:         <spectrum name=\"albedo_1\" value=\"0\"/>\n55:         <phase type=\"hg\" name=\"phase_1\"><float name=\"g\" value=\"0\"/></phase>\n56: \n57:         <bsdf type=\"diffuse\" name=\"surface_2\">\n58:             <spectrum name=\"reflectance\" value=\"0.55,0.055,0.02\"/>\n59:         </bsdf>"
+        }
+      ]
+    },
+    "n4_manifest": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\scene.baamboo",
+      "sha256": "67765a8c6dbe50b47c8140ac7653fed1c4396e2d952c37eef6e64415deb285e8",
+      "bytes": 2468,
+      "relative_path": "Assets/Generated/gallery_nlayer_killeroo_n4_alpha01_bright10x/scene.baamboo",
+      "anchors": [
+        {
+          "line_start": 6,
+          "line_end": 24,
+          "excerpt": "6: # Keep the canonical N=4 camera, material stack, and environment unchanged.\n7: camera pos=4,0.2,0.3 target=0,0.63,-1.1 up=0,0,1 fovY=39\n8: pathtracer spp=8 dumpSamples=64 maxDepth=16\n9: environment path=Texture/studio_small.exr\n10: \n11: # Broad key and fill sphere emitters. Engine sphere-light radiance is\n12: # L = color * flux / (4*pi^2*r^2), so these evaluate to\n13: # key L=(20,19,17) and fill L=(11,12,13.5).\n14: sphereLight name=nlayer_key position=3,-2,3.2 radius=0.9 scale=1,1,1 color=1,0.95,0.85 flux=639.55036\n15: sphereLight name=nlayer_fill position=-2.3,2.2,2.1 radius=1.1 scale=1,1,1 color=0.814814815,0.888888889,1 flux=644.87995\n16: \n17: mesh path=Generated/gallery_nlayer_killeroo_n4/meshes/killeroo-red-rh-world.ply name=killeroo_red_n4 faceNormals=0 tint=1,1,1,1 metallic=0 roughness=0.01 ior=1.5 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.25 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0\n18: layer name=red_interface_1 tint=1,1,1,1 metallic=0 roughness=0.1 ior=1.1 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.15 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0\n19: layer name=red_interface_2 tint=1,1,1,1 metallic=0 roughness=0.1 ior=1.5 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.1 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0\n20: layer name=red_diffuse_terminal tint=0.65,0.08,0.015,1 metallic=0 roughness=1 ior=1.5 transmission=0 specularColor=0,0,0 specularStrength=0 thickness=0 sigmaA=0,0,0 sigmaS=0,0,0 phaseG=0\n21: \n22: mesh path=Generated/gallery_nlayer_killeroo_n4/meshes/killeroo-green-rh-world.ply name=killeroo_green_n4 faceNormals=0 tint=1,1,1,1 metallic=0 roughness=0.01 ior=1.5 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.25 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0\n23: layer name=green_interface_1 tint=1,1,1,1 metallic=0 roughness=0.1 ior=1.1 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.15 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0\n24: layer name=green_interface_2 tint=1,1,1,1 metallic=0 roughness=0.1 ior=1.5 transmission=1 specularColor=1,1,1 specularStrength=1 thickness=0.1 sigmaA=1,1,1 sigmaS=0,0,0 phaseG=0"
+        }
+      ]
+    },
+    "n4_reference": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\validation\\n4_killeroo_alpha01_700_bright10x.xml",
+      "sha256": "4c6aad73c1783e98610ba4152c0b3241d01a8c6d51f99a3ef15221f851770938",
+      "bytes": 5905,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/validation/n4_killeroo_alpha01_700_bright10x.xml",
+      "anchors": [
+        {
+          "line_start": 30,
+          "line_end": 43,
+          "excerpt": "30:     <!-- Same radiance as the engine sphere lights. Engine converts\n31:          flux by L=color*flux/(4*pi^2*r^2). -->\n32:     <shape type=\"sphere\">\n33:         <point name=\"center\" x=\"3\" y=\"-2\" z=\"3.2\"/>\n34:         <float name=\"radius\" value=\"0.9\"/>\n35:         <emitter type=\"area\">\n36:             <spectrum name=\"radiance\" value=\"20, 19, 17\"/>\n37:         </emitter>\n38:     </shape>\n39:     <shape type=\"sphere\">\n40:         <point name=\"center\" x=\"-2.3\" y=\"2.2\" z=\"2.1\"/>\n41:         <float name=\"radius\" value=\"1.1\"/>\n42:         <emitter type=\"area\">\n43:             <spectrum name=\"radiance\" value=\"11, 12, 13.5\"/>"
+        },
+        {
+          "line_start": 47,
+          "line_end": 88,
+          "excerpt": "47:     <bsdf type=\"multilayered_guo2018\" id=\"killeroo_red_n4\">\n48:         <boolean name=\"bidir\" value=\"true\"/>\n49:         <string name=\"pdf\" value=\"bidirStochTRT\"/>\n50:         <integer name=\"stochPdfDepth\" value=\"5\"/>\n51:         <integer name=\"pdfRepetitive\" value=\"1\"/>\n52:         <float name=\"diffusePdf\" value=\"0.1\"/>\n53:         <float name=\"maxSurvivalProb\" value=\"1\"/>\n54:         <integer name=\"nbLayers\" value=\"4\"/>\n55: \n56:         <bsdf type=\"roughdielectric\" name=\"surface_0\">\n57:             <float name=\"extIOR\" value=\"1.0\"/>\n58:             <float name=\"intIOR\" value=\"1.5\"/>\n59:             <float name=\"alpha\" value=\"0.01\"/>\n60:             <string name=\"distribution\" value=\"ggx\"/>\n61:         </bsdf>\n62:         <spectrum name=\"sigmaT_0\" value=\"0.25, 0.25, 0.25\"/>\n63:         <spectrum name=\"albedo_0\" value=\"0\"/>\n64:         <phase type=\"hg\" name=\"phase_0\"><float name=\"g\" value=\"0\"/></phase>\n65: \n66:         <bsdf type=\"roughdielectric\" name=\"surface_1\">\n67:             <float name=\"extIOR\" value=\"1.5\"/>\n68:             <float name=\"intIOR\" value=\"1.1\"/>\n69:             <float name=\"alpha\" value=\"0.1\"/>\n70:             <string name=\"distribution\" value=\"ggx\"/>\n71:         </bsdf>\n72:         <spectrum name=\"sigmaT_1\" value=\"0.15, 0.15, 0.15\"/>\n73:         <spectrum name=\"albedo_1\" value=\"0\"/>\n74:         <phase type=\"hg\" name=\"phase_1\"><float name=\"g\" value=\"0\"/></phase>\n75: \n76:         <bsdf type=\"roughdielectric\" name=\"surface_2\">\n77:             <float name=\"extIOR\" value=\"1.1\"/>\n78:             <float name=\"intIOR\" value=\"1.5\"/>\n79:             <float name=\"alpha\" value=\"0.1\"/>\n80:             <string name=\"distribution\" value=\"ggx\"/>\n81:         </bsdf>\n82:         <spectrum name=\"sigmaT_2\" value=\"0.1, 0.1, 0.1\"/>\n83:         <spectrum name=\"albedo_2\" value=\"0\"/>\n84:         <phase type=\"hg\" name=\"phase_2\"><float name=\"g\" value=\"0\"/></phase>\n85: \n86:         <bsdf type=\"diffuse\" name=\"surface_3\">\n87:             <spectrum name=\"reflectance\" value=\"0.65, 0.08, 0.015\"/>\n88:         </bsdf>"
+        },
+        {
+          "line_start": 134,
+          "line_end": 144,
+          "excerpt": "134: \n135:     <shape type=\"ply\">\n136:         <string name=\"filename\" value=\"../../../../Assets/Generated/gallery_nlayer_killeroo_n4/meshes/killeroo-red-rh-world.ply\"/>\n137:         <boolean name=\"flipNormals\" value=\"true\"/>\n138:         <ref id=\"killeroo_red_n4\"/>\n139:     </shape>\n140:     <shape type=\"ply\">\n141:         <string name=\"filename\" value=\"../../../../Assets/Generated/gallery_nlayer_killeroo_n4/meshes/killeroo-green-rh-world.ply\"/>\n142:         <boolean name=\"flipNormals\" value=\"true\"/>\n143:         <ref id=\"killeroo_green_n4\"/>\n144:     </shape>"
+        }
+      ]
+    }
+  },
+  "analytic_helper_occurrences": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "line": 294,
+      "text": "bool IntersectRayAreaLight(float3 origin, float3 dir, AreaLight light, out float tHit, out float3 normalAtHit)"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "line": 325,
+      "text": "bool IntersectRaySphereLight(float3 origin, float3 dir, SphereLight light, out float tHit, out float3 normalAtHit)"
+    }
+  ],
+  "related_prepared_records": {
+    "gallery_nlayer_shaderball_n3": {
+      "geometry_audit.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_shaderball_n3\\geometry_audit.json",
+        "sha256": "ea8a3608b29e64f3caf4897a8753f2fc32aa1e2b1f8f0a74b002de720940cdd9",
+        "bytes": 5505
+      },
+      "roi_precommit.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_shaderball_n3\\roi_precommit.json",
+        "sha256": "67d09572bc81fc7cf8f81a5315eccc831a5edd0fb3ad776dd1715c305c56c021",
+        "bytes": 1851
+      },
+      "contract.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_shaderball_n3\\contract.json",
+        "sha256": "c442543d6880c8e353134b06a667ebb1b3f90fa2a54891dce7032cabc93c0b22",
+        "bytes": 74008
+      },
+      "scene.xml": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_shaderball_n3\\scene.xml",
+        "sha256": "9458449fb1713aa12c3d397eae6ca9ce87936802dfa4ea48ebab65fe98e4ee18",
+        "bytes": 4089
+      }
+    },
+    "gallery_nlayer_killeroo_n4_alpha01_bright10x": {
+      "geometry_audit.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\geometry_audit.json",
+        "sha256": "03808f0ce9069b3efe28b41b838a3a1e8df901597d47f137ae81bfb26790906c",
+        "bytes": 3079
+      },
+      "roi_precommit.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\roi_precommit.json",
+        "sha256": "765b3919101edb8f5d5218f652f067d77174df5b5c059ca4740a355d610b80ee",
+        "bytes": 1661
+      },
+      "contract.json": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\contract.json",
+        "sha256": "5e20902be115970c744f6a0c1f8bc2b7317901062bcefc9204f052c3c4d0e980",
+        "bytes": 77070
+      },
+      "scene.xml": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\nlayer_representative_guo\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\scene.xml",
+        "sha256": "522b5cf7d063f8c01606d016b03c4866cf10e4ea018a6c32a21401ef4108df45",
+        "bytes": 6534
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "status": "CONFIRMED_SOURCE_CONTRACT_MISMATCH",
+      "scope": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
+      "title": "Analytic-only sphere lights lack the BSDF-hit complement assumed by finite-light MIS",
+      "evidence": [
+        "manifest_loader",
+        "n4_manifest",
+        "n4_reference",
+        "path_integrator",
+        "light_sampling",
+        "analytic_helpers"
+      ],
+      "details": "The manifest loader creates LightComponent-only sphere entities. Sphere NEE uses non-delta area-to-solid-angle PDF and, except at the terminal path vertex, a power-heuristic MIS weight against the scattering PDF. Mesh miss evaluates only the environment; emitted radiance is read only at actual emissive mesh hits. The current sphere entities therefore have no corresponding BSDF-hit emitter contribution or TLAS occlusion. Guo spheres are geometric area emitters. Missing complement is established by source; image error magnitude and its share of any baseline residual are not established by this audit.",
+      "limits": "N3 is environment-only and is outside this finite-light finding. The earlier many-lights matched depth-1 control disables continuation MIS and does not test this issue. Smooth-conductor NEE is skipped, so reflected finite light also requires an actual emitter hit."
+    },
+    {
+      "id": "F2",
+      "status": "CONFIRMED_SOURCE_AND_ASSET_CONTRACT_MISMATCH",
+      "scope": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
+      "title": "Authored non-unit vertex normals interpolate differently",
+      "evidence": [
+        "engine_mesh_loader",
+        "assimp_pretransform",
+        "assimp_keep_normals",
+        "engine_normal_alpha",
+        "guo_ply_normalize"
+      ],
+      "details": "The identity Assimp path retains supplied normal magnitudes; the engine interpolates them and then normalizes. Guo normalizes each vertex normal during PLY load, then interpolates. The original magnitudes vary strongly, so these operations produce different directions.",
+      "asset_observation": [
+        {
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_nlayer_killeroo_n4\\meshes\\killeroo-red-rh-world.ply",
+            "sha256": "03671d8ca842ad671325d751a691ecffc8620f3469ed42454fa03f0764d5ba67",
+            "bytes": 838239
+          },
+          "vertices": 16899,
+          "triangles": 33264,
+          "authored_normal_length": {
+            "min": 1.0445539285454803,
+            "median": 2937.268690886992,
+            "max": 289685.2543567701
+          },
+          "centroid_raw_normal_vs_geometric": {
+            "negative": 33263,
+            "positive": 1,
+            "min_cos": -0.9999999553302269,
+            "max_cos": 0.001127338045059545
+          },
+          "triangles_with_mixed_corner_normal_hemispheres": 16
+        },
+        {
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_nlayer_killeroo_n4\\meshes\\killeroo-green-rh-world.ply",
+            "sha256": "95935d0eb818449c71df4be3ffedbcfebb3e9d657e2da94d4c4c7d6d40b1b73a",
+            "bytes": 838239
+          },
+          "vertices": 16899,
+          "triangles": 33264,
+          "authored_normal_length": {
+            "min": 1.0445539285454803,
+            "median": 2937.268690886992,
+            "max": 289685.2543567701
+          },
+          "centroid_raw_normal_vs_geometric": {
+            "negative": 33263,
+            "positive": 1,
+            "min_cos": -0.999999967186887,
+            "max_cos": 0.0011586201970747445
+          },
+          "triangles_with_mixed_corner_normal_hemispheres": 16
+        }
+      ],
+      "limits": "Predicted from source plus actual PLY data; the final imported GPU vertex buffer has not been captured. Audit does not attribute all rendered error to this difference."
+    },
+    {
+      "id": "F3",
+      "status": "CONFIRMED_SOURCE_CONTRACT_MISMATCH",
+      "scope": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
+      "title": "Guo and engine resolve geometric/shading hemisphere disagreement in opposite directions",
+      "evidence": [
+        "guo_flip_normals",
+        "guo_hit_frame",
+        "engine_normal_alpha"
+      ],
+      "details": "With provided vertex normals, Guo flipNormals negates vertex normals without reversing indices. At the actual triangle hit, Guo then flips the geometric normal toward the shading normal. The engine preserves the geometric cross and flips the interpolated shading normal toward it. Unitization plus a global flip alone cannot resolve the 16 triangles with mixed corner hemispheres.",
+      "limits": "Do not describe flipNormals as changing only the final shading frame: Guo hit-time alignment may also change the final geometric frame."
+    },
+    {
+      "id": "F4",
+      "status": "SOURCE_ALIGNED_WITH_LIMITS",
+      "scope": [
+        "gallery_nlayer_shaderball_n3",
+        "gallery_nlayer_killeroo_n4_alpha01_bright10x"
+      ],
+      "title": "Authored layer optical depth and generic microfacet alpha values are consistent",
+      "evidence": [
+        "engine_normal_alpha",
+        "n3_manifest",
+        "n3_reference",
+        "n4_manifest",
+        "n4_reference"
+      ],
+      "details": "Generic engine alpha is the authored roughness value, not its square. N3 has three surfaces with interface alphas 0.09 and 0.28 and absorption optical depths (0.0176,0.121,0.297) and (0.028,0.0032,0.0144). N4 has four surfaces, interface alphas 0.01,0.1,0.1, IOR sequence 1->1.5->1.1->1.5, absorption optical depths 0.25,0.15,0.1, and matching red/green diffuse terminals. The alpha01 name does not authorize changing the actual top alpha 0.01.",
+      "limits": "Layer count/optical depth alignment is not proof of identical stochastic BSDF PDF estimator, walk truncation, RR, global path-depth convention, or numerical acceptance. Prepared-run depth/camera/film contracts must be checked separately."
+    }
+  ],
+  "evaluated_alternatives": [
+    {
+      "name": "Shared smooth-normal control",
+      "assessment": "A valid separate geometry-input control, not an unchanged authored baseline.",
+      "requirements": [
+        "Keep all triangle positions and physical surfaces unchanged. Preserve original files.",
+        "Unitize authored normal directions and orient every per-triangle corner normal to the existing geometric face hemisphere; duplicate only corner records as necessary rather than enabling faceNormals.",
+        "Use exactly the same corrected PLY in both engines and Guo flipNormals=false. Verify all corner dot products are nonnegative, interpolation never vanishes, and the actual imported hit frames agree.",
+        "The correction changes the shading-normal field and may introduce local seams at malformed corners; disclose and measure it."
+      ],
+      "current_action": "NOT_IMPLEMENTED"
+    },
+    {
+      "name": "Paired emissive sphere mesh under existing finite-light convention",
+      "assessment": "Approximation control only; not an exact scene-contract repair.",
+      "evidence": [
+        "manifest_loader",
+        "light_sampling",
+        "shadow_epsilon"
+      ],
+      "requirements": [
+        "Existing Cornell area light pairs an emissive PLY with a LightComponent. A sphere analogue can supply emission hits and opaque visibility, but analytic NEE remains on a different surface.",
+        "All mesh facets must lie within the AreaLightPDFAtHit radial tolerance 1e-3; this only enables PDF recognition and does not make the analytic PDF/Jacobian exact for facets.",
+        "Prefer an audited convex inscribed hull; a visible analytic target segment lies outside that hull before origin offset. Test the actual PT_RAY_EPS=1e-4 offset and shortened segment at grazing angles; do not assume absence of self-shadow.",
+        "Quantify silhouette, area and radiance changes with at least two subdivision levels. Matching the Guo emitter to the same PLY still leaves engine analytic NEE versus mesh-surface sampling."
+      ],
+      "current_action": "NOT_IMPLEMENTED_AND_NOT_ACCEPTED_AS_EXACT_FIX"
+    },
+    {
+      "name": "Exact analytic sphere emission-hit and shadow integration",
+      "assessment": "Would address the missing renderer capability, but is a separate transport change requiring explicit scope approval.",
+      "evidence": [
+        "analytic_helpers",
+        "path_integrator",
+        "shadow_epsilon"
+      ],
+      "requirements": [
+        "Resolve nearest analytic sphere versus TLAS surface, evaluate emission with the same analytic PDF and light-selection PMF, and integrate sphere shadow blocking.",
+        "Preserve medium segment endpoints, primary versus continuation handling, and existing paired emissive mesh behavior without duplicate contribution.",
+        "Use focused actual-GPU negative and positive controls: black environment; diffuse and near-mirror receiver; depth1/2/16; emitter visibility; occlusion; matched Guo; independent seeds and noise/convergence."
+      ],
+      "current_action": "DEFERRED_NO_IMPLEMENTATION_AUTHORIZED"
+    }
+  ],
+  "post_render_independent_review": [
+    "Accept only normal-exit completed batches with frozen source/input and output hash validation; preserve failed or incomplete attempts.",
+    "Verify scene-specific dimensions, SPP, seeds, path-depth mapping, camera/film and reference contract; do not inherit N2 settings silently.",
+    "Compute float64 spatial summaries per independent render first; run-level uncertainty uses independent seeds, not pixels as independent replicates.",
+    "Equal integer seed labels in different renderers do not establish paired random draws; engine/reference CI must use the independent-renderer method.",
+    "Use each scene-specific roi_precommit.json and validate bounds. Reject N2 sphere/central ROI hardcoded coordinates or masks inherited into shaderball/killeroo.",
+    "Separate coherent mean residual, raw SSIM, noise/variance and convergence; report actual gates and inconclusive outcomes. Noise compatibility does not prove zero bias.",
+    "A passing image metric cannot override known N4 source-contract failures. Keep radiance OPEN and stage_pass=false until explicitly resolved/accepted; no blanket stage PASS or fabricated visual approval."
+  ],
+  "actions_performed": [
+    "Read source/assets and existing prepared contracts.",
+    "Write only this JSON and companion Markdown under campaign/nlayer_representative."
+  ],
+  "actions_not_performed": [
+    "No source or asset modifications.",
+    "No GPU or renderer process.",
+    "No external repository writes, commits or publication."
+  ]
+}

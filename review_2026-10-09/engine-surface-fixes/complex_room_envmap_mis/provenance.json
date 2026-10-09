@@ -4,7 +4,7 @@
   "reference": "Mitsuba 3.9.1 native RGB",
   "radiance_status": "OPEN",
   "variance_status": "PASS",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.028259%, renderer당 4 seeds. 기존 SSIM .99 검사: 0.997503 / PASSED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
   "images": [
     {
@@ -43,5 +43,6 @@
       "bytes": 162949
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_surface_fixes"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_surface_fixes",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

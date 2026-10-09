@@ -4,7 +4,7 @@
   "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
   "radiance_status": "OPEN",
   "variance_status": "See report",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
   "images": [
     {
@@ -48,5 +48,6 @@
       "bytes": 187283
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_rng_fixed_12seeds"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_rng_fixed_12seeds",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

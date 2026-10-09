@@ -4,7 +4,7 @@
   "reference": "Mitsuba RGB",
   "radiance_status": "OPEN",
   "variance_status": "See report",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "메시를 맞춘 보충 비교. float64 통계 교정 후 결과이며 radiance 판정과 분산 판정을 분리합니다.",
   "images": [
     {
@@ -23,5 +23,6 @@
       "bytes": 1393581
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_rgb_mesh_matched_float64"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_rgb_mesh_matched_float64",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

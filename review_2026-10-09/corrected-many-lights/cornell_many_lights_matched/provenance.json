@@ -4,7 +4,7 @@
   "reference": "PBRT primary / Mitsuba diagnostic",
   "radiance_status": "OPEN",
   "variance_status": "PASS",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "기존 finite-light geometry 동작에 맞도록 발광체 간 차폐가 없는 별도 fixture를 추가했습니다. 동일 receiver mesh와 open-cylinder emitter를 사용합니다. PBRT 평균 Y 차이: 기존 128 SPP +3.7335%, 새 128 SPP −0.0123%, 새 512 SPP −0.0147%. 512 SPP mean SSIM 0.990714로 기존 0.99 기준을 통과했습니다. Engine/PBRT Y variance ratio 3.3952, RGB variance ratio 0.5177을 각각 보고합니다. Mitsuba spot falloff 차이는 아직 이 진단에 남아 있습니다.",
   "images": [
     {
@@ -48,5 +48,6 @@
       "bytes": 4730350
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

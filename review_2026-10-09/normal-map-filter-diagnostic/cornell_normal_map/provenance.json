@@ -4,7 +4,7 @@
   "reference": "Mitsuba RGB",
   "radiance_status": "OPEN",
   "variance_status": "PASS",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "기존 ray-cone normal-map mip filtering을 base-level bilinear로만 바꾼 대조 실험입니다. 128 SPP 평균 Y 차이 +2.4576% → +0.0758%; 바닥 ROI는 약 +0.3%가 남습니다. 원인 분리를 위한 shader overlay이며 production 수정이나 전체 통과를 뜻하지 않습니다. 원래 shader는 복구했습니다.",
   "images": [
     {
@@ -28,5 +28,6 @@
       "bytes": 5090608
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_lod0_diagnostic"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_lod0_diagnostic",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

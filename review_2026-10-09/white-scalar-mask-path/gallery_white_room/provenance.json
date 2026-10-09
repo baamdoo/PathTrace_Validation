@@ -4,7 +4,7 @@
   "reference": "Mitsuba 3.9.1 original path control",
   "radiance_status": "OPEN",
   "variance_status": "PASS",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "블라인드·전등갓 7개 mesh의 버려졌던 scalar mask opacity를 기존 BLEND 경로로 복원했습니다. 동일한 원본 Mitsuba path reference 대비 평균 Y -0.172790% → -0.194988%. 기존 SSIM .99 검사 0.989367 / FAILED. Shader/exe/카메라/나머지 재질은 동일합니다. Mitsuba path는 null 통과도 깊이에 포함하므로 엔진과 유한 깊이 정의가 다릅니다. 이 결과는 보존하는 원본 path 대조군이며, 더 잘 맞는 null-depth 조건은 별도 volpath 비교를 보세요.",
   "images": [
     {
@@ -43,5 +43,6 @@
       "bytes": 184278
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_path"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_path",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

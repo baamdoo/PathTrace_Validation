@@ -4,7 +4,7 @@
   "reference": "Mitsuba RGB",
   "radiance_status": "OPEN",
   "variance_status": "PASS",
-  "visual_approved": false,
+  "visual_approved": true,
   "note": "PBRT의 spectral/RGB 차이만으로 설명되는지 확인하기 위한 원본 Mitsuba RGB 비교입니다. 필터링 원인 대조 실험은 별도로 진행 중입니다.",
   "images": [
     {
@@ -23,5 +23,6 @@
       "bytes": 5118945
     }
   ],
-  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected"
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected",
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
 }

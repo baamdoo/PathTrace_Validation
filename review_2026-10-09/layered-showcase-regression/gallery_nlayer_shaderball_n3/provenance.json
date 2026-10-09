@@ -1,0 +1,53 @@
+{
+  "scene": "gallery_nlayer_shaderball_n3",
+  "category": "layered-showcase-regression",
+  "reference": "Guo EfficientComplexLayered Mitsuba 0.6 / original multilayered_guo2018; verified seed/tent/camera adapter",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+  "visual_approved": false,
+  "note": "16/64/128 SPP, renderer별 독립 seed 4개를 비교했습니다. 128 SPP 평균 Y 차이는 전체 +0.387351%, 전경 +0.384611%; 전체 Y 차이의 Welch 95% 구간은 [0.00037096563, 0.00051702512]입니다. 기존 SSIM .99 검사 0.99757259 / PASSED; 분산 감소 PASS_VARIANCE_DECREASE_ONLY. 128 SPP 전경 engine/Guo Y 분산 비율 0.154714이며, 비율 1을 통과 기준으로 요구하지 않습니다. 사전에 정한 전경·재질 영역을 사용했고 픽셀을 독립 표본으로 세지 않았습니다. 원본 Shaderball N3의 공유 PLY와 카메라·광학 설정을 유지했습니다. Smith G와 환경맵 필터 모델 차이는 남으며, 관측된 작은 평균 잔차를 전부 노이즈 또는 특정 원인으로 단정하지 않습니다. Radiance OPEN입니다. Guo의 primary-ray differential은 1/sqrt(SPP)로 축소되어 환경맵 EWA 필터도 SPP에 따라 달라집니다. 따라서 배경의 평균 변화와 표본 분산 감소를 동일시하지 않으며, geometry 기반 전경 결과를 별도로 제시합니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "68ae4a43ff9b298ae596b8c08925c3116e8990786031b103ebe076bcd5e26025",
+      "bytes": 363983
+    },
+    {
+      "file": "foreground_comparison.png",
+      "sha256": "47afc054f68a6f73ac673abded0787b3aabd1261004e283b44438ec8aa1b421a",
+      "bytes": 1953624
+    },
+    {
+      "file": "mean_difference_spp128.png",
+      "sha256": "d2b569421bf2defba402c389d3331702cc1cd5138702abb93b178496304675cc",
+      "bytes": 1803045
+    },
+    {
+      "file": "mean_difference_spp16.png",
+      "sha256": "55bab8ef609c05a8cb4a79d3a4354919c2e90fc47c2f634102e0df884cac5349",
+      "bytes": 2314726
+    },
+    {
+      "file": "mean_difference_spp64.png",
+      "sha256": "5e50f2d71dbcbd9fe40a868729ff5ceede3aaa79afa02f65f8a48c1c0cd67192",
+      "bytes": 1960578
+    },
+    {
+      "file": "noise_stddev.png",
+      "sha256": "86617eda8531c5112550c280208879d6a82f8ec697a44b67c36650502282d551",
+      "bytes": 3729703
+    },
+    {
+      "file": "precommitted_regions.png",
+      "sha256": "7e4801984f602044db95d548efea015fcc2c1a03515cf5b70b031e46cdc14e5e",
+      "bytes": 58515
+    },
+    {
+      "file": "radiance_uncertainty.png",
+      "sha256": "27855cad6a48a5449b175ace0743444075a8212cfd035bfda263101f60f3b24d",
+      "bytes": 305285
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_shaderball_n3/analysis_nlayer_representative",
+  "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS"
+}
