@@ -1,3 +1,7 @@
+현재 사용자 육안 상태: **미승인 · superseded baseline 보존**. Radiance/variance의 역사적 판정은 바꾸지 않습니다.
+
+---
+
 # gallery_nlayer_killeroo_n4_alpha01_bright10x
 
 **Radiance: OPEN · Variance: PASS_VARIANCE_DECREASE_ONLY · 사용자 육안 확인: 대기 (새 이미지)**

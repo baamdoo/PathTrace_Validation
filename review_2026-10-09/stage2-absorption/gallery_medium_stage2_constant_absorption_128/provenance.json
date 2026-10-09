@@ -1,0 +1,92 @@
+{
+  "scene": "gallery_medium_stage2_constant_absorption_128",
+  "category": "stage2-absorption",
+  "reference": "PBRT v4",
+  "radiance_status": "INCONCLUSIVE",
+  "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+  "source_contract_status": "OPEN",
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "note": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "0585bd3e99376f5d2bb653b4c76dd762558cd0eb6f9ea528f0d27cb79cfd314f",
+      "bytes": 152908,
+      "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\convergence.png",
+        "sha256": "0585bd3e99376f5d2bb653b4c76dd762558cd0eb6f9ea528f0d27cb79cfd314f",
+        "bytes": 152908
+      }
+    },
+    {
+      "file": "geometry_masks.png",
+      "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+      "bytes": 33042,
+      "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\geometry_masks.png",
+        "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+        "bytes": 33042
+      }
+    },
+    {
+      "file": "linear_residuals.png",
+      "sha256": "db7a86917da68c81018fada4cb2967e939bbc7e3aa16b49d97c926cbbe9d1fdc",
+      "bytes": 153779,
+      "caption": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\linear_residuals.png",
+        "sha256": "db7a86917da68c81018fada4cb2967e939bbc7e3aa16b49d97c926cbbe9d1fdc",
+        "bytes": 153779
+      }
+    },
+    {
+      "file": "noise_and_oracle_bounds.png",
+      "sha256": "e8bdea734fefd7163939d0a71eba028a47bd3fdc21cf432852b199aae5745954",
+      "bytes": 146197,
+      "caption": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\noise_and_oracle_bounds.png",
+        "sha256": "e8bdea734fefd7163939d0a71eba028a47bd3fdc21cf432852b199aae5745954",
+        "bytes": 146197
+      }
+    },
+    {
+      "file": "regional_uncertainty.png",
+      "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+      "bytes": 63050,
+      "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\regional_uncertainty.png",
+        "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+        "bytes": 63050
+      }
+    },
+    {
+      "file": "transmittance_comparison.png",
+      "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+      "bytes": 66330,
+      "caption": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\transmittance_comparison.png",
+        "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+        "bytes": 66330
+      }
+    }
+  ],
+  "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis",
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\analysis_receipt.json",
+    "sha256": "9c78db100f702f98ff0a89bc0e1be3b69dbd71bb21acbecb9147bffeaf5cb9ab",
+    "bytes": 37021
+  },
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\summary.json",
+    "sha256": "b9044c264280ba2023895c2e9b829b14fc2434b7249310e45d48083e5555f592",
+    "bytes": 198325
+  },
+  "stage_pass": false
+}

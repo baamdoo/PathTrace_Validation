@@ -1,0 +1,168 @@
+{
+  "scene": "boundary_tangent_defect",
+  "radiance": "FAIL_DETERMINISTIC_VACUUM",
+  "variance_status": "NOT_A_STOCHASTIC_VARIANCE_FAILURE",
+  "source_contract_status": "CONFIRMED_ENGINE_EDGE_CASE",
+  "stage_pass": false,
+  "engine_production_modified": false,
+  "observations": [
+    {
+      "seed": 11,
+      "pixels_yx": [
+        [
+          20,
+          44
+        ]
+      ],
+      "lost_samples": 1.0,
+      "max_loss": 1.0
+    },
+    {
+      "seed": 29,
+      "pixels_yx": [
+        [
+          20,
+          37
+        ],
+        [
+          20,
+          89
+        ]
+      ],
+      "lost_samples": 2.0,
+      "max_loss": 1.0
+    },
+    {
+      "seed": 47,
+      "pixels_yx": [
+        [
+          20,
+          38
+        ],
+        [
+          20,
+          55
+        ],
+        [
+          20,
+          82
+        ],
+        [
+          20,
+          83
+        ],
+        [
+          20,
+          95
+        ]
+      ],
+      "lost_samples": 5.0,
+      "max_loss": 1.0
+    },
+    {
+      "seed": 83,
+      "pixels_yx": [
+        [
+          20,
+          51
+        ],
+        [
+          20,
+          56
+        ],
+        [
+          20,
+          57
+        ],
+        [
+          20,
+          65
+        ],
+        [
+          20,
+          69
+        ],
+        [
+          20,
+          88
+        ],
+        [
+          20,
+          90
+        ]
+      ],
+      "lost_samples": 7.0,
+      "max_loss": 1.0
+    }
+  ],
+  "captured_ray": {
+    "origin": [
+      -0.5,
+      0.25,
+      -4.0
+    ],
+    "direction": [
+      -0.21056996285915375,
+      0.23709768056869507,
+      0.9483907222747803
+    ],
+    "first_hit": [
+      -1.3881148099899292,
+      1.25,
+      0
+    ],
+    "no_w": -0.23709768056869507,
+    "sample_index": 221,
+    "air_count": 0
+  },
+  "cause": "Exact edge touch returns an outward EXIT while the air-contributor set is empty; strict transition fails and the radiance path terminates.",
+  "repair_attempts": "Output-only v1 exact zero-width query found no candidates. v2 widened search by one float step but required identical candidate t; recovered original ray yet falsely merged a positive physical chord. Both rejected; canonical shader restored.",
+  "remaining": "Robust boundary event classification must distinguish tangency from finite crossings and preserve both path and shadow state. Entry-first tangency also needs coverage; vacuum images alone do not prove absence of ghost membership.",
+  "input_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_4096\\radiance.exr",
+      "sha256": "db8ac55dd8d27f958eeff39a764d8d0c8fdd67605d5ea2b50167e4152ebf6d92",
+      "bytes": 880
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_4096\\radiance.exr",
+      "sha256": "95c18c3f076a471b4ae2d9dc97099c47020d883da3c9d1279552db02acb16d14",
+      "bytes": 887
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_4096\\radiance.exr",
+      "sha256": "4c4908f19015383eef48d9238d04cfe655b815db066148862daff85dce9ff2e2",
+      "bytes": 898
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_4096\\radiance.exr",
+      "sha256": "699cfd0d9acafc5088bb035deb6ed087f66a423a1c4075fcf9ae2f1e1a899079",
+      "bytes": 904
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\vacuum_diagnostic_v1\\receipt.json",
+      "sha256": "6b44f3ea31b2328029f668bd9f7707fa1be47386912db4063ca42bf065421e58",
+      "bytes": 3135
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\vacuum_diagnostic_ray_v2\\receipt.json",
+      "sha256": "bff5098d8a0167baf883c62147b6385bf5f9e421a80af96e861fc0cd6949b9d4",
+      "bytes": 2719
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\vacuum_diagnostic_ray_v2\\independent_geometry_audit.json",
+      "sha256": "b95f4251a76f799bcd58ae14fcf822c01d00831089037965a93b3e78c8c89390",
+      "bytes": 8036
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\vacuum_touch_prototype\\receipt.json",
+      "sha256": "d9dad828428d35dcfb7fecf130bb3d4098ce7936de288ca079b658134947f310",
+      "bytes": 4737
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\vacuum_touch_prototype_v2\\receipt.json",
+      "sha256": "595e7aa7d05948cf0804b83d02ea231c066e6a3924c60e9ac1e830e53d257277",
+      "bytes": 5822
+    }
+  ]
+}

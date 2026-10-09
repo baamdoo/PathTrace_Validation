@@ -1,0 +1,92 @@
+{
+  "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+  "category": "stage2-scattering",
+  "reference": "PBRT v4",
+  "radiance_status": "INCONCLUSIVE",
+  "variance_status": "PASS_SCOPED",
+  "source_contract_status": "MATCHED_SCOPED",
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+      "bytes": 109676,
+      "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\convergence.png",
+        "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+        "bytes": 109676
+      }
+    },
+    {
+      "file": "geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287,
+      "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\geometry_masks.png",
+        "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+        "bytes": 22287
+      }
+    },
+    {
+      "file": "noise_stddev_rgb_y.png",
+      "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+      "bytes": 146912,
+      "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\noise_stddev_rgb_y.png",
+        "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+        "bytes": 146912
+      }
+    },
+    {
+      "file": "normalized_radiance.png",
+      "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+      "bytes": 58690,
+      "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\normalized_radiance.png",
+        "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+        "bytes": 58690
+      }
+    },
+    {
+      "file": "regional_uncertainty.png",
+      "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+      "bytes": 114919,
+      "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\regional_uncertainty.png",
+        "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+        "bytes": 114919
+      }
+    },
+    {
+      "file": "signed_residual_rgb_y.png",
+      "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+      "bytes": 79811,
+      "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\signed_residual_rgb_y.png",
+        "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+        "bytes": 79811
+      }
+    }
+  ],
+  "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05",
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\analysis_receipt.json",
+    "sha256": "d60fb42432a864d7616434052dfc0178c89684abc127eb96886f1455a4ee9414",
+    "bytes": 257248
+  },
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\summary.json",
+    "sha256": "4b646ef3099753ec841f2b2ee80ca38d1329f68efd8e740d368f5623b44daab0",
+    "bytes": 408820
+  },
+  "stage_pass": false
+}

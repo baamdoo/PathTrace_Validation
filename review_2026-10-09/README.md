@@ -1,3 +1,39 @@
+# PathTracing 검증 · 2026-10-09
+
+기존 **309개 이미지(277 + 구형 광원 수정 32)**는 정확한 SHA 기준으로 사용자 육안 승인을 받았습니다. 이전의 superseded baseline 24개는 미승인 상태로 보존합니다. 새 Stage 2 38개 이미지는 육안 확인 대기입니다.
+
+육안 승인과 수치·소스 계약 판정은 별개입니다. 모든 historical failure/OPEN/INCONCLUSIVE와 시간 측정 범위를 유지합니다.
+
+[전체 이미지/판정 색인](INDEX.md)
+
+| Stage 2 scene | Radiance | Variance | 사용자 육안 |
+|---|---|---|---|
+| [gallery_medium_stage2_constant_absorption_128](stage2-absorption/gallery_medium_stage2_constant_absorption_128/README.md) | INCONCLUSIVE | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_medium_stage2_ramp_absorption](stage2-absorption/gallery_medium_stage2_ramp_absorption/README.md) | INCONCLUSIVE | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_medium_stage2_constant_scatter_g0](stage2-scattering/gallery_medium_stage2_constant_scatter_g0/README.md) | INCONCLUSIVE | PASS_SCOPED | 대기 |
+| [gallery_medium_stage2_ramp_scatter_gp05](stage2-scattering/gallery_medium_stage2_ramp_scatter_gp05/README.md) | INCONCLUSIVE | PASS_SCOPED | 대기 |
+| [gallery_medium_stage2_ramp_scatter_gm05](stage2-scattering/gallery_medium_stage2_ramp_scatter_gm05/README.md) | INCONCLUSIVE | PASS_SCOPED | 대기 |
+| [gallery_medium_stage2_smoke_scatter_g0](stage2-scattering/gallery_medium_stage2_smoke_scatter_g0/README.md) | INCONCLUSIVE | PASS_SCOPED | 대기 |
+| [boundary_tangent_defect](stage2-boundary/boundary_tangent_defect/README.md) | FAIL_DETERMINISTIC_VACUUM | NOT_A_STOCHASTIC_VARIANCE_FAILURE | 대기 |
+
+[stage2-report.md](stage2-report.md)
+
+[stage2-summary.json](stage2-summary.json)
+
+[stage2-timings.md](stage2-timings.md)
+
+[stage2-timings.json](stage2-timings.json)
+
+[stage2-engine-time-audit.md](stage2-engine-time-audit.md)
+
+[stage2-engine-time-audit.json](stage2-engine-time-audit.json)
+
+[stage2-engine-depth32-plan.json](stage2-engine-depth32-plan.json)
+
+[stage2-reference-depth32-plan.json](stage2-reference-depth32-plan.json)
+
+## 이전 Stage 1 게시 설명 (당시 상태를 보존한 기록)
+
 # PathTracing 회귀 검증 · 2026-10-09
 
 **기존 277개 이미지는 사용자 육안 승인을 받았습니다. 수치상 미통과·불확실 판정은 그대로 보존하며, 새 Shaderball/Killeroo 이미지는 이 승인에 포함되지 않습니다.**

@@ -1,0 +1,1584 @@
+{
+  "status": "READ_ONLY_TIMING_SCOPE_AUDIT_COMPLETE_NOT_STAGE4",
+  "queue_snapshot": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\engine_timing_scope_audit\\engine_cohort_queue_snapshot.json",
+    "sha256": "273bde784dbef35146761b401e289842cb9e467493e75735b6781c591a985624"
+  },
+  "completed_scene_count_at_snapshot": 9,
+  "scope_definitions": {
+    "queue_process_seconds": "Outer matrix job perf_counter: Python batch process including Application, subsequent EXR/metadata validation, plus matrix postflight and frozen-file checking.",
+    "application_process_wall_seconds": "Inner wrapper perf_counter around subprocess.run(Application.exe), covering startup, scene/device creation, all four seeds/checkpoint files, normal shutdown and process exit.",
+    "metadata_wall_seconds": "CPU steady_clock cumulative interval per current seed, from immediately before its first accumulation DispatchRays call through synchronous radiance EXR save at this checkpoint. Earlier checkpoints are included. Timer resets only for a new seed or invalidating scene reset; no reset for64->256->1024. Not GPU-only.",
+    "sum_final_checkpoint": "Sum only the largest-SPP checkpoint once per seed. Summing every checkpoint double-counts nested time.",
+    "metadata_excluded": "Application/scene/pipeline initialization before first timed dispatch; work after the final checkpoint clock is sampled (metadata write itself, completion/close polling, final frame end/present, render-thread join, queue idle waits, object teardown/process exit); inter-seed work outside timer windows.",
+    "validation_mode": "These receipts say pt_validation=false, so validation-AOV exports/readback-ring drain code is compiled out. Boilerplate timing_scope mentions their possible cost but they cannot explain the observed110s here."
+  },
+  "findings": [
+    {
+      "confidence": "Measured receipt arithmetic",
+      "claim": "Constant scatter Application115.7946544s minus four final seed timers5.39902413s leaves110.39563027s outside those windows. Ramp g-.5 likewise115.4137186s minus5.31651782s leaves110.09720078s."
+    },
+    {
+      "confidence": "Supporting file chronology",
+      "claim": "Constant and ramp g-.5 final metadata were written roughly109.16s and108.79s before final receipt completion. Therefore the dominant delay lies after checkpoint output, not in the already-timed radiance accumulation or ordinary initial scene loading."
+    },
+    {
+      "confidence": "Confirmed source scope",
+      "claim": "A completed automation batch returns before any further PathTracer dispatch. Exit is polled by the game thread; engine release joins the render thread, flushes queues and destroys scene/renderer resources."
+    },
+    {
+      "confidence": "Unresolved specific cause",
+      "claim": "Existing stdout has no per-phase timestamps or stack samples. Cannot assign the long post-output delay specifically to the game thread, join, fence wait, resource destruction, driver/PIX teardown, or another exit cost. These are candidate phase locations, not measured attributions."
+    },
+    {
+      "confidence": "Excluded misinterpretation",
+      "claim": "The wrapper adds about0.4s for these jobs; Python polling/import alone does not explain the roughly110s Application tail. No intentional100s delay appears in the inspected exit/batch code."
+    }
+  ],
+  "records": [
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_g0",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 116.19278099999792,
+      "application_process_seconds": 115.79465439999694,
+      "wrapper_extra_seconds": 0.3981266000009782,
+      "sum_each_seed_final_checkpoint_seconds": 5.399024130000001,
+      "application_time_outside_seed_timer_windows_seconds": 110.39563026999694,
+      "last_metadata_mtime_utc": "2026-10-09T09:19:44.918665+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:21:34.081394+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 109.162729,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.140919194,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "147c18571809aa09baa62085ef1b2968fd850b7d63bfd7d724baeb58d55cfcbe"
+          },
+          "mtime_utc": "2026-10-09T09:19:39.649472+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.403186291,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "e9896bcffc5fff816bac6a23c2f02c2006ab282d47520ba6a9c8bf0ffe6a4fa6"
+          },
+          "mtime_utc": "2026-10-09T09:19:39.912349+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 1.40575624,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "8fd949bf706e220d104f5d9a5216c861e013c148b5a0637a2d13024dc21f9aaf"
+          },
+          "mtime_utc": "2026-10-09T09:19:40.914941+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.084573999,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "93e3783700f569715b03671e64459dec21c4ff0fa4a9ba4f9651f3a1bceb0e57"
+          },
+          "mtime_utc": "2026-10-09T09:19:40.999731+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.334396899,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "9e5098bae718e77913abdd0798cf2519869cc6c0f5841ac914e97811364357a5"
+          },
+          "mtime_utc": "2026-10-09T09:19:41.249680+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 1.32359374,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "7827201721f98f74de92c1bed1d43c4d30afd0ed39a56dc3b8a85fd3840d5e59"
+          },
+          "mtime_utc": "2026-10-09T09:19:42.239079+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.0848673955,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "c6cd9067fbeac9f1bc55e6772723d00355acabe0b2d44f9b3965d7cfa36a48d1"
+          },
+          "mtime_utc": "2026-10-09T09:19:42.324566+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.333918303,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "def1d56d3c216e547862bc2ef9418187b12b25fbdf929a4994ed630966febf1f"
+          },
+          "mtime_utc": "2026-10-09T09:19:42.581562+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 1.32834303,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "6c9c243109f63a61ac6b16338bfa06d5c1cf2d553a048358642461b88b15af80"
+          },
+          "mtime_utc": "2026-10-09T09:19:43.568311+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.0901271999,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "b3472aff319a012a624192ed3dfa75bf6d5b6944fa1739ca52a45194f2ed7344"
+          },
+          "mtime_utc": "2026-10-09T09:19:43.659131+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.347118378,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "9f9310ecfcc4125dd34f610a6941396a50d2552729b534303c72c6d67200ef20"
+          },
+          "mtime_utc": "2026-10-09T09:19:43.916473+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 1.34133112,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "2cdf7d00713b64725a55204d454eafaf0e251e6404f0927ecae3b79f1bbbbff4"
+          },
+          "mtime_utc": "2026-10-09T09:19:44.918665+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\receipt.json",
+        "sha256": "8d8827426e2c8c6786b18f4aa8ad4fbd98d4b6a9a717d2756af937c13760b6e2"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\stdout.log",
+        "sha256": "603c22281c03716e4a194c1d4afe5d8b01133c1ea06bf17dd7c5a21c01091b79"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_g0\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_vacuum",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 2.917928699996992,
+      "application_process_seconds": 2.5219655000000785,
+      "wrapper_extra_seconds": 0.3959631999969133,
+      "sum_each_seed_final_checkpoint_seconds": 1.049429536,
+      "application_time_outside_seed_timer_windows_seconds": 1.4725359640000784,
+      "last_metadata_mtime_utc": "2026-10-09T09:21:36.933410+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:21:37.161218+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 0.227808,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.0753649995,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "5fadf23bf3e554d45f804591ff274b8e17c3e70910c21da196a5222951dee7d5"
+          },
+          "mtime_utc": "2026-10-09T09:21:35.957353+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.1222554,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "be1f5f5796b16ec0a0387f118c3fa858f24917d32342b01a27e4f8194db012d0"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.004626+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 0.305524975,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "21be37209662dc8ef1f638de32583bbace781e8e07683c36e83e5f292ff28dc9"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.187624+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.0165273994,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "f18f025003411c6b50573ad0f956d4b07cb79d03e3e96007855509dba04e216b"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.204712+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.0646332949,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "583e9f0a9af6ed1a04d803e84ca44b9052116e6e9653bb7cbe41e5e09de1e495"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.253367+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 0.248268694,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "7b6e5fc94b08a2dc9e09b52470afbe34fc4d972679cc85c856a8f046f72a5475"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.436092+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.0167020001,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "350f90fb2290f2ffda3da73f960d2dafb5fd21643645b9882b850f46e3adcff7"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.454132+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.0606296994,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "e01dc300039eef5441d37cfe5807d5b598c35ec1f669d956c55f9bd3ded464c8"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.497383+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 0.246101782,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "6036ef17b34c2fc334df1631cb9efc85b39dff9b95d8e4998eebf00da6cdd82f"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.683074+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.0181734003,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "f540b37307da8b5b8f8ae6d49c86f08187c1fd517ba491b0d6be15eb1cde56aa"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.702209+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.067591399,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "55d6f1da28f4481647b9f7f88eaa17a4fbc772b3ac9554cef14a959b15860236"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.751781+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 0.249534085,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "b8a7aa0304f8e9794f7abb7cedf5e70d44c590fa9f7666f02af1906d5e2977a6"
+          },
+          "mtime_utc": "2026-10-09T09:21:36.933410+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\receipt.json",
+        "sha256": "f6abc3a74974a4f2e7056fcc1397f1af8e51e5ff8ccdc6d78faa84d4f81f50f4"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\stdout.log",
+        "sha256": "488ddab471686a32a3b6117b1a0b2ec06847beecc0cbd02cb78f6b917ebfc90e"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_constant_scatter_vacuum\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_absorption",
+      "levels": [
+        256,
+        1024,
+        4096
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 8,
+      "queue_wrapper_seconds": 22.42445299999963,
+      "application_process_seconds": 22.014933800001018,
+      "wrapper_extra_seconds": 0.40951919999861275,
+      "sum_each_seed_final_checkpoint_seconds": 1.994691849,
+      "application_time_outside_seed_timer_windows_seconds": 20.02024195100102,
+      "last_metadata_mtime_utc": "2026-10-09T09:21:41.089571+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:21:59.767015+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 18.677444,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.0809203014,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "eab0bb76f2dd3cb6d4b8c7bd61f4467bcfb4d1515dd2c0d670a0a81c518b96da"
+          },
+          "mtime_utc": "2026-10-09T09:21:39.173744+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 0.184500694,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "d7b85d69c28f3b04e43106250f7de7091d8fb77605ee604b0d98ba860f108833"
+          },
+          "mtime_utc": "2026-10-09T09:21:39.268062+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 4096,
+          "wall_seconds": 0.546530187,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_11\\spp_4096\\render_metadata.json",
+            "sha256": "5623a7f686cb770c249796de8376f0658f3ff5d2496d824c95194b59d3f8d092"
+          },
+          "mtime_utc": "2026-10-09T09:21:39.638793+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.0307492986,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "122c8fc55e68e37b138dd735db36b47b1c2612fb5a77a969a75184734db1e954"
+          },
+          "mtime_utc": "2026-10-09T09:21:39.670608+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 0.1223263,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "c818da184150f66629ef85945e905c8ed4f95976a81b9f9338c295c3465186d4"
+          },
+          "mtime_utc": "2026-10-09T09:21:39.762035+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 4096,
+          "wall_seconds": 0.479717791,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_29\\spp_4096\\render_metadata.json",
+            "sha256": "ee20b2ffbef0d2654e015e630dda4b8d5175ac3f167738454ae97f4c72ea79ab"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.119344+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.0314700976,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "adfe7cd829ed7b3fdf238188a6a533e3c60678e924439090bf80665f3a878dfc"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.152855+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 0.122836895,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "7ab5b8c8f5d7a9c7d9851cf3f5ac8518d7a2a1f6373943f57bfda0b7c534f465"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.243583+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 4096,
+          "wall_seconds": 0.487852484,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_47\\spp_4096\\render_metadata.json",
+            "sha256": "fbcfee8dfd5a89a56ea7aa0165c3232bbbb41608579519656206c52664ac3214"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.608849+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.0317297988,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "88450ed815f3f3a432703ed8dad68f5c092e90edb178e7d6478b8d851d87c145"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.640912+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 0.12291529,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "ace06e3bd5f541fe8f9b3276774c14dfc85e84f36ffd09c8567f013597fb343e"
+          },
+          "mtime_utc": "2026-10-09T09:21:40.733929+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 4096,
+          "wall_seconds": 0.480591387,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\seed_83\\spp_4096\\render_metadata.json",
+            "sha256": "c6aa712eb3ff9000d09c740d747001f88e93827fc4db3efa77da4a843f8b5c8a"
+          },
+          "mtime_utc": "2026-10-09T09:21:41.089571+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\receipt.json",
+        "sha256": "81e39f1c9e4d051611ce2bc0430cc54bfab086c6bc504db9d5a4ff6de5ce4c1a"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\stdout.log",
+        "sha256": "e0131e7929de0889d52df99672da15fff9174623d3719a799e099a2ac7211509"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_absorption_vacuum",
+      "levels": [
+        256,
+        1024,
+        4096
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 8,
+      "queue_wrapper_seconds": 9.714005999998335,
+      "application_process_seconds": 9.313551499999448,
+      "wrapper_extra_seconds": 0.4004544999988866,
+      "sum_each_seed_final_checkpoint_seconds": 0.831939459,
+      "application_time_outside_seed_timer_windows_seconds": 8.481612040999448,
+      "last_metadata_mtime_utc": "2026-10-09T09:22:02.421472+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:22:09.649206+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 7.227734,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.0737807974,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "cd50b14c2112fc5b8608acd2b4568c354719b032d807d796bec97356cad4c2f9"
+          },
+          "mtime_utc": "2026-10-09T09:22:01.660151+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 0.113259293,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "c33e234376a7d9bd22ec7ede420bb127450d718af926ea89728f42306df19fa8"
+          },
+          "mtime_utc": "2026-10-09T09:22:01.700363+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 4096,
+          "wall_seconds": 0.268899471,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_11\\spp_4096\\render_metadata.json",
+            "sha256": "01587519581cf87b5897029ce856632ce963de116428fb89107ccbc7ef7cc556"
+          },
+          "mtime_utc": "2026-10-09T09:22:01.855651+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.0130479001,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "ba5e50abfdd78e3884a0384b57d021ab0c8d70b82d050cce585f04f160fb1f00"
+          },
+          "mtime_utc": "2026-10-09T09:22:01.869815+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 0.0493603982,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "4ff0fbe2fe21441b9765f727e1a61f8c1e498e4d74dcde920329fcc398c3d1bc"
+          },
+          "mtime_utc": "2026-10-09T09:22:01.906136+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 4096,
+          "wall_seconds": 0.18815279,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_29\\spp_4096\\render_metadata.json",
+            "sha256": "79776f72f6dfb2de7184450dcc7970960d073d193dcb623ac593cb3c783952db"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.044436+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.0127251996,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "1022697c063d2cfeb519aad287ed1758a791396abde8efb392ccd87e00541bf5"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.058537+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 0.0487231985,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "5295ccf95a59ab41f47017f3532975387fe87243f09393a4b92e47b577648a62"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.093842+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 4096,
+          "wall_seconds": 0.188440189,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_47\\spp_4096\\render_metadata.json",
+            "sha256": "7692fa4d4a4c9fc65c08e28d62e377d52b5a9a9dcdaac3c0e853c30bd74c297a"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.233714+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.0130052995,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "72185f694557cc6b7c63a7fcf4b00c99556651569c38aba2b7fe7ad32661319f"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.247712+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 0.0485517979,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "824dddd63d9c2214b40fe39f5512a7491b5bd3bef14e99a8d5129c7da40ca871"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.283893+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 4096,
+          "wall_seconds": 0.186447009,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\seed_83\\spp_4096\\render_metadata.json",
+            "sha256": "d60db4ed16e8a12c1f1529ec0b0c5f3a0ee03dafbfe0a186593951bc0026df52"
+          },
+          "mtime_utc": "2026-10-09T09:22:02.421472+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\receipt.json",
+        "sha256": "ffac2a2ff38d0852feb03096598d86ea44679e2c367c2a9ae21de57ed68d240f"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\stdout.log",
+        "sha256": "f41e821aa70ecc94635e219ce400b6b7afcda0fe2dd9ca8e75651f2b29c7e443"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_absorption_vacuum\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gm05",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 115.80079430000114,
+      "application_process_seconds": 115.41371859999708,
+      "wrapper_extra_seconds": 0.3870757000040612,
+      "sum_each_seed_final_checkpoint_seconds": 5.31651782,
+      "application_time_outside_seed_timer_windows_seconds": 110.09720077999708,
+      "last_metadata_mtime_utc": "2026-10-09T09:22:16.840860+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:24:05.631272+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 108.790412,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.140064597,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "22b8de6baecfd5f29f610e46407295c7a6ca02fc0cd89642cc4bca7d9a031037"
+          },
+          "mtime_utc": "2026-10-09T09:22:11.661761+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.395484,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "cf344cfe6be65641468e3fb1da178c999a7a2de68473801a885cf03ddf2d3bdf"
+          },
+          "mtime_utc": "2026-10-09T09:22:11.917493+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 1.37760031,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "0d6d63d6d26f735e55321890c42dd00582e954ce3bf516e79882d9118800b0c4"
+          },
+          "mtime_utc": "2026-10-09T09:22:12.899001+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.0834311992,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "6f573ca85b1ba869f6f8048076145714aabb22d8c73822a26cd893675b3edce1"
+          },
+          "mtime_utc": "2026-10-09T09:22:12.983575+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.330330402,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "6b4073340879badfebf015a0ef689736d6be9720fee7ebe0bf933e1ea492552f"
+          },
+          "mtime_utc": "2026-10-09T09:22:13.230396+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 1.31143963,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "2098d5b07403c02b7b97fc91745118018303fb67d71a87b38ab64aa33536ec25"
+          },
+          "mtime_utc": "2026-10-09T09:22:14.211133+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.083945103,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "1e8dc69e16df88582d3491302c84830ce7d5600457996e9a419d24a8f129e017"
+          },
+          "mtime_utc": "2026-10-09T09:22:14.296412+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.330458999,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "95331e47b518d85d38c954eeeb174547049cd0897b836aa0b080908d95f7749d"
+          },
+          "mtime_utc": "2026-10-09T09:22:14.550776+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 1.32036459,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "eaf22f9ae303ae1fef397d6204dc25c72ce146bfd7afed5f95456d5a9407e0f7"
+          },
+          "mtime_utc": "2026-10-09T09:22:15.532335+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.0834003985,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "ba2758a76c33f702861e99fead1a002e29650aff0e7ba1fb343bc0ead9f48167"
+          },
+          "mtime_utc": "2026-10-09T09:22:15.616410+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.329033792,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "ed85392804531ef31c1287680a36b099dfd4a64336dae5c0625b2bbc75ba6e01"
+          },
+          "mtime_utc": "2026-10-09T09:22:15.862196+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 1.30711329,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "7677bd2682c06430365a2a5b7f5b0cd2977f9724bd3a39ceb83c49a6616592f2"
+          },
+          "mtime_utc": "2026-10-09T09:22:16.840860+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\receipt.json",
+        "sha256": "7f6babb19c63f6f82664dd7d4f1b079fcf27480257b41946001139e49b2f383f"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\stdout.log",
+        "sha256": "8bb34b1e0aec700da700adac650f8a9a05cf6a530ec115e8d4c3894a098aebdb"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gm05\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 40.28642190000028,
+      "application_process_seconds": 39.92127410000103,
+      "wrapper_extra_seconds": 0.3651477999992494,
+      "sum_each_seed_final_checkpoint_seconds": 4.98774029,
+      "application_time_outside_seed_timer_windows_seconds": 34.93353381000103,
+      "last_metadata_mtime_utc": "2026-10-09T09:24:12.415915+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:24:46.074930+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 33.659015,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.139015004,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "688e099f46b84459d31924ac088d18c63c512d84c5dde0f8618aaf32b322f9fe"
+          },
+          "mtime_utc": "2026-10-09T09:24:07.564238+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.382422388,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "3802ca2aaf3f71d315db7a1270350c51659e3fc5d91454510b4dfecc24be62ea"
+          },
+          "mtime_utc": "2026-10-09T09:24:07.799266+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 1.29402912,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "50fbdb539d0e39c10b3eaa9c2702447aff5cee4e0f1f62c41ebcb0472196744f"
+          },
+          "mtime_utc": "2026-10-09T09:24:08.710989+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.077456601,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "b4e63fb414736e48c182e13bcdadcec62ac95f6008ca5c3d37e85b161f8456e0"
+          },
+          "mtime_utc": "2026-10-09T09:24:08.789374+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.309107006,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "ebdf76b7610a1ed8fcb6551c6a4ff91bb30aea869425fe7f11c7fc3f2de980b3"
+          },
+          "mtime_utc": "2026-10-09T09:24:09.029072+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 1.23774374,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "aa5db435a20293b012cf50d6002009a7cd274ddca1c332d56702e88a723ed3ae"
+          },
+          "mtime_utc": "2026-10-09T09:24:09.949582+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.0788580924,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "fbeda0c6cd219264b9f98c0766142e50ee9a392de88a764dad0cc7f6577fd184"
+          },
+          "mtime_utc": "2026-10-09T09:24:10.029147+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.317120492,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "bcf325822aef72260d2767869963bbab6505271c0b50922c89e7c292c51e410e"
+          },
+          "mtime_utc": "2026-10-09T09:24:10.267382+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 1.23224616,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "7593ad28f4d1eb7485f1231fa30f1c164016bdd3967af4b675e62bf067ee57df"
+          },
+          "mtime_utc": "2026-10-09T09:24:11.191005+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.0770367011,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "f859b85764f038805e78bb4e80bf9bb82ff744a4d98cde52248057d185558a9a"
+          },
+          "mtime_utc": "2026-10-09T09:24:11.268801+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.306412399,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "a4843c14af8b4e86e74e8b5a529127b4204f4e466999730a4755797deec83d9d"
+          },
+          "mtime_utc": "2026-10-09T09:24:11.498458+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 1.22372127,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "6cbbb6a9bed579a6e0037da177e0e52dde58e24c45eab3530e20981210490b29"
+          },
+          "mtime_utc": "2026-10-09T09:24:12.415915+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\receipt.json",
+        "sha256": "5bc31bc91d939e7c7168939cb49270e26d930336f9729094629de92782eff75c"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\stdout.log",
+        "sha256": "dd5da70965eec35003389ed689b2336f6819d8194d65a04d5d3777ecaab083ff"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_gp05\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_vacuum",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 2.745179300000018,
+      "application_process_seconds": 2.3669477999974333,
+      "wrapper_extra_seconds": 0.37823150000258465,
+      "sum_each_seed_final_checkpoint_seconds": 0.92746696,
+      "application_time_outside_seed_timer_windows_seconds": 1.4394808399974335,
+      "last_metadata_mtime_utc": "2026-10-09T09:24:48.770342+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:24:48.969882+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 0.19954,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.0742707998,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "8902d46887e3bc319be01184ceea0a6c3b3debb76a89bdb5b5d5b4df0323c317"
+          },
+          "mtime_utc": "2026-10-09T09:24:47.915477+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.11544849,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "9ee88f7380b170fdc15630dade26e21e337aae68c49afbcda9c3b882a8bcc908"
+          },
+          "mtime_utc": "2026-10-09T09:24:47.957114+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 0.281313092,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "ca074e068cff4c537e5cb99c535e64ada0a73dabed202bccc91c2e91b019111f"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.123540+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.0150327999,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "edb26da38496cac4c49df6960b6cdde4447e2d8f7f5d0fe9aaa81d28aa67ff6e"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.138651+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.0571635999,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "6210645162027df2c3d36fb1ae8081ec82ce86c005d6f7eace6e57c9a8ed86f1"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.180385+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 0.217979297,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "a5747ba95bb892ab58db1b0682e0bd560a14f1f5c2949a1b027f0971816497fb"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.341551+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.0148764998,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "6623c80cfe8fa0e9d63c967e089206af698b0094def452fe273c516d79c4e651"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.357056+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.0558446981,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "f7f49741b85ca774737342beab918e5fb3e7dbf2f6b9fa046efe896ee9a29211"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.398279+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 0.212329686,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "be8d4e37bb274350e91a08eedfdae69217cc6e67e2dd51e488c09ae6d5fc9a3d"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.554157+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.0152664995,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "8adffbe7d6c2f4a98922b4dedd8ce65008aefe3a82a1f2fd3f485ae5f0166c56"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.570219+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.0553458966,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "ae7f5a6b36935d59db2eaeab2988cabf426d6ce8e102f2fc1edeceaac91309cf"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.610410+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 0.215844885,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "e6482aa54060667c7e722a9a24369548a9c0b47f4ee509f83efb3db2dd789b38"
+          },
+          "mtime_utc": "2026-10-09T09:24:48.770342+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\receipt.json",
+        "sha256": "a282075fdff3748cc15e7bdc076c8ba7f98528dad8bd6a1459404a446d10fe33"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\stdout.log",
+        "sha256": "56e2c81b41a45a270d92a1fe9f8305cb9264f4a80e3b58deb9326e995afae378"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_ramp_scatter_vacuum\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_g0",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 116.65999960000045,
+      "application_process_seconds": 116.27808670000013,
+      "wrapper_extra_seconds": 0.38191290000031586,
+      "sum_each_seed_final_checkpoint_seconds": 11.843335150000001,
+      "application_time_outside_seed_timer_windows_seconds": 104.43475155000013,
+      "last_metadata_mtime_utc": "2026-10-09T09:25:02.658219+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:26:45.796483+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 103.138264,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.271796286,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "fff98da346126a3684abed7bab7defa8b85740bcac6a96a1d9680adb6cf9cf06"
+          },
+          "mtime_utc": "2026-10-09T09:24:51.084842+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.834934056,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "6af8285e3213464962cd4c5a942a120afc278068ba9bbbfa38215761d3b309c7"
+          },
+          "mtime_utc": "2026-10-09T09:24:51.639723+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 3.02231932,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "e427a9007b66f95b421b02113879ee21b08019d708de51945992ae204aa7617c"
+          },
+          "mtime_utc": "2026-10-09T09:24:53.827544+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.183486581,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "ce9bfb8e9e762f2e1f5b5eacc9104a4fa6ed9577c0a35ffd7c348b4bc1ecb708"
+          },
+          "mtime_utc": "2026-10-09T09:24:54.011234+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.73817116,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "d330e1f2a8f82f198f406172c6987bebf012848d0741924c4ea8d9329accb4dc"
+          },
+          "mtime_utc": "2026-10-09T09:24:54.573575+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 2.94441414,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "db1c3f8fca83fa208eb796a6a60a4afeb01628ee006a7fdc57571813ed387da8"
+          },
+          "mtime_utc": "2026-10-09T09:24:56.772531+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.189799994,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "b7f88b1f5b562794d2257f8778d6a8df3ddd9bcb03f0c8b647e3f2341971fb13"
+          },
+          "mtime_utc": "2026-10-09T09:24:56.962233+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.74320817,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "823d4bdc0bf1ee42bc8a040e9e8e4cbe38220ab92a5604b26755b32b6ef83652"
+          },
+          "mtime_utc": "2026-10-09T09:24:57.516176+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 2.93576455,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "5b6aa59eb6ed2ea788de24fd8080f6cbf3f0dd8333bfbe0978eb2ef42c934c56"
+          },
+          "mtime_utc": "2026-10-09T09:24:59.717063+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.185799092,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "d4d0e9ff9fab54ae656a7d936ed9489a9225d820c121544acc17e6c7d6a47047"
+          },
+          "mtime_utc": "2026-10-09T09:24:59.903032+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.735673726,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "e07e4f070b7cb70175308bd121cc18203d4adc9360f3676c1e624947cd4450d1"
+          },
+          "mtime_utc": "2026-10-09T09:25:00.453204+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 2.94083714,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "a1b2eb362a61bf3ac96ae8d43836c3eb573cf8d6da907dbecd8154368aac8cfc"
+          },
+          "mtime_utc": "2026-10-09T09:25:02.658219+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\receipt.json",
+        "sha256": "0ff86335038421cf7d18120ec832680837b1b33da13e547917f2fd4883e06300"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\stdout.log",
+        "sha256": "f2a175b95600ec02eaad2b8378189d4f0e3b00e6069ae748f6b7d5fcf0c2f0e6"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_g0\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_vacuum",
+      "levels": [
+        64,
+        256,
+        1024
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "samples_per_frame": 1,
+      "queue_wrapper_seconds": 2.82626750000054,
+      "application_process_seconds": 2.4491854999978386,
+      "wrapper_extra_seconds": 0.37708200000270153,
+      "sum_each_seed_final_checkpoint_seconds": 0.960838273,
+      "application_time_outside_seed_timer_windows_seconds": 1.4883472269978386,
+      "last_metadata_mtime_utc": "2026-10-09T09:26:48.578612+00:00",
+      "receipt_finalized_utc": "2026-10-09T09:26:48.773982+00:00",
+      "approx_seconds_last_metadata_write_to_receipt_finalized": 0.19537,
+      "mtime_caveat": "Filesystem last-write time is supporting chronology, not a sampled CPU/GPU profiling event. Receipt finished_utc is finalized after Python image validation, so its late tail includes that small unseparated interval. No timestamp is present on stdout lines.",
+      "metadata": [
+        {
+          "seed": 11,
+          "spp": 64,
+          "wall_seconds": 0.0973130986,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_11\\spp_64\\render_metadata.json",
+            "sha256": "02ac3356ca99d0734e23b1493c9f8ed6360d0ad2c5fe07284585b0b27fbe3d14"
+          },
+          "mtime_utc": "2026-10-09T09:26:47.712879+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 256,
+          "wall_seconds": 0.147425294,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_11\\spp_256\\render_metadata.json",
+            "sha256": "fe56033b32a575edb5a7edd5bcf74248131391a1fba7d62fe222863fb7201f4d"
+          },
+          "mtime_utc": "2026-10-09T09:26:47.763246+00:00"
+        },
+        {
+          "seed": 11,
+          "spp": 1024,
+          "wall_seconds": 0.314175487,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_11\\spp_1024\\render_metadata.json",
+            "sha256": "65ede30dd7dadde85a8a1227bbed24532cfba299b7b490b4f583f1a5fe17599d"
+          },
+          "mtime_utc": "2026-10-09T09:26:47.929838+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 64,
+          "wall_seconds": 0.0153434994,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_29\\spp_64\\render_metadata.json",
+            "sha256": "94fb52d7bb5fb49ecc4d97a75483dbbc4e172eff096434e7e23c80ad62e9c6fd"
+          },
+          "mtime_utc": "2026-10-09T09:26:47.945921+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 256,
+          "wall_seconds": 0.0570141971,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_29\\spp_256\\render_metadata.json",
+            "sha256": "c6e812ab7a67f343dca9c3833dbd7cd4b35d2ab8ad6d87b6a5c29499d2bc2c64"
+          },
+          "mtime_utc": "2026-10-09T09:26:47.987684+00:00"
+        },
+        {
+          "seed": 29,
+          "spp": 1024,
+          "wall_seconds": 0.216929287,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_29\\spp_1024\\render_metadata.json",
+            "sha256": "35e9ee7aa31677070d0b8d140ebadb5b7a7646c0c2ed446e713eb68b3eba5e48"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.147244+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 64,
+          "wall_seconds": 0.0150488997,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_47\\spp_64\\render_metadata.json",
+            "sha256": "f2049a501a7a8215cd95630b8f2f2c73c986973f1251425b6299f2a581248f69"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.163325+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 256,
+          "wall_seconds": 0.055934798,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_47\\spp_256\\render_metadata.json",
+            "sha256": "762df1314a60e1e308c81d672a32d1cc08fd0ff918c3acc327776a5a2f3754f6"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.203833+00:00"
+        },
+        {
+          "seed": 47,
+          "spp": 1024,
+          "wall_seconds": 0.2144728,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_47\\spp_1024\\render_metadata.json",
+            "sha256": "4a3cf7acaeac6fd486c5a1adc59426248e24b38f8420b345157bbe52f9fdac6f"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.362817+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 64,
+          "wall_seconds": 0.015625,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_83\\spp_64\\render_metadata.json",
+            "sha256": "9e007e06cb13f39f1f198fd602130276e592a21fef085764d5ca35a271be3a9b"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.378819+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 256,
+          "wall_seconds": 0.0565579981,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_83\\spp_256\\render_metadata.json",
+            "sha256": "e1025fd97f49614586d7e5651c0046220fce31b92e9cc57fffad8165ced0f1a7"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.419402+00:00"
+        },
+        {
+          "seed": 83,
+          "spp": 1024,
+          "wall_seconds": 0.215260699,
+          "file": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\seed_83\\spp_1024\\render_metadata.json",
+            "sha256": "3699e5a20870f2b549acfbf061e6cf8f4e448031277d2f364b6c6a72134970f0"
+          },
+          "mtime_utc": "2026-10-09T09:26:48.578612+00:00"
+        }
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\receipt.json",
+        "sha256": "4d7cf8a515632b75751903190726b0d7c152ff701c45e249e4b4768b944afa39"
+      },
+      "stdout": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\stdout.log",
+        "sha256": "b95992cca6a0a659adc350f79691d9f093a33ce1796b7c97a03e44230e1b90f1"
+      },
+      "stderr": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_cohort\\gallery_medium_stage2_smoke_scatter_vacuum\\engine\\stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "source_evidence": {
+    "wrapper_child_clock": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\run_pathtracer_reference_batch.py",
+      "sha256": "9cef1051cbda5001abc6d8e06134670503f70fc941b7991b1c4b799aad799ce3",
+      "lines": [
+        83,
+        95
+      ]
+    },
+    "single_engine_invocation": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\run_pathtracer_reference_batch.py",
+      "sha256": "9cef1051cbda5001abc6d8e06134670503f70fc941b7991b1c4b799aad799ce3",
+      "lines": [
+        189,
+        215
+      ]
+    },
+    "matrix_outer_clock": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\run_stage2_matrix.py",
+      "sha256": "51efd219184c7d521cf12d5efbab802ba681511aa8aa2722756cb9928f7cedb2",
+      "lines": [
+        29,
+        67
+      ]
+    },
+    "begin_clock_before_first_dispatch": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNode.cpp",
+      "sha256": "70fe3298f9392f84ca7ac6cfdc0f4250ab74732bfc9deb419ca2a483b172cc6d",
+      "lines": [
+        483,
+        493
+      ]
+    },
+    "batch_advance_and_timer_reset": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNodeDebug.cpp",
+      "sha256": "ba3ea30978d957d3031bfc1f474f2caf66532743d558de9211c6996f2f4065d0",
+      "lines": [
+        212,
+        234
+      ]
+    },
+    "timer_implementation": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNodeDebug.cpp",
+      "sha256": "ba3ea30978d957d3031bfc1f474f2caf66532743d558de9211c6996f2f4065d0",
+      "lines": [
+        264,
+        304
+      ]
+    },
+    "clock_end_after_radiance_save": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNodeDebug.cpp",
+      "sha256": "ba3ea30978d957d3031bfc1f474f2caf66532743d558de9211c6996f2f4065d0",
+      "lines": [
+        427,
+        455
+      ]
+    },
+    "dump_finish_signal": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNodeDebug.cpp",
+      "sha256": "ba3ea30978d957d3031bfc1f474f2caf66532743d558de9211c6996f2f4065d0",
+      "lines": [
+        237,
+        252
+      ]
+    },
+    "completed_batch_no_more_path_dispatch": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNode.cpp",
+      "sha256": "70fe3298f9392f84ca7ac6cfdc0f4250ab74732bfc9deb419ca2a483b172cc6d",
+      "lines": [
+        324,
+        327
+      ]
+    },
+    "exit_poll": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "ca7aef9155af504fd192c831f65b03030ef199da2ba240cb32503748e89cbcfd",
+      "lines": [
+        472,
+        480
+      ]
+    },
+    "engine_shutdown": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooEngine.cpp",
+      "sha256": "99ab4f14ee16b082c3a79b5a6c0eeb442d2dc2cfaa00cf5ab22c13cd905d68c8",
+      "lines": [
+        218,
+        244
+      ]
+    },
+    "renderer_teardown": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\Dx12Renderer.cpp",
+      "sha256": "efcd8585cc7da08fb4bd658d4ac0600796949bb0128f25341f14c1d7bd253c0f",
+      "lines": [
+        73,
+        81
+      ]
+    },
+    "device_flush": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderDevice\\Dx12RenderDevice.cpp",
+      "sha256": "c725582f4af989c06379847f33c8b9df6d51eb6ebf1b103a4657fe6a4eb3f72a",
+      "lines": [
+        115,
+        124
+      ]
+    },
+    "queue_fence_wait": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderDevice\\Dx12CommandQueue.cpp",
+      "sha256": "90df4bfe90cbdef03b7f0b2773ba65565b661ab0205d81b9e86476ee598e58c4",
+      "lines": [
+        102,
+        125
+      ]
+    }
+  },
+  "report_wording": "Record116.19s as whole job/process elapsed, not render-only. The constant-scatter timed accumulation/readback windows sum5.40s across four seeds. A separately observed post-checkpoint shutdown/exit delay is not yet phase-attributed. Stage4 needs separately instrumented, isolated timing before comparing heterogeneous-medium slowdown.",
+  "future_stage4_requirements": [
+    "Separate startup, first dispatch, final radiance save, close signal, render join, each queue flush and object teardown timestamps.",
+    "Use actual GPU timestamp around PathTracer dispatch for GPU kernel cost; retain end-to-end time separately.",
+    "Compare equal scene/seed/SPP/depth/SPF settings; nested checkpoints are not independent one-shot runs.",
+    "Record overlapping CPU/GPU workloads; current campaign timings are observational, not isolated benchmark conclusions."
+  ],
+  "changes": "No production/source edits, new rendering or GPU work; analysis of current source and existing artifacts only."
+}

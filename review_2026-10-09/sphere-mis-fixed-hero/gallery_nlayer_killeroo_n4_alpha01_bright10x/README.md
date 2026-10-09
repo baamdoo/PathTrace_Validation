@@ -1,3 +1,7 @@
+현재 사용자 육안 상태: **승인**. Radiance/variance의 역사적 판정은 바꾸지 않습니다.
+
+---
+
 # gallery_nlayer_killeroo_n4_alpha01_bright10x
 
 **Radiance: OPEN · Variance: NOT_APPLICABLE_SINGLE_SEED · 사용자 육안 확인: 대기 (새 이미지)**

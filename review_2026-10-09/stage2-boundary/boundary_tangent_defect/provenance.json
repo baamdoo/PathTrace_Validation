@@ -1,0 +1,48 @@
+{
+  "scene": "boundary_tangent_defect",
+  "category": "stage2-boundary",
+  "reference": "PBRT vacuum + actual DXR diagnostics",
+  "radiance_status": "FAIL_DETERMINISTIC_VACUUM",
+  "variance_status": "NOT_A_STOCHASTIC_VARIANCE_FAILURE",
+  "source_contract_status": "CONFIRMED_ENGINE_EDGE_CASE",
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "note": "결정론적 진공 대조군 FAIL. exact-edge tangent가 진입 없이 EXIT로 관측되며 경로가 종료됩니다. query-only 수정 두 개는 음성 대조군을 통과하지 못해 적용하지 않았습니다. 진단 그림과 원자료를 그대로 보존합니다.",
+  "images": [
+    {
+      "file": "tangent_diagnostic.png",
+      "sha256": "8b76853bdc4559fe20f5a19b3812ffe80506acda974cd374066fc9767cca5075",
+      "bytes": 98656,
+      "caption": "실제 GPU 캡처 광선의 경계 접촉과 거부한 수정의 ±1ULP 반례입니다. 엔진 수정 완료 그림이 아닙니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\tangent_diagnostic.png",
+        "sha256": "8b76853bdc4559fe20f5a19b3812ffe80506acda974cd374066fc9767cca5075",
+        "bytes": 98656
+      }
+    },
+    {
+      "file": "vacuum_sample_loss.png",
+      "sha256": "d757933c1134d2a471174675fd8618e32507b9f35ac98226efa91164c53f0acd",
+      "bytes": 150156,
+      "caption": "단일 sample 손실을4096배 확대한 위치도입니다. 네 seed의15개 pixel/seed에서 각각1/SPP 손실이 있습니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\vacuum_sample_loss.png",
+        "sha256": "d757933c1134d2a471174675fd8618e32507b9f35ac98226efa91164c53f0acd",
+        "bytes": 150156
+      }
+    }
+  ],
+  "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2",
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\analysis_receipt.json",
+    "sha256": "b6dcadc8d539da6e7b471066076ec56d2db7cdcf169f02512078c84109241557",
+    "bytes": 4087
+  },
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\summary.json",
+    "sha256": "32fbb5592680082cab6c9cdd0f6132e3bf5dc3cd2066bfa4b217f4c05d2c2563",
+    "bytes": 5206
+  },
+  "stage_pass": false
+}

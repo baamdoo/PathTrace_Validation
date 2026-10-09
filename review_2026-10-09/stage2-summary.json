@@ -1,0 +1,313 @@
+{
+  "status": "COMPLETE_VALIDATION_WITH_UNRESOLVED_DEFECT",
+  "numerical_stage_pass": false,
+  "user_visual_approval": "PENDING_STAGE2",
+  "accepted_stage1_image_count": 309,
+  "preserved_unapproved_stage1_baseline_images": 24,
+  "normal_exit_exr_count": 320,
+  "physical_scenes": 11,
+  "seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "resolution": [
+    128,
+    128
+  ],
+  "rows": [
+    {
+      "scene": "constant_absorption",
+      "kind": "absorption",
+      "spp": 4096,
+      "mean_status": "PASS_SCOPED_EQUIVALENCE",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail": "depth1 absorption oracle",
+      "engine_global": 0.7470260559609813,
+      "reference_global": 0.7470008006720867,
+      "oracle_global": 0.7470228171297167,
+      "engine_over_reference_y_variance": 1.034174448904657,
+      "radiance": "INCONCLUSIVE"
+    },
+    {
+      "scene": "ramp_absorption",
+      "kind": "absorption",
+      "spp": 4096,
+      "mean_status": "PASS_SCOPED_EQUIVALENCE",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail": "depth1 absorption oracle",
+      "engine_global": 0.8404320999979973,
+      "reference_global": 0.8404409179761696,
+      "oracle_global": 0.8404377264416403,
+      "engine_over_reference_y_variance": 1.0239855622370402,
+      "radiance": "INCONCLUSIVE"
+    },
+    {
+      "scene": "constant_scatter_g0",
+      "kind": "scattering",
+      "spp": 1024,
+      "mean_status": "PASS_SCOPED",
+      "variance_status": "PASS_SCOPED",
+      "depth_tail": "PASS_SCOPED",
+      "engine_global": 1.0149762692802553,
+      "reference_global": 1.0150892727174003,
+      "engine_over_reference_y_variance": 1.7536264230772305,
+      "radiance": "INCONCLUSIVE"
+    },
+    {
+      "scene": "ramp_scatter_gp05",
+      "kind": "scattering",
+      "spp": 1024,
+      "mean_status": "PASS_SCOPED",
+      "variance_status": "PASS_SCOPED",
+      "depth_tail": "PASS_SCOPED",
+      "engine_global": 1.0187328719238624,
+      "reference_global": 1.0187851282332168,
+      "engine_over_reference_y_variance": 1.5325650836450155,
+      "radiance": "INCONCLUSIVE"
+    },
+    {
+      "scene": "ramp_scatter_gm05",
+      "kind": "scattering",
+      "spp": 1024,
+      "mean_status": "PASS_SCOPED",
+      "variance_status": "PASS_SCOPED",
+      "depth_tail": "PASS_SCOPED",
+      "engine_global": 0.9943289304162976,
+      "reference_global": 0.9943617947165343,
+      "engine_over_reference_y_variance": 1.6970134227762077,
+      "radiance": "INCONCLUSIVE"
+    },
+    {
+      "scene": "smoke_scatter_g0",
+      "kind": "scattering",
+      "spp": 1024,
+      "mean_status": "PASS_SCOPED",
+      "variance_status": "PASS_SCOPED",
+      "depth_tail": "PASS_SCOPED",
+      "engine_global": 0.9986045802560966,
+      "reference_global": 0.9986382489420897,
+      "engine_over_reference_y_variance": 1.5244388690478408,
+      "radiance": "INCONCLUSIVE"
+    }
+  ],
+  "known_issue": "Deterministic vacuum loses15 pixel/seed samples at4096SPP due to exact-edge boundary state failure. No production repair adopted.",
+  "stage3": "NOT_STARTED_PENDING_STAGE2_REPAIR_AND_REVIEW",
+  "stage4": "NOT_COMPLETED_TIMINGS_RECORDED_ONLY",
+  "reports": [
+    {
+      "category": "stage2-absorption",
+      "scene": "gallery_medium_stage2_constant_absorption_128",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\analysis_receipt.json",
+        "sha256": "9c78db100f702f98ff0a89bc0e1be3b69dbd71bb21acbecb9147bffeaf5cb9ab",
+        "bytes": 37021
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\summary.json",
+        "sha256": "b9044c264280ba2023895c2e9b829b14fc2434b7249310e45d48083e5555f592",
+        "bytes": 198325
+      },
+      "caption": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "linear_residuals.png": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+        "noise_and_oracle_bounds.png": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "transmittance_comparison.png": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다."
+      }
+    },
+    {
+      "category": "stage2-absorption",
+      "scene": "gallery_medium_stage2_ramp_absorption",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\analysis_receipt.json",
+        "sha256": "748956a0ee62e88ded304e9db387225a54567b23b9ce12a02908c9e31dac8559",
+        "bytes": 104236
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\summary.json",
+        "sha256": "0d259d06405e1c09ca050ed4fd5a024c2a11809ea9f236ecbcb19c94dade673f",
+        "bytes": 272177
+      },
+      "caption": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "linear_residuals.png": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+        "noise_and_oracle_bounds.png": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "transmittance_comparison.png": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다."
+      }
+    },
+    {
+      "category": "stage2-scattering",
+      "scene": "gallery_medium_stage2_constant_scatter_g0",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\analysis_receipt.json",
+        "sha256": "1f5596faf5e9e705461e7df62a2ef098d1729b6ac14b2826e33632b11ee011de",
+        "bytes": 257268
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\summary.json",
+        "sha256": "87101bc9379a555689b31790631986043f84a05edbaf9d426982e1ea8619f91b",
+        "bytes": 416237
+      },
+      "caption": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "noise_stddev_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "normalized_radiance.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "signed_residual_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다."
+      }
+    },
+    {
+      "category": "stage2-scattering",
+      "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\analysis_receipt.json",
+        "sha256": "d60fb42432a864d7616434052dfc0178c89684abc127eb96886f1455a4ee9414",
+        "bytes": 257248
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\summary.json",
+        "sha256": "4b646ef3099753ec841f2b2ee80ca38d1329f68efd8e740d368f5623b44daab0",
+        "bytes": 408820
+      },
+      "caption": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "noise_stddev_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "normalized_radiance.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "signed_residual_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다."
+      }
+    },
+    {
+      "category": "stage2-scattering",
+      "scene": "gallery_medium_stage2_ramp_scatter_gm05",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\analysis_receipt.json",
+        "sha256": "39914edfeaad80cfb0e11c31cfbdf76122dd3093d794b564fd4a5119c9868a58",
+        "bytes": 257248
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\summary.json",
+        "sha256": "6b81a1f1830401e7a543bd210ac01935028d73a269361e1dd26704fd0b980007",
+        "bytes": 414539
+      },
+      "caption": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "noise_stddev_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "normalized_radiance.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "signed_residual_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다."
+      }
+    },
+    {
+      "category": "stage2-scattering",
+      "scene": "gallery_medium_stage2_smoke_scatter_g0",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\analysis_receipt.json",
+        "sha256": "669aa6625c6473b317839f4fe4c8d1f57a07baba292fca5fbb04b0c3219e6985",
+        "bytes": 257237
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\summary.json",
+        "sha256": "21f623407e20b86232a8a29855bd7d3ee77e8858dce1e67d3cdae441ce51226d",
+        "bytes": 412186
+      },
+      "caption": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "reference": "PBRT v4",
+      "image_captions": {
+        "convergence.png": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+        "geometry_masks.png": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+        "noise_stddev_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "normalized_radiance.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+        "regional_uncertainty.png": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+        "signed_residual_rgb_y.png": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다."
+      }
+    },
+    {
+      "category": "stage2-boundary",
+      "scene": "boundary_tangent_defect",
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\analysis_receipt.json",
+        "sha256": "b6dcadc8d539da6e7b471066076ec56d2db7cdcf169f02512078c84109241557",
+        "bytes": 4087
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\summary.json",
+        "sha256": "32fbb5592680082cab6c9cdd0f6132e3bf5dc3cd2066bfa4b217f4c05d2c2563",
+        "bytes": 5206
+      },
+      "caption": "결정론적 진공 대조군 FAIL. exact-edge tangent가 진입 없이 EXIT로 관측되며 경로가 종료됩니다. query-only 수정 두 개는 음성 대조군을 통과하지 못해 적용하지 않았습니다. 진단 그림과 원자료를 그대로 보존합니다.",
+      "reference": "PBRT vacuum + actual DXR diagnostics",
+      "image_captions": {
+        "tangent_diagnostic.png": "실제 GPU 캡처 광선의 경계 접촉과 거부한 수정의 ±1ULP 반례입니다. 엔진 수정 완료 그림이 아닙니다.",
+        "vacuum_sample_loss.png": "단일 sample 손실을4096배 확대한 위치도입니다. 네 seed의15개 pixel/seed에서 각각1/SPP 손실이 있습니다."
+      }
+    }
+  ],
+  "plans": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant128_plan.json",
+      "sha256": "28ef670ca88a64664916f39c2aa3c89abd2307deca1d04de0cb081db1825faa1",
+      "bytes": 3748
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\combined_cohort_plan.json",
+      "sha256": "95ed7039cf0e7019fb2de7300801298c7a2bbd1dbcab867365370ed106d63931",
+      "bytes": 19768
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\combined_depth32_plan.json",
+      "sha256": "f4d66565530434ba24bc2238b5c6dfea277a504813f3f24f66d05f159c3be1e7",
+      "bytes": 15297
+    }
+  ],
+  "queues": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant128_queue.json",
+      "sha256": "296be96931e084dd5e1ca86525a101ef2b5050ccbc52c324e730c3ea84ff4458",
+      "bytes": 7482
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\combined_cohort_queue.json",
+      "sha256": "c06800f3a5ca93d8fea85a202e2260b5afb501db1d2b737c397d24c8afb3aba4",
+      "bytes": 36968
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\combined_depth32_queue.json",
+      "sha256": "af4d140ff3f343365547458cad1d8c5377683f3717d962fa63b3c7601601c69d",
+      "bytes": 28786
+    }
+  ],
+  "ownership_guide": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Docs\\Learning\\implementations\\reference-validation-ownership-recovery.md",
+    "sha256": "b39376557489e30d38787b5e3cc5fbcd90e456e8977ff35e6170165051f367ae",
+    "bytes": 98492
+  },
+  "ownership_source_index": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Docs\\Learning\\implementations\\reference-validation-ownership-recovery.sources.json",
+    "sha256": "752c80dcc7395987a302c01a6813f59462b91133f4b004ad8675418c836b4798",
+    "bytes": 64533
+  },
+  "ownership_documentation_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\ownership_recovery_documentation_final_stage2_v2.json",
+    "sha256": "5e08520c4c47993d8df076489e9f46d10070b6f295f193c102b4019568a8b1eb",
+    "bytes": 649
+  }
+}

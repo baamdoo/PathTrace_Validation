@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-09T08:31:13.818393+00:00",
+  "generated_utc": "2026-10-09T09:45:40.803663+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
@@ -8,7 +8,7 @@
     "images": 277,
     "sha256": "f08ec4ca5e575009c8433dbd6e35e5e3c9c4ab176983cb4f2841f736679f0800"
   },
-  "images": 333,
+  "images": 371,
   "rows": [
     {
       "scene": "cornell_box",
@@ -76,7 +76,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box/analysis_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 11,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_breakfast_room",
@@ -129,7 +134,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_rng_fixed_12seeds",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 8,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_glass_of_water",
@@ -167,7 +177,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_grey_white_room",
@@ -205,7 +220,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -243,7 +263,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_rng_fixed_spf1",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_directional_light",
@@ -286,7 +311,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_many_lights",
@@ -329,7 +359,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "complex_room_envmap_mis",
@@ -372,7 +407,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_anisotropic_conductor",
@@ -415,7 +455,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_box_dielectric",
@@ -458,7 +503,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box_dielectric/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_water_glass",
@@ -501,7 +551,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_water_glass/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_camera_inside_water",
@@ -544,7 +599,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_camera_inside_water/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_thin_neutrality",
@@ -587,7 +647,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_thin_neutrality/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2--analysis_feature_rng_fixed",
@@ -630,7 +695,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_material_maps",
@@ -673,7 +743,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_material_maps/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_normal_map",
@@ -716,7 +791,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_feature_rng_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_directional_light",
@@ -744,7 +824,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_rgb_mesh_matched_float64",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 3,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_principled_sheen",
@@ -772,7 +857,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_principled_sheen/analysis_rgb_mesh_matched_float64",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 3,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_constant_control",
@@ -810,7 +900,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_constant_control",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_internal256_diagnostic",
@@ -833,7 +928,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_internal256_diagnostic",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 2,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_breakfast_room",
@@ -881,7 +981,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_mitsuba_reference",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_glass_of_water",
@@ -929,7 +1034,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_mitsuba_reference",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_grey_white_room",
@@ -977,7 +1087,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_mitsuba_reference",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -1025,7 +1140,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_mitsuba_reference",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_normal_map",
@@ -1053,7 +1173,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 3,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_normal_map",
@@ -1086,7 +1211,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_lod0_diagnostic",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 4,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_many_lights_matched",
@@ -1139,7 +1269,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 8,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_many_lights_matched",
@@ -1192,7 +1327,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_spot_matched",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 8,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2",
@@ -1230,7 +1370,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_camera_matched",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2",
@@ -1268,7 +1413,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_surface_fixes",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "complex_room_envmap_mis",
@@ -1316,7 +1466,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_anisotropic_conductor",
@@ -1364,7 +1519,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_material_maps",
@@ -1412,7 +1572,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_material_maps/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "cornell_box_dielectric",
@@ -1460,7 +1625,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box_dielectric/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_water_glass",
@@ -1508,7 +1678,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_water_glass/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_camera_inside_water",
@@ -1556,7 +1731,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_camera_inside_water/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "module5d3_thin_neutrality",
@@ -1604,7 +1784,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_thin_neutrality/analysis_native_rgb_remaining",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "complex_room_envmap_mis",
@@ -1652,7 +1837,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_surface_fixes",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_breakfast_room",
@@ -1700,7 +1890,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_surface_fixes",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_grey_white_room",
@@ -1748,7 +1943,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_surface_fixes",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -1796,7 +1996,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_surface_fixes",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_glass_of_water",
@@ -1849,7 +2054,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_conductor_scale_fixed",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 8,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -1897,7 +2107,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_path",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -1940,7 +2155,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_volpath",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 6,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_white_room",
@@ -1978,7 +2198,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_volpath_floor_ggx_control",
-      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+      "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+      "visual_approved_images": 5,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "5c918237af57f1c552505e803f07be5acafb86b9"
+      ]
     },
     {
       "scene": "gallery_nlayer_shaderball_n3",
@@ -2031,7 +2256,11 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_shaderball_n3/analysis_nlayer_representative",
-      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS"
+      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS",
+      "visual_approved_images": 0,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "superseded_diagnostic": true,
+      "visual_approval_note": "Preserved superseded baseline; not included in the new32-image sphere-fix approval"
     },
     {
       "scene": "gallery_nlayer_shaderball_n3",
@@ -2064,7 +2293,11 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_shaderball_n3/analysis_nlayer_representative_hero1024",
-      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS"
+      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS",
+      "visual_approved_images": 0,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "superseded_diagnostic": true,
+      "visual_approval_note": "Preserved superseded baseline; not included in the new32-image sphere-fix approval"
     },
     {
       "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
@@ -2117,7 +2350,11 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_killeroo_n4_alpha01_bright10x/analysis_nlayer_representative",
-      "source_contract_status": "FAILED_FINITE_LIGHT_AND_NORMAL_MATCH"
+      "source_contract_status": "FAILED_FINITE_LIGHT_AND_NORMAL_MATCH",
+      "visual_approved_images": 0,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "superseded_diagnostic": true,
+      "visual_approval_note": "Preserved superseded baseline; not included in the new32-image sphere-fix approval"
     },
     {
       "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
@@ -2150,7 +2387,11 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_killeroo_n4_alpha01_bright10x/analysis_nlayer_representative_hero1024",
-      "source_contract_status": "FAILED_FINITE_LIGHT_AND_NORMAL_MATCH"
+      "source_contract_status": "FAILED_FINITE_LIGHT_AND_NORMAL_MATCH",
+      "visual_approved_images": 0,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "superseded_diagnostic": true,
+      "visual_approval_note": "Preserved superseded baseline; not included in the new32-image sphere-fix approval"
     },
     {
       "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
@@ -2158,7 +2399,7 @@
       "reference": "Guo EfficientComplexLayered Mitsuba 0.6 / unchanged verified original reference",
       "radiance_status": "OPEN",
       "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
-      "visual_approved": false,
+      "visual_approved": true,
       "note": "구형 광원에 BSDF/phase 광선이 도달할 때의 MIS 기여와 불투명 차폐를 복구했습니다. 기존 광원 선택 PMF·power heuristic·면적 샘플링 정책은 유지했습니다. 같은 원본 Guo reference 대비 평균 Y 차이: 전체 -2.508231% → +0.464413%, 전경 -7.179745% → -0.161022%. 기존 SSIM .99 검사 0.99924807 / PASSED. 16/64/128 SPP × 독립 seed 4개, 수정 전후 같은 seed끼리 비교했습니다. 분산 감소: PASS_VARIANCE_DECREASE_ONLY. 128 SPP 전경 fixed/before Y 분산 비율 1.006877, fixed/Guo 비율 0.286685. 광량 누락을 고친 전후이므로 분산이 작다는 이유만으로 정확도·효율이 높다고 판단하지 않습니다. Killeroo의 원본 비단위 vertex normal 보간·방향 정렬과 Guo의 처리 차이, BSDF/filter 모델 차이는 그대로 남습니다. 구형 광원 수정의 완료와 원본 씬 전체의 radiance 동등성을 구분하며 남은 잔차를 숨기지 않습니다. Ray-cone/normal map/PLY/카메라/재질/Guo reference를 변경하지 않았습니다. 새 이미지의 사용자 육안 확인은 대기입니다.",
       "images": [
         {
@@ -2223,7 +2464,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_killeroo_n4_alpha01_bright10x/analysis_sphere_fixed",
-      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN"
+      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN",
+      "visual_approved_images": 12,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "fee60b2fe0d3370a1bdb2d23ce26709128e4fe82"
+      ]
     },
     {
       "scene": "gallery_nlayer_shaderball_n3",
@@ -2231,7 +2477,7 @@
       "reference": "Guo EfficientComplexLayered Mitsuba 0.6 / unchanged verified original reference",
       "radiance_status": "OPEN",
       "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
-      "visual_approved": false,
+      "visual_approved": true,
       "note": "구형 광원에 BSDF/phase 광선이 도달할 때의 MIS 기여와 불투명 차폐를 복구했습니다. 기존 광원 선택 PMF·power heuristic·면적 샘플링 정책은 유지했습니다. 같은 원본 Guo reference 대비 평균 Y 차이: 전체 +0.387351% → +0.387351%, 전경 +0.384611% → +0.384611%. 기존 SSIM .99 검사 0.99757259 / PASSED. 16/64/128 SPP × 독립 seed 4개, 수정 전후 같은 seed끼리 비교했습니다. 분산 감소: PASS_VARIANCE_DECREASE_ONLY. 128 SPP 전경 fixed/before Y 분산 비율 1.000000, fixed/Guo 비율 0.154714. 광량 누락을 고친 전후이므로 분산이 작다는 이유만으로 정확도·효율이 높다고 판단하지 않습니다. 구형 광원이 없는 N3 회귀이며, 선형 EXR pixel array가 전후 모든 checkpoint에서 동일한지 확인한 결과: True. Ray-cone/normal map/PLY/카메라/재질/Guo reference를 변경하지 않았습니다. 새 이미지의 사용자 육안 확인은 대기입니다.",
       "images": [
         {
@@ -2296,7 +2542,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_shaderball_n3/analysis_sphere_fixed",
-      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS"
+      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS",
+      "visual_approved_images": 12,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "fee60b2fe0d3370a1bdb2d23ce26709128e4fe82"
+      ]
     },
     {
       "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
@@ -2304,7 +2555,7 @@
       "reference": "Guo EfficientComplexLayered Mitsuba 0.6 / unchanged verified original reference",
       "radiance_status": "OPEN",
       "variance_status": "NOT_APPLICABLE_SINGLE_SEED",
-      "visual_approved": false,
+      "visual_approved": true,
       "note": "구형 광원에 BSDF/phase 광선이 도달할 때의 MIS 기여와 불투명 차폐를 복구했습니다. 기존 광원 선택 PMF·power heuristic·면적 샘플링 정책은 유지했습니다. 같은 원본 Guo reference 대비 평균 Y 차이: 전체 -2.616903% → +0.351863%, 전경 -7.783979% → -0.799655%. 기존 SSIM .99 검사 0.99942288 / PASSED. 1024 SPP seed11 대표 이미지입니다. 수정 전/후/Guo 비교와 동일 노출 clean beauty PNG를 제공합니다. 기존 반복 검증의 seed11과 stream을 공유하므로 추가 독립 표본·분산·신뢰구간 근거가 아닙니다. Killeroo의 원본 비단위 vertex normal 보간·방향 정렬과 Guo의 처리 차이, BSDF/filter 모델 차이는 그대로 남습니다. 구형 광원 수정의 완료와 원본 씬 전체의 radiance 동등성을 구분하며 남은 잔차를 숨기지 않습니다. Ray-cone/normal map/PLY/카메라/재질/Guo reference를 변경하지 않았습니다. 새 이미지의 사용자 육안 확인은 대기입니다.",
       "images": [
         {
@@ -2344,7 +2595,12 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_killeroo_n4_alpha01_bright10x/analysis_sphere_fixed_hero1024",
-      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN"
+      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN",
+      "visual_approved_images": 7,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "fee60b2fe0d3370a1bdb2d23ce26709128e4fe82"
+      ]
     },
     {
       "scene": "lambertian_sphere_scalar",
@@ -2352,7 +2608,7 @@
       "reference": "PBRT-v4 CPU PathIntegrator + analytic Lambertian sphere integral",
       "radiance_status": "OPEN",
       "variance_status": "OBSERVED_DECREASE_FOUR_SEEDS",
-      "visual_approved": false,
+      "visual_approved": true,
       "note": "엔진 GPU 검사와 같은 구면/수광판 배치의 중성색 대조입니다. RGB×RGB와 spectral 변환의 차이를 피하려 반사율 .5, 방출량 1로 고정했고 해석적 기대값은 1/18입니다. 실제 PBRT CPU 40개 렌더가 정상 종료했습니다. 1,048,576 SPP × 4 평균 Y는 해석값 대비 +1.758 ppm(+0.0001758%)입니다. depth 1/2/15 결과는 동일하고 세 SPP 수준에서 seed 간 분산이 감소합니다. 흰색 광원 비율 보정은 1ppm 규모의 색 변환·수치 오차를 살펴보는 별도 진단이며 원본값을 함께 표시했습니다. N4/Guo 영상에는 어떤 밝기 보정도 적용하지 않았습니다. 이 대조는 N-layered Guo reference를 대신하지 않습니다.",
       "images": [
         {
@@ -2362,8 +2618,701 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/analytic_sphere_mis_fix/pbrt_control",
-      "source_contract_status": "NEUTRAL_DIFFUSE_SCALAR_CONTROL"
+      "source_contract_status": "NEUTRAL_DIFFUSE_SCALAR_CONTROL",
+      "visual_approved_images": 1,
+      "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+      "visual_approval_source_commits": [
+        "fee60b2fe0d3370a1bdb2d23ce26709128e4fe82"
+      ]
+    },
+    {
+      "scene": "gallery_medium_stage2_constant_absorption_128",
+      "category": "stage2-absorption",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "source_contract_status": "OPEN",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "0585bd3e99376f5d2bb653b4c76dd762558cd0eb6f9ea528f0d27cb79cfd314f",
+          "bytes": 152908,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\convergence.png",
+            "sha256": "0585bd3e99376f5d2bb653b4c76dd762558cd0eb6f9ea528f0d27cb79cfd314f",
+            "bytes": 152908
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+          "bytes": 33042,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\geometry_masks.png",
+            "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+            "bytes": 33042
+          }
+        },
+        {
+          "file": "linear_residuals.png",
+          "sha256": "db7a86917da68c81018fada4cb2967e939bbc7e3aa16b49d97c926cbbe9d1fdc",
+          "bytes": 153779,
+          "caption": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\linear_residuals.png",
+            "sha256": "db7a86917da68c81018fada4cb2967e939bbc7e3aa16b49d97c926cbbe9d1fdc",
+            "bytes": 153779
+          }
+        },
+        {
+          "file": "noise_and_oracle_bounds.png",
+          "sha256": "e8bdea734fefd7163939d0a71eba028a47bd3fdc21cf432852b199aae5745954",
+          "bytes": 146197,
+          "caption": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\noise_and_oracle_bounds.png",
+            "sha256": "e8bdea734fefd7163939d0a71eba028a47bd3fdc21cf432852b199aae5745954",
+            "bytes": 146197
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+          "bytes": 63050,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\regional_uncertainty.png",
+            "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+            "bytes": 63050
+          }
+        },
+        {
+          "file": "transmittance_comparison.png",
+          "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+          "bytes": 66330,
+          "caption": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\transmittance_comparison.png",
+            "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+            "bytes": 66330
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\analysis_receipt.json",
+        "sha256": "9c78db100f702f98ff0a89bc0e1be3b69dbd71bb21acbecb9147bffeaf5cb9ab",
+        "bytes": 37021
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\summary.json",
+        "sha256": "b9044c264280ba2023895c2e9b829b14fc2434b7249310e45d48083e5555f592",
+        "bytes": 198325
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_absorption",
+      "category": "stage2-absorption",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "source_contract_status": "OPEN",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+          "bytes": 143305,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\convergence.png",
+            "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+            "bytes": 143305
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+          "bytes": 30397,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\geometry_masks.png",
+            "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+            "bytes": 30397
+          }
+        },
+        {
+          "file": "linear_residuals.png",
+          "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+          "bytes": 129990,
+          "caption": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\linear_residuals.png",
+            "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+            "bytes": 129990
+          }
+        },
+        {
+          "file": "noise_and_oracle_bounds.png",
+          "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+          "bytes": 133636,
+          "caption": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\noise_and_oracle_bounds.png",
+            "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+            "bytes": 133636
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+          "bytes": 63309,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\regional_uncertainty.png",
+            "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+            "bytes": 63309
+          }
+        },
+        {
+          "file": "transmittance_comparison.png",
+          "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+          "bytes": 63303,
+          "caption": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\transmittance_comparison.png",
+            "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+            "bytes": 63303
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\analysis_receipt.json",
+        "sha256": "748956a0ee62e88ded304e9db387225a54567b23b9ce12a02908c9e31dac8559",
+        "bytes": 104236
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\summary.json",
+        "sha256": "0d259d06405e1c09ca050ed4fd5a024c2a11809ea9f236ecbcb19c94dade673f",
+        "bytes": 272177
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_g0",
+      "category": "stage2-scattering",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "84ad0b2222547a068dd613dd67a5c26021e61346fbc5fb585168b13201e5f1b3",
+          "bytes": 100856,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\convergence.png",
+            "sha256": "84ad0b2222547a068dd613dd67a5c26021e61346fbc5fb585168b13201e5f1b3",
+            "bytes": 100856
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "0dcb841ea71caad8c1336327d748b8be551f8189a7e5ee9e4a69c414556c99b6",
+          "bytes": 21642,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\geometry_masks.png",
+            "sha256": "0dcb841ea71caad8c1336327d748b8be551f8189a7e5ee9e4a69c414556c99b6",
+            "bytes": 21642
+          }
+        },
+        {
+          "file": "noise_stddev_rgb_y.png",
+          "sha256": "27e8fce48682ab38efc8558b61125bfc6b8bdd582a7816794e557a84901fd28e",
+          "bytes": 171420,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\noise_stddev_rgb_y.png",
+            "sha256": "27e8fce48682ab38efc8558b61125bfc6b8bdd582a7816794e557a84901fd28e",
+            "bytes": 171420
+          }
+        },
+        {
+          "file": "normalized_radiance.png",
+          "sha256": "6e52364eb972c1344d1c0b3edb36c1ed0a112e045429e4f80fad1be5df8a2eb1",
+          "bytes": 66190,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\normalized_radiance.png",
+            "sha256": "6e52364eb972c1344d1c0b3edb36c1ed0a112e045429e4f80fad1be5df8a2eb1",
+            "bytes": 66190
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "48530335d5308a59111eb282c7933d49d994db3782cf803070bbd7dfad479f54",
+          "bytes": 114749,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\regional_uncertainty.png",
+            "sha256": "48530335d5308a59111eb282c7933d49d994db3782cf803070bbd7dfad479f54",
+            "bytes": 114749
+          }
+        },
+        {
+          "file": "signed_residual_rgb_y.png",
+          "sha256": "81eb50c5cacf9b81e697ca7b2f4c3ffc8e21b90a6943d4761b7373b6a1917bfc",
+          "bytes": 93276,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\signed_residual_rgb_y.png",
+            "sha256": "81eb50c5cacf9b81e697ca7b2f4c3ffc8e21b90a6943d4761b7373b6a1917bfc",
+            "bytes": 93276
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\analysis_receipt.json",
+        "sha256": "1f5596faf5e9e705461e7df62a2ef098d1729b6ac14b2826e33632b11ee011de",
+        "bytes": 257268
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_constant_scatter_g0\\summary.json",
+        "sha256": "87101bc9379a555689b31790631986043f84a05edbaf9d426982e1ea8619f91b",
+        "bytes": 416237
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+      "category": "stage2-scattering",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+          "bytes": 109676,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\convergence.png",
+            "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+            "bytes": 109676
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+          "bytes": 22287,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\geometry_masks.png",
+            "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+            "bytes": 22287
+          }
+        },
+        {
+          "file": "noise_stddev_rgb_y.png",
+          "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+          "bytes": 146912,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\noise_stddev_rgb_y.png",
+            "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+            "bytes": 146912
+          }
+        },
+        {
+          "file": "normalized_radiance.png",
+          "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+          "bytes": 58690,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\normalized_radiance.png",
+            "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+            "bytes": 58690
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+          "bytes": 114919,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\regional_uncertainty.png",
+            "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+            "bytes": 114919
+          }
+        },
+        {
+          "file": "signed_residual_rgb_y.png",
+          "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+          "bytes": 79811,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\signed_residual_rgb_y.png",
+            "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+            "bytes": 79811
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\analysis_receipt.json",
+        "sha256": "d60fb42432a864d7616434052dfc0178c89684abc127eb96886f1455a4ee9414",
+        "bytes": 257248
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gp05\\summary.json",
+        "sha256": "4b646ef3099753ec841f2b2ee80ca38d1329f68efd8e740d368f5623b44daab0",
+        "bytes": 408820
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gm05",
+      "category": "stage2-scattering",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "3c790a1dc67dac636ee8e38ead67450c5d6b91c6f485fed46d04964b919da1c0",
+          "bytes": 105485,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\convergence.png",
+            "sha256": "3c790a1dc67dac636ee8e38ead67450c5d6b91c6f485fed46d04964b919da1c0",
+            "bytes": 105485
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+          "bytes": 22287,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\geometry_masks.png",
+            "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+            "bytes": 22287
+          }
+        },
+        {
+          "file": "noise_stddev_rgb_y.png",
+          "sha256": "0ef04253f108c74824feee005a52b772d684357a03b2ce114965e157774591c7",
+          "bytes": 145270,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\noise_stddev_rgb_y.png",
+            "sha256": "0ef04253f108c74824feee005a52b772d684357a03b2ce114965e157774591c7",
+            "bytes": 145270
+          }
+        },
+        {
+          "file": "normalized_radiance.png",
+          "sha256": "6356c8840e70a4782d209f7f4b2b268c6fd62af84f6fc55b82cd5d4c99232080",
+          "bytes": 56823,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\normalized_radiance.png",
+            "sha256": "6356c8840e70a4782d209f7f4b2b268c6fd62af84f6fc55b82cd5d4c99232080",
+            "bytes": 56823
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "e30b72271acc97182147d35848e483769eed5a9ccef8df09a1981dc657d5be2b",
+          "bytes": 132308,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\regional_uncertainty.png",
+            "sha256": "e30b72271acc97182147d35848e483769eed5a9ccef8df09a1981dc657d5be2b",
+            "bytes": 132308
+          }
+        },
+        {
+          "file": "signed_residual_rgb_y.png",
+          "sha256": "748b330cbd2eddb442c9ce9cf3b26e160fc925f3ab5f6ec0c544550bb20d86ef",
+          "bytes": 82104,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\signed_residual_rgb_y.png",
+            "sha256": "748b330cbd2eddb442c9ce9cf3b26e160fc925f3ab5f6ec0c544550bb20d86ef",
+            "bytes": 82104
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\analysis_receipt.json",
+        "sha256": "39914edfeaad80cfb0e11c31cfbdf76122dd3093d794b564fd4a5119c9868a58",
+        "bytes": 257248
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_ramp_scatter_gm05\\summary.json",
+        "sha256": "6b81a1f1830401e7a543bd210ac01935028d73a269361e1dd26704fd0b980007",
+        "bytes": 414539
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_g0",
+      "category": "stage2-scattering",
+      "reference": "PBRT v4",
+      "radiance_status": "INCONCLUSIVE",
+      "variance_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "0780cf065806c598b802e096dabb7a32734d6142b90bc2b636a8415b1f93f2ee",
+          "bytes": 102171,
+          "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\convergence.png",
+            "sha256": "0780cf065806c598b802e096dabb7a32734d6142b90bc2b636a8415b1f93f2ee",
+            "bytes": 102171
+          }
+        },
+        {
+          "file": "geometry_masks.png",
+          "sha256": "1242ca434bb5293a0cc8c4acd087acf9f6526ff809f37f3ed511de215860320a",
+          "bytes": 22397,
+          "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\geometry_masks.png",
+            "sha256": "1242ca434bb5293a0cc8c4acd087acf9f6526ff809f37f3ed511de215860320a",
+            "bytes": 22397
+          }
+        },
+        {
+          "file": "noise_stddev_rgb_y.png",
+          "sha256": "7a519e27f344e65c00657852ceca75ad6e33dbf3e18b9d204d4981550d5d2d01",
+          "bytes": 100179,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\noise_stddev_rgb_y.png",
+            "sha256": "7a519e27f344e65c00657852ceca75ad6e33dbf3e18b9d204d4981550d5d2d01",
+            "bytes": 100179
+          }
+        },
+        {
+          "file": "normalized_radiance.png",
+          "sha256": "32b38034f320fccd0b0a7e40165b45eab5ad32591619a163cdb15ca38a9751d6",
+          "bytes": 43073,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\normalized_radiance.png",
+            "sha256": "32b38034f320fccd0b0a7e40165b45eab5ad32591619a163cdb15ca38a9751d6",
+            "bytes": 43073
+          }
+        },
+        {
+          "file": "regional_uncertainty.png",
+          "sha256": "3c9cd085d31ac524b2245507ac38ce2cd62fc1716ae7f912bd81dd1e82cfc355",
+          "bytes": 131955,
+          "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\regional_uncertainty.png",
+            "sha256": "3c9cd085d31ac524b2245507ac38ce2cd62fc1716ae7f912bd81dd1e82cfc355",
+            "bytes": 131955
+          }
+        },
+        {
+          "file": "signed_residual_rgb_y.png",
+          "sha256": "f57f0a64a164a3b611f7e58fbc72855ba9ce30a83f4e61b69c209c174612af42",
+          "bytes": 53472,
+          "caption": "1024 SPP ×4seed 산란 비교입니다. 각 renderer의 matched vacuum으로 정규화했으며 그림 제목·범례의 선형 평균/잔차/표본 표준편차를 구분합니다. 전체 Stage2는 경계 결함 때문에 미통과입니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\signed_residual_rgb_y.png",
+            "sha256": "f57f0a64a164a3b611f7e58fbc72855ba9ce30a83f4e61b69c209c174612af42",
+            "bytes": 53472
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\analysis_receipt.json",
+        "sha256": "669aa6625c6473b317839f4fe4c8d1f57a07baba292fca5fbb04b0c3219e6985",
+        "bytes": 257237
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scattering_analysis_final\\gallery_medium_stage2_smoke_scatter_g0\\summary.json",
+        "sha256": "21f623407e20b86232a8a29855bd7d3ee77e8858dce1e67d3cdae441ce51226d",
+        "bytes": 412186
+      },
+      "stage_pass": false
+    },
+    {
+      "scene": "boundary_tangent_defect",
+      "category": "stage2-boundary",
+      "reference": "PBRT vacuum + actual DXR diagnostics",
+      "radiance_status": "FAIL_DETERMINISTIC_VACUUM",
+      "variance_status": "NOT_A_STOCHASTIC_VARIANCE_FAILURE",
+      "source_contract_status": "CONFIRMED_ENGINE_EDGE_CASE",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_approval_scope": "New Stage2 images await explicit user review",
+      "note": "결정론적 진공 대조군 FAIL. exact-edge tangent가 진입 없이 EXIT로 관측되며 경로가 종료됩니다. query-only 수정 두 개는 음성 대조군을 통과하지 못해 적용하지 않았습니다. 진단 그림과 원자료를 그대로 보존합니다.",
+      "images": [
+        {
+          "file": "tangent_diagnostic.png",
+          "sha256": "8b76853bdc4559fe20f5a19b3812ffe80506acda974cd374066fc9767cca5075",
+          "bytes": 98656,
+          "caption": "실제 GPU 캡처 광선의 경계 접촉과 거부한 수정의 ±1ULP 반례입니다. 엔진 수정 완료 그림이 아닙니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\tangent_diagnostic.png",
+            "sha256": "8b76853bdc4559fe20f5a19b3812ffe80506acda974cd374066fc9767cca5075",
+            "bytes": 98656
+          }
+        },
+        {
+          "file": "vacuum_sample_loss.png",
+          "sha256": "d757933c1134d2a471174675fd8618e32507b9f35ac98226efa91164c53f0acd",
+          "bytes": 150156,
+          "caption": "단일 sample 손실을4096배 확대한 위치도입니다. 네 seed의15개 pixel/seed에서 각각1/SPP 손실이 있습니다.",
+          "source": {
+            "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\vacuum_sample_loss.png",
+            "sha256": "d757933c1134d2a471174675fd8618e32507b9f35ac98226efa91164c53f0acd",
+            "bytes": 150156
+          }
+        }
+      ],
+      "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2",
+      "source_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\analysis_receipt.json",
+        "sha256": "b6dcadc8d539da6e7b471066076ec56d2db7cdcf169f02512078c84109241557",
+        "bytes": 4087
+      },
+      "source_summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\boundary_defect_report_v2\\summary.json",
+        "sha256": "32fbb5592680082cab6c9cdd0f6132e3bf5dc3cd2066bfa4b217f4c05d2c2563",
+        "bytes": 5206
+      },
+      "stage_pass": false
     }
   ],
-  "authorization": "User explicitly requested GitHub publication even when validation does not pass."
+  "authorization": "User explicitly requested GitHub publication even when validation does not pass.",
+  "visual_acceptance": {
+    "approved_images": 309,
+    "approval_receipts": [
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_277.json",
+        "sha256": "f08ec4ca5e575009c8433dbd6e35e5e3c9c4ab176983cb4f2841f736679f0800",
+        "bytes": 72157
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_sphere_fix.json",
+        "sha256": "315226e7f33ae80755fff5258d0215fb4d1e97e1768948b241324b60b541fcf2",
+        "bytes": 9716
+      }
+    ],
+    "superseded_unapproved_images": 24,
+    "new_stage2_pending_images": 38
+  },
+  "stage2_input": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\publication_input_v2.json",
+    "sha256": "c8764dd2b92b71022a0d279250d42af6d3c59fd39a470902b0d1b66e580be56f",
+    "bytes": 18492
+  },
+  "stage2_documents": [
+    {
+      "file": "stage2-report.md",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\final_report_v2.md",
+        "sha256": "c576d75f5f92d3eba99f96dc33bb10d8213c86dc3b6752fa7014178a306c92d5",
+        "bytes": 5411
+      }
+    },
+    {
+      "file": "stage2-summary.json",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\final_summary_v2.json",
+        "sha256": "30984c2da33eac6d59fc8ea886db5b535b328e53d55ec49b66f9a766a05c91d2",
+        "bytes": 21375
+      }
+    },
+    {
+      "file": "stage2-timings.md",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\publication_documents_v2\\stage2-timings.md",
+        "sha256": "921cc7259a989a6857cd63a440973ca60cba3ea0ddb3f10707f87270f1ff13f4",
+        "bytes": 4566
+      }
+    },
+    {
+      "file": "stage2-timings.json",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\stage2_timings.json",
+        "sha256": "62ee16b4a978037de21f8487b7a113df1c0fb959acdd01b9d42a70f7a634477f",
+        "bytes": 413785
+      }
+    },
+    {
+      "file": "stage2-engine-time-audit.md",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\publication_documents_v2\\stage2-engine-time-audit.md",
+        "sha256": "8b878a83a344a8b8a731468a0276d929305340e891945def1578a8e436d018c8",
+        "bytes": 4160
+      }
+    },
+    {
+      "file": "stage2-engine-time-audit.json",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\engine_timing_scope_audit\\timing_scope_audit.json",
+        "sha256": "189858583779517db76fab88121cbe72d5f3b1ca8c1e09b1b19fa8c63e283470",
+        "bytes": 84050
+      }
+    },
+    {
+      "file": "stage2-engine-depth32-plan.json",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\engine_depth32_plan.json",
+        "sha256": "735244a026b5fceaf43be15b209fde077cb8e0c0c927a182cee9ebfbf30cf0fd",
+        "bytes": 8431
+      }
+    },
+    {
+      "file": "stage2-reference-depth32-plan.json",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\reference_depth32_plan.json",
+        "sha256": "37a29c30aee7eebc21d097c01c3e10254cf364c0aec909d6d2e0f1ddde0322de",
+        "bytes": 8236
+      }
+    }
+  ]
 }

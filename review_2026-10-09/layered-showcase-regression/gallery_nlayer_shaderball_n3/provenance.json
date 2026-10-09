@@ -49,5 +49,9 @@
     }
   ],
   "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_shaderball_n3/analysis_nlayer_representative",
-  "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS"
+  "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS",
+  "visual_approved_images": 0,
+  "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+  "superseded_diagnostic": true,
+  "visual_approval_note": "Preserved superseded baseline; not included in the new32-image sphere-fix approval"
 }

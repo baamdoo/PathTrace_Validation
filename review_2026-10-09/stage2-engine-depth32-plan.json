@@ -1,0 +1,196 @@
+{
+  "frozen_inputs": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\engine_depth32_inputs.json",
+    "sha256": "6e9a8296935eb187291fdf03c77ad78d64a1300a4fc930264810b18e00822568",
+    "bytes": 76330
+  },
+  "protocol": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scatter_protocol.json",
+    "sha256": "4fcdd9d14f3f09b060491e1035d219120b200baa8463c9894b090b7601f16b02",
+    "bytes": 3080040
+  },
+  "parent_reference_plan": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\reference_depth32_plan.json",
+    "sha256": "37a29c30aee7eebc21d097c01c3e10254cf364c0aec909d6d2e0f1ddde0322de",
+    "bytes": 8236
+  },
+  "known_issue": "Exact geometric boundary tangent may fail strict air-set exit; both proposed query-only repairs rejected by actual GPU negative controls. Production unchanged.",
+  "timing_limitation": "May overlap GPU diagnostic preparation and CPU analysis. Not an isolated performance comparison.",
+  "jobs": [
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_g0",
+      "kind": "scatter",
+      "vacuum": false,
+      "vacuum_scene": "gallery_medium_stage2_constant_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_constant_scatter_g0\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_constant_scatter_g0\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_constant_scatter_g0\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_vacuum",
+      "kind": "scatter",
+      "vacuum": true,
+      "vacuum_scene": "gallery_medium_stage2_constant_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_constant_scatter_vacuum\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_constant_scatter_vacuum\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_constant_scatter_vacuum\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gm05",
+      "kind": "scatter",
+      "vacuum": false,
+      "vacuum_scene": "gallery_medium_stage2_ramp_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_gm05\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_gm05\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_ramp_scatter_gm05\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+      "kind": "scatter",
+      "vacuum": false,
+      "vacuum_scene": "gallery_medium_stage2_ramp_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_gp05\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_gp05\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_ramp_scatter_gp05\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_vacuum",
+      "kind": "scatter",
+      "vacuum": true,
+      "vacuum_scene": "gallery_medium_stage2_ramp_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_vacuum\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_ramp_scatter_vacuum\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_ramp_scatter_vacuum\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_g0",
+      "kind": "scatter",
+      "vacuum": false,
+      "vacuum_scene": "gallery_medium_stage2_smoke_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_smoke_scatter_g0\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_smoke_scatter_g0\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_smoke_scatter_g0\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_vacuum",
+      "kind": "scatter",
+      "vacuum": true,
+      "vacuum_scene": "gallery_medium_stage2_smoke_scatter_vacuum",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_smoke_scatter_vacuum\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_prepared_depth32\\gallery_medium_stage2_smoke_scatter_vacuum\\scene.pbrt",
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\extended\\engine_depth32\\gallery_medium_stage2_smoke_scatter_vacuum\\engine",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1
+    }
+  ]
+}

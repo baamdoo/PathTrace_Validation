@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "artifact_qa": "complete",
+  "radiance": "INCONCLUSIVE",
+  "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+  "stage_pass": false,
+  "scene": "gallery_medium_stage2_constant_absorption_128",
+  "analysis_kind": "matched_absorption_oracle_and_vacuum",
+  "files": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\combined_absorption_replicates.json",
+      "sha256": "fc7f3405f0b4687016f43a4bdb8e714816aa93ec51eb094c50b270acdfac1c85",
+      "bytes": 15368
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\convergence.png",
+      "sha256": "0585bd3e99376f5d2bb653b4c76dd762558cd0eb6f9ea528f0d27cb79cfd314f",
+      "bytes": 152908
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\geometry_masks.png",
+      "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+      "bytes": 33042
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\linear_residuals.png",
+      "sha256": "db7a86917da68c81018fada4cb2967e939bbc7e3aa16b49d97c926cbbe9d1fdc",
+      "bytes": 153779
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\mean_variance_float64.npz",
+      "sha256": "0ce7c78f246e4b9fd1eb9ac9efe98c2e987c1afb3efa012b15588027677d0395",
+      "bytes": 1275562
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\noise_and_oracle_bounds.png",
+      "sha256": "e8bdea734fefd7163939d0a71eba028a47bd3fdc21cf432852b199aae5745954",
+      "bytes": 146197
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\regional_uncertainty.png",
+      "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+      "bytes": 63050
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\replicate_report.json",
+      "sha256": "25bc05e1ccdd46f68ce20054f558d811cc68a22ab2822d834231e60f2ea0707e",
+      "bytes": 109014
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\summary.json",
+      "sha256": "b9044c264280ba2023895c2e9b829b14fc2434b7249310e45d48083e5555f592",
+      "bytes": 198325
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\analysis\\transmittance_comparison.png",
+      "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+      "bytes": 66330
+    }
+  ],
+  "input_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_absorption.py",
+      "sha256": "f22aec7bbaa33e863c5881a3d324f7b18d71bdc30a5a3d7ae92c6b429a9550ec",
+      "bytes": 22946
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_analysis_protocol.json",
+      "sha256": "9550c2d210296b1304f802c607d05234dcf2c05d9fe925251475385fb2c0e0c4",
+      "bytes": 10798
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\validate_pathtracer_replicates.py",
+      "sha256": "be165fbfa3aa6fef9910f6f2c1b667e57f32d5f32ee71d390cb4dac220d0bb59",
+      "bytes": 26460
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant128_plan.json",
+      "sha256": "28ef670ca88a64664916f39c2aa3c89abd2307deca1d04de0cb081db1825faa1",
+      "bytes": 3748
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant128_queue.json",
+      "sha256": "296be96931e084dd5e1ca86525a101ef2b5050ccbc52c324e730c3ea84ff4458",
+      "bytes": 7482
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant128_inputs.json",
+      "sha256": "1cc23607868b8a644d3fec151c7ec88797fa801a4f208c3bc070e96d99644871",
+      "bytes": 34080
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\receipt.json",
+      "sha256": "86486eea1438dc4bbb2fc710027284a33a30042ce22d00c2e28c24b5fcfef8a0",
+      "bytes": 10496
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage2_constant_absorption_128\\contract.json",
+      "sha256": "4f8780e54f15a7fd6b937a457262bfdeca0b1bc7f7feb1d732738e37e6fa06f5",
+      "bytes": 4746
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_256\\receipt.json",
+      "sha256": "0f19ab967cf71d5f791cae4082a429592e623c23992fd4a54ed03eb35cb9fca2",
+      "bytes": 2707
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "532981cfd1ac37f92508146decc46bb23861810524aaae59f3e1534b60e6be06",
+      "bytes": 14831
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "e131721ccbc03e9bd9e5a44b6a3b0dffd0bfbd95c1de50cd86e094f630408f8f",
+      "bytes": 2711
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "3686038cfc2615e1cee13d33c820f0ee01cc3e31593ae79547fda1f9d2b51446",
+      "bytes": 18342
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_4096\\receipt.json",
+      "sha256": "42663575ba959b44ee256688a3715487d98107b326bdf96c5935717cc9c36c35",
+      "bytes": 2711
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_11\\spp_4096\\radiance.exr",
+      "sha256": "4e8c20029a350bf6d86c7b0987280c97d0e00f51bf658e38d3542f646548bf8a",
+      "bytes": 20645
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_256\\receipt.json",
+      "sha256": "e183fc2a18f4284b4e543240a0a448dcddd6854121b13190b168aa98f24bc30a",
+      "bytes": 2707
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "1ccebb7f784751f48ec131a997b89adb8274ca77b5e1bf41b6030144d36a39ef",
+      "bytes": 14873
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "39fef979115b1edc9ae4d83642c13818e1c8763a117aabc5c65a54a1a61bbebd",
+      "bytes": 2710
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "7523d337119ad7565a9c037c08ee0e84325f73d841d8f85b00c2f03edb0a6dfa",
+      "bytes": 18317
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_4096\\receipt.json",
+      "sha256": "6cc6d6d06524c39e822d5a2957c41b0887550bf3baa6a77569d3a91d5b0d7dc5",
+      "bytes": 2709
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_29\\spp_4096\\radiance.exr",
+      "sha256": "4ef54e9ddb70b27dbd8bd7b825ce80f2494414b260165ecdca2f526457128bc6",
+      "bytes": 20591
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_256\\receipt.json",
+      "sha256": "29880cc37bbf2c53aa6630f3f70310f44f8ffe50501fbc9c5e118b93bba1b850",
+      "bytes": 2707
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "c114f923e54f51d4e337bece3d9dfe67368b7ef75c95b1f71b089e7fd83ed90f",
+      "bytes": 14788
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "97809498a0b42d406449b45adea829cf0985f511f2ef599720126da73128d789",
+      "bytes": 2713
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "f1b6e2ae1ff1f29514eb01c099b1a268a7ad70df07b716aabbf173905930820e",
+      "bytes": 18334
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_4096\\receipt.json",
+      "sha256": "4d4e09d86a54410eb6520b002f1b3fcf7eb92b9079c402070ae0dca165cf9ad9",
+      "bytes": 2711
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_47\\spp_4096\\radiance.exr",
+      "sha256": "5774babe9f7121f7cc25ae2e2996fcf05dcf944fb8c9ed4cc36055ca50a4ecc7",
+      "bytes": 20458
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_256\\receipt.json",
+      "sha256": "c6a4ec08e7e4489661b0ffea8aa75808b9109955d3e73790c22f1cba2dca4a84",
+      "bytes": 2707
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "3a66b3ec0e4ee79e975dbc8bfd003f189cda2d90f1b29458d55c20af26b029bd",
+      "bytes": 14753
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "93ddb98160c93e4ee691e8855e8450f2005954d80aa1065ee4418d410180a0a7",
+      "bytes": 2714
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "7ee425e89c19ccb310dfb6c89859f27820616eee353225a0df5681b4b02dccd2",
+      "bytes": 18411
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_4096\\receipt.json",
+      "sha256": "2cdcea4b83a9a38e29334b108e2eae35cc7bd8c8f05242a5c5440c8bb97b415f",
+      "bytes": 2712
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\engine\\seed_83\\spp_4096\\radiance.exr",
+      "sha256": "6a655e19d649920c29a8231346e0f59e05d851ff5938ee11f7fab0dae286386b",
+      "bytes": 20710
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\receipt.json",
+      "sha256": "b6998199f36572482b5afeda9ad26bf1d821bd464c85755771c60665203e5988",
+      "bytes": 10383
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage2_constant_vacuum_128\\contract.json",
+      "sha256": "5b9101561d032c192484d779b383b9feb223ba050c14cf09834879871df6095b",
+      "bytes": 4733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_256\\receipt.json",
+      "sha256": "a4aba3a8f576470c0cf8bd621719bafc71123d2b12719cce69be27005b9d57be",
+      "bytes": 2636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "564c71367934786397c3c609bfc705122ea31ddba5e73772f4d7c1c981d31ccc",
+      "bytes": 2640
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_4096\\receipt.json",
+      "sha256": "c8d56301b3aa3a218b7c3755adb185816a88f96163b919e82059370e0119a849",
+      "bytes": 2685
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_11\\spp_4096\\radiance.exr",
+      "sha256": "db8ac55dd8d27f958eeff39a764d8d0c8fdd67605d5ea2b50167e4152ebf6d92",
+      "bytes": 880
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_256\\receipt.json",
+      "sha256": "6f335aefd7d1ee1398f589a2b798e22c0be84a87c76d2bf983127900e75c3c87",
+      "bytes": 2636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "42b61fb9cdfa5ee8c8c6367964605ed02c5acd483bf1e9dd1106d6d75507e455",
+      "bytes": 2687
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "df972adedd00febbdfd7d61ca082bf6d8844bf836da7dc27e7331470d2de18b7",
+      "bytes": 877
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_4096\\receipt.json",
+      "sha256": "20aebffbfb0594edfe102a1c15bf55198ea7e044fa521e6cc6ae1a16e13e3e1c",
+      "bytes": 2685
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_29\\spp_4096\\radiance.exr",
+      "sha256": "95c18c3f076a471b4ae2d9dc97099c47020d883da3c9d1279552db02acb16d14",
+      "bytes": 887
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_256\\receipt.json",
+      "sha256": "f29b63b77e9348939cc026faa8a1bdb67e8310c3855c192989a1aa97c541e606",
+      "bytes": 2636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "6524f73171298f37d05c1d02420b7871a50781e9bc9141310f860dbafb29dfd9",
+      "bytes": 2687
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "0cc0299316371a639cf75efb71ec0ae3dc9c47fc493de0f9ee22704915dc1826",
+      "bytes": 876
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_4096\\receipt.json",
+      "sha256": "8a9f1bcfe7c27f14a279f3c97b8e68703440aebbc4bca5702b136a5f018dc8b7",
+      "bytes": 2680
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_47\\spp_4096\\radiance.exr",
+      "sha256": "4c4908f19015383eef48d9238d04cfe655b815db066148862daff85dce9ff2e2",
+      "bytes": 898
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_256\\receipt.json",
+      "sha256": "e85d958939a525b4110fc42ee7323bbdf2b845df9429b55836433d529d8e322f",
+      "bytes": 2636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "a860abc5c7596a042cfdce08596cd82dc33ec62f6270ec3a282c9e2ead5d0a6d",
+      "bytes": 2643
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_4096\\receipt.json",
+      "sha256": "fb0e6ef703c8cfeba9180dbc4dce768bdd95d375d3ea9ba17fa586f2d16c156c",
+      "bytes": 2686
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\engine\\seed_83\\spp_4096\\radiance.exr",
+      "sha256": "699cfd0d9acafc5088bb035deb6ed087f66a423a1c4075fcf9ae2f1e1a899079",
+      "bytes": 904
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\receipt.json",
+      "sha256": "7e7b17f6ba6c81c7a34ac96ac0dfeb22355b5db1cd705b929ceddc2b75ef02b2",
+      "bytes": 9300
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_256\\receipt.json",
+      "sha256": "6df687cb505ede2491cf8556fa7b4d4f037113ed771b346a4f826698e7a3128e",
+      "bytes": 1671
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "3f82905b0feafc557f6c27a86ebcacb1eaf87ec33eb51246b17ab31a0fb2eb0b",
+      "bytes": 85309
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "4cffc0ec532faa88babffb829f957e1dd9f7b201d66335efd34adee2b2241b57",
+      "bytes": 1677
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "f9cc0f7aecaa628452dd7c784f44eec938fea7e2628a0787bfa14e3324a7b38f",
+      "bytes": 92296
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_4096\\receipt.json",
+      "sha256": "192184f5781a4c2d64ec7ad41b3c475c86c73fa2a868245571ddede6869bfe88",
+      "bytes": 1678
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_11\\spp_4096\\radiance.exr",
+      "sha256": "ff5511ce2a596d093cd9d3517abd6869ad121da7815e7cc4eb256d8dc064af18",
+      "bytes": 95632
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_256\\receipt.json",
+      "sha256": "cc48ba6c4e3ecf0529dc9968d88ac8b22075fc5169f9e979f264f91b796f0109",
+      "bytes": 1672
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "8e56a9d57f5bd77c9bc01bced4da861ae7dbb2d9b11a30b9d303fb7dfda53c47",
+      "bytes": 85302
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "5589cfff4d6b4d7ea8da2703dc51225c3ceddcf8e1df19ca3bed17742409adf4",
+      "bytes": 1678
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "85e6bd851df92f036e6ece88018dc7e052b8033c1d47c3447be3d70e847cdc18",
+      "bytes": 92638
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_4096\\receipt.json",
+      "sha256": "4f5016c079ce83f9b47c1f1cb9e57c1b9130cd8d0eb2e25b15f4b902b4d9d4f1",
+      "bytes": 1677
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_29\\spp_4096\\radiance.exr",
+      "sha256": "7119b02f9a25bd0cf1c7ec41cac4bd27def39621b48a7f297a625c7d4c1c5984",
+      "bytes": 95388
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_256\\receipt.json",
+      "sha256": "5d3b2e60c89fc98f96ef57273560333b8f5db0b873c972b1e27118f9c00eee8a",
+      "bytes": 1671
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "f3b7a77b658a181346adf1fdca9acf33639142608970626606e6db6884c3a9d1",
+      "bytes": 85585
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "9b96f83fad27a2b27d08fc3021c4aba2a101c71e38fe0efd22944c8146860642",
+      "bytes": 1676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "184186583d0262c61358f0c6b565fb26842a931a4388da259fcaefdfa4dfa6be",
+      "bytes": 92468
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_4096\\receipt.json",
+      "sha256": "c4fb283f6c5c62e25c0ae356d5b8c478a998aa7ee004fe92de9a410e873af3f3",
+      "bytes": 1677
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_47\\spp_4096\\radiance.exr",
+      "sha256": "f3084c89294dc890a0d2a87102db132a887f16b002639467d19adabab4cf55d4",
+      "bytes": 95490
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_256\\receipt.json",
+      "sha256": "b4411ccf83eac029edaaa38e76471623b9e8a3e1fdf50b4e69ea47908772d44c",
+      "bytes": 1671
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "685f4492a2b40fb04b90119acd427372dcec5d71302fc7e532e12458d8cfb858",
+      "bytes": 84874
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "0de783a3c4d1a9e6969d8b15aaca84648bfa92e12833fc9ca9dfb2eb921c8c24",
+      "bytes": 1678
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "27868ac6753e09098093c2ab452908c8eeba35c6b75aaf64971019989585d04a",
+      "bytes": 92536
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_4096\\receipt.json",
+      "sha256": "5cf20cc3027acc0be98a9c4f1fe4ce4c24bf4ebe48bff9e0291399620a9d8818",
+      "bytes": 1678
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\absorption\\pbrt\\seed_83\\spp_4096\\radiance.exr",
+      "sha256": "cee3457c0d61165e02fdf1c6083c16719419f78f1ee454f14fe3f755e2c3563f",
+      "bytes": 95716
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\receipt.json",
+      "sha256": "ed17e82a1206b977a94ba368cf1e2cb398750691fcf1b9d60e2ef72dbafc7ac7",
+      "bytes": 9173
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_256\\receipt.json",
+      "sha256": "ca8afc2ae46b02322b1555cba7cf97501c77f904dd56b1534133592eb143e428",
+      "bytes": 1655
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "6d392a686ed2255e8171adea8f4c862393ee1d184bfa684ed9ada9ffef0da2de",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "668f671cb88175f74ab4cb67fca65724087f2d50ddc5959f1f3e5167046d15ff",
+      "bytes": 1658
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "74b3701fbf99f2c00ff874379ad8351a224835f684d2470a5543b72fd975c79d",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_4096\\receipt.json",
+      "sha256": "0fad8ef6ed51fa073edc24c318e5e872c61eec04f5e18a67b03ec04f2d238b7c",
+      "bytes": 1659
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_11\\spp_4096\\radiance.exr",
+      "sha256": "c7eec900c66d3482fdb9516a1beb311dab9ebda09f102bf6d02e6a6f70cba51c",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_256\\receipt.json",
+      "sha256": "db594a73eae1a0d383fd3f4000e38fd077f6e6f4e747d943e1f4c7a2dde3fc78",
+      "bytes": 1655
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "99ce714ca0d94ccebe3886a2467603a488905805c15689a8ee955601bff4693e",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "07265e3b324d83cf1f94e838b9cb55fd9fb887158378deccbaf0d0d588eadb28",
+      "bytes": 1658
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "6e27f1a0d8242f658635ef2af97beb908b9dbefae9ae1b156384aa8f1584fc9d",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_4096\\receipt.json",
+      "sha256": "2cf4b7a4851512d7c430671366cacc1a248a50cbe25c7d81280d61fe18e48d32",
+      "bytes": 1659
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_29\\spp_4096\\radiance.exr",
+      "sha256": "3703aae0bcbd65315cd6ec3690fe28fa504d0f3f659af02dff6cc4734a9564b9",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_256\\receipt.json",
+      "sha256": "a925b640192bc4177b8ce895a1b3cefd9fac3f50f729088127e5783e0454a285",
+      "bytes": 1655
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "5d49e1fde0dd781e02e0e7d8f35a0babcb009ebdb7358e3cd6d7354ddd0e079a",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "8f97d4e364814db7d7e6e05901eae59a4e216625d1bf941274ead10cbd1b3153",
+      "bytes": 1659
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "6c29d51e8fdbb9e820137ab681ceedec2dc4030a66e0c3ba2e2e6126df45b7c6",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_4096\\receipt.json",
+      "sha256": "c17540bfc7864d602d46abca5060f8334a6f3615c98261e7e8405028cd48d940",
+      "bytes": 1659
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_47\\spp_4096\\radiance.exr",
+      "sha256": "bca7b4a8f0797bb2f2757854671edded4dd92b23045655eec32cc310c28f1a61",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_256\\receipt.json",
+      "sha256": "703bf5857771342488b7dbee301f3a85029eea49b3ab49b054972713ccb3124d",
+      "bytes": 1655
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "33b0f054e1fc7fd63de5ce60e9dd7c7ff84f224ab20d353b01b000ace05ef570",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "d03c8e88ea0ed0c50b3c885c3788650feb4deac1df8570acd1ca373bdbf2f5f4",
+      "bytes": 1658
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "29217c9e9060feeebdee37039c37b821d1bca557132e3dc499c43d2bf90db965",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_4096\\receipt.json",
+      "sha256": "ccc2b44c0aca19a0a2c0c546a2b2fbc630f4d7b973bed65a1f2239ac097887a9",
+      "bytes": 1659
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\constant_absorption128\\vacuum\\pbrt\\seed_83\\spp_4096\\radiance.exr",
+      "sha256": "bb4c30e264972bb1aa60667f2f94151ab1a62e6474ab06dc3dc996630c964835",
+      "bytes": 2840
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\oracle_constant128\\receipt.json",
+      "sha256": "21e26cdbf607c2f3e78c7245c37bf087d7459f39ec1909711330dfde32f14885",
+      "bytes": 5628
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\volume_fixtures\\fixtures.json",
+      "sha256": "c58726a2816e021d41efc982e1528398d065e4d0e4431e2582e90b45db3fdedf",
+      "bytes": 2250
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_absorption_oracle.py",
+      "sha256": "487321300fde20617b8ab4113648e51db44f27c0b2fc99faa6a96f027eb8f437",
+      "bytes": 13984
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\oracle_constant128\\oracle.npz",
+      "sha256": "b1b9ce9d2cbd3d4fb0fb5ab36a3931a4d8be300ee3125ef5337f3d10d568efe7",
+      "bytes": 98998
+    }
+  ]
+}

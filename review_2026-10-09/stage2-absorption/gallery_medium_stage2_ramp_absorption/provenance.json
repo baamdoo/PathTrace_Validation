@@ -1,0 +1,92 @@
+{
+  "scene": "gallery_medium_stage2_ramp_absorption",
+  "category": "stage2-absorption",
+  "reference": "PBRT v4",
+  "radiance_status": "INCONCLUSIVE",
+  "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+  "source_contract_status": "OPEN",
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "note": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+      "bytes": 143305,
+      "caption": "동일 seed의 SPP checkpoint는 누적 prefix입니다. 독립 표본 수는4이며, 분산 감소와 평균 일치를 별도로 확인합니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\convergence.png",
+        "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+        "bytes": 143305
+      }
+    },
+    {
+      "file": "geometry_masks.png",
+      "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+      "bytes": 30397,
+      "caption": "영상 잔차를 보고 선택하지 않은 camera/boundary 기반의 고정 비교 영역입니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\geometry_masks.png",
+        "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+        "bytes": 30397
+      }
+    },
+    {
+      "file": "linear_residuals.png",
+      "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+      "bytes": 129990,
+      "caption": "선형 평균 영상의 잔차입니다. 오차를 보기 위한 컬러 스케일이며 display 밝기 차이로 해석하지 않습니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\linear_residuals.png",
+        "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+        "bytes": 129990
+      }
+    },
+    {
+      "file": "noise_and_oracle_bounds.png",
+      "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+      "bytes": 133636,
+      "caption": "독립 seed의 표본 노이즈와 CPU oracle 수치 오차 범위를 구분합니다. 축·범례의 수량과 공통 스케일을 확인하세요.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\noise_and_oracle_bounds.png",
+        "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+        "bytes": 133636
+      }
+    },
+    {
+      "file": "regional_uncertainty.png",
+      "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+      "bytes": 63309,
+      "caption": "기하로 미리 정한 영역의 RGB/휘도 평균과95% 불확실성입니다. 회색 허용범위 및 oracle의 수치 오차를 함께 봅니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\regional_uncertainty.png",
+        "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+        "bytes": 63309
+      }
+    },
+    {
+      "file": "transmittance_comparison.png",
+      "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+      "bytes": 63303,
+      "caption": "4096 SPP ×4seed 평균 투과율. 각 renderer의 medium/vacuum 비와 독립 CPU 적분 oracle을 같은 스케일로 비교합니다.",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\transmittance_comparison.png",
+        "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+        "bytes": 63303
+      }
+    }
+  ],
+  "source_analysis": "Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue",
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\analysis_receipt.json",
+    "sha256": "748956a0ee62e88ded304e9db387225a54567b23b9ce12a02908c9e31dac8559",
+    "bytes": 104236
+  },
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption\\analysis_with_known_issue\\summary.json",
+    "sha256": "0d259d06405e1c09ca050ed4fd5a024c2a11809ea9f236ecbcb19c94dade673f",
+    "bytes": 272177
+  },
+  "stage_pass": false
+}

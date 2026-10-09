@@ -1,3 +1,7 @@
+현재 사용자 육안 상태: **승인**. Radiance/variance의 역사적 판정은 바꾸지 않습니다.
+
+---
+
 # lambertian_sphere_scalar
 
 **Radiance: OPEN · Variance: OBSERVED_DECREASE_FOUR_SEEDS · 사용자 육안 확인: 대기 (새 이미지)**

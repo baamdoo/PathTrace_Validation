@@ -39,5 +39,10 @@
     }
   ],
   "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_feature_rng_fixed",
-  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9"
+  "visual_approval_source_commit": "5c918237af57f1c552505e803f07be5acafb86b9",
+  "visual_approved_images": 6,
+  "visual_approval_scope": "Only exact category/scene/file/SHA identities in user approval receipts",
+  "visual_approval_source_commits": [
+    "5c918237af57f1c552505e803f07be5acafb86b9"
+  ]
 }
