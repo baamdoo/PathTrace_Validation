@@ -8,6 +8,11 @@
   "note": "기존 ray-cone normal-map mip filtering을 base-level bilinear로만 바꾼 대조 실험입니다. 128 SPP 평균 Y 차이 +2.4576% → +0.0758%; 바닥 ROI는 약 +0.3%가 남습니다. 원인 분리를 위한 shader overlay이며 production 수정이나 전체 통과를 뜻하지 않습니다. 원래 shader는 복구했습니다.",
   "images": [
     {
+      "file": "normal_filter_before_after_128.png",
+      "sha256": "3428a363d7472cca9d930e399c6a0432eb01c748c3c2b9afa4b68a2783260c55",
+      "bytes": 2823890
+    },
+    {
       "file": "convergence_uncertainty.png",
       "sha256": "aa176768c2271aded9887673f0048b503d693aa58ef3cb60a33b507ce2a17271",
       "bytes": 184762

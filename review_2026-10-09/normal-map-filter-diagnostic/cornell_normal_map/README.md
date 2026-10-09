@@ -8,6 +8,10 @@ Reference: Mitsuba RGB
 
 평균 영상은 여러 seed의 평균이며 단일 렌더와 구분했습니다. 노이즈 영상은 seed 간 분산입니다. 노이즈 비율 1은 통과 기준이 아닙니다. 색상 스케일·SPP·seed 수는 각 그림에 표시됩니다.
 
+## normal_filter_before_after_128.png
+
+![normal_filter_before_after_128.png](normal_filter_before_after_128.png)
+
 ## convergence_uncertainty.png
 
 ![convergence_uncertainty.png](convergence_uncertainty.png)
