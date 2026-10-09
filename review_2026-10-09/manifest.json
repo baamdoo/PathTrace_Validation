@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T05:51:57.578388+00:00",
+  "generated_utc": "2026-10-09T06:06:31.093779+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 259,
+  "images": 272,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1803,6 +1803,95 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_conductor_scale_fixed"
+    },
+    {
+      "scene": "gallery_white_room",
+      "category": "white-scalar-mask-path",
+      "reference": "Mitsuba 3.9.1 original path control",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "블라인드·전등갓 7개 mesh의 버려졌던 scalar mask opacity를 기존 BLEND 경로로 복원했습니다. 동일한 원본 Mitsuba path reference 대비 평균 Y -0.172790% → -0.194988%. 기존 SSIM .99 검사 0.989367 / FAILED. Shader/exe/카메라/나머지 재질은 동일합니다. Mitsuba path는 null 통과도 깊이에 포함하므로 엔진과 유한 깊이 정의가 다릅니다. 이 결과는 보존하는 원본 path 대조군이며, 더 잘 맞는 null-depth 조건은 별도 volpath 비교를 보세요.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "186a306bb655f35b1e79b48e32b2869bc44ff28bc25bb402e307d2b1719b9bd9",
+          "bytes": 1693450
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "0b484dafe10535e0b1789bf37edd78cf0513525184938fcd3194afe3e5fbf1f0",
+          "bytes": 1606190
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "1a48e6c91c332870d98d780f7f83bcc8878bc0bbb99daeb601a0522f211c621c",
+          "bytes": 1552585
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "0961b8de7b4446c1c4583f7f9b902eaa232f45f9f49fd8c8a54661db2f20b990",
+          "bytes": 1652283
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "d2c3bce9f2b68c0660e3416a5f5e612932d49e205920c0d9d0cb249aa593f48a",
+          "bytes": 1871559
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "ddc9da504c5fcbe49bcfbc2843646f970dd6cb5e14329589a62920c5f93f8794",
+          "bytes": 3255440
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "aac5c964d1e9000e005c5c584123e906da82be58902aa5bd3a68cce9185b5c6b",
+          "bytes": 184278
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_path"
+    },
+    {
+      "scene": "gallery_white_room",
+      "category": "white-scalar-mask-volpath",
+      "reference": "Mitsuba 3.9.1 native volpath null-depth control",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "수정 전후 엔진을 하나의 동일한 native Mitsuba volpath reference와 비교합니다. 128SPP x 4 평균 Y -0.159632% → -0.181833%, 기존 SSIM .99 검사 0.989897 / FAILED. 원본 XML에서 integrator 종류만 변경했고 193개 참조 asset 및 형상/카메라/재질/광원을 보존했습니다. null 통과를 실제 산란 깊이에 세지 않는 volpath가 엔진의 깊이 정의에 더 맞습니다. 수정 전후 same-seed paired 통계와 path→volpath reference 변화는 따로 계산했습니다. Engine의 확률적 opacity/shadow와 volpath의 결정론적 투과율 곱, RR 실행 시점은 다르므로 노이즈 비율 1을 요구하지 않습니다. 고정 영역별 밝기 차이·노이즈·수렴과 기존 path 결과를 모두 보존하며, 정확한 재질 모델 동등성과 radiance/단계 승인은 별도입니다.",
+      "images": [
+        {
+          "file": "before_after_same_volpath.png",
+          "sha256": "00f55846ed1203d134c9c0ed8ceae7159abcbaa63062200d799ee7f75b922091",
+          "bytes": 3030039
+        },
+        {
+          "file": "convergence_radiance_uncertainty.png",
+          "sha256": "52dcc4ed64578b52e49d7000a37530c002e83849e48c2869fb232d5ddab62a5a",
+          "bytes": 180883
+        },
+        {
+          "file": "mean_reference_control_spp128.png",
+          "sha256": "2d94ba1b6c58e5d7b5639de3def048551a8062836472cc1dc65adf6c27720d50",
+          "bytes": 3436577
+        },
+        {
+          "file": "mean_reference_control_spp16.png",
+          "sha256": "be4c37b773f224514c734c22552175d0b00ffd99d22ce8b4dd92ac8d946c40b2",
+          "bytes": 3673752
+        },
+        {
+          "file": "mean_reference_control_spp64.png",
+          "sha256": "34f6cfb86df7f42968720757600c064e5efbe4520e1b3c2ad217a539d51e0c4c",
+          "bytes": 3541631
+        },
+        {
+          "file": "noise_reference_control.png",
+          "sha256": "4e2cb6a16ddd0bfa5bac85a841cceebeba2e521f0e7868874b68fb545f51e653",
+          "bytes": 2004998
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_volpath"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."

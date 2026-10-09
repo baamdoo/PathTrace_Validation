@@ -43,6 +43,12 @@
 | gallery_nlayer_sphere_alpha01_n2 | guo / guo_camera_matched_batch | 16 | 4 | 3.717 | 3.716–3.831 |
 | gallery_nlayer_sphere_alpha01_n2 | guo / guo_camera_matched_batch | 64 | 4 | 13.690 | 13.517–14.009 |
 | gallery_nlayer_sphere_alpha01_n2 | guo / guo_camera_matched_batch | 128 | 4 | 26.866 | 26.541–27.062 |
+| gallery_white_room | engine / engine_scalar_mask_fix | 16 | 4 | 14.512 | 14.450–14.556 |
+| gallery_white_room | engine / engine_scalar_mask_fix | 64 | 4 | 57.913 | 57.665–58.178 |
+| gallery_white_room | engine / engine_scalar_mask_fix | 128 | 4 | 115.883 | 115.343–116.084 |
+| gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 16 | 4 | 0.083 | 0.083–0.485 |
+| gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 64 | 4 | 0.253 | 0.247–1.049 |
+| gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 128 | 4 | 0.445 | 0.440–0.469 |
 
 Engine: seed별 누적 checkpoint 시간(합산 금지). Mitsuba: 동기화 render 호출. Guo: 프로세스 전체 시간. 일부 CPU 분석이 동시에 진행됐습니다.
 

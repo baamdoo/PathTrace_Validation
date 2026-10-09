@@ -1,0 +1,42 @@
+{
+  "scene": "gallery_white_room",
+  "category": "white-scalar-mask-volpath",
+  "reference": "Mitsuba 3.9.1 native volpath null-depth control",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "수정 전후 엔진을 하나의 동일한 native Mitsuba volpath reference와 비교합니다. 128SPP x 4 평균 Y -0.159632% → -0.181833%, 기존 SSIM .99 검사 0.989897 / FAILED. 원본 XML에서 integrator 종류만 변경했고 193개 참조 asset 및 형상/카메라/재질/광원을 보존했습니다. null 통과를 실제 산란 깊이에 세지 않는 volpath가 엔진의 깊이 정의에 더 맞습니다. 수정 전후 same-seed paired 통계와 path→volpath reference 변화는 따로 계산했습니다. Engine의 확률적 opacity/shadow와 volpath의 결정론적 투과율 곱, RR 실행 시점은 다르므로 노이즈 비율 1을 요구하지 않습니다. 고정 영역별 밝기 차이·노이즈·수렴과 기존 path 결과를 모두 보존하며, 정확한 재질 모델 동등성과 radiance/단계 승인은 별도입니다.",
+  "images": [
+    {
+      "file": "before_after_same_volpath.png",
+      "sha256": "00f55846ed1203d134c9c0ed8ceae7159abcbaa63062200d799ee7f75b922091",
+      "bytes": 3030039
+    },
+    {
+      "file": "convergence_radiance_uncertainty.png",
+      "sha256": "52dcc4ed64578b52e49d7000a37530c002e83849e48c2869fb232d5ddab62a5a",
+      "bytes": 180883
+    },
+    {
+      "file": "mean_reference_control_spp128.png",
+      "sha256": "2d94ba1b6c58e5d7b5639de3def048551a8062836472cc1dc65adf6c27720d50",
+      "bytes": 3436577
+    },
+    {
+      "file": "mean_reference_control_spp16.png",
+      "sha256": "be4c37b773f224514c734c22552175d0b00ffd99d22ce8b4dd92ac8d946c40b2",
+      "bytes": 3673752
+    },
+    {
+      "file": "mean_reference_control_spp64.png",
+      "sha256": "34f6cfb86df7f42968720757600c064e5efbe4520e1b3c2ad217a539d51e0c4c",
+      "bytes": 3541631
+    },
+    {
+      "file": "noise_reference_control.png",
+      "sha256": "4e2cb6a16ddd0bfa5bac85a841cceebeba2e521f0e7868874b68fb545f51e653",
+      "bytes": 2004998
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_scalar_mask_fix_vs_volpath"
+}

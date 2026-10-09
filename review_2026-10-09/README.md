@@ -8,7 +8,7 @@ Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layer
 
 ## 엔진 수정 후 새 렌더
 
-Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fresnel 외부 반사율 배율. 실제 GPU의 수정 전 실패와 수정 후 통과를 확인했습니다. 아래는 공통 최종 셰이더로 새로 렌더한 완료 항목입니다.
+Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fresnel 외부 반사율 배율. 실제 GPU의 수정 전 실패와 수정 후 통과를 확인했습니다. 아래는 공통 셰이더 적용 시점의 결과이며, White 불투명도 후속 수정은 별도 링크를 보세요.
 
 | Scene | 평균 Y 차이 (128 SPP) | 기존 SSIM .99 검사 | 분산 수렴 |
 |---|---:|---|---|
@@ -20,6 +20,10 @@ Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fr
 환경맵 CDF 생성의 수평 이웃도 U 반복에 맞췄습니다. 희소 seam fixture의 기존 proposal이 만드는 큰 분산은 새 baker로 줄였고, 실제 GPU support/MIS 검사를 통과했습니다. 기존 네 자연 환경맵의 cache는 양의 sampling support를 유지하므로 변경하지 않았으며, 위 이미지는 그 동일 cache로 비교했습니다.
 
 유리잔 금속 반사율 수정: 평균 Y +4.7600% → +0.9104%, SSIM 0.991912 / PASSED, 분산 PASS. [전후 이미지와 노이즈](glass-conductor-fixed/gallery_glass_of_water/README.md).
+
+White 불투명도 수정 / 동일 volpath reference: 평균 Y -0.1596% → -0.1818%, SSIM 0.989897 / FAILED, 분산 PASS. [최신 전후 이미지·노이즈](white-scalar-mask-volpath/gallery_white_room/README.md).
+
+White 불투명도 수정 / 보존한 원본 path reference: 평균 Y -0.1728% → -0.1950%, SSIM 0.989367 / FAILED. [별도 대조군](white-scalar-mask-path/gallery_white_room/README.md).
 
 ## 최신 수정 및 진단
 
