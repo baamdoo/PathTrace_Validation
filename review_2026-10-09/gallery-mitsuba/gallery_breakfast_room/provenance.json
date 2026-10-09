@@ -1,0 +1,47 @@
+{
+  "scene": "gallery_breakfast_room",
+  "category": "gallery-mitsuba",
+  "reference": "Mitsuba 3.9.1 cuda_ad_rgb (원본 gallery)",
+  "radiance_status": "OPEN",
+  "variance_status": "INCONCLUSIVE",
+  "visual_approved": false,
+  "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+  "images": [
+    {
+      "file": "radiance_mean12_spp16.png",
+      "sha256": "0882777c3df2dd3f60e490b0f4dc07823dbc3f0c027ebbcc0a57e8bf081af4b6",
+      "bytes": 1495441
+    },
+    {
+      "file": "radiance_mean12_spp64.png",
+      "sha256": "3a1a8793b9fd01c2f83276c74b60119cab17f340a16efbc70a0aceba7c5e583c",
+      "bytes": 1376543
+    },
+    {
+      "file": "radiance_mean12_spp128.png",
+      "sha256": "97045181959d7b470e0798417498d9e83d053cc6045c3a4c2b6a9f9a3340ab73",
+      "bytes": 1307133
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "5bac098d31ba57293501250122b6ea327b6fcda2b7104f59076b88e44195c7fc",
+      "bytes": 1513801
+    },
+    {
+      "file": "signed_residuals.png",
+      "sha256": "4f32640f89cafe8a91517b3ba2205a497984e5b6f2d74ab64d1001e729ca6f98",
+      "bytes": 1608812
+    },
+    {
+      "file": "noise_variance.png",
+      "sha256": "a92289c57e8ab5eed1d806536e40bf7047d508def0af88b896d80ede8a34e3d2",
+      "bytes": 2657270
+    },
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "3215b4c70f387184333d6f13986b63bf3cff8fbb13624b32466abfa22d50a02f",
+      "bytes": 179907
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_mitsuba_reference"
+}

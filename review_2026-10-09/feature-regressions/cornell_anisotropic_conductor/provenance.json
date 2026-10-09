@@ -1,0 +1,42 @@
+{
+  "scene": "cornell_anisotropic_conductor",
+  "category": "feature-regressions",
+  "reference": "PBRT",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+  "images": [
+    {
+      "file": "comparison_spp_16.png",
+      "sha256": "4592bb448ba8523ecc60df39841c3e3581feaa57a83b0b4d6ba75d45f9562810",
+      "bytes": 1572895
+    },
+    {
+      "file": "comparison_spp_64.png",
+      "sha256": "9335d899ecec4385adb957806560ed615881d533304f951bf72fc18532498dc3",
+      "bytes": 1466812
+    },
+    {
+      "file": "comparison_spp_128.png",
+      "sha256": "925eefd3e396b6cb534aea6a0a1a240496afdab70e56217f945d446fabb180ca",
+      "bytes": 1416078
+    },
+    {
+      "file": "replicate_noise_stddev_128.png",
+      "sha256": "ee29bc6e879cf6c48a377a5447a137bef4b59573a2ba64a185d5c408c9608ae6",
+      "bytes": 5519937
+    },
+    {
+      "file": "replicate_noise_variance_128.png",
+      "sha256": "3af6bdcad6c24d82ea658096ea2380872295abd6dad52de4d720d91b00d4291a",
+      "bytes": 5523724
+    },
+    {
+      "file": "replicate_noise_convergence.png",
+      "sha256": "bcef24632584724de4d193c87b9d299c030af5af811719d74c51bce4cdc2e424",
+      "bytes": 189713
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_feature_rng_fixed"
+}

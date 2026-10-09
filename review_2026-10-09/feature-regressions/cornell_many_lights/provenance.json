@@ -1,0 +1,42 @@
+{
+  "scene": "cornell_many_lights",
+  "category": "feature-regressions",
+  "reference": "PBRT",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+  "images": [
+    {
+      "file": "comparison_spp_16.png",
+      "sha256": "c324fc2fc58158fe8b6d56f6ff0bd456cafba3874dc2edcbdd72beccff762b9c",
+      "bytes": 1238713
+    },
+    {
+      "file": "comparison_spp_64.png",
+      "sha256": "7ef439cb75107dd2f5feac4e622e038f1d42b598a1b76110a7433e605899124e",
+      "bytes": 1130975
+    },
+    {
+      "file": "comparison_spp_128.png",
+      "sha256": "da2f7bc1b0fd837d6e4f809034a0ab7d36a2ad3fac711ff9a152208752b4dda5",
+      "bytes": 979017
+    },
+    {
+      "file": "replicate_noise_stddev_128.png",
+      "sha256": "16b1776aaa04ccf139d66d585b133cca20cf39108213772ca55b4fa42455ab91",
+      "bytes": 2821387
+    },
+    {
+      "file": "replicate_noise_variance_128.png",
+      "sha256": "33331183dcdab7b2dcc3c238bad15818f563cf8c7e8ed906e86d85edc4b9628f",
+      "bytes": 2823455
+    },
+    {
+      "file": "replicate_noise_convergence.png",
+      "sha256": "4aaea042d5efa1dae5d70e8e5da4e95f03d9bb83026bd681bb0a99a18be48d3d",
+      "bytes": 178302
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights/analysis_feature_rng_fixed"
+}

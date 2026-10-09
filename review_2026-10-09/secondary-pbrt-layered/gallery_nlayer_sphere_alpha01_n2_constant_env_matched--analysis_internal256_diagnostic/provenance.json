@@ -1,0 +1,22 @@
+{
+  "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_internal256_diagnostic",
+  "category": "secondary-pbrt-layered",
+  "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+  "images": [
+    {
+      "file": "paired_roi_uncertainty.png",
+      "sha256": "d8efb64afc6d705d491fc820e0894b278ac9d31ad940d23a2135825da78c8499",
+      "bytes": 133546
+    },
+    {
+      "file": "pbrt16_256_comparison.png",
+      "sha256": "b845b462ae84fb9f3280ee669fa5366b273d236531bbe33b085c2c72a17eb087",
+      "bytes": 438287
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_internal256_diagnostic"
+}

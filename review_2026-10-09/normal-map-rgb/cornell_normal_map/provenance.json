@@ -1,0 +1,27 @@
+{
+  "scene": "cornell_normal_map",
+  "category": "normal-map-rgb",
+  "reference": "Mitsuba RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "PBRT의 spectral/RGB 차이만으로 설명되는지 확인하기 위한 원본 Mitsuba RGB 비교입니다. 필터링 원인 대조 실험은 별도로 진행 중입니다.",
+  "images": [
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "91a4cb374f222d6bbbfb37cea9798364dc87297a35d4b4d63724d7a0526757a8",
+      "bytes": 185251
+    },
+    {
+      "file": "mean_difference.png",
+      "sha256": "795a7f6dd4066a55642b22775167178709922481a33f8c33de1e5b3cc79ab646",
+      "bytes": 4784704
+    },
+    {
+      "file": "noise_comparison.png",
+      "sha256": "486e3dce41d13ed3db607ebac976f7016c213896801232fc5ca9ebfeaf401639",
+      "bytes": 5118945
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected"
+}

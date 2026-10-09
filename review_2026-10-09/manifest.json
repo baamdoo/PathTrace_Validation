@@ -1,0 +1,1030 @@
+{
+  "generated_utc": "2026-10-09T04:50:49.732009+00:00",
+  "status": "REVIEW_OPEN",
+  "numerical_stage_pass": false,
+  "visual_approved": false,
+  "images": 144,
+  "rows": [
+    {
+      "scene": "cornell_box",
+      "category": "feature-regressions",
+      "reference": "PBRT / Mitsuba",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "noise_convergence.png",
+          "sha256": "c52ea15169e1694bf5e9971af85d12ed0e6640fefc1011ea5845d8491759824e",
+          "bytes": 4206526
+        },
+        {
+          "file": "noise_convergence_mitsuba.png",
+          "sha256": "714b6e88279506c248460337893366156860b3676d190c87e72f82ffb5951f14",
+          "bytes": 4999729
+        },
+        {
+          "file": "radiance_comparison.png",
+          "sha256": "d1e1e112586070406da6542024aef43c2f04ecd55c80a53104380e4144d29d02",
+          "bytes": 4700046
+        },
+        {
+          "file": "radiance_comparison_mitsuba.png",
+          "sha256": "f0b0fd564f86e0666d364af4e7062dd1b5fcae09507c3a3e6013581cdb645845",
+          "bytes": 4597321
+        },
+        {
+          "file": "radiance_uncertainty.png",
+          "sha256": "d8a7d883220a598f8cb9ed8dff471c229c044cee1788a33f3e5b033290675d4f",
+          "bytes": 119870
+        },
+        {
+          "file": "radiance_uncertainty_mitsuba.png",
+          "sha256": "8e6b3aa12569e0c4c0a1a6d3182b1a4299a16014cced78c84c9da3e127e8e865",
+          "bytes": 128093
+        },
+        {
+          "file": "residual_channels_512.png",
+          "sha256": "f313856867bd9041e7fb8a998379ad9758a01e8011721fde1e992519389bf77e",
+          "bytes": 2434918
+        },
+        {
+          "file": "residual_channels_512_mitsuba.png",
+          "sha256": "d1dfb3863cab75cee7c415042aebfd9c0b73c72510c0059fe9b98fdea2fe1d96",
+          "bytes": 3450815
+        },
+        {
+          "file": "roi_localization.png",
+          "sha256": "c187fc88db7ec72d6cf65b24549c3bb3a68eda192e7332739ce3b771dd22a28e",
+          "bytes": 598064
+        },
+        {
+          "file": "roi_localization_mitsuba.png",
+          "sha256": "d9b7c6b054551a366d60c62de56435f3102d29830602d10ebc40758178027f61",
+          "bytes": 609078
+        },
+        {
+          "file": "three_renderer_overview.png",
+          "sha256": "67f86378dda2a413a929c8b367b7ea3b425c181aa78a694c9119425f011cb7ee",
+          "bytes": 3266024
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box/analysis_rng_fixed"
+    },
+    {
+      "scene": "gallery_breakfast_room",
+      "category": "historical-pbrt-gallery",
+      "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
+      "images": [
+        {
+          "file": "radiance_mean12_spp16.png",
+          "sha256": "325a855b3e56876895aab23a766ba88b6834b07e0d8d0d7f5c76da1998bacb27",
+          "bytes": 1493941
+        },
+        {
+          "file": "radiance_mean12_spp64.png",
+          "sha256": "cfcf821cb5f40c1321cf8b613fc74577723a6b0bd76bdc4a8a903800c298dd77",
+          "bytes": 1363491
+        },
+        {
+          "file": "radiance_mean12_spp128.png",
+          "sha256": "03b69658995e1696742b00cb5c2c657f4bedd08f251e30c6cc8141e4687ec431",
+          "bytes": 1292856
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "9b6a5e6cfa54c326e3d2aef9084a754480a45dc598a282fc0f6f06936f1c35dd",
+          "bytes": 1494846
+        },
+        {
+          "file": "radiance_seed101_spp128.png",
+          "sha256": "feceb0f1b4a8203fb5097ce0d4bac9e0f06cb3769008d15fc8a8df3827e5a8e4",
+          "bytes": 1493055
+        },
+        {
+          "file": "radiance_signed_residuals_mean12_spp128.png",
+          "sha256": "20516052552072600944949193179f408098c43e1b1a7f9925ee27712fb0720d",
+          "bytes": 1339791
+        },
+        {
+          "file": "noise_variance_12seeds_spp128.png",
+          "sha256": "ce8ada53052e36c21fc6e2a49f00ef716697bc07db389a52eb4e08333a04150b",
+          "bytes": 2421561
+        },
+        {
+          "file": "noise_convergence_12seeds.png",
+          "sha256": "152e06ce58cc19eb9b357fec8d2c79cacfa7684cf725801eb7bab882ee6247c5",
+          "bytes": 187283
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_rng_fixed_12seeds"
+    },
+    {
+      "scene": "gallery_glass_of_water",
+      "category": "historical-pbrt-gallery",
+      "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
+      "images": [
+        {
+          "file": "radiance_seed11_128_rng_fixed.png",
+          "sha256": "11289506840e7b858fde03bdbd16f85b0a3b0c348921bcabe4a9c78c9847652b",
+          "bytes": 1588506
+        },
+        {
+          "file": "radiance_mean4_128_rng_fixed.png",
+          "sha256": "4cc5ca329919f280ed78ca96a3ca72df4d501db01f3189ef1ba60575af84db56",
+          "bytes": 1570499
+        },
+        {
+          "file": "radiance_signed_residuals_128_rng_fixed.png",
+          "sha256": "1b5507345517b2a94ab825ebe91bb2237ebf362ded344c7d651f4d6ff9569443",
+          "bytes": 1653924
+        },
+        {
+          "file": "noise_variance_128_rng_fixed.png",
+          "sha256": "a670bd05b71dfa76c22aa8d8180b52e7e589ea5518576b13ebf164125543f6ca",
+          "bytes": 3203366
+        },
+        {
+          "file": "noise_convergence_rng_fixed.png",
+          "sha256": "3077ee40d621c34eb9bfadc29facf138682cdb82fd7248b759801442f637042a",
+          "bytes": 151345
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_rng_fixed"
+    },
+    {
+      "scene": "gallery_grey_white_room",
+      "category": "historical-pbrt-gallery",
+      "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
+      "images": [
+        {
+          "file": "radiance_seed11_128_rng_fixed.png",
+          "sha256": "6ded3904882a39ed40bf34fdc89a72c206366605e293e0fc54e0c9be37352a5c",
+          "bytes": 1805244
+        },
+        {
+          "file": "radiance_mean4_128_rng_fixed.png",
+          "sha256": "55a53043784b55bf33c2a2e9cdefadc8c20e165745bac64e2c0ba72bc92ad4ee",
+          "bytes": 1667163
+        },
+        {
+          "file": "radiance_signed_residuals_128_rng_fixed.png",
+          "sha256": "214b80a03f8f2a113eab5c5f22de052a8c93a640197a51e6d50397c7a1249c6c",
+          "bytes": 1583378
+        },
+        {
+          "file": "noise_variance_128_rng_fixed.png",
+          "sha256": "d188140025f639f423825b05374e25e873b55129eedb089f419a2c6fcbfe70e2",
+          "bytes": 3174027
+        },
+        {
+          "file": "noise_convergence_rng_fixed.png",
+          "sha256": "6c565a6c08ca15d43445a8717254f36b62d270abce0a76412c7ae02cb176c21c",
+          "bytes": 169717
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_rng_fixed"
+    },
+    {
+      "scene": "gallery_white_room",
+      "category": "historical-pbrt-gallery",
+      "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
+      "images": [
+        {
+          "file": "radiance_seed11_128_rng_fixed_spf1.png",
+          "sha256": "739b71de1b5a9afdbaa7e6e59ad6885e59e809ae6fe24581ad5eec3c6cedf586",
+          "bytes": 1693725
+        },
+        {
+          "file": "radiance_mean4_128_rng_fixed_spf1.png",
+          "sha256": "a57562ba49e87a661eae72d07db31949145a23de3c531950a060d67e1503eda3",
+          "bytes": 1599177
+        },
+        {
+          "file": "radiance_signed_residuals_128_rng_fixed_spf1.png",
+          "sha256": "7cfa8733def94c23116773c2b1189abb707a3ddcb57db413c2e301d9597bba33",
+          "bytes": 1799746
+        },
+        {
+          "file": "noise_variance_128_rng_fixed_spf1.png",
+          "sha256": "5be2206924ab56da038f13837c02911e7875d6ce4621e0c6acd1e109003df914",
+          "bytes": 3299938
+        },
+        {
+          "file": "noise_convergence_rng_fixed_spf1.png",
+          "sha256": "24c031b43f97f7c8b690185c812cf1cdbe4bb938baab5fa12fc169c21d63bcae",
+          "bytes": 168988
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_rng_fixed_spf1"
+    },
+    {
+      "scene": "cornell_directional_light",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "b201f645675b10a37fd36d8abe7a009de16f51498ecbe442bb96aaeb838f998d",
+          "bytes": 567512
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "b3c81197dc2c6a55a6fd756ee143a4d2bc5f468f155012d2cada7c3fe1231d9e",
+          "bytes": 437304
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "67b767abd18bc1f8f26bf52e78aaf5e6a2ae5828dab06dcf5808181880e438dd",
+          "bytes": 373962
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "20cf5c8c0fe40aade204aa87f24822509edff0a6e3d03adf539b54e670bf82a5",
+          "bytes": 1334550
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "fcdc73a5917ff2a3cdbf0ec0abd9ae963486a83082cac969f287119ce8cbb81a",
+          "bytes": 1337736
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "eba3827ec81c9397c858e99b8f25615df579bae45f0a5066369414b9414386f4",
+          "bytes": 177515
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_many_lights",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "c324fc2fc58158fe8b6d56f6ff0bd456cafba3874dc2edcbdd72beccff762b9c",
+          "bytes": 1238713
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "7ef439cb75107dd2f5feac4e622e038f1d42b598a1b76110a7433e605899124e",
+          "bytes": 1130975
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "da2f7bc1b0fd837d6e4f809034a0ab7d36a2ad3fac711ff9a152208752b4dda5",
+          "bytes": 979017
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "16b1776aaa04ccf139d66d585b133cca20cf39108213772ca55b4fa42455ab91",
+          "bytes": 2821387
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "33331183dcdab7b2dcc3c238bad15818f563cf8c7e8ed906e86d85edc4b9628f",
+          "bytes": 2823455
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "4aaea042d5efa1dae5d70e8e5da4e95f03d9bb83026bd681bb0a99a18be48d3d",
+          "bytes": 178302
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "complex_room_envmap_mis",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "149b513e74811545c622d3f306ed1136792c0cfdd954fa9bd7238d9aae3b0459",
+          "bytes": 1858081
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "622f0f6881a8071ae0cbc486d03941d1e6a4aa081ce216e78312bcb25cfc737b",
+          "bytes": 1695762
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "5275ea7d77e486fcf3298d0285911dbc7d60b62ca087f29108efaa2d2fe2013a",
+          "bytes": 1623077
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "543087b5c270e6d8d14c648a71597a0b8d28df7a88be81b527a0a31a4950bd3e",
+          "bytes": 5570572
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "933ea7250d4d8a9a5a7e16f145457e3e417c9e289c9ef5d5487ce7fedd5b25ed",
+          "bytes": 5574045
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "1008c910efd93e736555796ded3a1c2a038c90c9bdf4c8c474847b621f93a4b6",
+          "bytes": 194487
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_anisotropic_conductor",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "4592bb448ba8523ecc60df39841c3e3581feaa57a83b0b4d6ba75d45f9562810",
+          "bytes": 1572895
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "9335d899ecec4385adb957806560ed615881d533304f951bf72fc18532498dc3",
+          "bytes": 1466812
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "925eefd3e396b6cb534aea6a0a1a240496afdab70e56217f945d446fabb180ca",
+          "bytes": 1416078
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "ee29bc6e879cf6c48a377a5447a137bef4b59573a2ba64a185d5c408c9608ae6",
+          "bytes": 5519937
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "3af6bdcad6c24d82ea658096ea2380872295abd6dad52de4d720d91b00d4291a",
+          "bytes": 5523724
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "bcef24632584724de4d193c87b9d299c030af5af811719d74c51bce4cdc2e424",
+          "bytes": 189713
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_box_dielectric",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "83da5b59ddc4ca97f3a02a115e81b9103c37d4af7e8c8429ea21edbcd8744269",
+          "bytes": 1501490
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "8e3ac5902bce6ec0583d02113ef81d4e9c47d1b6f9c70b97c198548cb3cb8e5d",
+          "bytes": 1542727
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "f112326407397d9e45b95e3ad8244218bd24fd2d8aa079e271655ea3a649b98d",
+          "bytes": 1548288
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "d30036f8a71a7d56cf99ca8ac4954d7a47e426079300e16946c37d4765e08f28",
+          "bytes": 5740405
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "784590c645de5a3efaf33b3408595963a01fb7b2ec38b4b4c39dcf871ba42ae5",
+          "bytes": 5744263
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "1e0f9d73eac3f0b612f8f9bedf42dbdc85fce70284b4a30972795e6ad03529f4",
+          "bytes": 189517
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box_dielectric/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "module5d3_water_glass",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "ec73f069becf99a454bdeb91239e29edf3bbc15c3bc6e28e0c402423bacf4cc9",
+          "bytes": 3157351
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "83561f818f6ca2ecc5e9f07a3ba5541e121f4610fe7fa1d754daebd7b7d56c8b",
+          "bytes": 3529690
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "652083168d32677c78945208b7668bb4237bdc08fcd82a61add9787b80d463e4",
+          "bytes": 3589959
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "43b50ef09262d102faeb0010f05206d08664c5bcced82c5af779fe1346471d52",
+          "bytes": 8925542
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "d7df50b0f39c1fc01c111efab8c328aa368963347f5ae673cf92c4ea832548fb",
+          "bytes": 8928191
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "ca83c0d509b464b46bcffe01a3fd1e7d58b27190411a31ebf1434a10276bd041",
+          "bytes": 227361
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_water_glass/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "module5d3_camera_inside_water",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "167796c1f732d14f71f644b0cc1fa1497e892d9b0f064baa7a9b6849d48b52f7",
+          "bytes": 2971474
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "248e1c12c204533fe3756e857679d28d0a518b6c3d8743734d12e4d500104da4",
+          "bytes": 2775935
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "8df234fd4357a901d2c2a7b8585dbd4df0ad234f13dbd8ba0ff8e397f3a77197",
+          "bytes": 2721844
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "4959a82076be4515c9f25d9ee66d60c64acdd1f1e41b2339effc1fd24b8b27b4",
+          "bytes": 7750099
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "5b7f78b11de9d33f1d8ee2da16d4b50751c3482efb35ecfbde8796c46100fa54",
+          "bytes": 7752582
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "f1f90832163cf9cd7fa8e6f6684ecbe2a8991bf27416d89205798d6c7aed49ff",
+          "bytes": 209975
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_camera_inside_water/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "module5d3_thin_neutrality",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "073e3c37c833111a1807d1a8ad1e1a78488fdb37419fe6362d7b68adeddb041d",
+          "bytes": 3122024
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "5f7938ef57f86d9393ac92bf09f4d06a5c5d6f5bce0bb45cf86659b025d5ffb6",
+          "bytes": 3388375
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "f65d574781c2000e8a36a9ba94e304f1d53e21f78e2762f77f96d34a4767346d",
+          "bytes": 3455606
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "7964788a9f075faee462ab21e57ab8065aeba5d68a41ca146e04c17daa0313a6",
+          "bytes": 8813116
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "6f494e4f0be3d345c1b3667913cf1d1e20f718681ec6bc7c09f7ca9694745e2e",
+          "bytes": 8815172
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "6bddf121311c509e85fd4538d03417436180cf21a1ad0306647350d2b8bc3f43",
+          "bytes": 206782
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_thin_neutrality/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "gallery_nlayer_sphere_alpha01_n2--analysis_feature_rng_fixed",
+      "category": "secondary-pbrt-layered",
+      "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "9aa39551a7bdb2e81390a9d305508d1ffd588f32eecb0c6e79df86df6619d703",
+          "bytes": 404017
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "bab8a9d318df22dfcc2662618487badda6273b5214c448dc0b5374240cb0d69d",
+          "bytes": 368595
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "9d3d607c420a531e1d5a334536d9cc44d303a0af4cc3dba30b636e0f41c019c8",
+          "bytes": 357249
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "d251358bd1466fda407e5949ecd8089d18fd618955e61448d453070cbc01603b",
+          "bytes": 3324331
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "e415d7e578d08b0c0db9df5eb3b3af1fdc21a6682b66d331a482b8f08db594bc",
+          "bytes": 3326123
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "2087e511e1d31126f9cdafb371d99f17d2ae387c8e4fd521c61e96ea830afb79",
+          "bytes": 171756
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_material_maps",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "5e6872327b9c83998b23bb4052d819057fd7dd6d28153b2b04e17e61b37c009c",
+          "bytes": 1576941
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "4f0b96f380e99916591b2c51d1c1a793d9d2bb04b71d75263daf48e7026302f7",
+          "bytes": 1468620
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "6c7459e6c259f7e34fccea7bb689425555872bc236df8e615afab9ff07bc8c66",
+          "bytes": 1386914
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "bac649bf5f44d46da0b7867239f635ca679896eda8df9b3f96ddbc490ff386cb",
+          "bytes": 5552196
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "0dfc4bf4e32c124d7c8b6cc77429a8e9a32160360b4be5b1c1cce6a8af6aee77",
+          "bytes": 5555453
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "76d7266211fe9fc4c33dc78c3df2134dc9d55e88007a9449cffccf39b18890af",
+          "bytes": 176743
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_material_maps/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_normal_map",
+      "category": "feature-regressions",
+      "reference": "PBRT",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "images": [
+        {
+          "file": "comparison_spp_16.png",
+          "sha256": "21087251030876010b053b23c684de7c354e77567cdf1026995c204e4d94aa62",
+          "bytes": 1546169
+        },
+        {
+          "file": "comparison_spp_64.png",
+          "sha256": "210f0a7a911704fb07bab4f2775682aab5024278f9ccdcc72ffa5f2ec5aeeca5",
+          "bytes": 1441834
+        },
+        {
+          "file": "comparison_spp_128.png",
+          "sha256": "daf81af4ccf221dd3b7a19e45cbaf0d77c1b8eed955d95da6e6da42b89df5c55",
+          "bytes": 1347794
+        },
+        {
+          "file": "replicate_noise_stddev_128.png",
+          "sha256": "078756e8f52e88f514eee4b0adcff839bdeae5e784ddb774d855bd9200992123",
+          "bytes": 5491946
+        },
+        {
+          "file": "replicate_noise_variance_128.png",
+          "sha256": "889796abf3ac7cb7ef0de2c663863022b1afc94a7412b51bafdfa9d72f0e3ecf",
+          "bytes": 5495191
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "82a13a9ef81ef7a35d757ff87376a37cdcbed1d62c2d42ee4a8c11e26b456356",
+          "bytes": 177482
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_feature_rng_fixed"
+    },
+    {
+      "scene": "cornell_directional_light",
+      "category": "rgb-supplements",
+      "reference": "Mitsuba RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "메시를 맞춘 보충 비교. float64 통계 교정 후 결과이며 radiance 판정과 분산 판정을 분리합니다.",
+      "images": [
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "cea6b53677afd5222f0e7f47be14664864867bbf573d461b29dadb80e9761310",
+          "bytes": 188987
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "7aef04e6574ff0a288bc55de8d0d9ca8cc2d9a275ef249f4730e5508ca318d3c",
+          "bytes": 480229
+        },
+        {
+          "file": "noise_comparison.png",
+          "sha256": "11c5b3e970f3e2c6b3ab04aef8c79b89c49c6713dd76aa9e1d65576f798ace62",
+          "bytes": 1393581
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_rgb_mesh_matched_float64"
+    },
+    {
+      "scene": "cornell_principled_sheen",
+      "category": "rgb-supplements",
+      "reference": "Mitsuba RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "메시를 맞춘 보충 비교. float64 통계 교정 후 결과이며 radiance 판정과 분산 판정을 분리합니다.",
+      "images": [
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "7c156851c88506313c47fc38a0f71b5c0537f3624986d738fa396188495415e4",
+          "bytes": 191352
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "4e3daf05357c34d61f5a55297a23d3eaf8b99530a050ed2809e01073556405d7",
+          "bytes": 4670882
+        },
+        {
+          "file": "noise_comparison.png",
+          "sha256": "ad7ffdbec87c63f61aa961424d96b437597ee416f82bf3897d561af11f79af21",
+          "bytes": 4612631
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_principled_sheen/analysis_rgb_mesh_matched_float64"
+    },
+    {
+      "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_constant_control",
+      "category": "secondary-pbrt-layered",
+      "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "186d21add6cbdcb4a1f395567ebc7b580eae3c90bac88a1ae95042947e9eef7c",
+          "bytes": 256434
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "839d265ab1c01bc80c3556d85d5b46af4b164e1bb2421efce3ae4218279f6bac",
+          "bytes": 2299040
+        },
+        {
+          "file": "noise_stddev.png",
+          "sha256": "bb8684aac5da2791cc33acc50557a3b5a0c7645ab728da0d720c919839ffaf73",
+          "bytes": 2726837
+        },
+        {
+          "file": "roi_mean_uncertainty.png",
+          "sha256": "1d689481608553e289a33682d9c467fba49bf55af59e5197b8bba1a62516a47d",
+          "bytes": 165893
+        },
+        {
+          "file": "surface_roi.png",
+          "sha256": "18d809d2543e0e6a95b8fa02d73aa9586433d03904531af34e7e91c5a3ec3159",
+          "bytes": 223327
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_constant_control"
+    },
+    {
+      "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_internal256_diagnostic",
+      "category": "secondary-pbrt-layered",
+      "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+      "radiance_status": "OPEN",
+      "variance_status": "See report",
+      "visual_approved": false,
+      "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+      "images": [
+        {
+          "file": "paired_roi_uncertainty.png",
+          "sha256": "d8efb64afc6d705d491fc820e0894b278ac9d31ad940d23a2135825da78c8499",
+          "bytes": 133546
+        },
+        {
+          "file": "pbrt16_256_comparison.png",
+          "sha256": "b845b462ae84fb9f3280ee669fa5366b273d236531bbe33b085c2c72a17eb087",
+          "bytes": 438287
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_internal256_diagnostic"
+    },
+    {
+      "scene": "gallery_breakfast_room",
+      "category": "gallery-mitsuba",
+      "reference": "Mitsuba 3.9.1 cuda_ad_rgb (원본 gallery)",
+      "radiance_status": "OPEN",
+      "variance_status": "INCONCLUSIVE",
+      "visual_approved": false,
+      "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+      "images": [
+        {
+          "file": "radiance_mean12_spp16.png",
+          "sha256": "0882777c3df2dd3f60e490b0f4dc07823dbc3f0c027ebbcc0a57e8bf081af4b6",
+          "bytes": 1495441
+        },
+        {
+          "file": "radiance_mean12_spp64.png",
+          "sha256": "3a1a8793b9fd01c2f83276c74b60119cab17f340a16efbc70a0aceba7c5e583c",
+          "bytes": 1376543
+        },
+        {
+          "file": "radiance_mean12_spp128.png",
+          "sha256": "97045181959d7b470e0798417498d9e83d053cc6045c3a4c2b6a9f9a3340ab73",
+          "bytes": 1307133
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "5bac098d31ba57293501250122b6ea327b6fcda2b7104f59076b88e44195c7fc",
+          "bytes": 1513801
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "4f32640f89cafe8a91517b3ba2205a497984e5b6f2d74ab64d1001e729ca6f98",
+          "bytes": 1608812
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "a92289c57e8ab5eed1d806536e40bf7047d508def0af88b896d80ede8a34e3d2",
+          "bytes": 2657270
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "3215b4c70f387184333d6f13986b63bf3cff8fbb13624b32466abfa22d50a02f",
+          "bytes": 179907
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_mitsuba_reference"
+    },
+    {
+      "scene": "gallery_glass_of_water",
+      "category": "gallery-mitsuba",
+      "reference": "Mitsuba 3.9.1 cuda_ad_rgb (원본 gallery)",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "d23f920dd574e7705d156545c0aa0d69cc80d66fb999d00d182f31df66a555d6",
+          "bytes": 1586053
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "80d2165a4530f720b05a3385079f64a5adce0bcc14589571f746c37cf5d980cf",
+          "bytes": 1573463
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "847bafbec1b4b6f4cbc6e611b09074c2fc3782e2d805904088a463e7140cd0c5",
+          "bytes": 1541649
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "9b8cc7a4bd8566ee99d1118560e6f6e4135ce71fefedfe85c19d76f23b891f7e",
+          "bytes": 1578583
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "ffabb545dfcbb1197543e3a2f42e7c24bb058651c50821415b92d7febc2e0e54",
+          "bytes": 1742034
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "07f3f75a5bec933b2523d1310ed11c3227172256f109ad0fdb516721c3680a7a",
+          "bytes": 3447972
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "3f2903e18961f12bdf8c596f6ff7f5f9836319e5575c6b4012ff29d1eeafff2b",
+          "bytes": 168253
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_mitsuba_reference"
+    },
+    {
+      "scene": "gallery_grey_white_room",
+      "category": "gallery-mitsuba",
+      "reference": "Mitsuba 3.9.1 cuda_ad_rgb (원본 gallery)",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "4c6a84ada64a2bf861fa27d28753c3989c8856b57130b68d433ac6993250fb34",
+          "bytes": 1828458
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "e4ccd268810377f7cea3e2676c6b41595e2b649f938a9c784f5aa73afbe0a40f",
+          "bytes": 1707991
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "80f675eff7b632e225331dae73ce861e8956e0cbcab84b495eaf02caa1c8022a",
+          "bytes": 1645657
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "4bf188734a5433496fde44aab29e4eef8571138b269a265aea293d6aeb989bc4",
+          "bytes": 1765217
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "887057fe0ef2f5f09b5c6168568504cdf9a21766784ff66d4237f5522c3217a9",
+          "bytes": 1851175
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "583c52963f81e1774942ddba50d111124289d3608f02620087faba77589e48e9",
+          "bytes": 3428232
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "aca31cbf8e83a939ca5e7b411ea992f072ef7e92e9f275e2beee8e671f079a38",
+          "bytes": 178566
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_mitsuba_reference"
+    },
+    {
+      "scene": "gallery_white_room",
+      "category": "gallery-mitsuba",
+      "reference": "Mitsuba 3.9.1 cuda_ad_rgb (원본 gallery)",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "a34dba635732a0454dbd83d68989c69f7275771ed5be9712c12e2904566e7d06",
+          "bytes": 1692244
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "c44a3e08eccea3081551c0d21d5102c193ed9239ea886e336d8fae5f64d643fd",
+          "bytes": 1603014
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "1c04dafc8ab9d20a470931f73573b6727a5c5e1fba43a742e71068345004b3a8",
+          "bytes": 1547560
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "77a84bd2819cfff27960745c4378aa64c382012ba14bb4cf9c982c5ac7538469",
+          "bytes": 1650543
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "cc1f69c98f10601597ca6d251ad001aedaaab0eb66dba5f093db28b7e7703a81",
+          "bytes": 1856437
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "8fd8b7106628aea7785e34ff0ba227f13dc41065195fdaa2508729e53519b8b9",
+          "bytes": 3255610
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "b98cf0cfd6a7071dbc409c672709acc66d2bcb51f4546883b2e63759d92f2978",
+          "bytes": 184516
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_mitsuba_reference"
+    },
+    {
+      "scene": "cornell_normal_map",
+      "category": "normal-map-rgb",
+      "reference": "Mitsuba RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "PBRT의 spectral/RGB 차이만으로 설명되는지 확인하기 위한 원본 Mitsuba RGB 비교입니다. 필터링 원인 대조 실험은 별도로 진행 중입니다.",
+      "images": [
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "91a4cb374f222d6bbbfb37cea9798364dc87297a35d4b4d63724d7a0526757a8",
+          "bytes": 185251
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "795a7f6dd4066a55642b22775167178709922481a33f8c33de1e5b3cc79ab646",
+          "bytes": 4784704
+        },
+        {
+          "file": "noise_comparison.png",
+          "sha256": "486e3dce41d13ed3db607ebac976f7016c213896801232fc5ca9ebfeaf401639",
+          "bytes": 5118945
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected"
+    }
+  ],
+  "authorization": "User explicitly requested GitHub publication even when validation does not pass."
+}

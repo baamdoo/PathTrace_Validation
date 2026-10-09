@@ -1,0 +1,42 @@
+{
+  "scene": "gallery_nlayer_sphere_alpha01_n2--analysis_feature_rng_fixed",
+  "category": "secondary-pbrt-layered",
+  "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+  "images": [
+    {
+      "file": "comparison_spp_16.png",
+      "sha256": "9aa39551a7bdb2e81390a9d305508d1ffd588f32eecb0c6e79df86df6619d703",
+      "bytes": 404017
+    },
+    {
+      "file": "comparison_spp_64.png",
+      "sha256": "bab8a9d318df22dfcc2662618487badda6273b5214c448dc0b5374240cb0d69d",
+      "bytes": 368595
+    },
+    {
+      "file": "comparison_spp_128.png",
+      "sha256": "9d3d607c420a531e1d5a334536d9cc44d303a0af4cc3dba30b636e0f41c019c8",
+      "bytes": 357249
+    },
+    {
+      "file": "replicate_noise_stddev_128.png",
+      "sha256": "d251358bd1466fda407e5949ecd8089d18fd618955e61448d453070cbc01603b",
+      "bytes": 3324331
+    },
+    {
+      "file": "replicate_noise_variance_128.png",
+      "sha256": "e415d7e578d08b0c0db9df5eb3b3af1fdc21a6682b66d331a482b8f08db594bc",
+      "bytes": 3326123
+    },
+    {
+      "file": "replicate_noise_convergence.png",
+      "sha256": "2087e511e1d31126f9cdafb371d99f17d2ae387c8e4fd521c61e96ea830afb79",
+      "bytes": 171756
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_feature_rng_fixed"
+}

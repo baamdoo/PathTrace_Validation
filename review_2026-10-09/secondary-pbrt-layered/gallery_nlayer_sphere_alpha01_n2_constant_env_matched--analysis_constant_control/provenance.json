@@ -1,0 +1,37 @@
+{
+  "scene": "gallery_nlayer_sphere_alpha01_n2_constant_env_matched--analysis_constant_control",
+  "category": "secondary-pbrt-layered",
+  "reference": "PBRT (보조 진단; 지정 Guo 레퍼런스 아님)",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "Guo 검증을 대체하지 않는 과거 PBRT/환경맵/내부 깊이 진단입니다. 원래 결과를 보존합니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "186d21add6cbdcb4a1f395567ebc7b580eae3c90bac88a1ae95042947e9eef7c",
+      "bytes": 256434
+    },
+    {
+      "file": "mean_difference.png",
+      "sha256": "839d265ab1c01bc80c3556d85d5b46af4b164e1bb2421efce3ae4218279f6bac",
+      "bytes": 2299040
+    },
+    {
+      "file": "noise_stddev.png",
+      "sha256": "bb8684aac5da2791cc33acc50557a3b5a0c7645ab728da0d720c919839ffaf73",
+      "bytes": 2726837
+    },
+    {
+      "file": "roi_mean_uncertainty.png",
+      "sha256": "1d689481608553e289a33682d9c467fba49bf55af59e5197b8bba1a62516a47d",
+      "bytes": 165893
+    },
+    {
+      "file": "surface_roi.png",
+      "sha256": "18d809d2543e0e6a95b8fa02d73aa9586433d03904531af34e7e91c5a3ec3159",
+      "bytes": 223327
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2_constant_env_matched/analysis_constant_control"
+}

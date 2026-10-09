@@ -1,0 +1,27 @@
+{
+  "scene": "cornell_principled_sheen",
+  "category": "rgb-supplements",
+  "reference": "Mitsuba RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "메시를 맞춘 보충 비교. float64 통계 교정 후 결과이며 radiance 판정과 분산 판정을 분리합니다.",
+  "images": [
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "7c156851c88506313c47fc38a0f71b5c0537f3624986d738fa396188495415e4",
+      "bytes": 191352
+    },
+    {
+      "file": "mean_difference.png",
+      "sha256": "4e3daf05357c34d61f5a55297a23d3eaf8b99530a050ed2809e01073556405d7",
+      "bytes": 4670882
+    },
+    {
+      "file": "noise_comparison.png",
+      "sha256": "ad7ffdbec87c63f61aa961424d96b437597ee416f82bf3897d561af11f79af21",
+      "bytes": 4612631
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_principled_sheen/analysis_rgb_mesh_matched_float64"
+}

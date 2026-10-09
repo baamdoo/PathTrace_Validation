@@ -1,0 +1,52 @@
+{
+  "scene": "gallery_breakfast_room",
+  "category": "historical-pbrt-gallery",
+  "reference": "PBRT (진단용; gallery의 지정 레퍼런스가 아님)",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "이전 턴의 PBRT 비교입니다. 올바른 gallery 레퍼런스 비교는 아래가 아니라 최상위 gallery-mitsuba 목록을 사용하세요.",
+  "images": [
+    {
+      "file": "radiance_mean12_spp16.png",
+      "sha256": "325a855b3e56876895aab23a766ba88b6834b07e0d8d0d7f5c76da1998bacb27",
+      "bytes": 1493941
+    },
+    {
+      "file": "radiance_mean12_spp64.png",
+      "sha256": "cfcf821cb5f40c1321cf8b613fc74577723a6b0bd76bdc4a8a903800c298dd77",
+      "bytes": 1363491
+    },
+    {
+      "file": "radiance_mean12_spp128.png",
+      "sha256": "03b69658995e1696742b00cb5c2c657f4bedd08f251e30c6cc8141e4687ec431",
+      "bytes": 1292856
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "9b6a5e6cfa54c326e3d2aef9084a754480a45dc598a282fc0f6f06936f1c35dd",
+      "bytes": 1494846
+    },
+    {
+      "file": "radiance_seed101_spp128.png",
+      "sha256": "feceb0f1b4a8203fb5097ce0d4bac9e0f06cb3769008d15fc8a8df3827e5a8e4",
+      "bytes": 1493055
+    },
+    {
+      "file": "radiance_signed_residuals_mean12_spp128.png",
+      "sha256": "20516052552072600944949193179f408098c43e1b1a7f9925ee27712fb0720d",
+      "bytes": 1339791
+    },
+    {
+      "file": "noise_variance_12seeds_spp128.png",
+      "sha256": "ce8ada53052e36c21fc6e2a49f00ef716697bc07db389a52eb4e08333a04150b",
+      "bytes": 2421561
+    },
+    {
+      "file": "noise_convergence_12seeds.png",
+      "sha256": "152e06ce58cc19eb9b357fec8d2c79cacfa7684cf725801eb7bab882ee6247c5",
+      "bytes": 187283
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_rng_fixed_12seeds"
+}

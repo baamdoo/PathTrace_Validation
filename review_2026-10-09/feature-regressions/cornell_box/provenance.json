@@ -1,0 +1,67 @@
+{
+  "scene": "cornell_box",
+  "category": "feature-regressions",
+  "reference": "PBRT / Mitsuba",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+  "images": [
+    {
+      "file": "noise_convergence.png",
+      "sha256": "c52ea15169e1694bf5e9971af85d12ed0e6640fefc1011ea5845d8491759824e",
+      "bytes": 4206526
+    },
+    {
+      "file": "noise_convergence_mitsuba.png",
+      "sha256": "714b6e88279506c248460337893366156860b3676d190c87e72f82ffb5951f14",
+      "bytes": 4999729
+    },
+    {
+      "file": "radiance_comparison.png",
+      "sha256": "d1e1e112586070406da6542024aef43c2f04ecd55c80a53104380e4144d29d02",
+      "bytes": 4700046
+    },
+    {
+      "file": "radiance_comparison_mitsuba.png",
+      "sha256": "f0b0fd564f86e0666d364af4e7062dd1b5fcae09507c3a3e6013581cdb645845",
+      "bytes": 4597321
+    },
+    {
+      "file": "radiance_uncertainty.png",
+      "sha256": "d8a7d883220a598f8cb9ed8dff471c229c044cee1788a33f3e5b033290675d4f",
+      "bytes": 119870
+    },
+    {
+      "file": "radiance_uncertainty_mitsuba.png",
+      "sha256": "8e6b3aa12569e0c4c0a1a6d3182b1a4299a16014cced78c84c9da3e127e8e865",
+      "bytes": 128093
+    },
+    {
+      "file": "residual_channels_512.png",
+      "sha256": "f313856867bd9041e7fb8a998379ad9758a01e8011721fde1e992519389bf77e",
+      "bytes": 2434918
+    },
+    {
+      "file": "residual_channels_512_mitsuba.png",
+      "sha256": "d1dfb3863cab75cee7c415042aebfd9c0b73c72510c0059fe9b98fdea2fe1d96",
+      "bytes": 3450815
+    },
+    {
+      "file": "roi_localization.png",
+      "sha256": "c187fc88db7ec72d6cf65b24549c3bb3a68eda192e7332739ce3b771dd22a28e",
+      "bytes": 598064
+    },
+    {
+      "file": "roi_localization_mitsuba.png",
+      "sha256": "d9b7c6b054551a366d60c62de56435f3102d29830602d10ebc40758178027f61",
+      "bytes": 609078
+    },
+    {
+      "file": "three_renderer_overview.png",
+      "sha256": "67f86378dda2a413a929c8b367b7ea3b425c181aa78a694c9119425f011cb7ee",
+      "bytes": 3266024
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box/analysis_rng_fixed"
+}

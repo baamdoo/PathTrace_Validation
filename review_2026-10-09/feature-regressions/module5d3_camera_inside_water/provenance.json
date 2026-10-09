@@ -1,0 +1,42 @@
+{
+  "scene": "module5d3_camera_inside_water",
+  "category": "feature-regressions",
+  "reference": "PBRT",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+  "images": [
+    {
+      "file": "comparison_spp_16.png",
+      "sha256": "167796c1f732d14f71f644b0cc1fa1497e892d9b0f064baa7a9b6849d48b52f7",
+      "bytes": 2971474
+    },
+    {
+      "file": "comparison_spp_64.png",
+      "sha256": "248e1c12c204533fe3756e857679d28d0a518b6c3d8743734d12e4d500104da4",
+      "bytes": 2775935
+    },
+    {
+      "file": "comparison_spp_128.png",
+      "sha256": "8df234fd4357a901d2c2a7b8585dbd4df0ad234f13dbd8ba0ff8e397f3a77197",
+      "bytes": 2721844
+    },
+    {
+      "file": "replicate_noise_stddev_128.png",
+      "sha256": "4959a82076be4515c9f25d9ee66d60c64acdd1f1e41b2339effc1fd24b8b27b4",
+      "bytes": 7750099
+    },
+    {
+      "file": "replicate_noise_variance_128.png",
+      "sha256": "5b7f78b11de9d33f1d8ee2da16d4b50751c3482efb35ecfbde8796c46100fa54",
+      "bytes": 7752582
+    },
+    {
+      "file": "replicate_noise_convergence.png",
+      "sha256": "f1f90832163cf9cd7fa8e6f6684ecbe2a8991bf27416d89205798d6c7aed49ff",
+      "bytes": 209975
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_camera_inside_water/analysis_feature_rng_fixed"
+}

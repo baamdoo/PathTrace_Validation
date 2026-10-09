@@ -1,5 +1,11 @@
 ﻿# PathTrace_Validation
 
+## Current regression review — 2026-10-09
+
+[Open the current comparison images and status](review_2026-10-09/README.md).
+
+**Work in progress: OPEN / inconclusive results are included for visual review.** Mitsuba gallery uses its native Mitsuba reference; N-layered uses Guo. Older PBRT gallery/layered comparisons are labeled secondary diagnostics. Historical PASS labels below do not describe this current run.
+
 BaambooRenderer PathTracer validation snapshots for visual review.
 
 Each scene folder contains:

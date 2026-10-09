@@ -1,0 +1,27 @@
+{
+  "scene": "cornell_directional_light",
+  "category": "rgb-supplements",
+  "reference": "Mitsuba RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "See report",
+  "visual_approved": false,
+  "note": "메시를 맞춘 보충 비교. float64 통계 교정 후 결과이며 radiance 판정과 분산 판정을 분리합니다.",
+  "images": [
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "cea6b53677afd5222f0e7f47be14664864867bbf573d461b29dadb80e9761310",
+      "bytes": 188987
+    },
+    {
+      "file": "mean_difference.png",
+      "sha256": "7aef04e6574ff0a288bc55de8d0d9ca8cc2d9a275ef249f4730e5508ca318d3c",
+      "bytes": 480229
+    },
+    {
+      "file": "noise_comparison.png",
+      "sha256": "11c5b3e970f3e2c6b3ab04aef8c79b89c49c6713dd76aa9e1d65576f798ace62",
+      "bytes": 1393581
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_directional_light/analysis_rgb_mesh_matched_float64"
+}
