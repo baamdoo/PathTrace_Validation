@@ -1,0 +1,52 @@
+{
+  "scene": "gallery_glass_of_water",
+  "category": "glass-conductor-fixed",
+  "reference": "Mitsuba 3.9.1 native original gallery",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "원본 Mitsuba 재질의 scalar reflectance가 Fresnel F0 안에 곱해지던 importer/engine 처리를 고쳤습니다. 동일 seed 전후 대조에서 평균 Y 차이 +4.759972% → +0.910382%. 기존 mean4 128SPP SSIM .99 검사: 0.991912 / PASSED. 수정 후/전 Y 분산 비율 0.944657, 엔진/Mitsuba 비율 0.505708. 남은 평균 Y 차이의 Welch 95% 구간은 0을 포함하지 않습니다. 정확한 complex-IOR/Schlick 및 재질 모델 동등성은 별도이며, 이번 수정으로 모든 잔차가 해소되었다고 판정하지 않습니다. 원본 reference/meshes와 이전 엔진 baseline은 보존했습니다.",
+  "images": [
+    {
+      "file": "before_after_correction.png",
+      "sha256": "4307f578cedd680a00591f3a0a7a3d303e4be64e004a07168f8dc33746147856",
+      "bytes": 2864327
+    },
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "6211075b9af92640cc21d171a1938da2c976a19e8da815f965ce1659d61c4016",
+      "bytes": 170988
+    },
+    {
+      "file": "noise_variance.png",
+      "sha256": "e3bddc67e507ff4a5b4a284eb0e2f4d46c45e5e1f56671addd39730182ba116a",
+      "bytes": 3425368
+    },
+    {
+      "file": "radiance_mean4_spp128.png",
+      "sha256": "68ec16af9b1dfc7e5d12db0c8ccaf3a63e42e6855521a67f76e9274ec2246e14",
+      "bytes": 1526384
+    },
+    {
+      "file": "radiance_mean4_spp16.png",
+      "sha256": "d2cac05218e694edc73109da2580adb1fdff3fdebe7c1e9d55079c6df390f485",
+      "bytes": 1569509
+    },
+    {
+      "file": "radiance_mean4_spp64.png",
+      "sha256": "85e9ae4f6d365f9d878e169f389d9811e09da5ace8a4c4d3d6e309405f0c2e09",
+      "bytes": 1556686
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "4594c651b10de773ae8c5e0d971f55a48887dad1be884e05ad778a8b6927017d",
+      "bytes": 1561034
+    },
+    {
+      "file": "signed_residuals.png",
+      "sha256": "52a03c598b153573583132e2ba1102644bb593e5d4e83121ec95555ddd2a0300",
+      "bytes": 1724189
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_conductor_scale_fixed"
+}

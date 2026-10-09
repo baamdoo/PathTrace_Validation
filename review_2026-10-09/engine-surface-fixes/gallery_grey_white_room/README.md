@@ -4,7 +4,7 @@
 
 Reference: Mitsuba 3.9.1 native RGB
 
-환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.419345%, renderer당 4 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.
+환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.419345%, renderer당 4 seeds. 기존 SSIM .99 검사: 0.998534 / PASSED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.
 
 평균 영상은 여러 seed의 평균이며 단일 렌더와 구분했습니다. 노이즈 영상은 seed 간 분산입니다. 노이즈 비율 1은 통과 기준이 아닙니다. 색상 스케일·SPP·seed 수는 각 그림에 표시됩니다.
 

@@ -10,11 +10,16 @@ Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layer
 
 Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fresnel 외부 반사율 배율. 실제 GPU의 수정 전 실패와 수정 후 통과를 확인했습니다. 아래는 공통 최종 셰이더로 새로 렌더한 완료 항목입니다.
 
-| Scene | 평균 Y 차이 (128 SPP) | 분산 수렴 |
-|---|---:|---|
-| [complex_room_envmap_mis](engine-surface-fixes/complex_room_envmap_mis/README.md) | +0.028259% | PASS |
-| [gallery_breakfast_room](engine-surface-fixes/gallery_breakfast_room/README.md) | +0.035808% | INCONCLUSIVE |
-| [gallery_grey_white_room](engine-surface-fixes/gallery_grey_white_room/README.md) | +0.419345% | PASS |
+| Scene | 평균 Y 차이 (128 SPP) | 기존 SSIM .99 검사 | 분산 수렴 |
+|---|---:|---|---|
+| [complex_room_envmap_mis](engine-surface-fixes/complex_room_envmap_mis/README.md) | +0.028259% | 0.997503 / PASSED | PASS |
+| [gallery_breakfast_room](engine-surface-fixes/gallery_breakfast_room/README.md) | +0.035808% | 0.997565 / PASSED | INCONCLUSIVE |
+| [gallery_grey_white_room](engine-surface-fixes/gallery_grey_white_room/README.md) | +0.419345% | 0.998534 / PASSED | PASS |
+| [gallery_white_room](engine-surface-fixes/gallery_white_room/README.md) | -0.172790% | 0.989376 / FAILED | PASS |
+
+환경맵 CDF 생성의 수평 이웃도 U 반복에 맞췄습니다. 희소 seam fixture의 기존 proposal이 만드는 큰 분산은 새 baker로 줄였고, 실제 GPU support/MIS 검사를 통과했습니다. 기존 네 자연 환경맵의 cache는 양의 sampling support를 유지하므로 변경하지 않았으며, 위 이미지는 그 동일 cache로 비교했습니다.
+
+유리잔 금속 반사율 수정: 평균 Y +4.7600% → +0.9104%, SSIM 0.991912 / PASSED, 분산 PASS. [전후 이미지와 노이즈](glass-conductor-fixed/gallery_glass_of_water/README.md).
 
 ## 최신 수정 및 진단
 
@@ -98,3 +103,5 @@ Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fr
 시간은 engine 누적 checkpoint 시간, PBRT 전체 process 시간, Mitsuba 동기화 render 호출 시간으로 각각 기록했습니다. 서로 다른 측정 범위와 동시 작업이 있으므로 이번 값으로 renderer 간 속도나 heterogeneous medium의 성능 저하를 판정하지 않습니다.
 
 원본 EXR·상세 실행 로그는 로컬 campaign에 보존합니다. 공개 묶음에는 비교 PNG와 SHA256 provenance만 포함합니다.
+
+[수정 후 렌더 시간 기록](timings.md) — 측정 범위가 서로 다르며, 4단계 성능 검증을 대신하지 않습니다.

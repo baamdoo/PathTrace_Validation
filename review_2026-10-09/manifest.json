@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T05:39:54.251995+00:00",
+  "generated_utc": "2026-10-09T05:51:57.578388+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 244,
+  "images": 259,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1571,7 +1571,7 @@
       "radiance_status": "OPEN",
       "variance_status": "PASS",
       "visual_approved": false,
-      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.028259%, renderer당 4 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.028259%, renderer당 4 seeds. 기존 SSIM .99 검사: 0.997503 / PASSED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
       "images": [
         {
           "file": "radiance_mean4_spp16.png",
@@ -1618,7 +1618,7 @@
       "radiance_status": "OPEN",
       "variance_status": "INCONCLUSIVE",
       "visual_approved": false,
-      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.035808%, renderer당 12 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.035808%, renderer당 12 seeds. 기존 SSIM .99 검사: 0.997565 / PASSED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
       "images": [
         {
           "file": "radiance_mean12_spp16.png",
@@ -1665,7 +1665,7 @@
       "radiance_status": "OPEN",
       "variance_status": "PASS",
       "visual_approved": false,
-      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.419345%, renderer당 4 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.419345%, renderer당 4 seeds. 기존 SSIM .99 검사: 0.998534 / PASSED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
       "images": [
         {
           "file": "radiance_mean4_spp16.png",
@@ -1704,6 +1704,105 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_surface_fixes"
+    },
+    {
+      "scene": "gallery_white_room",
+      "category": "engine-surface-fixes",
+      "reference": "Mitsuba 3.9.1 native RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 -0.172790%, renderer당 4 seeds. 기존 SSIM .99 검사: 0.989376 / FAILED. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "a34dba635732a0454dbd83d68989c69f7275771ed5be9712c12e2904566e7d06",
+          "bytes": 1692244
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "c44a3e08eccea3081551c0d21d5102c193ed9239ea886e336d8fae5f64d643fd",
+          "bytes": 1603014
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "1c04dafc8ab9d20a470931f73573b6727a5c5e1fba43a742e71068345004b3a8",
+          "bytes": 1547560
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "77a84bd2819cfff27960745c4378aa64c382012ba14bb4cf9c982c5ac7538469",
+          "bytes": 1650543
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "cc1f69c98f10601597ca6d251ad001aedaaab0eb66dba5f093db28b7e7703a81",
+          "bytes": 1856437
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "8fd8b7106628aea7785e34ff0ba227f13dc41065195fdaa2508729e53519b8b9",
+          "bytes": 3255610
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "b98cf0cfd6a7071dbc409c672709acc66d2bcb51f4546883b2e63759d92f2978",
+          "bytes": 184516
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_white_room/analysis_surface_fixes"
+    },
+    {
+      "scene": "gallery_glass_of_water",
+      "category": "glass-conductor-fixed",
+      "reference": "Mitsuba 3.9.1 native original gallery",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "원본 Mitsuba 재질의 scalar reflectance가 Fresnel F0 안에 곱해지던 importer/engine 처리를 고쳤습니다. 동일 seed 전후 대조에서 평균 Y 차이 +4.759972% → +0.910382%. 기존 mean4 128SPP SSIM .99 검사: 0.991912 / PASSED. 수정 후/전 Y 분산 비율 0.944657, 엔진/Mitsuba 비율 0.505708. 남은 평균 Y 차이의 Welch 95% 구간은 0을 포함하지 않습니다. 정확한 complex-IOR/Schlick 및 재질 모델 동등성은 별도이며, 이번 수정으로 모든 잔차가 해소되었다고 판정하지 않습니다. 원본 reference/meshes와 이전 엔진 baseline은 보존했습니다.",
+      "images": [
+        {
+          "file": "before_after_correction.png",
+          "sha256": "4307f578cedd680a00591f3a0a7a3d303e4be64e004a07168f8dc33746147856",
+          "bytes": 2864327
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "6211075b9af92640cc21d171a1938da2c976a19e8da815f965ce1659d61c4016",
+          "bytes": 170988
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "e3bddc67e507ff4a5b4a284eb0e2f4d46c45e5e1f56671addd39730182ba116a",
+          "bytes": 3425368
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "68ec16af9b1dfc7e5d12db0c8ccaf3a63e42e6855521a67f76e9274ec2246e14",
+          "bytes": 1526384
+        },
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "d2cac05218e694edc73109da2580adb1fdff3fdebe7c1e9d55079c6df390f485",
+          "bytes": 1569509
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "85e9ae4f6d365f9d878e169f389d9811e09da5ace8a4c4d3d6e309405f0c2e09",
+          "bytes": 1556686
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "4594c651b10de773ae8c5e0d971f55a48887dad1be884e05ad778a8b6927017d",
+          "bytes": 1561034
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "52a03c598b153573583132e2ba1102644bb593e5d4e83121ec95555ddd2a0300",
+          "bytes": 1724189
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_glass_of_water/analysis_conductor_scale_fixed"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."
