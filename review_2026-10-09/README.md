@@ -33,6 +33,8 @@
 | [cornell_directional_light (rgb-supplements)](rgb-supplements/cornell_directional_light/README.md) | Mitsuba RGB | Radiance OPEN |
 | [cornell_principled_sheen (rgb-supplements)](rgb-supplements/cornell_principled_sheen/README.md) | Mitsuba RGB | Radiance OPEN |
 | [cornell_normal_map (normal-map-rgb)](normal-map-rgb/cornell_normal_map/README.md) | Mitsuba RGB | Radiance OPEN |
+| [cornell_normal_map (normal-map-filter-diagnostic)](normal-map-filter-diagnostic/cornell_normal_map/README.md) | Mitsuba RGB | Radiance OPEN |
+| [cornell_many_lights_matched (corrected-many-lights)](corrected-many-lights/cornell_many_lights_matched/README.md) | PBRT primary / Mitsuba diagnostic | Radiance OPEN |
 
 ## 과거 PBRT 보조 진단
 

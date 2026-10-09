@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T04:50:49.732009+00:00",
+  "generated_utc": "2026-10-09T04:58:32.432091+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 144,
+  "images": 155,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1024,6 +1024,85 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_mitsuba_native_corrected"
+    },
+    {
+      "scene": "cornell_normal_map",
+      "category": "normal-map-filter-diagnostic",
+      "reference": "Mitsuba RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "기존 ray-cone normal-map mip filtering을 base-level bilinear로만 바꾼 대조 실험입니다. 128 SPP 평균 Y 차이 +2.4576% → +0.0758%; 바닥 ROI는 약 +0.3%가 남습니다. 원인 분리를 위한 shader overlay이며 production 수정이나 전체 통과를 뜻하지 않습니다. 원래 shader는 복구했습니다.",
+      "images": [
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "aa176768c2271aded9887673f0048b503d693aa58ef3cb60a33b507ce2a17271",
+          "bytes": 184762
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "26bd8d03b24ca93b1be3873f6c311155f9771bf29177204a762e78ebf2f5a904",
+          "bytes": 4811873
+        },
+        {
+          "file": "noise_comparison.png",
+          "sha256": "1da580921de6afa3e8f17d5c09e6eb812f7dec629ef70a903e6e035f21c1fc54",
+          "bytes": 5090608
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_normal_map/analysis_lod0_diagnostic"
+    },
+    {
+      "scene": "cornell_many_lights_matched",
+      "category": "corrected-many-lights",
+      "reference": "PBRT primary / Mitsuba diagnostic",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "기존 finite-light geometry 동작에 맞도록 발광체 간 차폐가 없는 별도 fixture를 추가했습니다. 동일 receiver mesh와 open-cylinder emitter를 사용합니다. PBRT 평균 Y 차이: 기존 128 SPP +3.7335%, 새 128 SPP −0.0123%, 새 512 SPP −0.0147%. 512 SPP mean SSIM 0.990714로 기존 0.99 기준을 통과했습니다. Engine/PBRT Y variance ratio 3.3952, RGB variance ratio 0.5177을 각각 보고합니다. Mitsuba spot falloff 차이는 아직 이 진단에 남아 있습니다.",
+      "images": [
+        {
+          "file": "original_vs_matched_128.png",
+          "sha256": "ed82156afbc15eeb9d25404862798702b1504c1f3d88763cd9a3eac608ed4573",
+          "bytes": 2237116
+        },
+        {
+          "file": "radiance_mean4_128.png",
+          "sha256": "9b6c76f813cafae6307037767582c389eaa04d616e520700e6658317e5d76e10",
+          "bytes": 1901908
+        },
+        {
+          "file": "radiance_mean4_512.png",
+          "sha256": "1ae31e05cee6a2c3108d427c6ee8f866a5901ebe5c37b896bf1163320f10ae49",
+          "bytes": 1738079
+        },
+        {
+          "file": "radiance_seed11_128.png",
+          "sha256": "ad75b20935183fe2e238d7f7f1f1f8dedfbbcb003e385bcd369023b8a6f1d810",
+          "bytes": 2027405
+        },
+        {
+          "file": "radiance_seed11_512.png",
+          "sha256": "2bb71d8a200ea342b39af97461252e0fb9630e3e632b13ecc65403f9ce72aa4e",
+          "bytes": 1872626
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "9d2d0d1c7ad5d6da1e4f6de2b0894c2b207e0959866c4fd79fecc550d914c096",
+          "bytes": 214307
+        },
+        {
+          "file": "replicate_noise_stddev_512.png",
+          "sha256": "42a22ec90a6acf63fc9bfd6dcc9c2aa8514afc8ea41496ac327b96e9dc3359db",
+          "bytes": 4727944
+        },
+        {
+          "file": "replicate_noise_variance_512.png",
+          "sha256": "e1b540c42b11f70c090478da0369f818eb798a07b997409c6f80a604f0e4ae82",
+          "bytes": 4730350
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."
