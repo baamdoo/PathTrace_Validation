@@ -49,6 +49,9 @@
 | gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 16 | 4 | 0.083 | 0.083–0.485 |
 | gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 64 | 4 | 0.253 | 0.247–1.049 |
 | gallery_white_room | mitsuba / mitsuba_volpath_scalar_mask_control | 128 | 4 | 0.445 | 0.440–0.469 |
+| gallery_white_room | mitsuba / mitsuba_volpath_floor_ggx_control | 16 | 4 | 0.085 | 0.080–0.418 |
+| gallery_white_room | mitsuba / mitsuba_volpath_floor_ggx_control | 64 | 4 | 0.253 | 0.244–0.973 |
+| gallery_white_room | mitsuba / mitsuba_volpath_floor_ggx_control | 128 | 4 | 0.470 | 0.450–0.509 |
 
 Engine: seed별 누적 checkpoint 시간(합산 금지). Mitsuba: 동기화 render 호출. Guo: 프로세스 전체 시간. 일부 CPU 분석이 동시에 진행됐습니다.
 

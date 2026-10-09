@@ -25,6 +25,8 @@ White 불투명도 수정 / 동일 volpath reference: 평균 Y -0.1596% → -0.1
 
 White 불투명도 수정 / 보존한 원본 path reference: 평균 Y -0.1728% → -0.1950%, SSIM 0.989367 / FAILED. [별도 대조군](white-scalar-mask-path/gallery_white_room/README.md).
 
+White 바닥 분포만 맞춘 진단: 동일 engine 대비 native Y -0.1818% / GGX control Y +0.1433%, control SSIM 0.990240 / PASSED. [원인 분리 이미지](white-floor-distribution-control/gallery_white_room/README.md). 원본 gallery의 판정은 유지합니다.
+
 ## 최신 수정 및 진단
 
 - [Many-lights: 발광체 차폐 조건 수정 전후](corrected-many-lights/cornell_many_lights_matched/README.md) — PBRT 평균 Y −0.0147%, 기존 SSIM 기준·분산 수렴 PASS.
