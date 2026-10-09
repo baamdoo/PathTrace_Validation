@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T05:02:18.948325+00:00",
+  "generated_utc": "2026-10-09T05:04:36.526219+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 160,
+  "images": 209,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1140,6 +1140,335 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_camera_matched"
+    },
+    {
+      "scene": "complex_room_envmap_mis",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 +0.028259%. 기존 전체 영상 SSIM .99 기준: 0.997503, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "100dfef84c564f1a4c7580e225cd70bc24d80cb5114efcdb85ecb6c612defaee",
+          "bytes": 1898506
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "47010308a147167c04ce1023258323d0da887f0601359256670d6bf2932db8d8",
+          "bytes": 1746644
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "6eeadb9f2ec7b481b8d64684905a05bff8b17baafcc02971e67211d5f30c2875",
+          "bytes": 1678227
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "6ab1225393289ce2a74515204a51b1ef9a5f017764c61b14375364b1c8289330",
+          "bytes": 1803845
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "b1f99016cc61e90722ba1704084675809b0aa51cf0df2b41a5fe7425f8ff2b5c",
+          "bytes": 3520366
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "6a2c0f2909ebc2aa685c60e8044e24c153183e9dc1eca86022f0cc561f66a5ce",
+          "bytes": 3501244
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "2e06d31f2c9ec02a669ed80afdaf15891a04952979168a4bd15fbbc5a011b6d6",
+          "bytes": 162949
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "cornell_anisotropic_conductor",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 +1.434576%. 기존 전체 영상 SSIM .99 기준: 0.999186, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "e16a0b40b7e948d611e00c3fb4ba6b279f1496a663bb32fe3d49b90793005439",
+          "bytes": 1607364
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "4e78cc07088251d547ad1b54cf4dee58df1e8e9b1e52566d7bb4117683c14ea6",
+          "bytes": 1504443
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "bf1c586309e553b5583392561ec44cbf305ce0ac2e96a3e049379a232a2c53cc",
+          "bytes": 1442586
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "754124e97860cc312ef312e667ec5b2bfd3b7347a72ac02cfa82712eafa6e99a",
+          "bytes": 1553983
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "9122d39cb93b7c4a6a2b6de055851bc041a9855871a0d0536afa365e6cbea571",
+          "bytes": 2984103
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "f4fd9dbf91d5b6bdc19c840c77a2b1b609437f8d57477448ea34c2c4838a16d7",
+          "bytes": 3383708
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "21ae7c3a7e3576eff672777d8115b56038f0003bac7fc14497e962e111e70d92",
+          "bytes": 161315
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "cornell_material_maps",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 +0.562703%. 기존 전체 영상 SSIM .99 기준: 0.999757, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "507e5ce0f4d37757a6de944f2109cfa248610a946b788d64c0a8b5537f2d4b44",
+          "bytes": 1692618
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "88e3d26b7d1aa33789740451efc3cd77ad6d863b321adb12c92bd1eb4ffd3346",
+          "bytes": 1543345
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "5137ae5e4825531d1209173778c0f576bfa311e5d605dc235d5809b6fb532605",
+          "bytes": 1463405
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "b288b4d650410a05d9c9c2f39c62b2adb1309cd7415e0023adadd38ed07d6350",
+          "bytes": 1608556
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "325b6ffd6f3e93071650efa3546928d294503d402bfd230ea429b866195f44ca",
+          "bytes": 3496396
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "72a6de64e182394c6e62765918d078334813883ab69234e06ea8638b8c6c5b25",
+          "bytes": 3633796
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "e31c2ee893b5d8c70fe9cba6b77b816431efb7d61ceff40be00520e4c47b36fd",
+          "bytes": 160383
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_material_maps/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "cornell_box_dielectric",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 -0.002772%. 기존 전체 영상 SSIM .99 기준: 0.998914, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "c9706fd04beaf4d7493dcac43ac7314294340b45f756d6c5ca508801fd10d0f0",
+          "bytes": 1518576
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "6fe77fed6c1f13ce215fcb946434f8e90b1872eb9da242b085bd8075e6642e22",
+          "bytes": 1517815
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "395a7f3dd0b45382d64010d9f78fa2a4e26db3ed2d51b8cd8a2afe59aa9e7ca1",
+          "bytes": 1530455
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "5dc85cb9b54545f8822ecc8ad54714252af3548d2650d96d24713744eea10b5f",
+          "bytes": 1503877
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "af14ec34b4e971822784e4b12ac02686eea63453721a36e23c835431bdc29f6c",
+          "bytes": 3067665
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "be4f5fb8010948f3290ffe7da4f7f9126b11c9a98ec2ff88502d595d653bbfcd",
+          "bytes": 3488387
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "327d86ad543de0f29e2faf336aad2470a98102ae7d4397569f74faef59d765c2",
+          "bytes": 175194
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_box_dielectric/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "module5d3_water_glass",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 -0.056473%. 기존 전체 영상 SSIM .99 기준: 0.994014, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "4c721910b9f512b745dd37222aad9aee2278871465aec90481e0493b7b8bbbe5",
+          "bytes": 1598040
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "28daeb720aa8e853ed39415b047ce27b6014296f552b84cda11b143984b9da7e",
+          "bytes": 1753840
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "96ccf75ca9192d527e63b5a50c4117620db04ddd83363b1a9ae31725f2b04636",
+          "bytes": 1782332
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "e349b828998a94fc35fb482153ed6403c30cc16b86d4b1ba3f6317f4fce945e0",
+          "bytes": 1674926
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "524d05d0302fc2ced96a21e867e4474e1fbdbc0edb328339b1b1bc5bba26b1bf",
+          "bytes": 3292150
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "58c1f7e0adbd4cbb12cbebca80464b1bd15843747c865462bfbe66df7327c2b0",
+          "bytes": 3730978
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "f245d60e3c80f7ce73041c4b985c7063bb5b3eb1f66a085fe05a522818270ad9",
+          "bytes": 177680
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_water_glass/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "module5d3_camera_inside_water",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 -0.004007%. 기존 전체 영상 SSIM .99 기준: 0.999580, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "dd64648660ddf7ea4600811a4ddda51ea2f32a86b49c8517fb688d2299f3212d",
+          "bytes": 1451526
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "2123808e1a95298693825ab8a9aec5c2a68a3cc33eaa6d19be35f9e904015d2e",
+          "bytes": 1305703
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "f96229d0951f91970f8d36f0342f748fd4e67cc397634732495be7c8f5a29844",
+          "bytes": 1261408
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "838023c0c38d6d47c4223b882d1af8b2a49ffb41669e20201c23e634fad24671",
+          "bytes": 1388431
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "70b109bcb0dcd473a32a44224177f0e1f9ec5df6bd4698024f42c172afc66823",
+          "bytes": 2681209
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "447068d28ab47f4fe6f3bf5cdc73c328b2a67080afd53671a38b51ca8dd2cae9",
+          "bytes": 2969142
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "3ec60c05de9ac0417dabe30dc8a54357f505960ee2f2bbebde101985f13dde7c",
+          "bytes": 166167
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_camera_inside_water/analysis_native_rgb_remaining"
+    },
+    {
+      "scene": "module5d3_thin_neutrality",
+      "category": "remaining-native-rgb",
+      "reference": "Mitsuba 3.9.1 RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 -0.069790%. 기존 전체 영상 SSIM .99 기준: 0.996879, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "ce33af9e6021bbe25b7e267d8c8373ea0f0700efee8b94171674a464463c14c6",
+          "bytes": 1553258
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "ac2cf4c500776c4e85d1d1737916d5a30d6aedcdc2fe3c4d681ae35d0f77a237",
+          "bytes": 1667009
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "20c6e37eb1e9f04d96177503d583dae4db9217b612dd24f001caaaa35a64bb1a",
+          "bytes": 1700736
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "e7528b2d507202bb4e1245ee2cf90b7f077b6801842dbd3da8fa37eba9857918",
+          "bytes": 1598942
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "56fa1764cb964dfba4c344cd29f20d30c31fab396541c4b7dc2e39c89e5b957a",
+          "bytes": 3286991
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "f3a2bdff4d6d5218afc7c29654d80dcfb39ce9104625d191c32b81da83ca6f97",
+          "bytes": 3708313
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "caecc892f3efc865fa39cfe2bbd3c59c473ab6a9e05e7362440e9c5b6ce7f56a",
+          "bytes": 171658
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/module5d3_thin_neutrality/analysis_native_rgb_remaining"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."

@@ -41,6 +41,13 @@ Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layer
 | [cornell_normal_map (normal-map-rgb)](normal-map-rgb/cornell_normal_map/README.md) | Mitsuba RGB | Radiance OPEN |
 | [cornell_normal_map (normal-map-filter-diagnostic)](normal-map-filter-diagnostic/cornell_normal_map/README.md) | Mitsuba RGB | Radiance OPEN |
 | [cornell_many_lights_matched (corrected-many-lights)](corrected-many-lights/cornell_many_lights_matched/README.md) | PBRT primary / Mitsuba diagnostic | Radiance OPEN |
+| [complex_room_envmap_mis (remaining-native-rgb)](remaining-native-rgb/complex_room_envmap_mis/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [cornell_anisotropic_conductor (remaining-native-rgb)](remaining-native-rgb/cornell_anisotropic_conductor/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [cornell_material_maps (remaining-native-rgb)](remaining-native-rgb/cornell_material_maps/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [cornell_box_dielectric (remaining-native-rgb)](remaining-native-rgb/cornell_box_dielectric/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [module5d3_water_glass (remaining-native-rgb)](remaining-native-rgb/module5d3_water_glass/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [module5d3_camera_inside_water (remaining-native-rgb)](remaining-native-rgb/module5d3_camera_inside_water/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
+| [module5d3_thin_neutrality (remaining-native-rgb)](remaining-native-rgb/module5d3_thin_neutrality/README.md) | Mitsuba 3.9.1 RGB | Radiance OPEN |
 
 ## 과거 PBRT 보조 진단
 

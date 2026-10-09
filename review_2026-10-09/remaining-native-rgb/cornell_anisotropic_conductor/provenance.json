@@ -1,0 +1,47 @@
+{
+  "scene": "cornell_anisotropic_conductor",
+  "category": "remaining-native-rgb",
+  "reference": "Mitsuba 3.9.1 RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 +1.434576%. 기존 전체 영상 SSIM .99 기준: 0.999186, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+  "images": [
+    {
+      "file": "radiance_mean4_spp16.png",
+      "sha256": "e16a0b40b7e948d611e00c3fb4ba6b279f1496a663bb32fe3d49b90793005439",
+      "bytes": 1607364
+    },
+    {
+      "file": "radiance_mean4_spp64.png",
+      "sha256": "4e78cc07088251d547ad1b54cf4dee58df1e8e9b1e52566d7bb4117683c14ea6",
+      "bytes": 1504443
+    },
+    {
+      "file": "radiance_mean4_spp128.png",
+      "sha256": "bf1c586309e553b5583392561ec44cbf305ce0ac2e96a3e049379a232a2c53cc",
+      "bytes": 1442586
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "754124e97860cc312ef312e667ec5b2bfd3b7347a72ac02cfa82712eafa6e99a",
+      "bytes": 1553983
+    },
+    {
+      "file": "signed_residuals.png",
+      "sha256": "9122d39cb93b7c4a6a2b6de055851bc041a9855871a0d0536afa365e6cbea571",
+      "bytes": 2984103
+    },
+    {
+      "file": "noise_variance.png",
+      "sha256": "f4fd9dbf91d5b6bdc19c840c77a2b1b609437f8d57477448ea34c2c4838a16d7",
+      "bytes": 3383708
+    },
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "21ae7c3a7e3576eff672777d8115b56038f0003bac7fc14497e962e111e70d92",
+      "bytes": 161315
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_anisotropic_conductor/analysis_native_rgb_remaining"
+}

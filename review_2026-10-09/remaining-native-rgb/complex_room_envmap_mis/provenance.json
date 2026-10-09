@@ -1,0 +1,47 @@
+{
+  "scene": "complex_room_envmap_mis",
+  "category": "remaining-native-rgb",
+  "reference": "Mitsuba 3.9.1 RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "같은 RGB 레퍼런스와 실제 엔진 메시로 비교했습니다. 128 SPP x 4 평균 Y 차이 +0.028259%. 기존 전체 영상 SSIM .99 기준: 0.997503, PASSED. 기존 영상 기준의 통과와 정확한 재질 모델 일치는 별도입니다. Complex-IOR/Schlick, Smith G, texture filtering 등 확인된 모델 차이는 유지한 native-reference 비교입니다. Water/inside/thin의 semantic-AOV ROI 기준 전체를 재실행한 결과는 아닙니다. Environment seam 수정 전 기준 영상은 보존합니다.",
+  "images": [
+    {
+      "file": "radiance_mean4_spp16.png",
+      "sha256": "100dfef84c564f1a4c7580e225cd70bc24d80cb5114efcdb85ecb6c612defaee",
+      "bytes": 1898506
+    },
+    {
+      "file": "radiance_mean4_spp64.png",
+      "sha256": "47010308a147167c04ce1023258323d0da887f0601359256670d6bf2932db8d8",
+      "bytes": 1746644
+    },
+    {
+      "file": "radiance_mean4_spp128.png",
+      "sha256": "6eeadb9f2ec7b481b8d64684905a05bff8b17baafcc02971e67211d5f30c2875",
+      "bytes": 1678227
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "6ab1225393289ce2a74515204a51b1ef9a5f017764c61b14375364b1c8289330",
+      "bytes": 1803845
+    },
+    {
+      "file": "signed_residuals.png",
+      "sha256": "b1f99016cc61e90722ba1704084675809b0aa51cf0df2b41a5fe7425f8ff2b5c",
+      "bytes": 3520366
+    },
+    {
+      "file": "noise_variance.png",
+      "sha256": "6a2c0f2909ebc2aa685c60e8044e24c153183e9dc1eca86022f0cc561f66a5ce",
+      "bytes": 3501244
+    },
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "2e06d31f2c9ec02a669ed80afdaf15891a04952979168a4bd15fbbc5a011b6d6",
+      "bytes": 162949
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_native_rgb_remaining"
+}
