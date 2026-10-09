@@ -1,0 +1,468 @@
+{
+  "category": "stage3-representative",
+  "scene": "glass_smoke_lighting_v3",
+  "reference": "PBRT v4 CPU volpath, wavelength jitter enabled; matched neutral optics, geometry, camera and tent film.",
+  "note": "실제 유리구슬 내부 smoke와 동일 glass clear 대조. 68 EXR 정상완료; smoke/clear 평균·분산 감소·depth 기준 PASS_SCOPED. 독립 검산2456항목 일치. 사용자 육안 검토 PENDING, 전체 stage_pass=false.",
+  "images": [
+    {
+      "file": "beauty_hero512_smoke_pair.png",
+      "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+      "bytes": 764297,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_smoke_pair.png",
+        "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+        "bytes": 764297
+      },
+      "caption": "512×512 원본,2048 SPP,seed11: smoke 실제 RGB. 공통 exposure1 + Reinhard + sRGB, denoise 없음. 단일hero로 분산·CI·사용자 승인을 부여하지 않는다.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "beauty_hero512_seed11_2048.png",
+      "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+      "bytes": 1347335,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_seed11_2048.png",
+        "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+        "bytes": 1347335
+      },
+      "caption": "512×512 원본,2048 SPP,seed11: smoke와 clear 실제 RGB. 공통 exposure1 + Reinhard + sRGB, denoise 없음. 단일hero로 분산·CI·사용자 승인을 부여하지 않는다.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "beauty_hero512_clear_pair.png",
+      "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+      "bytes": 708286,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_clear_pair.png",
+        "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+        "bytes": 708286
+      },
+      "caption": "512×512 원본,2048 SPP,seed11: clear 실제 RGB. 공통 exposure1 + Reinhard + sRGB, denoise 없음. 단일hero로 분산·CI·사용자 승인을 부여하지 않는다.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "hero512_clear_engine_RGB.png",
+      "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+      "bytes": 140012,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_engine_RGB.png",
+        "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+        "bytes": 140012
+      },
+      "caption": "512×512 native RGB: clear / engine,2048 SPP,seed11. 동일 표시식이며 단일표본이다.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "hero512_clear_pbrt_RGB.png",
+      "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+      "bytes": 302703,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_pbrt_RGB.png",
+        "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+        "bytes": 302703
+      },
+      "caption": "512×512 native RGB: clear / PBRT,2048 SPP,seed11. 동일 표시식이며 단일표본이다.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "hero512_smoke_engine_RGB.png",
+      "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+      "bytes": 154811,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_engine_RGB.png",
+        "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+        "bytes": 154811
+      },
+      "caption": "512×512 native RGB: smoke / engine,2048 SPP,seed11. 동일 표시식이며 단일표본이다.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "hero512_smoke_pbrt_RGB.png",
+      "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+      "bytes": 325724,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_pbrt_RGB.png",
+        "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+        "bytes": 325724
+      },
+      "caption": "512×512 native RGB: smoke / PBRT,2048 SPP,seed11. 동일 표시식이며 단일표본이다.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "beauty_single_seed11_1024.png",
+      "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+      "bytes": 188825,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_single_seed11_1024.png",
+        "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+        "bytes": 188825
+      },
+      "caption": "128×128,1024 SPP,seed11 단일표본. 위 smoke/아래 clear; 단일표본에서 분산이나 CI를 주장하지 않는다.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "beauty_mean4_1024.png",
+      "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+      "bytes": 166319,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_1024.png",
+        "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+        "bytes": 166319
+      },
+      "caption": "128×128, 1024 SPP/run, 독립4 seed 평균. 위 smoke/아래 clear, 왼쪽 engine/오른쪽 PBRT. 공통 exposure1 + Reinhard + sRGB.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "beauty_mean4_256.png",
+      "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+      "bytes": 190437,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_256.png",
+        "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+        "bytes": 190437
+      },
+      "caption": "128×128, 256 SPP/run, 독립4 seed 평균. 위 smoke/아래 clear, 왼쪽 engine/오른쪽 PBRT. 공통 exposure1 + Reinhard + sRGB.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "beauty_mean4_64.png",
+      "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+      "bytes": 213969,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_64.png",
+        "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+        "bytes": 213969
+      },
+      "caption": "128×128, 64 SPP/run, 독립4 seed 평균. 위 smoke/아래 clear, 왼쪽 engine/오른쪽 PBRT. 공통 exposure1 + Reinhard + sRGB.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "clear_depth_tail_Y_CI.png",
+      "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+      "bytes": 68635,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_depth_tail_Y_CI.png",
+        "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+        "bytes": 68635
+      },
+      "caption": "동일 renderer·seed의 depth64−32 Y 차이와 paired95% CI. 사전 band 안에서 통과하며 차이가 정확히0이라는 뜻은 아니다.",
+      "role": "supplemental_depth"
+    },
+    {
+      "file": "clear_regional_mean_CI.png",
+      "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+      "bytes": 133555,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_regional_mean_CI.png",
+        "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+        "bytes": 133555
+      },
+      "caption": "1024 SPP×4,geometry-only5영역 RGB/Y 평균차의 marginal95% Welch/bootstrap 합집합 CI. 초록은 사전 engineering band이며 동시 신뢰구간 주장이 아니다.",
+      "role": "supplemental_uncertainty"
+    },
+    {
+      "file": "clear_signed_residual_RGB_Y.png",
+      "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+      "bytes": 165634,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_signed_residual_RGB_Y.png",
+        "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+        "bytes": 165634
+      },
+      "caption": "1024 SPP 독립4 seed 평균의 raw linear engine−PBRT RGB/Y 잔차. 공통 발산색 스케일의 보조 진단이다.",
+      "role": "supplemental_residual"
+    },
+    {
+      "file": "clear_stddev_RGB_Y.png",
+      "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+      "bytes": 417370,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_stddev_RGB_Y.png",
+        "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+        "bytes": 417370
+      },
+      "caption": "1024 SPP×4 독립 seed의 표본분산(ddof1) 또는 그 제곱근. 위 engine/아래 PBRT, RGB/Y 공통 스케일. 표시 floor는 그림에만 적용한다.",
+      "role": "supplemental_noise"
+    },
+    {
+      "file": "clear_variance_RGB_Y.png",
+      "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+      "bytes": 366402,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_RGB_Y.png",
+        "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+        "bytes": 366402
+      },
+      "caption": "1024 SPP×4 독립 seed의 표본분산(ddof1) 또는 그 제곱근. 위 engine/아래 PBRT, RGB/Y 공통 스케일. 표시 floor는 그림에만 적용한다.",
+      "role": "supplemental_noise"
+    },
+    {
+      "file": "clear_variance_convergence.png",
+      "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+      "bytes": 196927,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_convergence.png",
+        "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+        "bytes": 196927
+      },
+      "caption": "64/256/1024 SPP의 독립 seed Y분산. 같은 seed의 중첩 SPP는 종속이며 PBRT spectral sampling noise를 포함한다.",
+      "role": "supplemental_convergence"
+    },
+    {
+      "file": "geometry_ROIs.png",
+      "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+      "bytes": 27437,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\geometry_ROIs.png",
+        "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+        "bytes": 27437
+      },
+      "caption": "렌더 결과를 보기 전에 고정한 geometry-only 영역. 밝기나 residual로 영역을 선택하지 않았다.",
+      "role": "supplemental_protocol"
+    },
+    {
+      "file": "smoke_depth_tail_Y_CI.png",
+      "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+      "bytes": 70018,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_depth_tail_Y_CI.png",
+        "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+        "bytes": 70018
+      },
+      "caption": "동일 renderer·seed의 depth64−32 Y 차이와 paired95% CI. 사전 band 안에서 통과하며 차이가 정확히0이라는 뜻은 아니다.",
+      "role": "supplemental_depth"
+    },
+    {
+      "file": "smoke_regional_mean_CI.png",
+      "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+      "bytes": 134306,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_regional_mean_CI.png",
+        "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+        "bytes": 134306
+      },
+      "caption": "1024 SPP×4,geometry-only5영역 RGB/Y 평균차의 marginal95% Welch/bootstrap 합집합 CI. 초록은 사전 engineering band이며 동시 신뢰구간 주장이 아니다.",
+      "role": "supplemental_uncertainty"
+    },
+    {
+      "file": "smoke_signed_residual_RGB_Y.png",
+      "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+      "bytes": 181598,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_signed_residual_RGB_Y.png",
+        "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+        "bytes": 181598
+      },
+      "caption": "1024 SPP 독립4 seed 평균의 raw linear engine−PBRT RGB/Y 잔차. 공통 발산색 스케일의 보조 진단이다.",
+      "role": "supplemental_residual"
+    },
+    {
+      "file": "smoke_stddev_RGB_Y.png",
+      "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+      "bytes": 421609,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_stddev_RGB_Y.png",
+        "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+        "bytes": 421609
+      },
+      "caption": "1024 SPP×4 독립 seed의 표본분산(ddof1) 또는 그 제곱근. 위 engine/아래 PBRT, RGB/Y 공통 스케일. 표시 floor는 그림에만 적용한다.",
+      "role": "supplemental_noise"
+    },
+    {
+      "file": "smoke_variance_RGB_Y.png",
+      "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+      "bytes": 365613,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_RGB_Y.png",
+        "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+        "bytes": 365613
+      },
+      "caption": "1024 SPP×4 독립 seed의 표본분산(ddof1) 또는 그 제곱근. 위 engine/아래 PBRT, RGB/Y 공통 스케일. 표시 floor는 그림에만 적용한다.",
+      "role": "supplemental_noise"
+    },
+    {
+      "file": "smoke_variance_convergence.png",
+      "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+      "bytes": 194136,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_convergence.png",
+        "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+        "bytes": 194136
+      },
+      "caption": "64/256/1024 SPP의 독립 seed Y분산. 같은 seed의 중첩 SPP는 종속이며 PBRT spectral sampling noise를 포함한다.",
+      "role": "supplemental_convergence"
+    }
+  ],
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\publication_analysis_receipt.json",
+    "sha256": "c96f716b1b759b7c7bed8c266b3eb27f3d856d0df3d45db4050818e753427c62",
+    "bytes": 16403
+  },
+  "stage_pass": false,
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_review_status": "PENDING_USER_REVIEW",
+  "visual_approval_scope": "New actual Stage3 images require user review. Numerical outcomes are separate.",
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+    "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+    "bytes": 771924
+  },
+  "radiance_status": {
+    "smoke": "PASS_SCOPED",
+    "clear": "PASS_SCOPED"
+  },
+  "variance_status": {
+    "smoke": "PASS_SCOPED",
+    "clear": "PASS_SCOPED"
+  },
+  "numerical_status": {
+    "smoke": "PASS_SCOPED",
+    "clear": "PASS_SCOPED"
+  },
+  "source_contract_status": {
+    "schema_version": 1,
+    "status": "SOURCE_CONTEXT_VERIFIED_BOUNDED_PREPARED_SCOPE",
+    "created_utc": "2026-10-09T12:25:42.771856+00:00",
+    "stage_pass": false,
+    "source_contract_verified": true,
+    "unresolved_blocking_issues": [],
+    "radiance_status": "PENDING_FORMAL_STAGE3_IMAGES",
+    "user_visual_acceptance": "PENDING_USER_REVIEW",
+    "scope": "Current installed lighting_v3 solid dielectric smoke/clear host, frozen v5 application and reused v4 shaders, plus completed bounded Stage2 controls. Enables analysis of the planned Stage3 cohorts; does not supply Stage3 numerical or visual acceptance.",
+    "evidence": [
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4.json",
+        "sha256": "f67d236242bd0da57be506217583eb573f6bb97c419d22a8a93444ab14e543eb",
+        "bytes": 122485
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\intake_preflight.json",
+        "sha256": "4a3e30f7bd7c5952601c121a53e154bd774622bac49ee73e86f8df72fe967145",
+        "bytes": 42970
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_completion_receipt.json",
+        "sha256": "3182691185cf658e7830e5406fc625e4c04908727ad95edd7d4b7778a6b79561",
+        "bytes": 4009
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_summary.json",
+        "sha256": "bd97f990cd255c3977ca15a54a5227c7025367b19ed70f229a9815fda82affc9",
+        "bytes": 88118
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_report.md",
+        "sha256": "08291a4055cffd2eb6814b3f665ea9aa8061526c1f29d3edfddf90f510809be2",
+        "bytes": 7794
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\independent_final_statistics_review.json",
+        "sha256": "90229cb4c182b0e5ae9e56aa58d87f90e398818b4923d223508cc199278b53bc",
+        "bytes": 172059
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\main_inputs.json",
+        "sha256": "0cde31861eb4d0d6869130e8b8d9b1b125ac3793e106ad523a36908f5f3a1edf",
+        "bytes": 49830
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_protocol.json",
+        "sha256": "d638beccbfd36bf1afbd28ee322352b35630bf9a5e2ea1bf772a4aed40919de2",
+        "bytes": 14430
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+        "sha256": "85354c29ebbfa6bf8ebd5f35d53fc1e09e99035b9b33f83189b765ec8aaadb35",
+        "bytes": 31941
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+        "sha256": "08849004e18e89b040f38a52e859fe9725d49aa421b3e0038d8f36213bc8e222",
+        "bytes": 2194
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+        "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+        "bytes": 27641
+      },
+      {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+        "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+        "bytes": 23031
+      }
+    ],
+    "stage2_prepared_gate": {
+      "status": "READY_FOR_STAGE3_PREPARED_SCOPE",
+      "scene_count": 11,
+      "medium_scene_count": 6,
+      "vacuum_control_count": 5,
+      "numeric_mean": "PASS_SCOPED_EQUIVALENCE",
+      "variance": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth": "PASS_SCOPED_16_VS_32",
+      "source_and_application": "VERIFIED_BOUNDED_CONTACT_AND_ACTUAL_LOADER_INTEGRATION",
+      "scope": "These authored neutral single-boundary fixtures only; no universal geometry or Stage3/4 acceptance."
+    },
+    "stage2_independent_scope": {
+      "scenes": 11,
+      "unique_exrs": 320,
+      "engine_exrs": 160,
+      "pbrt_exrs": 160,
+      "numerical_comparisons": 3440,
+      "blockers": []
+    },
+    "stage3_source_model": {
+      "host": "single solid dielectric host containing smoke; not a hollow shell/air cavity",
+      "ior": 1.5,
+      "scattering": "neutral sigma_a=.1, sigma_s=.9, g=0, densityScale=.18; clear only densityScale=0",
+      "reference": "PBRT wavelength jitter enabled; white calibration is source-only, never a hero correction factor",
+      "geometry": "Identical shared closed PLY and fixed camera/film; static source review does not directly read back GPU optical buffers"
+    },
+    "current_source_crosscheck": {
+      "frozen_file_count": 139,
+      "all_current_hashes_match": true,
+      "archive_fallback_used": 0,
+      "protocol_fields_preserved": [
+        "acquisition",
+        "mean_gate",
+        "noise_gate",
+        "depth_gate",
+        "visual",
+        "regions",
+        "performance"
+      ]
+    },
+    "limits": [
+      "Actual GPU-uploaded medium IDs, flags, IOR and host state are not read back by this source review; normal completion and full source-frozen image tests remain required.",
+      "This is one solid dielectric host containing smoke, not a hollow glass shell with an air cavity.",
+      "Shared smooth PLY normals all lie in their geometric hemispheres, but renderer shading-normal transport conventions and finite-precision intersection/offset behavior are not proven identical.",
+      "Engine/PBRT density and coefficient multiplication order, majorants, spectral sampling, and estimators differ. Gray optical spectra and scalar eta remove chromatic material mismatch; white-source calibration does not prove the heterogeneous transport implementation.",
+      "Depth32 source values match but convergence sufficiency remains the precommitted32-to64 rendered tail test. Source identity is not a claim of identical random samples/variance.",
+      "No normal maps/material textures are present. Ray-cone LOD does not select source texture values here, but ray offsets and normal handling still apply.",
+      "Old contract unmet text and installation INSTALLED_NOT_RENDERED are preserved historical preparation statements; this report closes only static source checks and confirms existing white-calibration provenance.",
+      "The v5 auxiliary meshlet fix applies only to bAirContributor=true pure boundaries. All four Stage3 hosts have false, retaining original loading behavior. Actual Stage2 v5 recovery remains separate.",
+      "All formal all-region/channel gates use original protocols; no threshold widening or empirical medium brightness fitting.",
+      "Four independent seeds only; SPP checkpoints are dependent. Regional intervals are not simultaneous95% coverage.",
+      "Variance PASS means variance decreases with SPP. Engine/PBRT variance equality is not required and is not claimed.",
+      "Exact shared-edge repair is bounded: supported coordinate range, edge interior, manifold pair, max8 meshlets/256 triangles and guarded near-hit interval. Vertex/nonmanifold/general subepsilon geometry is not certified.",
+      "v4 GPU shader PASS did not prove application integration: actual loader omitted meshlets; failed v4 image evidence remains preserved. v5 changes the auxiliary loader topology, not authored BLAS indices.",
+      "Raw GPU meshlet readback was not performed; source/build provenance plus actual repaired image controls establish this scoped integration.",
+      "Timing includes differing scopes, concurrent CPU analysis and initialization/post-output shutdown delay. No Stage4 causal overhead or normal-slowdown conclusion.",
+      "Stage2 diagnostic visual review waived by user does not approve Stage3 actual RGB images.",
+      "Empty unresolved_blocking_issues means no identified blocker for these authored scoped contracts after actual v5 controls, not universal medium/geometry correctness.",
+      "Stage2 ratio-normalized neutral controls do not replace Stage3 raw RGB/spectral-noise/32-to64 depth-tail checks.",
+      "Source matching does not imply equal variance or identical Monte Carlo samples.",
+      "Base/hero/depth execution order may differ; frozen68-image acquisition and statistical definitions are unchanged."
+    ],
+    "required_remaining": [
+      "All base/depth/hero child batches normal exit, fixed source hashes,68finiteEXRs and exact metadata",
+      "Four-seed radiance/noise/variance and paired32-to64 tail under the existing frozen protocol",
+      "Actual24PNG artifact QA, independent numerical review and separate user visual review",
+      "Separate isolated performance validation before any Stage4 causal slowdown claim"
+    ],
+    "analysis_executed": false,
+    "renderer_executed_by_context_preparation": false
+  },
+  "timing_scope": "Raw metadata scopes retained verbatim. These cumulative/checkpoint and whole-process records are not a Stage4 isolated slowdown comparison.",
+  "publication_scope": "Primary actual RGB first; uncertainty/noise/depth are supplementary. Original linear EXRs remain unchanged in source evidence."
+}

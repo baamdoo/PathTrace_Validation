@@ -1,3 +1,7 @@
+현재 사용자 육안 상태: **면제 (waived), 승인 아님**. 아래 수치·과거 기록은 그대로 보존합니다. Stage3 실제 대표 이미지는 별도 검토가 필요합니다.
+
+---
+
 # gallery_medium_stage2_smoke_scatter_g0
 
 **Radiance: INCONCLUSIVE · Variance: PASS_SCOPED · 사용자 육안 확인: 대기 (새 Stage 2 이미지)**

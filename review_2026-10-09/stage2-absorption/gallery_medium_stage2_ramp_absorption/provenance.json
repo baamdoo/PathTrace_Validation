@@ -7,7 +7,7 @@
   "source_contract_status": "OPEN",
   "visual_approved": false,
   "visual_approved_images": 0,
-  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "visual_approval_scope": "Stage2 diagnostic visual review waived by user; not visual approval. Stage3 actual beauty still requires review.",
   "note": "상수/램프 흡수량과 분산 감소는 해당 고정 기준을 충족했습니다. 알려진 경계 접촉 결함이 남아 전체 판정은 INCONCLUSIVE입니다. Spectral white와 RGB white는 각자의 vacuum으로 정규화합니다.",
   "images": [
     {
@@ -88,5 +88,11 @@
     "sha256": "0d259d06405e1c09ca050ed4fd5a024c2a11809ea9f236ecbcb19c94dade673f",
     "bytes": 272177
   },
-  "stage_pass": false
+  "stage_pass": false,
+  "visual_review_status": "WAIVED_BY_USER",
+  "visual_review_waiver": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\user_stage2_visual_waiver.json",
+    "sha256": "57481c33efe8ce120a617a1eb62b2f5ea36c4e3d10767382f7cc177889c80c78",
+    "bytes": 980
+  }
 }

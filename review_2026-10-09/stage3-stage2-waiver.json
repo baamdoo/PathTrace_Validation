@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "USER_VISUAL_REVIEW_WAIVED_STAGE2_ONLY",
+  "user_statement": "일단 실제 씬의 이미지는 없는것같아서 육안 검증이 불가능해. 지금은 테스트용이니까 불필요해. 다만 다음 검증 때는 대표 이미지를 생성해야 하니까 실제 heterogeneous medium이 포함된 씬을 렌더링한 뒤 육안 검증까지 필요해.",
+  "evidence_source": "Exact latest user statement relayed by parent /root in the active validation conversation; recorded with the parent's explicit authorization.",
+  "scope": "Stage2 diagnostic test-scene images only. Preserve numerical failures, unresolved source limitations, prior exact-SHA approvals and superseded images separately.",
+  "visual_approved": false,
+  "stage3_visual_review": "REQUIRED",
+  "stage_pass": false,
+  "publication_effect": "Stage2 image rows are labelled WAIVED_BY_USER, never approved. This record does not waive actual Stage3 beauty comparison."
+}

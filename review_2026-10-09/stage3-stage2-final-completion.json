@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_PREPARED_STAGE2_REVALIDATION_SCOPED",
+  "stage_pass": false,
+  "prepared_scene_gate": {
+    "status": "READY_FOR_STAGE3_PREPARED_SCOPE",
+    "scene_count": 11,
+    "medium_scene_count": 6,
+    "vacuum_control_count": 5,
+    "numeric_mean": "PASS_SCOPED_EQUIVALENCE",
+    "variance": "PASS_VARIANCE_DECREASE_ONLY",
+    "depth": "PASS_SCOPED_16_VS_32",
+    "source_and_application": "VERIFIED_BOUNDED_CONTACT_AND_ACTUAL_LOADER_INTEGRATION",
+    "scope": "These authored neutral single-boundary fixtures only; no universal geometry or Stage3/4 acceptance."
+  },
+  "summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_summary.json",
+    "sha256": "bd97f990cd255c3977ca15a54a5227c7025367b19ed70f229a9815fda82affc9",
+    "bytes": 88118
+  },
+  "report": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_report.md",
+    "sha256": "08291a4055cffd2eb6814b3f665ea9aa8061526c1f29d3edfddf90f510809be2",
+    "bytes": 7794
+  },
+  "image_inventory": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_image_inventory.json",
+    "sha256": "6a3e7ac7cb580e62f2ca3c9a654f1232dcee7a98c9379d4bca98f4b71a64b642",
+    "bytes": 229473
+  },
+  "numerical_independent_review": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\independent_final_statistics_review.json",
+    "sha256": "90229cb4c182b0e5ae9e56aa58d87f90e398818b4923d223508cc199278b53bc",
+    "bytes": 172059
+  },
+  "artifact_qa": {
+    "constant": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_artifact_qa.json",
+      "sha256": "36ae2141e29cea1738576935f69693d0afc65f0a045b96951ab7e603843310a7",
+      "bytes": 3407
+    },
+    "ramp": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_artifact_qa.json",
+      "sha256": "f6c7e00512d2ce636801ab9b54d714d482d2d9c1b312e15159a8d0270cf8a880",
+      "bytes": 2791
+    },
+    "scatter": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_artifact_qa.json",
+      "sha256": "e4547d7e158324531d97b81f658cf22255fe409cd814df6f62e12204e82c52a9",
+      "bytes": 9427
+    }
+  },
+  "result_summaries": {
+    "constant": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_publication_summary.json",
+      "sha256": "e9e48d58723a8c80579ad41f1d4be47c847405463705eae5da0c8a44ae8c2f18",
+      "bytes": 4837
+    },
+    "ramp": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_publication_summary.json",
+      "sha256": "81eec1e4834ee58d24ba688179587ef9ed64ba0ce6834a3b30103cf575398d10",
+      "bytes": 4008
+    },
+    "scatter": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_publication_summary.json",
+      "sha256": "36a5082ad0dc4971f115bd2d82e0ec1856adff88a4b7a50fce4f1bcfa58ca09f",
+      "bytes": 32487
+    }
+  },
+  "visual_review": {
+    "stage2_diagnostics": "WAIVED_BY_USER",
+    "approved": false,
+    "stage3_actual_rgb": "REQUIRED_SEPARATELY"
+  },
+  "builder": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\build_stage2_v5_final_report.py",
+    "sha256": "03238de56382451965e83cb40be18fa373316a236facb936b51808eb9d09fcf5",
+    "bytes": 21581
+  }
+}

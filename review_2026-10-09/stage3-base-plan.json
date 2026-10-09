@@ -1,0 +1,111 @@
+{
+  "frozen_inputs": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\main_inputs.json",
+    "sha256": "0cde31861eb4d0d6869130e8b8d9b1b125ac3793e106ad523a36908f5f3a1edf",
+    "bytes": 49830
+  },
+  "protocol": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_protocol.json",
+    "sha256": "d638beccbfd36bf1afbd28ee322352b35630bf9a5e2ea1bf772a4aed40919de2",
+    "bytes": 14430
+  },
+  "jobs": [
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        64,
+        256,
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1,
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine"
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3",
+      "backend": "pbrt",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        64,
+        256,
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1,
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt"
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control",
+      "backend": "engine",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        64,
+        256,
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1,
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine"
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control",
+      "backend": "pbrt",
+      "contract": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+      "reference_scene": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+      "resolution": [
+        128,
+        128
+      ],
+      "seeds": [
+        11,
+        29,
+        47,
+        83
+      ],
+      "spp_levels": [
+        64,
+        256,
+        1024
+      ],
+      "max_depth": 32,
+      "samples_per_frame": 1,
+      "output": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt"
+    }
+  ],
+  "scope": "Matched actual beauty with wavelength sampling enabled. Timings are recorded but this is not an isolated Stage4 performance experiment."
+}

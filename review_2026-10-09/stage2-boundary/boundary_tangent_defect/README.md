@@ -1,3 +1,7 @@
+현재 사용자 육안 상태: **면제 (waived), 승인 아님**. 아래 수치·과거 기록은 그대로 보존합니다. Stage3 실제 대표 이미지는 별도 검토가 필요합니다.
+
+---
+
 # boundary_tangent_defect
 
 **Radiance: FAIL_DETERMINISTIC_VACUUM · Variance: NOT_A_STOCHASTIC_VARIANCE_FAILURE · 사용자 육안 확인: 대기 (새 Stage 2 이미지)**

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_RAMP_REVALIDATION_SCOPED",
+  "stage_pass": false,
+  "scene": "gallery_medium_stage2_ramp_absorption",
+  "resolution": [
+    128,
+    128
+  ],
+  "seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "spp_levels": [
+    256,
+    1024,
+    4096
+  ],
+  "radiance": "PASS_SCOPED_EQUIVALENCE",
+  "mean_equivalence_status": "PASS_SCOPED_EQUIVALENCE",
+  "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+  "global_mean_transmittance": 0.8404320999979973,
+  "oracle_global_mean": 0.8404377264416403,
+  "global_residual": -5.6264436429920295e-06,
+  "global_residual_expanded95": [
+    -0.00018505314263461692,
+    0.00017529330192034287
+  ],
+  "ratio_rmse": 0.002062785026084849,
+  "ssim_screen": {
+    "value": 0.9921942736581206,
+    "threshold": 0.99,
+    "status": "PASSED",
+    "scope": "Normalized mean-ratio images; informational only"
+  },
+  "analysis_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\analysis_receipt.json",
+    "sha256": "fbf4781887a2139e6ab1bafd2cea34bf33fde9a85b30796a482dd5bf25e763b9",
+    "bytes": 109163
+  },
+  "orchestration_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_orchestration_receipt.json",
+    "sha256": "7955115594fb95e5cb7288bb87c65928608ca5dd36c51ce6ed4f63f6b2231976",
+    "bytes": 9132
+  },
+  "qa_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_artifact_qa.json",
+    "sha256": "f6c7e00512d2ce636801ab9b54d714d482d2d9c1b312e15159a8d0270cf8a880",
+    "bytes": 2791
+  },
+  "context": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+    "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+    "bytes": 10330
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\convergence.png",
+      "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+      "bytes": 143305
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\geometry_masks.png",
+      "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+      "bytes": 30397
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\linear_residuals.png",
+      "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+      "bytes": 129990
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\noise_and_oracle_bounds.png",
+      "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+      "bytes": 133636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\regional_uncertainty.png",
+      "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+      "bytes": 63309
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\transmittance_comparison.png",
+      "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+      "bytes": 63303
+    }
+  ],
+  "scope": "Original numerical protocol and PBRT/oracle bytes reused; bounded application source integration checked; no automatic Stage2/3/4 acceptance."
+}

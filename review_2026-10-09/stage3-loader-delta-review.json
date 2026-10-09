@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SOURCE_DELTA_ONLY",
+  "stage_pass": false,
+  "source_delta_exactly_one_replacement": true,
+  "inputs": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+      "bytes": 97084
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+      "bytes": 33307
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\ThirdParties\\meshoptimizer\\src\\meshoptimizer.h",
+      "sha256": "f7d325344e0b245b18caf08bed88929ae18a75ee7e3c0a85abd2474a24ff4fd0",
+      "bytes": 89428
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\RayTracingApp.before.cpp",
+      "sha256": "1f3263a1690dffc71a0a90ce704bdd78206558da594366eccf6440b1e962692d",
+      "bytes": 96773
+    }
+  ],
+  "findings": [
+    "Per-gallery-mesh descriptor copy changes only bGenerateMeshlets when medium exists and bAirContributor is true. Shared descriptor and ordinary/host mesh behavior remain unchanged.",
+    "Host parser sets bAirContributor=false for mediumMode=host, so Stage3 glass keeps prior loader behavior.",
+    "GenerateMeshlets writes only auxiliary meshlets/meshletVertices/meshletTriangles; original indices passed as const unsigned int*, original positions as const float*.",
+    "meshopt_optimizeMeshlet receives auxiliary vertex remap and local triangle bytes only, not original index/position arrays.",
+    "bOptimize remains false, so the following meshopt_optimizeVertexCache mutation is not invoked. LOD count remains1 and original normal/transform/material declarations are unchanged."
+  ],
+  "limitations": [
+    "Source review only; no new GPU/loader readback by reviewer. Nonzero actual runtime meshlets and image recovery are separate validation.",
+    "No source/model/shader/asset edits performed."
+  ]
+}

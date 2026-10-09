@@ -1,0 +1,2804 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_INDEPENDENT_NUMERICAL_REVIEW_NO_STAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "created_utc": "2026-10-09T12:58:07.487836+00:00",
+  "review_script": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\independent_preparation\\review_stage3_completed_v2.py",
+    "sha256": "8fe956180f3d70857a3a2001a89fabce246ca38e32172fd0e08fa8088814de85",
+    "bytes": 24622
+  },
+  "producer_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+    "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+    "bytes": 771924
+  },
+  "producer_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\analysis_receipt.json",
+    "sha256": "da390a670b41f336d7df0776454b963694bcd065416a0c63a78a2e59b50d136e",
+    "bytes": 14579
+  },
+  "statistics_arrays": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\statistics_arrays.npz",
+    "sha256": "f12744e9a7e51b21b15b3bbdf8f27a3698d619e6eb942f2d1e1f5e2f0306f392",
+    "bytes": 15866272
+  },
+  "actual_original_exr_count": 68,
+  "numerical_comparisons": 2456,
+  "max_absolute_difference": 9.747758156208874e-14,
+  "modes": [
+    {
+      "mode": "smoke",
+      "gates": {
+        "mean": "PASS_SCOPED",
+        "variance": "PASS_SCOPED",
+        "depth_tail": "PASS_SCOPED"
+      },
+      "overall_numeric_status": "PASS_SCOPED",
+      "mean1024_global": {
+        "engine": [
+          0.19777940286525109,
+          0.19777940286525109,
+          0.19777940286525109,
+          0.19777940286525109
+        ],
+        "pbrt": [
+          0.19790170584388989,
+          0.19788869917380225,
+          0.19792465484840704,
+          0.1978940603915692
+        ],
+        "delta": [
+          -0.0001223029786387997,
+          -0.00010929630855116557,
+          -0.00014525198315595844,
+          -0.00011465752631811821
+        ],
+        "engine_run_means": [
+          [
+            0.1977211840014661,
+            0.1977211840014661,
+            0.1977211840014661,
+            0.1977211840014661
+          ],
+          [
+            0.19775280000840212,
+            0.19775280000840212,
+            0.19775280000840212,
+            0.19775280000840212
+          ],
+          [
+            0.1978151510279531,
+            0.1978151510279531,
+            0.1978151510279531,
+            0.1978151510279531
+          ],
+          [
+            0.19782847642318302,
+            0.19782847642318302,
+            0.19782847642318302,
+            0.19782847642318302
+          ]
+        ],
+        "pbrt_run_means": [
+          [
+            0.19772719750335455,
+            0.19771960606226457,
+            0.1976641877538441,
+            0.1977172188007719
+          ],
+          [
+            0.1977142365981308,
+            0.19771476041250935,
+            0.19773709834294095,
+            0.19771626184814967
+          ],
+          [
+            0.198103603821437,
+            0.19809345879730245,
+            0.19827713779864098,
+            0.19810887725333082
+          ],
+          [
+            0.1980617854526372,
+            0.19802697142313264,
+            0.19802019549820216,
+            0.19803388366402447
+          ]
+        ],
+        "welch_df": [
+          3.352597010823286,
+          3.3878776462904265,
+          3.1973376074950455,
+          3.3618643024678705
+        ],
+        "welch_t95": [
+          [
+            -0.0004462055802063374,
+            -0.000417291461376362,
+            -0.0005837703803297143,
+            -0.0004341586081740618
+          ],
+          [
+            0.000201599622928738,
+            0.00019869884427403087,
+            0.00029326641401779735,
+            0.0002048435555378254
+          ]
+        ],
+        "bootstrap95": [
+          [
+            -0.0003084249344738055,
+            -0.0002876821580457545,
+            -0.0003881828868657067,
+            -0.0002984695846728891
+          ],
+          [
+            6.516626712027573e-05,
+            6.67922807906507e-05,
+            8.471538262710965e-05,
+            6.723519371681919e-05
+          ]
+        ],
+        "interval95": [
+          [
+            -0.0004462055802063374,
+            -0.000417291461376362,
+            -0.0005837703803297143,
+            -0.0004341586081740618
+          ],
+          [
+            0.000201599622928738,
+            0.00019869884427403087,
+            0.00029326641401779735,
+            0.0002048435555378254
+          ]
+        ],
+        "band": [
+          0.003958034116877797,
+          0.003957773983476045,
+          0.0039584930969681405,
+          0.003957881207831384
+        ],
+        "channels": {
+          "R": "PASS_SCOPED",
+          "G": "PASS_SCOPED",
+          "B": "PASS_SCOPED",
+          "Y": "PASS_SCOPED"
+        },
+        "zero_in_CI": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "status": "PASS_SCOPED"
+      },
+      "engine_over_pbrt_global_Y_variance": {
+        "numerator_variance": 0.00012306843827144268,
+        "denominator_variance": 0.00017335313677715487,
+        "ratio": 0.7099291109433279,
+        "draws": 20000,
+        "valid_draws": 19342,
+        "paired_by_seed": false,
+        "status": "DIAGNOSTIC_ONLY",
+        "interval95": [
+          0.4040896603111319,
+          1.2261407312626083
+        ],
+        "lower_one_sided95": 0.419884389794459,
+        "upper_one_sided95": 1.2057834710708693
+      },
+      "depth_global": {
+        "engine": {
+          "mean_depth32": [
+            0.19777940286525109,
+            0.19777940286525109,
+            0.19777940286525109,
+            0.19777940286525109
+          ],
+          "mean_depth64": [
+            0.197820254803446,
+            0.197820254803446,
+            0.197820254803446,
+            0.197820254803446
+          ],
+          "delta64_minus32": [
+            4.085193819491906e-05,
+            4.085193819491906e-05,
+            4.085193819491906e-05,
+            4.085193819491906e-05
+          ],
+          "paired_run_differences": [
+            [
+              3.800081435656466e-05,
+              3.800081435656466e-05,
+              3.800081435656466e-05,
+              3.800081435656466e-05
+            ],
+            [
+              4.357278407951526e-05,
+              4.357278407951526e-05,
+              4.357278407951526e-05,
+              4.357278407951526e-05
+            ],
+            [
+              3.538718988238543e-05,
+              3.538718988238543e-05,
+              3.538718988238543e-05,
+              3.538718988238543e-05
+            ],
+            [
+              4.644696446121088e-05,
+              4.644696446121088e-05,
+              4.644696446121088e-05,
+              4.644696446121088e-05
+            ]
+          ],
+          "paired_t95": [
+            [
+              3.280617397235593e-05,
+              3.280617397235593e-05,
+              3.280617397235593e-05,
+              3.280617397235593e-05
+            ],
+            [
+              4.889770241748219e-05,
+              4.889770241748219e-05,
+              4.889770241748219e-05,
+              4.889770241748219e-05
+            ]
+          ],
+          "bootstrap95": [
+            [
+              3.6694002119475044e-05,
+              3.6694002119475044e-05,
+              3.6694002119475044e-05,
+              3.6694002119475044e-05
+            ],
+            [
+              4.500987427036307e-05,
+              4.500987427036307e-05,
+              4.500987427036307e-05,
+              4.500987427036307e-05
+            ]
+          ],
+          "interval95": [
+            [
+              3.280617397235593e-05,
+              3.280617397235593e-05,
+              3.280617397235593e-05,
+              3.280617397235593e-05
+            ],
+            [
+              4.889770241748219e-05,
+              4.889770241748219e-05,
+              4.889770241748219e-05,
+              4.889770241748219e-05
+            ]
+          ],
+          "band": [
+            0.00197820254803446,
+            0.00197820254803446,
+            0.00197820254803446,
+            0.00197820254803446
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "zero_in_CI": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "mean_depth32": [
+            0.19790170584388989,
+            0.19788869917380225,
+            0.19792465484840704,
+            0.1978940603915692
+          ],
+          "mean_depth64": [
+            0.197939238159222,
+            0.19792630946784584,
+            0.1979615965946664,
+            0.1979316058381887
+          ],
+          "delta64_minus32": [
+            3.753231533210055e-05,
+            3.761029404358851e-05,
+            3.6941746259344654e-05,
+            3.754544661948439e-05
+          ],
+          "paired_run_differences": [
+            [
+              3.707039240907761e-05,
+              3.69526167105505e-05,
+              3.329660262352263e-05,
+              3.67136916065991e-05
+            ],
+            [
+              3.672445518532186e-05,
+              3.678102689264051e-05,
+              3.7152022514419514e-05,
+              3.679578563153818e-05
+            ],
+            [
+              3.8573952679143986e-05,
+              3.8520265434272005e-05,
+              4.0377346749664866e-05,
+              3.866576061384297e-05
+            ],
+            [
+              3.776046105485875e-05,
+              3.818726713689102e-05,
+              3.6941013149771607e-05,
+              3.8006548625957315e-05
+            ]
+          ],
+          "paired_t95": [
+            [
+              3.623209041091944e-05,
+              3.622274217344331e-05,
+              3.233592805315314e-05,
+              3.602987401628804e-05
+            ],
+            [
+              3.883254025328166e-05,
+              3.899784591373371e-05,
+              4.154756446553617e-05,
+              3.906101922268074e-05
+            ]
+          ],
+          "bootstrap95": [
+            [
+              3.6897423797199735e-05,
+              3.6866821801595506e-05,
+              3.426045759624685e-05,
+              3.675473861906864e-05
+            ],
+            [
+              3.819806261162739e-05,
+              3.8353766285581514e-05,
+              3.951826334969155e-05,
+              3.833615461990014e-05
+            ]
+          ],
+          "interval95": [
+            [
+              3.623209041091944e-05,
+              3.622274217344331e-05,
+              3.233592805315314e-05,
+              3.602987401628804e-05
+            ],
+            [
+              3.883254025328166e-05,
+              3.899784591373371e-05,
+              4.154756446553617e-05,
+              3.906101922268074e-05
+            ]
+          ],
+          "band": [
+            0.00197939238159222,
+            0.0019792630946784584,
+            0.001979615965946664,
+            0.001979316058381887
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "zero_in_CI": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "status": "PASS_SCOPED"
+        }
+      },
+      "hero_scope": "Single seed2048; no variance/CI; excluded from base4runstatistics"
+    },
+    {
+      "mode": "clear",
+      "gates": {
+        "mean": "PASS_SCOPED",
+        "variance": "PASS_SCOPED",
+        "depth_tail": "PASS_SCOPED"
+      },
+      "overall_numeric_status": "PASS_SCOPED",
+      "mean1024_global": {
+        "engine": [
+          0.19103930878156916,
+          0.19103930878156916,
+          0.19103930878156916,
+          0.19103930878156916
+        ],
+        "pbrt": [
+          0.19114722054172262,
+          0.19114470864661826,
+          0.19116083449603138,
+          0.19114640696184454
+        ],
+        "delta": [
+          -0.00010791176015345627,
+          -0.00010539986504909393,
+          -0.00012152571446222282,
+          -0.00010709818027537787
+        ],
+        "engine_run_means": [
+          [
+            0.19097132950423656,
+            0.19097132950423656,
+            0.19097132950423656,
+            0.19097132950423656
+          ],
+          [
+            0.1910430025968708,
+            0.1910430025968708,
+            0.1910430025968708,
+            0.1910430025968708
+          ],
+          [
+            0.19107004059469546,
+            0.19107004059469546,
+            0.19107004059469546,
+            0.19107004059469546
+          ],
+          [
+            0.19107286243047383,
+            0.19107286243047383,
+            0.19107286243047383,
+            0.19107286243047383
+          ]
+        ],
+        "pbrt_run_means": [
+          [
+            0.19110228886074765,
+            0.1911026965910878,
+            0.19100976756362797,
+            0.19109590043183497
+          ],
+          [
+            0.19099189093549285,
+            0.19099520336931164,
+            0.19104609039254683,
+            0.190998173188959
+          ],
+          [
+            0.19127038428428023,
+            0.19128034598384147,
+            0.1913985776793652,
+            0.1912867644549309
+          ],
+          [
+            0.19122431808636975,
+            0.1912005886422321,
+            0.19118890234858554,
+            0.1912047897716534
+          ]
+        ],
+        "welch_df": [
+          3.834475106413,
+          3.8629118213098783,
+          3.4289951329129895,
+          3.8281877971864273
+        ],
+        "welch_t95": [
+          [
+            -0.0002973132938034189,
+            -0.0002913630635340669,
+            -0.0003925274353037726,
+            -0.00029728372197752504
+          ],
+          [
+            8.148977349650634e-05,
+            8.056333343587905e-05,
+            0.00014947600637932697,
+            8.308736142676926e-05
+          ]
+        ],
+        "bootstrap95": [
+          [
+            -0.00021550736215658617,
+            -0.00021454312724245028,
+            -0.0002828777514309877,
+            -0.0002202025030861865
+          ],
+          [
+            1.0137156607470388e-05,
+            8.982533472590148e-06,
+            1.884476188251938e-05,
+            9.238823490381742e-06
+          ]
+        ],
+        "interval95": [
+          [
+            -0.0002973132938034189,
+            -0.0002913630635340669,
+            -0.0003925274353037726,
+            -0.00029728372197752504
+          ],
+          [
+            8.148977349650634e-05,
+            8.056333343587905e-05,
+            0.00014947600637932697,
+            8.308736142676926e-05
+          ]
+        ],
+        "band": [
+          0.0038229444108344524,
+          0.0038228941729323653,
+          0.003823216689920628,
+          0.003822928139236891
+        ],
+        "channels": {
+          "R": "PASS_SCOPED",
+          "G": "PASS_SCOPED",
+          "B": "PASS_SCOPED",
+          "Y": "PASS_SCOPED"
+        },
+        "zero_in_CI": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "status": "PASS_SCOPED"
+      },
+      "engine_over_pbrt_global_Y_variance": {
+        "numerator_variance": 5.266629776088157e-05,
+        "denominator_variance": 0.0001302643088815541,
+        "ratio": 0.40430335993852046,
+        "draws": 20000,
+        "valid_draws": 19342,
+        "paired_by_seed": false,
+        "status": "DIAGNOSTIC_ONLY",
+        "interval95": [
+          0.22532726875486558,
+          0.734962086065551
+        ],
+        "lower_one_sided95": 0.23503569578658798,
+        "upper_one_sided95": 0.7124378717563536
+      },
+      "depth_global": {
+        "engine": {
+          "mean_depth32": [
+            0.19103930878156916,
+            0.19103930878156916,
+            0.19103930878156916,
+            0.19103930878156916
+          ],
+          "mean_depth64": [
+            0.1910399514515575,
+            0.1910399514515575,
+            0.1910399514515575,
+            0.1910399514515575
+          ],
+          "delta64_minus32": [
+            6.426699883377296e-07,
+            6.426699883377296e-07,
+            6.426699883377296e-07,
+            6.426699883377296e-07
+          ],
+          "paired_run_differences": [
+            [
+              3.302193363197148e-08,
+              3.302193363197148e-08,
+              3.302193363197148e-08,
+              3.302193363197148e-08
+            ],
+            [
+              6.154673428682145e-07,
+              6.154673428682145e-07,
+              6.154673428682145e-07,
+              6.154673428682145e-07
+            ],
+            [
+              7.968801583047025e-07,
+              7.968801583047025e-07,
+              7.968801583047025e-07,
+              7.968801583047025e-07
+            ],
+            [
+              1.12531051854603e-06,
+              1.12531051854603e-06,
+              1.12531051854603e-06,
+              1.12531051854603e-06
+            ]
+          ],
+          "paired_t95": [
+            [
+              -8.60183684421813e-08,
+              -8.60183684421813e-08,
+              -8.60183684421813e-08,
+              -8.60183684421813e-08
+            ],
+            [
+              1.3713583451176405e-06,
+              1.3713583451176405e-06,
+              1.3713583451176405e-06,
+              1.3713583451176405e-06
+            ]
+          ],
+          "bootstrap95": [
+            [
+              2.2398648980015423e-07,
+              2.2398648980015423e-07,
+              2.2398648980015423e-07,
+              2.2398648980015423e-07
+            ],
+            [
+              9.97849724626576e-07,
+              9.97849724626576e-07,
+              9.97849724626576e-07,
+              9.97849724626576e-07
+            ]
+          ],
+          "interval95": [
+            [
+              -8.60183684421813e-08,
+              -8.60183684421813e-08,
+              -8.60183684421813e-08,
+              -8.60183684421813e-08
+            ],
+            [
+              1.3713583451176405e-06,
+              1.3713583451176405e-06,
+              1.3713583451176405e-06,
+              1.3713583451176405e-06
+            ]
+          ],
+          "band": [
+            0.001910399514515575,
+            0.001910399514515575,
+            0.001910399514515575,
+            0.001910399514515575
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "zero_in_CI": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "mean_depth32": [
+            0.19114722054172262,
+            0.19114470864661826,
+            0.19116083449603138,
+            0.19114640696184454
+          ],
+          "mean_depth64": [
+            0.19114821677607097,
+            0.1911456951580135,
+            0.19116184868192931,
+            0.19114739753843876
+          ],
+          "delta64_minus32": [
+            9.962343483493896e-07,
+            9.865113952400861e-07,
+            1.0141858979295648e-06,
+            9.905765941745082e-07
+          ],
+          "paired_run_differences": [
+            [
+              1.3705043784284499e-06,
+              1.241608515556436e-06,
+              1.2268387763469946e-06,
+              1.267945400840187e-06
+            ],
+            [
+              7.778216968290508e-07,
+              7.588023436255753e-07,
+              8.201436685340013e-07,
+              7.672747017739567e-07
+            ],
+            [
+              1.0542698873905465e-06,
+              1.1692395673890132e-06,
+              1.3166977623768616e-06,
+              1.155443495021169e-06
+            ],
+            [
+              7.823414307495113e-07,
+              7.763951543893199e-07,
+              6.930633844604017e-07,
+              7.7164277906272e-07
+            ]
+          ],
+          "paired_t95": [
+            [
+              5.49084177705336e-07,
+              5.813850508577448e-07,
+              5.302284007542186e-07,
+              5.777670787430974e-07
+            ],
+            [
+              1.4433845189934432e-06,
+              1.3916377396224275e-06,
+              1.498143395104911e-06,
+              1.403386109605919e-06
+            ]
+          ],
+          "bootstrap95": [
+            [
+              7.800815637892811e-07,
+              7.675987490074476e-07,
+              7.566035264972015e-07,
+              7.694587404183384e-07
+            ],
+            [
+              1.2234636415087152e-06,
+              1.2054240414727246e-06,
+              1.271768269361928e-06,
+              1.211694447930678e-06
+            ]
+          ],
+          "interval95": [
+            [
+              5.49084177705336e-07,
+              5.813850508577448e-07,
+              5.302284007542186e-07,
+              5.777670787430974e-07
+            ],
+            [
+              1.4433845189934432e-06,
+              1.3916377396224275e-06,
+              1.498143395104911e-06,
+              1.403386109605919e-06
+            ]
+          ],
+          "band": [
+            0.0019114821677607098,
+            0.001911456951580135,
+            0.0019116184868192931,
+            0.0019114739753843877
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "zero_in_CI": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "status": "PASS_SCOPED"
+        }
+      },
+      "hero_scope": "Single seed2048; no variance/CI; excluded from base4runstatistics"
+    }
+  ],
+  "hash_verified_files": 400,
+  "used_exact_source_archives": [],
+  "input_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\analysis_receipt.json",
+      "sha256": "da390a670b41f336d7df0776454b963694bcd065416a0c63a78a2e59b50d136e",
+      "bytes": 14579
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+      "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+      "bytes": 771924
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\statistics_arrays.npz",
+      "sha256": "f12744e9a7e51b21b15b3bbdf8f27a3698d619e6eb942f2d1e1f5e2f0306f392",
+      "bytes": 15866272
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_64_mean4.exr",
+      "sha256": "30c29823402858829d3cf1c08bec959cdfccad15309c91a0a22ca6a8374427ca",
+      "bytes": 67076
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_64_mean4.exr",
+      "sha256": "c0141d3b1d48d491f4ab29b2929c6dddaecf89e37e4aa3e11294043b0734f3c9",
+      "bytes": 195447
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_256_mean4.exr",
+      "sha256": "387ec7e5c9c76470a28131d9329cfe9bafdef5857c99af2380547f8898e0eaf0",
+      "bytes": 67078
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_256_mean4.exr",
+      "sha256": "d758d686633d15c06bef4141a0cabcf5e85e30d0cf0f04d4abfd2b99504ee86f",
+      "bytes": 195369
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_1024_mean4.exr",
+      "sha256": "20b189fc64fb20a16fc401ab8356519fec39cb50ecdf45c6022c209970188c2b",
+      "bytes": 67090
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_1024_mean4.exr",
+      "sha256": "0ebdb615149b4815ef3e20861359fc2567979c04d0c680f94939e075c171fffd",
+      "bytes": 195245
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_64_mean4.exr",
+      "sha256": "338323496888ca058d181dde52100b00f283774186723844d0ce1668758c2c82",
+      "bytes": 67123
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_64_mean4.exr",
+      "sha256": "37db729d614ecca0a910de269f4a4587c505d7dc81024d2a616ed92dcd785b52",
+      "bytes": 195260
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_256_mean4.exr",
+      "sha256": "c2b346dac4a710667f8d2f89e22a77fa4a6f580061a3f521c67fdd35a2c440ac",
+      "bytes": 67124
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_256_mean4.exr",
+      "sha256": "3c61240eb79f6a1679198ef828b90bf61766297171566703acd2d213a1b5a65a",
+      "bytes": 195252
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_1024_mean4.exr",
+      "sha256": "01f0e1f7280556278acaaffa37dc5ca12b62172ee721fb406d38e0e76eabbe92",
+      "bytes": 67094
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_1024_mean4.exr",
+      "sha256": "660eb47089ae8fb2f90cdbadd748c95f050719679b863c4ad3e32abd1ee0bf9b",
+      "bytes": 195271
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_64.png",
+      "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+      "bytes": 213969
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_256.png",
+      "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+      "bytes": 190437
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_1024.png",
+      "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+      "bytes": 166319
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_single_seed11_1024.png",
+      "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+      "bytes": 188825
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_seed11_2048.png",
+      "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+      "bytes": 1347335
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_engine_RGB.png",
+      "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+      "bytes": 154811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_pbrt_RGB.png",
+      "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+      "bytes": 325724
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_smoke_pair.png",
+      "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+      "bytes": 764297
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_signed_residual_RGB_Y.png",
+      "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+      "bytes": 181598
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_stddev_RGB_Y.png",
+      "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+      "bytes": 421609
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_RGB_Y.png",
+      "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+      "bytes": 365613
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_convergence.png",
+      "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+      "bytes": 194136
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_regional_mean_CI.png",
+      "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+      "bytes": 134306
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_depth_tail_Y_CI.png",
+      "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+      "bytes": 70018
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_engine_RGB.png",
+      "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+      "bytes": 140012
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_pbrt_RGB.png",
+      "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+      "bytes": 302703
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_clear_pair.png",
+      "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+      "bytes": 708286
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_signed_residual_RGB_Y.png",
+      "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+      "bytes": 165634
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_stddev_RGB_Y.png",
+      "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+      "bytes": 417370
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_RGB_Y.png",
+      "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+      "bytes": 366402
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_convergence.png",
+      "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+      "bytes": 196927
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_regional_mean_CI.png",
+      "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+      "bytes": 133555
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_depth_tail_Y_CI.png",
+      "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+      "bytes": 68635
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\geometry_ROIs.png",
+      "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+      "bytes": 27437
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\source_context.json",
+      "sha256": "041337c401633653734f9622585a97aef2ffe11b889de786f992eb5d463514be",
+      "bytes": 9189
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_protocol.json",
+      "sha256": "d638beccbfd36bf1afbd28ee322352b35630bf9a5e2ea1bf772a4aed40919de2",
+      "bytes": 14430
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+      "sha256": "85354c29ebbfa6bf8ebd5f35d53fc1e09e99035b9b33f83189b765ec8aaadb35",
+      "bytes": 31941
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4.json",
+      "sha256": "f67d236242bd0da57be506217583eb573f6bb97c419d22a8a93444ab14e543eb",
+      "bytes": 122485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\intake_preflight.json",
+      "sha256": "4a3e30f7bd7c5952601c121a53e154bd774622bac49ee73e86f8df72fe967145",
+      "bytes": 42970
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_completion_receipt.json",
+      "sha256": "3182691185cf658e7830e5406fc625e4c04908727ad95edd7d4b7778a6b79561",
+      "bytes": 4009
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_summary.json",
+      "sha256": "bd97f990cd255c3977ca15a54a5227c7025367b19ed70f229a9815fda82affc9",
+      "bytes": 88118
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_report.md",
+      "sha256": "08291a4055cffd2eb6814b3f665ea9aa8061526c1f29d3edfddf90f510809be2",
+      "bytes": 7794
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\independent_final_statistics_review.json",
+      "sha256": "90229cb4c182b0e5ae9e56aa58d87f90e398818b4923d223508cc199278b53bc",
+      "bytes": 172059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\main_inputs.json",
+      "sha256": "0cde31861eb4d0d6869130e8b8d9b1b125ac3793e106ad523a36908f5f3a1edf",
+      "bytes": 49830
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+      "sha256": "08849004e18e89b040f38a52e859fe9725d49aa421b3e0038d8f36213bc8e222",
+      "bytes": 2194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+      "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+      "bytes": 27641
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+      "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+      "bytes": 23031
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\base_plan.json",
+      "sha256": "4c74da8fe960a0b0a6e5b2e817f548f7e2da08283013465e224bb4b13a9ae637",
+      "bytes": 4313
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\base_queue.json",
+      "sha256": "adb75eb44fe138f5661e61877d46f9ef9a7fe8a16f3ceb73b3a8d7b78c00960b",
+      "bytes": 8093
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth_plan.json",
+      "sha256": "44614bc9316cc43cac6b8f5ecafd0cd6ca8720a6aeda19a139d37a0560f936ba",
+      "bytes": 4785
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth_queue.json",
+      "sha256": "0669187f57df39047cb02c0ba59141562ab577096009c99eb6c628cc827f87ed",
+      "bytes": 8554
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\hero_plan.json",
+      "sha256": "c6073d994162fa3f162a5d1dcfa744bf5fa013aaa6256abfd59f1333e8920df6",
+      "bytes": 4033
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\hero_queue.json",
+      "sha256": "1f79a70b0b3cef5411486efb15b4cf87d2b6aa2887ee6621b84bf06b5a239286",
+      "bytes": 7771
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "25fc1845ff7a15d5c6f5864c753ec3f8d345f762224fef79335db44fc986c2bf",
+      "bytes": 67108
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_64\\receipt.json",
+      "sha256": "b6f57c98304c9f2046af741b1c0ba1b4742a697d2c57566082b879b5c783de56",
+      "bytes": 2888
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "173bb079f8006dcffdb39162a611d7763f15d6fbba619893db50b261f3c6504c",
+      "bytes": 67125
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_256\\receipt.json",
+      "sha256": "e437b20c5f870b4f9b38c958d65a5444fd837a92a59a7be6cef283c316a7ea14",
+      "bytes": 2889
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "b325cf6fec5aa6ccf4f9237a37c1b7098f2374d80dd9ef971a98857cc571eff9",
+      "bytes": 67106
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "d024b1d73f8046d9886773c30123039882ae94f942bee6c04498d50eb9b6902c",
+      "bytes": 2893
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "18b680b529f82b4bfe85d1296627b7705865606cf55d9b6d79b52dbe5b0e3dbe",
+      "bytes": 67102
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_64\\receipt.json",
+      "sha256": "8c751d984fc3521baf2abdeab7a3444095c940cc1243fd64e4cf6e3de3030e99",
+      "bytes": 2888
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "cc3db689214f9e2f55910da85064cb9513124297f23adee57d86062a00ec0884",
+      "bytes": 67093
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_256\\receipt.json",
+      "sha256": "0b0005641ff42442cf4b42bd16a5c91f63919ca2d2684295d5f5beb1d72bbb02",
+      "bytes": 2892
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "da5ad345fb2c245fc7ca11908147efb5cfc446321d7a9b9cffd8368a27151dab",
+      "bytes": 67123
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "a914945a0b2a64bc209e06dd1e9558195321d00169b21c042191ad08cf88291f",
+      "bytes": 2896
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "f55b1e7a8229ce0b79b274ecea28417b590a5421009165d4d9eef89d80141028",
+      "bytes": 67146
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_64\\receipt.json",
+      "sha256": "4eb269eebab2e04ca9733dc4de7d5402399d94951d1eb20db90352e03681875b",
+      "bytes": 2888
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "4e9fcb6d88db843119b9a8551f4128cbb06146d2cfca2574ce2d83534586cc6e",
+      "bytes": 67150
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_256\\receipt.json",
+      "sha256": "79b8242c50df823e2b309669bc818b16d87c4a82ac841569ca8f50c0ed9054a4",
+      "bytes": 2892
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "8c964c676e78a7e8584488270b5522083028b28828875e0077cbce3ddec40729",
+      "bytes": 67114
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "4161d3fae87e5487a323cf30f78118c0ea858821beda4f749ffc34d0ab314246",
+      "bytes": 2895
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "9209e681e94967a3cfd8133f48aea0f551e8747dcad96a7896628c79f78eaf5b",
+      "bytes": 67123
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_64\\receipt.json",
+      "sha256": "0dd766b953eaed7c11812ebaac1098eebb2f8181d3f117ebc73755e57a7df0af",
+      "bytes": 2888
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "4fc54f0f907d0f5ca877d7688d81175458a8d8f5a8c2feec3f88e340c55f683e",
+      "bytes": 67131
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_256\\receipt.json",
+      "sha256": "82f2eeeec35502eef72fb2ae889d2d076c5d7e2aa41ee864f317a23324d66308",
+      "bytes": 2893
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "3757f12e93b43e22dd33019b136d7275cecb04b7b303a2877671bc0f9875b7f3",
+      "bytes": 67121
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "28d8f91728666e071ab2aaec46ef7bfef8a5985840534b3e1dc34ba9ab0f6e35",
+      "bytes": 2899
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "0d5d5ac00208fbfa869358f05f89d7e5e1da63df44cbcd6dae6e4e7fa8d6817e",
+      "bytes": 195875
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_64\\receipt.json",
+      "sha256": "d381d922096b84542aad4fdd762fb780fc0d7caaeebae844844ade99b63789fb",
+      "bytes": 1808
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "495f2c743a7303fdf8c798e62d32f4e7bf097e392ad01053c21f27d04fa54512",
+      "bytes": 195565
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_256\\receipt.json",
+      "sha256": "5b20e688d1cfce04e9bad20a9fc1ef04d9375d665b58b4b9c2a2d2ebccd3472d",
+      "bytes": 1813
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "e57f2d4ac917f6abd802006c02602a2d4e4654a8484a2dc67afeb3b00bbf751d",
+      "bytes": 195528
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "d00e4a3a1c457cc3682d3a31bc63ce0063f3b76d37c1f96a371c547e55f2d43d",
+      "bytes": 1816
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "a42ec1f68bcdfdeae6f909f2f84abc74ce8f1384340770a2db7137ab73f39169",
+      "bytes": 195939
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_64\\receipt.json",
+      "sha256": "f039d39fd6f185391bf13c84a267debd73b7d3777f2a0a5f3db10d2beb058406",
+      "bytes": 1809
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "df3719a0176a2098572f0eebb148823257b9b9785ea361563c4b3fcf09930e31",
+      "bytes": 195639
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_256\\receipt.json",
+      "sha256": "d55c2ab5a2a5107474ee3b1450aefa24d4bd7174903844dbc9f60886cd5135de",
+      "bytes": 1813
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "e0f4c3dfb1425bc334800ad403fe6e01508321943ccd91d77000eed847474eb0",
+      "bytes": 195461
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "b218171880cd806c66eb1268f727e8d2b37d2c79295511930598d2975b2e7d96",
+      "bytes": 1814
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "3aec59678ca0080cb4c1e7d5a5540de960bf88dec53a2908d84bdecb7976becd",
+      "bytes": 195877
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_64\\receipt.json",
+      "sha256": "9dc4fa38939f827d6d4d9497ae00d2370f562b3e16c8718a23765f4d7214d18f",
+      "bytes": 1808
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "16a61b5ed98bcf122b4b953e51af989740d41a8dc94080f75ea8157df15cf38b",
+      "bytes": 195673
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_256\\receipt.json",
+      "sha256": "fd79012182b6d8b5f409e73aebe743c08273aa3967330f4c4d57e578cd286081",
+      "bytes": 1810
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "aaed35f69eed94fec1c08bd764b041101d58f6c4f0d76470b641e45f33d5d83a",
+      "bytes": 195440
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "ff4632ad8f9065424a1f60d20a787e0184dbd549840a3e851e0a227c2616a647",
+      "bytes": 1815
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "a605b0266c915b55b878b92cbb3cdb3b933528fa16508a23e8a6523ffb9d9d40",
+      "bytes": 195995
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_64\\receipt.json",
+      "sha256": "683c8d0cafaa0443c58a77858401e73ae57e8a461b08c904470e049660a53970",
+      "bytes": 1808
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "7f4647f66078dac9744f18979420c2799882af46004033cd72e32a09491a841f",
+      "bytes": 195765
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_256\\receipt.json",
+      "sha256": "dea05acf88a9946dbc3dbf3768d8c2d44d9779040030d3a0516c6a5678d9ad2e",
+      "bytes": 1811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "7a8e9745c13c77e406115fd73002541307e0c363fa62346385f81c883fe34d11",
+      "bytes": 195501
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "219ab3d110254cd6721533fef49f123b6f7735ce8ca315d9f43762268a3395a5",
+      "bytes": 1816
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "b3a7b4721ca44846d533e1ef9425c7cac51df3f1befea0d7e49c283515f312a6",
+      "bytes": 67124
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_64\\receipt.json",
+      "sha256": "59a8fe5a7bca8cdacb94f56daaf65d732a8c4b9dd39fda5870363a98677ea2ec",
+      "bytes": 2969
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "e24dfcd601882fd8292804ef4497775c9a62a74b1b406fcc3174b750b66cdbe9",
+      "bytes": 67090
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_256\\receipt.json",
+      "sha256": "2778366793b084f1e46cdf756b16ec1636181102686279af476cca99dfc04d03",
+      "bytes": 2972
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "b951ae7731087cabc12633d31224ac5b8fadaefd8c95c91f2d3f987ece601d70",
+      "bytes": 67113
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "8acb2a61c5a4f0a6c1304c25bceed1595e8b31c17f580937bb82c7b204cf4945",
+      "bytes": 2982
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "029d51e2b6a8213d3dc340b6b6a3060fcb4829a0aacc8fdccd39157d6c2d9c10",
+      "bytes": 67139
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_64\\receipt.json",
+      "sha256": "325c772bc4bcaa1985f8e4eb5a993514358e60c40175bbecb758e4cad527ea99",
+      "bytes": 2972
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "68fa3bec7c8016eed6130a5fc45d7958ab9ab710938c3deeae79b3493219901b",
+      "bytes": 67106
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_256\\receipt.json",
+      "sha256": "49e92e901270329852d4f6c4101d919598de1dc8783638439ebb8c25c7ddded7",
+      "bytes": 2978
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "21d387674472c725ff9353dc9024a3ec921b5d6f043e523f2809ff6e85b187c1",
+      "bytes": 67111
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "083c9719e1442c8533ab36cad192b511f41967b685ab9496f3c27f5cf44aff12",
+      "bytes": 2979
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "7fe68df825592a93c88064f08654ec9340bac85b3cb1ba64be107905311d2471",
+      "bytes": 67115
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_64\\receipt.json",
+      "sha256": "d2b4ab90c04fda44504e961e4df1d5d1cce4713cc329fb0a28271f6706f04050",
+      "bytes": 2972
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "7494751332a091b7015ac8e81c9639efa3f163bfd759e450d795f4667773d2df",
+      "bytes": 67069
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_256\\receipt.json",
+      "sha256": "1937cc2a7019a5e32bec9c01fdb243959f8fdf3b62f351efcdabe02d54a86550",
+      "bytes": 2978
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "0becb431192e556c368f26978507d9a02aeb0104076060d263ba9c129bdc9f31",
+      "bytes": 67108
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "dc10c15565a43c4c6c5026110d2a141a3b98b87888899c6e26997cc0cacbb14d",
+      "bytes": 2982
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "4cc874c8939f49e8f929099760950b37019dfaf8a9de5daa9c616e46b1f4fe18",
+      "bytes": 67117
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_64\\receipt.json",
+      "sha256": "0794e3093bebb75928521db8fd9c9b3f97fe679a82d44131598b987c8b2ad14c",
+      "bytes": 2972
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "f0ac1fb0e57c1c60a4ab601f4ddf658f79e4290f3fa18e305119f1a292c52ab8",
+      "bytes": 67122
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_256\\receipt.json",
+      "sha256": "9111a52ea92a28c526b6ff521df49cb3f08f75d928d14b14d79db6f0ef8e9298",
+      "bytes": 2979
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "7050f144341d098ffeb9384ecdd8743ee56d4c107e3ccd27294c530ac9311d2c",
+      "bytes": 67136
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "66afcf9f9cc693641505dd85e2b60734e7809811dbcb4b0f1881614e96b70523",
+      "bytes": 2983
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "cb36397aee1799f572f7c17985ec8a2eb8836d01638c21f64566bfd13017cc85",
+      "bytes": 195807
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_64\\receipt.json",
+      "sha256": "239de92d65809505a0c3c328025f60c43a7de4cb67447d9b7c3aa399e2f3379b",
+      "bytes": 1864
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "0ce6e3c3320be55c8cd4e04da14e16134cf92cfa11fb551b625e94daea2cef5c",
+      "bytes": 195606
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_256\\receipt.json",
+      "sha256": "f895e13da3ead12061168c30135ae2d9dd5f33518a641de0cfd2a01a0b3ee696",
+      "bytes": 1866
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "367af4ecfd81ca8ce0b54e51c1e18541df297ed0ac534a49ef40df21a271b496",
+      "bytes": 195580
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "a8483109626d4ec11dae0436e393b05a58a3b62fd24639800c1c988dcd199b95",
+      "bytes": 1871
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "b251269b252d6125ce3d565b738b359c0b1f9fb5845c59c586416d0885f87650",
+      "bytes": 195870
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_64\\receipt.json",
+      "sha256": "e5c450725602b74a2a5276e62e4c9dbac2a7cab4c87227c5af574d569d885874",
+      "bytes": 1865
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "0f86e1e389541708e2ffe43a598c0b8ad0f5db6dd4f8b7a97cebfa3ee1156385",
+      "bytes": 195548
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_256\\receipt.json",
+      "sha256": "5cee1df29c9bf04f1931c6df87efea144e74ec9f71930fc2ed32e6202008764f",
+      "bytes": 1867
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "ff15f00bad32ae49d496dd3a8239b051132954371664ccb2b09a0e733a72837b",
+      "bytes": 195483
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "7ae3962c00233d0a58eed8635dd403bd82b056708a2d67e861bda95189d062b0",
+      "bytes": 1873
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "4624c864180fd616030a9fc17760aaa6023ecc9f7ad950f1746611eb8abc8072",
+      "bytes": 195838
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_64\\receipt.json",
+      "sha256": "5213b61155f24716d3f0e49c070c6ba91d83a6fec86845f5dc14856a47341588",
+      "bytes": 1865
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "d076fc8f4a039091759c5e3bdfec607c989c5a286b9c00bd1f885ffdc9257047",
+      "bytes": 195580
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_256\\receipt.json",
+      "sha256": "8e0a143903a4187225617a0769787c553f2c34d0950181ee4c272b7e55880967",
+      "bytes": 1866
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "5d44eb5a7ddd4e8e79c1476153c577928664df41d96a1c15665cc890c1dfe702",
+      "bytes": 195448
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "5ceff01472310f87a013f3acd2cda575218eeae952ed7bea0b474221cfbbe895",
+      "bytes": 1872
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "4c7a1cc638906125eab1e806883a3522e74df6097c78dad2c0e3caa8f830fc1f",
+      "bytes": 195810
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_64\\receipt.json",
+      "sha256": "bc75836e722a86cb96a49366fa85b66e166854811121c2fd375319834f7fc420",
+      "bytes": 1862
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "c4f271ed07d52e28d3707d230f49aa3010f8771ee946e67f4b341031f0a5dd47",
+      "bytes": 195520
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_256\\receipt.json",
+      "sha256": "680c52801360185a4fdeafbe038c46cd4071d09aeab21a867467104049476e91",
+      "bytes": 1865
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "f8d58291ad786b6f7fa59045c84795a5ef2e272ced516478f2d5342f08932743",
+      "bytes": 195590
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "9047bb5d665485fa80f45667cd7fc8e00ff3bd5fe464718294cca9506d2071c0",
+      "bytes": 1872
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\receipt.json",
+      "sha256": "05eac8b99b0dcfc568a5d674635fb374445cf485bebbee1fcef86c6d54fbeb76",
+      "bytes": 11586
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\receipt.json",
+      "sha256": "59e0cf299f07eeac6ea7d0b1b32479744e481526ba6fa528acad728421bd424f",
+      "bytes": 10406
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\receipt.json",
+      "sha256": "08c20e31be998d72d6a6e4ca1f1b5cfe1c5ff5c7cb54c2a17b68748150ee0c30",
+      "bytes": 11984
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\receipt.json",
+      "sha256": "64bd5e7bef0004d378049d9d0c58e5f9083404b3d91ab4aac197d3cb82df62d9",
+      "bytes": 10798
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\receipt.json",
+      "sha256": "0e676724da6b623b629845d17cee051c10f54aa45b4d1e5d96d2af5b339aa33a",
+      "bytes": 5890
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\receipt.json",
+      "sha256": "1c3dc37b57c1d08a047fd76fb93e4d1709a887050dab243a57667c3c129b7e14",
+      "bytes": 4678
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\receipt.json",
+      "sha256": "cfa56bcbd77ef12384fcb8095d0ce870e42be470a8ff68480cf12f3a22dce0dd",
+      "bytes": 6060
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\receipt.json",
+      "sha256": "2aa7519d8ea58e006ccef6802587bb48f92b10ca78074e7aea567e6cb4daf2b6",
+      "bytes": 4845
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\engine\\receipt.json",
+      "sha256": "d2fdcab2f69c31774946d4b2be503e5410c6d104d9c0e6e31801c8e3195126fe",
+      "bytes": 3696
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\pbrt\\receipt.json",
+      "sha256": "f343b8a6cddfd8aaded04d9cbb2384cf566b33648f5fa7897bc6413a53e2f582",
+      "bytes": 2277
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\engine\\receipt.json",
+      "sha256": "bf77c55cab8d2caf3721d069df4a6f1252787db005808da471e3943471b657c6",
+      "bytes": 3782
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\pbrt\\receipt.json",
+      "sha256": "2a1db4dc27bb14f0d5c6faf9e8259a770c3475c2ee588775d1d1e98bbf1fa7d1",
+      "bytes": 2362
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_stage3_analysis_protocol.py",
+      "sha256": "6f320dbd33e452bb49385223bf78358aa0c76021fbd86da625020a008eb73703",
+      "bytes": 9887
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\plan_draft.json",
+      "sha256": "8075ccbbb91c87549896e30197a13d4d7b7e16e067b1948eb12c59cbfccedaeb",
+      "bytes": 14204
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\analysis\\summary.json",
+      "sha256": "df3330cc7a5695674d4750e9ef117feb48cab38468c7ae48d3e36abdd1723267",
+      "bytes": 15550
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\gallery_medium_stage3_glass_smoke_pilot\\contract.json",
+      "sha256": "10150c8e1f0ba7d7576f74923d4efa0994ede65b37db668a65597037b864a488",
+      "bytes": 7092
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\meshes\\glass_sphere.ply",
+      "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+      "bytes": 1588396
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\geometry_masks_128.npz",
+      "sha256": "17d378cba1450ee50caab9863c5d7f06419e790d1bfd1135747500abc81278f1",
+      "bytes": 128880
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\gallery_medium_stage3_glass_smoke_hero\\contract.json",
+      "sha256": "30ee6cc6c6bc530ff0f1f35236708a469dc41f39d3c217aed134e9225cbbc560",
+      "bytes": 7089
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\geometry_masks_512.npz",
+      "sha256": "b04dd43f1e737753012f5defa4dd0b7f983ad8c4d6f3b2c93d5a6e3344204e40",
+      "bytes": 2002286
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\protocol.json",
+      "sha256": "9a6390ce9c41e1943e92b82b4e3f1ee95c16e39beae909979322e6eb3177fd01",
+      "bytes": 12557
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol.json",
+      "sha256": "8bd0cca387e954518410312e893830c3b097d96f33202622073c262677698608",
+      "bytes": 13635
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_stage3_final_v5.py",
+      "sha256": "c85a5dece172a5759f39129adbbd386f6f1cccafa3bc596848c8b1be965ad68a",
+      "bytes": 5555
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\preparation_receipt.json",
+      "sha256": "9db27450aaa86dabf2f7c693b4966b161be93fce224cce66d352cd2196eb8d00",
+      "bytes": 8762
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\install_stage3_assets_paths_v3.py",
+      "sha256": "76fafc4594119b55ee795d97b61faa673913da630bc9412b1ee6e5c30ef89c94",
+      "bytes": 4496
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v2_receipt.json",
+      "sha256": "25831d092c75991ded47939ae20affb22042bdc0d296ca7049002e63b740efef",
+      "bytes": 7449
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_0.ply",
+      "sha256": "f0ab8bd92088eca30235219afa4fb44a585f3d53517deee287a53c616b221660",
+      "bytes": 444
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_1.ply",
+      "sha256": "f68f4bfa6aa614d1fc145823f12703645ee06fc076dbde65434536b5926c3df0",
+      "bytes": 442
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_2.ply",
+      "sha256": "34a6129655a702b96f0ab86dd32be8ce7c65b7e561b8d3ace0d1840b52a06173",
+      "bytes": 440
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_0.ply",
+      "sha256": "82a57b4e3063e12e96d119e950e88eb19b546eb5168cc19fc04770db54215905",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_1.ply",
+      "sha256": "9161d556880c269e4413d74f13b01481165abe50755252db02c7eeac1a91a842",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\glass_sphere.ply",
+      "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+      "bytes": 1588396
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.envcdf.bin",
+      "sha256": "c4159467aa8e49e31713da22303188a9c4446be4e057c5b9baf53414adf0889a",
+      "bytes": 32
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.exr",
+      "sha256": "0598c5baf75d20011655dc6271bbcf81dac89604df8345f1313be3c7a257898c",
+      "bytes": 344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+      "sha256": "e4a8e5b9b97e4645c7c25c654c65f32c42332906ad1e765ecb683f169b6ca6cd",
+      "bytes": 12161
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+      "sha256": "e3e781f396b81bf39967cbb7a4332800d09d29b2fc8a9d591be66d2837516258",
+      "bytes": 2633
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+      "sha256": "6b2624aefefef0cac1c9d8d05b885c6500e375259a13000d81f312afb1333a3e",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+      "sha256": "3fd6a6816a8fedb389a74c23d5f8d6a3edb4948fb38a5f3c98dfc29c588abff7",
+      "bytes": 12243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+      "sha256": "d5b867aba4f117ed10ac4a4c08bbf9e4e6514f95326a0dd9ee43e800062d90b8",
+      "bytes": 2629
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+      "sha256": "4de9f40c9f30eed962482477c54f6a422baa4ea5c0185b13931349da42dc49ec",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\contract.json",
+      "sha256": "48c4b4c63ea61e6d33d82dd9bb5031939c5a1e853978504251e1f17cd474b22e",
+      "bytes": 12154
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+      "sha256": "c9cec9c39c4138a9fdc6718168ed6acfcd9578806b45c96c210954652d8dd106",
+      "bytes": 2632
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+      "sha256": "f62fe84bbb9def916c09d83c2eeed06782cebc7c1277c2a66ed94a9caffd934c",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\contract.json",
+      "sha256": "c4f203e69fee6963fe2dbd47c08e18b4b5d7bf121dd092ecbcbcb320f730cf59",
+      "bytes": 12236
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+      "sha256": "d1648a12e5dae52d70119b7a3df97fca593341c42840af747ba0817b37863060",
+      "bytes": 2628
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+      "sha256": "390dcb8f84f2935320009b5c3ae13035af7979a0e24114af265fb98c3220c5a0",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2\\contract.json",
+      "sha256": "c5960711dfd6a1c7a9b66ab7d589b6653500c2d820ba4a877477faaf4857a3d2",
+      "bytes": 7358
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\glass_sphere.ply",
+      "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+      "bytes": 1588396
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\checker_0.ply",
+      "sha256": "82a57b4e3063e12e96d119e950e88eb19b546eb5168cc19fc04770db54215905",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\checker_1.ply",
+      "sha256": "9161d556880c269e4413d74f13b01481165abe50755252db02c7eeac1a91a842",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\backdrop_0.ply",
+      "sha256": "f0ab8bd92088eca30235219afa4fb44a585f3d53517deee287a53c616b221660",
+      "bytes": 444
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\backdrop_1.ply",
+      "sha256": "f68f4bfa6aa614d1fc145823f12703645ee06fc076dbde65434536b5926c3df0",
+      "bytes": 442
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\meshes\\backdrop_2.ply",
+      "sha256": "34a6129655a702b96f0ab86dd32be8ce7c65b7e561b8d3ace0d1840b52a06173",
+      "bytes": 440
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2_clear_control\\contract.json",
+      "sha256": "79f03c8dfef0358d1c1f7f137531c4dc93b81575c5258f094ec6f684d34d5685",
+      "bytes": 7398
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2\\contract.json",
+      "sha256": "f3fdaaab2dc42f8a3ce09b8068117af46ccd32d8036f9751b6205fa08c71e9ff",
+      "bytes": 7354
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2_clear_control\\contract.json",
+      "sha256": "8fa8f7245f539d54dddcde62a81b3aefd3f914acb101b73d935493e9ddeb658f",
+      "bytes": 7394
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2\\scene.baamboo",
+      "sha256": "66460d50a8c1640e6f1d2d0573653fcadad392d396eb04e2446f980cc278c677",
+      "bytes": 2909
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2\\scene.pbrt",
+      "sha256": "d5005bfddcfc1673f5432f11dfc6c3e6559b8ea8147fa211c32a39b729db345a",
+      "bytes": 3620
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2_clear_control\\scene.baamboo",
+      "sha256": "4e2dfdd425bd1b66be22250b832fdee57e61abfe5739c54e04da87b5795a2f2f",
+      "bytes": 2905
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2_clear_control\\scene.pbrt",
+      "sha256": "1a644a54ad7b9f4e68533a2ff55c16858e694cb335e75b6345c602f6daf3cddb",
+      "bytes": 3602
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2\\scene.baamboo",
+      "sha256": "7e1ddd97fe0cc90f97a47b6c16f273d2883b51a15e2306ab38a42559374ee2ff",
+      "bytes": 2908
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2\\scene.pbrt",
+      "sha256": "abea3d893c4b80c64236983002b61ea555c61be3aec60eb6dbda4c1286d8b730",
+      "bytes": 3620
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2_clear_control\\scene.baamboo",
+      "sha256": "fb6b95ae68afeeba57e8331f14df24eb861fa34c4602baa0e4a50cca045dcaf4",
+      "bytes": 2904
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v2_clear_control\\scene.pbrt",
+      "sha256": "2932f7d53cca25c9f149e13375da65d24ef8c23fd74bf0070857e25115dca070",
+      "bytes": 3602
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+      "sha256": "8e61891af773293a8480942537b4f5f4b91957f9f580b61bf7d6b096221b488c",
+      "bytes": 27563912
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2\\contract.json",
+      "sha256": "862a98ce36c4c9b07a955f4ed32760bf79133e9aa97ac5fdd36f70cf72ce9c13",
+      "bytes": 7336
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_host_loader_build\\receipt.json",
+      "sha256": "6c3f9d28d3227e04be45a8218413bbd4e2b5ef72f6185b8f914dcd3c0659c57a",
+      "bytes": 2796
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\gallery_medium_stage3_glass_smoke_pilot_lighting_v2_clear_control\\contract.json",
+      "sha256": "fdf05204de9823cac133dccfd6973fbca63a3f2739b490212ab1eb49ce748a3b",
+      "bytes": 7362
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\gallery_medium_stage3_glass_smoke_hero_lighting_v2\\contract.json",
+      "sha256": "2f85fb9d7c4097986272056d38434667354724328b93247ef32ad57df755e6f6",
+      "bytes": 7333
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\gallery_medium_stage3_glass_smoke_hero_lighting_v2_clear_control\\contract.json",
+      "sha256": "e98c40f83acee23e444715ac29a35773ddfd30dc200786c8f1db6a3c07c081df",
+      "bytes": 7359
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\run_stage3_matrix.py",
+      "sha256": "ed8a517597453b1d5d754af802caa1b7f5be9f3de11bf7c4f2871c6ba2ac60cf",
+      "bytes": 5811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+      "sha256": "e87d910d46c17f9522779522159cfcf0c86fc0ef9c7928d915a076e47a0687be",
+      "bytes": 1618928
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\installed_before_v4\\PathTracerLIB.cso",
+      "sha256": "193f2e2feae3b2b0740de6f0a0595c9a1cfb1b12b86f854fdb58563e7cffa9ae",
+      "bytes": 1541360
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\production_compile_v4\\PathTracerLIB.cso",
+      "sha256": "e87d910d46c17f9522779522159cfcf0c86fc0ef9c7928d915a076e47a0687be",
+      "bytes": 1618928
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PrimaryMediumQueryCS.cso",
+      "sha256": "bea72716d4ab42187c43438b64fd3f4c34b6fb5c517e781303bc388999606b25",
+      "bytes": 695568
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\installed_before_v4\\PrimaryMediumQueryCS.cso",
+      "sha256": "a35a16776716d7e3a69287b4838f564abdbc703a39391617bca392f5f98e7d44",
+      "bytes": 545100
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\production_compile_v4\\PrimaryMediumQueryCS.cso",
+      "sha256": "bea72716d4ab42187c43438b64fd3f4c34b6fb5c517e781303bc388999606b25",
+      "bytes": 695568
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\run_receipt.json",
+      "sha256": "426b97e577a1de7f5a13879d583111c84bb987f15f1805723bda586ba9bb6c0a",
+      "bytes": 4174
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\production_compile_v4\\receipt.json",
+      "sha256": "fc337df49d604badd8e7d9a7b67414639a460d6aeacdce544fffcdd2d950656e",
+      "bytes": 43554
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\install_receipt_v4.json",
+      "sha256": "a061797bdf3e868fd152c63625e684ade4f613b99aab3fd6bd9ea7ceef85729a",
+      "bytes": 2933
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\build\\receipt.json",
+      "sha256": "a387abf7a9df26d30a07496f5bf44708f3c76cb57f2203ebe29e291172ccbaab",
+      "bytes": 2800
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth64_reference\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+      "sha256": "01ee508ad6c9f2dbf861f02e804869689d32bf394b2836870eb3f1aa2aeb9c61",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth64_reference\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+      "sha256": "e1950ba2041aa259b8bc9958874d8fb6a4d4139bb528ac7910c99146d6fcfb62",
+      "bytes": 12591
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth64_reference\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+      "sha256": "3061d3e70fc6f2bdf73d20cd89b806bcc16e76b2b7e94d35b00c871dfb4830fa",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth64_reference\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+      "sha256": "79e1077ca114ef878b92923dd5b8622e381e949a749a6a3b41d8f3301916f2dd",
+      "bytes": 12687
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Binaries\\Release\\windows\\Application\\Application.exe",
+      "sha256": "f6a54021f53b435fbf3b48469ac250811c4abc7e998ddab59533241b6c3e4c0f",
+      "bytes": 1465856
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Binaries\\Release\\windows\\BaambooCommon\\BaambooCommon.dll",
+      "sha256": "37fc3903bad56060b30a09577c3a97109690f9d4b94558200fe85af00c676988",
+      "bytes": 89088
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Binaries\\Release\\windows\\Dx12Renderer\\Dx12Renderer.dll",
+      "sha256": "14f50d6f0f10a1601c60d428117bfa68a6847c6e648fd2b70c073a37a34e3c4b",
+      "bytes": 658432
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+      "sha256": "f9177d77b89dad891990e8f7a733ae4bd30b90b28b8a7b6cebd40b3c0b8ab674",
+      "bytes": 49437696
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+      "bytes": 97084
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\Common.bsh",
+      "sha256": "7a24be32fbc5527b1591b5b311ee763d00de5ef21d44095558c8c893357cf102",
+      "bytes": 14596
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereAerialPerspectiveCS.hlsl",
+      "sha256": "27b0febcd9299ceead3dc29be872e773c24a79bdbc77576c8b5ef58a5f57069b",
+      "bytes": 7079
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereCommon.hlsli",
+      "sha256": "c8fdc2a9a5de4bbc1f1ff9473d4967bfbf500ad80f7bd1c2885e30c190350ce0",
+      "bytes": 2297
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereDistantSkyLightCS.hlsl",
+      "sha256": "309a27c5b88e4702baac9ec63ba02a43a268cbf0a0ac34c11ea355d2c345da11",
+      "bytes": 8395
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereMultiScatteringCS.hlsl",
+      "sha256": "79eb472b6bbabfb4bae4e2ba9735751bc4ea53a9f0ee8e91c51502efc865ab40",
+      "bytes": 6735
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereSkyboxCS.hlsl",
+      "sha256": "8b9264c2bbce9a4b864efab4d46dfac16776803f39586a9fa752b29d51b1c4d2",
+      "bytes": 4590
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereSkyViewCS.hlsl",
+      "sha256": "94fd3128f020d6f63c3ce5ae69604edf0c3e6130dec16cead6958679cb1056e9",
+      "bytes": 8142
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\AtmosphereTransmittanceCS.hlsl",
+      "sha256": "e82c74a8b1d940a9a4648a188e5407598b1b45008fcb23097a3eb39470c74a31",
+      "bytes": 3578
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BloomDownsampleCS.hlsl",
+      "sha256": "efb0ae64d95f9bb88734319e106b43faa0e134ba9c9c7543f7d014a6a3c0e967",
+      "bytes": 3374
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BloomUpsampleCS.hlsl",
+      "sha256": "37fc25c1e247170ccebd698e521161c9bac58e33d62d37910d935a7fad6bd6e5",
+      "bytes": 2272
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\BxDF.hlsli",
+      "sha256": "468ade0988a3005a165e7427cc902882bb3d5276ce5b95ce2111021b0fe2b65d",
+      "bytes": 33375
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CloudCommon.hlsli",
+      "sha256": "8708de5bb178369a8f4912859eacda694fdde7be08cc9bd962dd463fe28ce43a",
+      "bytes": 6049
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CloudRaymarchCS.hlsl",
+      "sha256": "1e77569e78b95b12b1eb50ff6dd2d92a3647a8c1c6ccd421de1c4da736c1511e",
+      "bytes": 21164
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CloudShadowMapCS.hlsl",
+      "sha256": "25c1887db8b24effce828be60a9761b6ffd9d86adb2d56e9e8f68038ad3b2798",
+      "bytes": 4619
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CloudShapeBaseCS.hlsl",
+      "sha256": "fc413b2ca4010bf6355990fa101f523c10e0a9d72d4b40a7f351702e4ad7fae5",
+      "bytes": 1711
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CloudTemporalUprezCS.hlsl",
+      "sha256": "2d90739a9f8298179f5075e1558ab5666e0e0f54391c3953e7d35c1d3de2d83b",
+      "bytes": 4505
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\ClusterBuildCS.hlsl",
+      "sha256": "c81ced68db88645739b696c9a908bca3a8ee87e34db08a0efdf40be169b1c07b",
+      "bytes": 3057
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Common.hlsli",
+      "sha256": "2626dbd3cf71d4173eb9751335f2b1de60e00ccdf68ca9096d459e76359e7325",
+      "bytes": 5681
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\CullingCommon.hlsli",
+      "sha256": "922b88a43314aa323970977c100c642cc640ef1629f186583c0f7c16ceae3ad2",
+      "bytes": 5221
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugClusterVS.hlsl",
+      "sha256": "fafbbf3e85649a91deb9abae34fbfdcccf7246e793219e16cf085692ba0023f2",
+      "bytes": 3636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugColor.hlsli",
+      "sha256": "b3e4ae722012aa4b548a4b4c577db9b883d283142c53762480a6c3acc5d0d925",
+      "bytes": 1145
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugFrustumVS.hlsl",
+      "sha256": "adc314fd716c41a8215ff8851c85ce525839fddbbe32740b7308109ee7f4b538",
+      "bytes": 1887
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugLightVS.hlsl",
+      "sha256": "43aa9f6d19e5ba763bd8682c44870729fb50c62d223d8fd1a6f6e3cd322323a9",
+      "bytes": 13523
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugLineVS.hlsl",
+      "sha256": "e32555943f51f31a168531a7dd9b34fb21ce746e8f38e9470c0dbc4797d38e5e",
+      "bytes": 677
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DebugWireframePS.hlsl",
+      "sha256": "c229ba2291081364c460e0da2b5f971e8032ddf34b86fa5d23f22a89b33f65a0",
+      "bytes": 181
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\DeferredPBRLightingCS.hlsl",
+      "sha256": "6b4a4d6d52fc257e2e369a3c38345a7952cd40b6d72d8bef5631590e34c60ac9",
+      "bytes": 12395
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\GBufferMS.hlsl",
+      "sha256": "e5fd8fb12f8907498b1a4a847fe090874e0c8fee6382c34818b5b7551d72b8e3",
+      "bytes": 16775
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\GBufferPS.hlsl",
+      "sha256": "b634c1493fb8b7b70d5caee1c31a880f312e4194a225c17a9de970e951f5503f",
+      "bytes": 1758
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\GBufferTS.hlsl",
+      "sha256": "bd8dedf2d775ab2e5a9717ba8c2601ea56f1182f900294477c96d758c19ca8a7",
+      "bytes": 10505
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\GBufferVS.hlsl",
+      "sha256": "cbb6bc04969e10b82b97a390c2d69b045dd49d873d349ad19a22ef99df624201",
+      "bytes": 1384
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\HelperFunctions.hlsli",
+      "sha256": "9e52850ce04070c4a63fad42843180b8663822aa96d16f463928301fdbc13ac9",
+      "bytes": 11464
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\HiZGenerationCS.hlsl",
+      "sha256": "8da9ed4529283a9345076ab3ddd22a5ce72f6401d9d170cc5d3e1a148be81afe",
+      "bytes": 7944
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\InstanceCullingCS.hlsl",
+      "sha256": "15e5a64e3f794080c108378d1e6158b94264608a1308915e7f2c216bf237b191",
+      "bytes": 4742
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\LightCullingCommon.hlsli",
+      "sha256": "4e5ac162447a107af1477726b424dd384bd38c049a3ab1513393913710fa1c40",
+      "bytes": 5407
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\LightCullingCountCS.hlsl",
+      "sha256": "b9f9993ff08c1d809301199c0a1c392d3f22225b4b1971d34a61aadae946227d",
+      "bytes": 3929
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\LightCullingScanCS.hlsl",
+      "sha256": "c15dffbda62ef2637988ed1e1408258cf4cd3ff56104c963f47e2a7b0247a9ae",
+      "bytes": 680
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\LightCullingWriteCS.hlsl",
+      "sha256": "93758363b1043be5b77fc9e923db1d4c74870ab4b1616baa192049b98b68cd7d",
+      "bytes": 4893
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Lighting.hlsli",
+      "sha256": "a0ff8a186115dd82f8bfa3cc2df70920320d30c8e35d067202505abb36cdc339",
+      "bytes": 19499
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\MaterialTextures.hlsli",
+      "sha256": "828af52c83e11386e437cd02c6626fb557de52b9c356f2f08307ac1c63ee209c",
+      "bytes": 2674
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Medium.hlsli",
+      "sha256": "d2a7136fc68a5e88fdcd0f41456fa7f4c8b191a37f427f03cfb16b875447cfaa",
+      "bytes": 27128
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\NoiseCommon.hlsli",
+      "sha256": "3625a5932d9acb01e1278a374e3e6edb0f62fb0a360bffad1fc880e9c6851bbd",
+      "bytes": 19830
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "sha256": "b1676daf97a0ccdffea4ca4c9d4cebafa4f5319616853a6eda5a715bacad66df",
+      "bytes": 82429
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathLayered.hlsli",
+      "sha256": "22723266208991de5d80306328c2bda655d982418f5fe1fa4434bfba22fd158f",
+      "bytes": 1878
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+      "bytes": 28223
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+      "bytes": 14745
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "b69233d2535a68aa937f536889f4fc4151aa2206330f8f859eff60666b314566",
+      "bytes": 31129
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "sha256": "0671b92c0420e1dcc23c60d7f1feb53f7dc654f466d7d386b81c46282548052e",
+      "bytes": 55664
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathValidation.hlsli",
+      "sha256": "52bb9fde8ca5fa5fff2f59d152d24ee43fb6005a0d5cb6b561b2553b0f3fdb00",
+      "bytes": 23705
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+      "sha256": "bf4d9317439257446a108b3c0f751bc40ecc7cdf2d9ac06ec371a4b48aeac66e",
+      "bytes": 19733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+      "bytes": 13059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SharpenCS.hlsl",
+      "sha256": "992b75196abefa6d75a514edab1cb16457f99f0b6685c710b39d852463384e8b",
+      "bytes": 1842
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SobolSampling.hlsli",
+      "sha256": "cb4c981fa1229717967270c35087bad3f8dfde89121ea26a5b4661a6565d4487",
+      "bytes": 1574
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SobolTables.hlsli",
+      "sha256": "18dc027c00f99dd0e27df8d2125f71d705fd716d9090bae3f81e462ed378d1e7",
+      "bytes": 52194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SpdCommon.hlsli",
+      "sha256": "2a6f25a725a3e01dc483f5e44846b5f82f749f8742b3a60e5487b479685f7690",
+      "bytes": 3706
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\StaticSkyboxCS.hlsl",
+      "sha256": "fb598f3342a1d2247e308a82cc7299180d05b422b479b6f5a23cb6807b9e29cc",
+      "bytes": 1898
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SurfaceResolve.hlsli",
+      "sha256": "3b20d86a27e5787233f7c1f1897490f0f56caace7157a0fc5ac93d5adb4552e5",
+      "bytes": 14547
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\SurfaceResolveCS.hlsl",
+      "sha256": "60006537e7ce64abd328c1d6643562652b473895a256a4a342eb59bc85428af7",
+      "bytes": 9331
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\TemporalAntiAliasingCS.hlsl",
+      "sha256": "992f821d1f9d0281e65e1b9b2047960902893e887f3e2573256c7a87bff4c0ef",
+      "bytes": 4142
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\ToneMappingCS.hlsl",
+      "sha256": "6f5a9cdc12b0e86e53086074de3e97f6c7516cf9d730d9aa0652330b89a5e60f",
+      "bytes": 4300
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VisibilityBuffer.hlsli",
+      "sha256": "4421b52de1b256babb4b6cf2896dba89af2e8c9f8bc0799e9411819df699357f",
+      "bytes": 2449
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelDensityCS.hlsl",
+      "sha256": "86e0a90a4ea11357311563a9c6a5e429f9529a416c280bb8f4fc039dc419e87f",
+      "bytes": 754
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelErosionBakeCS.hlsl",
+      "sha256": "d4a4e42f1065dde41a2eeeb5da264beee5f4154f8082b501eacb96e74d79f125",
+      "bytes": 2351
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelMarchingCubesCS.hlsl",
+      "sha256": "280af83dd1d11561a5a401c304c765637792eae6d4cfc156262b3a1a13ff1e91",
+      "bytes": 5231
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelMeshDataPatchCS.hlsl",
+      "sha256": "8ac51d237767dc407751bb3ddd21b577f30eb954ce8de33dea30c0ad8aacd6e7",
+      "bytes": 1714
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelMeshletBuildCS.hlsl",
+      "sha256": "118ad91d733066ace337a9676112efcbf649a5da98fab01a2d592c625e3e93f5",
+      "bytes": 3076
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelTerrainCommon.hlsli",
+      "sha256": "64822d7417afc7622d69c96304078ecff436d539c0bdc6c1016a14fb5be12b32",
+      "bytes": 38875
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelTransvoxelCS.hlsl",
+      "sha256": "8786c34a0bb16d3c869b314cd1e9f979e13a410ae02ab93f64b8e8cd29f824bf",
+      "bytes": 9295
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelTriSortCountCS.hlsl",
+      "sha256": "a01cff06efc7b2d156f6c0001d9ad1537a5425de62637106ae26d7ba7d5fbd45",
+      "bytes": 1270
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelTriSortScanCS.hlsl",
+      "sha256": "9cfdc12476d8576697f3b9faeaff1ccbc46e136ea65620a5c9feffd565e51746",
+      "bytes": 1403
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\VoxelTriSortScatterCS.hlsl",
+      "sha256": "723696f3dbbc5deb56ac15df0f435cd6c3be58d84db8c16b504abaa072d76f1d",
+      "bytes": 1668
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\run_pathtracer_reference_batch.py",
+      "sha256": "9cef1051cbda5001abc6d8e06134670503f70fc941b7991b1c4b799aad799ce3",
+      "bytes": 14876
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_64\\render_metadata.json",
+      "sha256": "756419b2f8d93af913165d4b4859e068465ad981da521e3dfb45a5c4416c8a22",
+      "bytes": 833
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_256\\render_metadata.json",
+      "sha256": "8d8487886427feecf58184644ede7d710f7584cecdc48c3fcb9098c7f1b8988d",
+      "bytes": 834
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\render_metadata.json",
+      "sha256": "2e38e0226d506fa56ffc8c0fa6a97401688345c29bc03f3d518c57b099421f5b",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_64\\render_metadata.json",
+      "sha256": "9538d2b025f6056b8d1a9865e313e9433d75c6e35367254acc0fbaa98f296147",
+      "bytes": 833
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_256\\render_metadata.json",
+      "sha256": "125ae1008dd7913719217a57103ab38a5f18c10a5f8854ea2dd49a3fcaa72155",
+      "bytes": 834
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\render_metadata.json",
+      "sha256": "56b19d7282ea3b39ff51ccfe5545f4e4cb385a9ea1202ce6e80e90917f1ab052",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_64\\render_metadata.json",
+      "sha256": "68a90eb5bb13a1a4ab17a714c51672b88400caaae30b349a849e9d86daff7d11",
+      "bytes": 833
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_256\\render_metadata.json",
+      "sha256": "9dfd6efc65ce61b82157888c3d43e032442c642d298484212d31f18f84abd6fd",
+      "bytes": 834
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\render_metadata.json",
+      "sha256": "9086d58d32687ffd47a6edad5ed080b880523a2e252ba5102fd1dd4bc5296f5e",
+      "bytes": 836
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_64\\render_metadata.json",
+      "sha256": "65fb5c381d4fa8fc9053d24aea76306fa9ef342375d41ce4617c61efe88d2ef0",
+      "bytes": 833
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_256\\render_metadata.json",
+      "sha256": "81a473b71ee8eb315f62882557fc400752943463e98672d48b843184678761ea",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\render_metadata.json",
+      "sha256": "f0fd40b06ffa64340b21cb86542c6cbebe6d7289839a67df46c5be4a377ac3cb",
+      "bytes": 837
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\scene.pbrt",
+      "sha256": "05a1429c58c368e513c48a410b09ea8347774ada171fced9477f48f3e9de1280",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_64\\render_metadata.json",
+      "sha256": "62f566ef7b88245661b4e5179c9ff79e6b773d146a9114bc4ec7be4878065b38",
+      "bytes": 847
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_256\\render_metadata.json",
+      "sha256": "c21221f5eccb3ad4ccfb69b84e81305af718e0adfc8acfb1e68e6e511cbdded1",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\render_metadata.json",
+      "sha256": "860c7c003bb1c56010f48f159b22d989ffacbe77e8a36316c97b7c758b2b6da1",
+      "bytes": 850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_64\\render_metadata.json",
+      "sha256": "69198dbd734d81db0fce32115ec131080a86181d456be2ddb15bf86cf920d44d",
+      "bytes": 847
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_256\\render_metadata.json",
+      "sha256": "51b0a90ec6b2acd5098484d8f1b94cfa569f13340ca83741a35cdc6bbdd2a191",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\render_metadata.json",
+      "sha256": "a8214a7bbceb48f532ac6ea43f275713d220ecc6e1713b2b057025ce496963d4",
+      "bytes": 850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_64\\render_metadata.json",
+      "sha256": "cf93d8cb6c6e070a70a7fe81ca2d139842818020b5177a2987629227373f0919",
+      "bytes": 847
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_256\\render_metadata.json",
+      "sha256": "1037b0d5fbedd0f092fca19533d29e11358ab0e6134a496e99f82cffc7c26c60",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\render_metadata.json",
+      "sha256": "d0405bd6833191636fed079b6d3f49b1db1f52a7943cad6cafe084f9d1735f75",
+      "bytes": 850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_64\\render_metadata.json",
+      "sha256": "f67de93c7c6f233e6382ca57e4d022d7bd967c55bf5a43ee8962800240bcc519",
+      "bytes": 847
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_256\\render_metadata.json",
+      "sha256": "2d4f4f636f91701deb30b5bb50d0b725b38c53daa9b6327fe9056d47bdf740b8",
+      "bytes": 850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\render_metadata.json",
+      "sha256": "ad216833d179fb58e2937329370af16b14c98d85c69d3ed38603d5f57033ad10",
+      "bytes": 851
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\scene.pbrt",
+      "sha256": "8c98d230466d68694781dec7662c6c8ceabf68e1a12acd0e8e2f700c0a7361a9",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "5666a894d8cc86cf7bf5c1f118f2e6d9595f59997d424d27a7dd71b4d6531cbc",
+      "bytes": 67107
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "efc5afa6024bdf30d8ed32118d4cfe72d5c3bc11d5be3135fa92488d98789654",
+      "bytes": 67123
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "4c4a70cf0d594d8dfb9d031fbe0bf5c291075a2c67e8c15b0e18fa7fa795c68e",
+      "bytes": 67117
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "df1a770e418c5c66b99056e51155953af1e4d926dce5ae99817781d76cb317da",
+      "bytes": 67121
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "22bb08f251232b7395129b58f47bff01ad4b70627a4ea096d9f70fb5547ae2bb",
+      "bytes": 2901
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_11\\spp_1024\\render_metadata.json",
+      "sha256": "ca6754afdd4ae7a26d51bdf3f49ff3f7e1dd16926078795de1eb7e6030713100",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "290f01c956a2954ef95c5994f2d3cb3686a53b712f2d78833c25ee25ad7f533a",
+      "bytes": 2901
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_29\\spp_1024\\render_metadata.json",
+      "sha256": "2d7960d9c1a2e173ee10a670dc44aa26dbf557aad9445a7cd8b2b46d5feb9029",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "4674336f3c2cd3b19e31927c3614887be1568b3743b2c17dfe0c4af8ac3cc438",
+      "bytes": 2898
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_47\\spp_1024\\render_metadata.json",
+      "sha256": "3cb3d8ee2bb70918a842a790a4b1a6279966ef3663c3525e13108d62a1651b9f",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "80900e8885d89ffdd00f7c5a5a7a0fa5cdfbd74cd8ffab1b293628eec98cbae8",
+      "bytes": 2901
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\seed_83\\spp_1024\\render_metadata.json",
+      "sha256": "d3b3fdc9fb2a5a072e8f182068d8c2786444506e245ea93ab79e8d96301db06b",
+      "bytes": 835
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\scene.pbrt",
+      "sha256": "6571f4e9a65746d7b224eb1913d1abf0629631104b269b8a4f9943b5ea1a54b4",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "4b95849f412dd8b8c70edae3aa3a211e0656e8676004116164a22ee56f23989f",
+      "bytes": 195545
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "b681798dc37cc4c771872cdb907eb439da7c39ef61fa0a6f318d451eb8524a52",
+      "bytes": 195483
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "8b5ba0b721b70aab5e1ee3f3676c3ece817cc76199ffe2dab64ecf6a269754d2",
+      "bytes": 195407
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "1f098754f2f213943d81f51ec0262ef6286f49607a8676d0767278aac1da8167",
+      "bytes": 195494
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "016cedff3f4f08207594934fc1682bc0762098158278426d951226b7edd88ebd",
+      "bytes": 1820
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "5064adc1b5e078b39873e243b89329f51bbd3bfef23e825058e1cd0625aaf0bd",
+      "bytes": 1819
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "6270fe214c22659793949cebe91fb13fac2ef58942ad708f5e0882ae07e77956",
+      "bytes": 1821
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "d30a795e976c757cd3acdb59b82e286f9b9a5ee958c045bb75929fd437673a14",
+      "bytes": 1821
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "b03268091a989ffe7f696bf0cd11a108c0a8dac5cfd1027c2f7dca6d0cbc87a4",
+      "bytes": 67113
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "eadadba3a275ecbcea8f6a09b53538c0dc1bdfeabe8c2e137174be02df5db208",
+      "bytes": 67111
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "41c69e0ecc9b492f140d73c4e607ad5f4cb01263526865e34e15ab71f41ddb06",
+      "bytes": 67108
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "f8784a18816c4aea503cf36adbc3abc7cd31a10c38f5ccac9cf16d27a6571450",
+      "bytes": 67139
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "f6f96098c92cbf95dda78ebe290155d24d43325e9d5859838d4bebe66d5ef6cf",
+      "bytes": 2982
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_11\\spp_1024\\render_metadata.json",
+      "sha256": "9adcb010d902e5ffdeb53554f1c5e76b8c4216d1c1966e40a938159468f0f63c",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "54e5ac68a02e12b4654b4c4f5df5e7ef14ce96fb18b54c8aeb34bfa12fe06f6d",
+      "bytes": 2985
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_29\\spp_1024\\render_metadata.json",
+      "sha256": "aea1ac5cd135a61bb23446b5a9089a2839a6b98c384cec11e41c2d15f36e3edd",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "883373b8b9144c4beb0dd0cf489be6f54175a224f6d7d0d6baa0ae3d93ac6848",
+      "bytes": 2985
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_47\\spp_1024\\render_metadata.json",
+      "sha256": "e071b960c4bdbd84dfef391f048e52e9d3d8d4f555423936eeba1508fc33add5",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "9f836a0bb1c42507d7c39fd1159e8727515a23dbf0bae2ea04f74ba58838a145",
+      "bytes": 2985
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\seed_83\\spp_1024\\render_metadata.json",
+      "sha256": "c43926e67755ba11618305bf8df23db4731b44aaea2026d7a0bc2064a900b48b",
+      "bytes": 849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\scene.pbrt",
+      "sha256": "45a1b9e534d5288dd8795ae68bd1207cf70193160c26a06cd7134605c8396dfa",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "ad839c7475408fcbdbee530cb2a2041dc986a509f73d1fd498c3bbe10d285571",
+      "bytes": 195576
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "59494f0e9a38e19f23ac1348359d7cb43c93486efcfb002bd508dad0c16c5696",
+      "bytes": 195486
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "fc96987bdbe7b1daec2b8d7f4c9d91711af5d387a188ee8e9e4bd219d5d690d2",
+      "bytes": 195457
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "27a2a3c9f9048e09166c4b5446289a597131a1101bb36587dc64153c210e30cf",
+      "bytes": 195596
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "6e7c944ca447deb1f58cee2331a19baa9926c6bc882e0af0927006a3ddb06746",
+      "bytes": 1877
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "82bb06a189ec8c47bb68da6309835f42faf04cc945f9429bd0cbd509cd6c3e0f",
+      "bytes": 1876
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "35af1f8196506e1726c6da8e26542fe5da5bd4d00da4b4d582532f4db484c1f0",
+      "bytes": 1877
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "e43285d371b01e93a3ae7eb4585286dbe9e0c5ff9e633b5287305a0340ab45ab",
+      "bytes": 1872
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\engine\\seed_11\\spp_2048\\radiance.exr",
+      "sha256": "4f99a299768e0584119b2d774f13c6eb8988496add9ad97aaa5e76134339e8ca",
+      "bytes": 1049038
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\engine\\seed_11\\spp_2048\\receipt.json",
+      "sha256": "b05d81cf66844d75a5f632907ef8c87e2068ae6ffe3a6596c4fd830c1003e605",
+      "bytes": 2893
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\engine\\seed_11\\spp_2048\\render_metadata.json",
+      "sha256": "639e61f4f3de3c0d324a59a811b0023e78e9f96f6890896e968afe813ac5d48e",
+      "bytes": 834
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\pbrt\\scene.pbrt",
+      "sha256": "65e90710f2ace7c749e9edec5180730ae5738abe7f30e479d1a536f3dff51f7a",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\pbrt\\seed_11\\spp_2048\\radiance.exr",
+      "sha256": "8b0d2cdaa241f3cd89a97383d926134aeeab853be8f4253d4fdd69452e231fbf",
+      "bytes": 3031200
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\pbrt\\seed_11\\spp_2048\\receipt.json",
+      "sha256": "8190f94f90d904dd1809900e2168373b6252b3833e893193daf60d48238a6263",
+      "bytes": 1811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\engine\\seed_11\\spp_2048\\radiance.exr",
+      "sha256": "3ca7a801d42f61c23b88a5a2e1f7ffb9a8c2b6ed7506536ee694b84536f10356",
+      "bytes": 1048686
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\engine\\seed_11\\spp_2048\\receipt.json",
+      "sha256": "b8478cc9dc8f17d6fc0e1dfb7623be1369bbf00d996e1043f203b3ad2fac07b1",
+      "bytes": 2977
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\engine\\seed_11\\spp_2048\\render_metadata.json",
+      "sha256": "7487e9b757ef0fec05955b60e00deca327be686b160d05b404de6b7e10d6e9e6",
+      "bytes": 848
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\pbrt\\scene.pbrt",
+      "sha256": "254bd6dc94db2da759397fed1f2fb9d443dc6b70905f7bfa07038b4b9accd88c",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\pbrt\\seed_11\\spp_2048\\radiance.exr",
+      "sha256": "f176372776496bf06a214320da9344382e6ce7b9f24546c1c66c4c65ff5cd11b",
+      "bytes": 3030231
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\pbrt\\seed_11\\spp_2048\\receipt.json",
+      "sha256": "cd8754253b771f0bb54193e5d8c333d73054fcfe960029ec7f0949e6d19cfbf4",
+      "bytes": 1869
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage3.py",
+      "sha256": "40f07267254f47dc42029c93371d9929a43648c81f3014768d3b83f09c471742",
+      "bytes": 8981
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_analysis_common.py",
+      "sha256": "1996f20b474819175291e4f87128df1da8b9a2c0dc13165289cc21fd421b8296",
+      "bytes": 8628
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_analysis_intake.py",
+      "sha256": "f33398cf50e1fb050ee35d01c1f0ddf45288e8e36a53a66a9c5da65acf238157",
+      "bytes": 14632
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\create_stage3_figures.py",
+      "sha256": "7c8b86144808134fd858b6e011ce2465b3f534e85649744051127802831b3ecd",
+      "bytes": 7081
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\independent_preparation\\review_stage3_completed_v2.py",
+      "sha256": "8fe956180f3d70857a3a2001a89fabce246ca38e32172fd0e08fa8088814de85",
+      "bytes": 24622
+    }
+  ],
+  "scope": "Independent implementation, no imports from producer analyzer/intake/statistical functions. Actual original68EXR/receipt/meta/normalexit/frozen139checks; rawfloat64means/ddof1noise; Welch-t and explicitwhole-run bootstrap CI union; paireddepth32to64; direct resampled-array variance ratios and convergence; fixed engineering decisions. Same4seedcounts retained across nestedSPP/depth, backends independent.",
+  "limitations": [
+    "No new rendering/GPU/source edits or stage acceptance. Reported FAIL/INCONCLUSIVE outcomes remain failures/inconclusive, not reviewer mismatches if correctly computed.",
+    "Saved source-derived ROI masks are reconstructed from stored geometry distances, not independently reprojected from mesh geometry.",
+    "Producer SSIM and rendered PNG appearance/mean-EXR float32 exports are hash checked only, not independently regenerated or visually accepted here.",
+    "Single hero images are descriptive; they provide no independent-run noise or correctness proof.",
+    "Four runs and marginal regional intervals do not establish universal unbiasedness. Runtime timing fields checked for validity, not isolated Stage4 equivalence."
+  ],
+  "blockers": []
+}

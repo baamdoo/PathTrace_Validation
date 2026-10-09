@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE_ANALYSIS_ONLY",
+  "stage_pass": false,
+  "summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\summary.json",
+    "sha256": "0a673bb524371a0a52aabd3048f484b0c222108afbffae48fd6dc3cc055b6b8f",
+    "bytes": 122347
+  },
+  "files": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\analysis_inputs.json",
+      "sha256": "8bd38924bd76d34a0d013dfc07dd4666358f161c8402424a1965a2aac3ef4cbd",
+      "bytes": 83942
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\analysis_plan.json",
+      "sha256": "71772031ca57d90429fa178da7f3ccb7c54713e4c5e39087db4c4b9706446238",
+      "bytes": 4447
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\analysis_queue.json",
+      "sha256": "5f1e00879061c51be7fdcd598d16b80618c01b7e8bc52c647d447bcf64798c13",
+      "bytes": 8139
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\before_after_boundary_contact.png",
+      "sha256": "3da9d644fd15e827242381d6fb995c237ad44545d288adf59e2eb76cf3a95bfa",
+      "bytes": 78251
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\before_after_float64.npz",
+      "sha256": "160b13e98c794993ec8b52944c3f2e71cd698b287e08216cd6ab4f2acdb56210",
+      "bytes": 4403
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\raw_vacuum_audit.json",
+      "sha256": "50aab3c06a412aa0d18f52ec6dc218de1a309773f261bef92986f09c8fd0fe45",
+      "bytes": 10707
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\summary.json",
+      "sha256": "0a673bb524371a0a52aabd3048f484b0c222108afbffae48fd6dc3cc055b6b8f",
+      "bytes": 122347
+    }
+  ],
+  "oracle_analysis_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\analysis_receipt.json",
+    "sha256": "b324edb9f9c6f66b437366039cd64c12300573ea83f54df70e91571e7eba07c2",
+    "bytes": 39773
+  },
+  "artifact_qa": "PENDING"
+}

@@ -1,0 +1,2023 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SOURCE_CONTRACT_SCOPED_NOT_IMAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "radiance_status": "PENDING_FORMAL_IMAGES",
+  "source_contract_verified": true,
+  "scope": "Current installed lighting_v3 smoke/clear pilot and hero source correspondence, host parser/data flow, source-only v5 loader nonimpact. No GPU execution/readback by reviewer.",
+  "scenes": [
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3",
+      "resolution": [
+        128,
+        128
+      ],
+      "density_scale": 0.18000000715255737,
+      "sigma_a": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "sigma_s": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "host_ior": 1.5,
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "lights": [
+        {
+          "name": "key",
+          "position": [
+            -129.51219177246094,
+            196.7073211669922,
+            -70.0
+          ],
+          "radius": 24.0,
+          "radiance": 16.0,
+          "engine_flux": 363833.09375
+        },
+        {
+          "name": "fill",
+          "position": [
+            120.48780822753906,
+            126.70732116699219,
+            45.0
+          ],
+          "radius": 18.0,
+          "radiance": 8.0,
+          "engine_flux": 102328.0625
+        }
+      ],
+      "max_depth": 32,
+      "source_match": "PASS_SOURCE_SCOPED",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+        "sha256": "e3e781f396b81bf39967cbb7a4332800d09d29b2fc8a9d591be66d2837516258",
+        "bytes": 2633
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+        "sha256": "6b2624aefefef0cac1c9d8d05b885c6500e375259a13000d81f312afb1333a3e",
+        "bytes": 3344
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control",
+      "resolution": [
+        128,
+        128
+      ],
+      "density_scale": 0.0,
+      "sigma_a": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "sigma_s": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "host_ior": 1.5,
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "lights": [
+        {
+          "name": "key",
+          "position": [
+            -129.51219177246094,
+            196.7073211669922,
+            -70.0
+          ],
+          "radius": 24.0,
+          "radiance": 16.0,
+          "engine_flux": 363833.09375
+        },
+        {
+          "name": "fill",
+          "position": [
+            120.48780822753906,
+            126.70732116699219,
+            45.0
+          ],
+          "radius": 18.0,
+          "radiance": 8.0,
+          "engine_flux": 102328.0625
+        }
+      ],
+      "max_depth": 32,
+      "source_match": "PASS_SOURCE_SCOPED",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+        "sha256": "d5b867aba4f117ed10ac4a4c08bbf9e4e6514f95326a0dd9ee43e800062d90b8",
+        "bytes": 2629
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+        "sha256": "4de9f40c9f30eed962482477c54f6a422baa4ea5c0185b13931349da42dc49ec",
+        "bytes": 3326
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_hero_lighting_v3",
+      "resolution": [
+        512,
+        512
+      ],
+      "density_scale": 0.18000000715255737,
+      "sigma_a": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "sigma_s": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "host_ior": 1.5,
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "lights": [
+        {
+          "name": "key",
+          "position": [
+            -129.51219177246094,
+            196.7073211669922,
+            -70.0
+          ],
+          "radius": 24.0,
+          "radiance": 16.0,
+          "engine_flux": 363833.09375
+        },
+        {
+          "name": "fill",
+          "position": [
+            120.48780822753906,
+            126.70732116699219,
+            45.0
+          ],
+          "radius": 18.0,
+          "radiance": 8.0,
+          "engine_flux": 102328.0625
+        }
+      ],
+      "max_depth": 32,
+      "source_match": "PASS_SOURCE_SCOPED",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+        "sha256": "c9cec9c39c4138a9fdc6718168ed6acfcd9578806b45c96c210954652d8dd106",
+        "bytes": 2632
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+        "sha256": "f62fe84bbb9def916c09d83c2eeed06782cebc7c1277c2a66ed94a9caffd934c",
+        "bytes": 3344
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control",
+      "resolution": [
+        512,
+        512
+      ],
+      "density_scale": 0.0,
+      "sigma_a": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.10000000149011612
+      ],
+      "sigma_s": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421
+      ],
+      "host_ior": 1.5,
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "lights": [
+        {
+          "name": "key",
+          "position": [
+            -129.51219177246094,
+            196.7073211669922,
+            -70.0
+          ],
+          "radius": 24.0,
+          "radiance": 16.0,
+          "engine_flux": 363833.09375
+        },
+        {
+          "name": "fill",
+          "position": [
+            120.48780822753906,
+            126.70732116699219,
+            45.0
+          ],
+          "radius": 18.0,
+          "radiance": 8.0,
+          "engine_flux": 102328.0625
+        }
+      ],
+      "max_depth": 32,
+      "source_match": "PASS_SOURCE_SCOPED",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+        "sha256": "d1648a12e5dae52d70119b7a3df97fca593341c42840af747ba0817b37863060",
+        "bytes": 2628
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+        "sha256": "390dcb8f84f2935320009b5c3ae13035af7979a0e24114af265fb98c3220c5a0",
+        "bytes": 3326
+      }
+    }
+  ],
+  "geometry": {
+    "vertices": 10242,
+    "triangles": 20480,
+    "closed_edges": 30720,
+    "min_corner_normal_dot": 0.9997151277913203,
+    "normal_length_range": [
+      0.9999999620160336,
+      1.0000000368772615
+    ],
+    "grid_bbox_min_plane_clearance": 5.987052429896481,
+    "coordinate_precision": "Read as engine/PBRT float32 then checked in float64; source topology only"
+  },
+  "calibration": {
+    "protocol": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\protocol.json",
+      "sha256": "ee5348890b18282d72804615385965cbf43a341494aa93392b0e9b3739fef7e4",
+      "bytes": 1499
+    },
+    "queue": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\queue.json",
+      "sha256": "6aaa36ef138474697319196516522c782a03c8b7d50b303fe4ad994b249dff1c",
+      "bytes": 20396
+    },
+    "summary": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\analysis\\summary.json",
+      "sha256": "df3330cc7a5695674d4750e9ef117feb48cab38468c7ae48d3e36abdd1723267",
+      "bytes": 15550
+    },
+    "actual_commands_checked": 24,
+    "wavelength_jitter": true,
+    "source_scaling": "rgb L white times .5/16/8; no fitted per-backend correction. Calibration itself is geometry-free at white1 and gray.05.",
+    "statistics_scope": "Existing calibration result only; no new calibration image/statistical recomputation in this source audit."
+  },
+  "sources": [
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+        "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+        "bytes": 97084
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+        "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+        "bytes": 97084
+      },
+      "reviewed_ranges": [
+        {
+          "first": 282,
+          "last": 304,
+          "meaning": "Host parser rejects mixed/unknown modes; AIR flag false for host"
+        },
+        {
+          "first": 891,
+          "last": 904,
+          "meaning": "Gallery descriptor identity/no optimize"
+        },
+        {
+          "first": 951,
+          "last": 973,
+          "meaning": "Bind medium to matching mesh draw; v5 meshlets conditional only for AIR"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+        "sha256": "2d6cef5feb9466b61164a0a50b2424a52387b2dc2fc8ac39a638878f09ec3e6d",
+        "bytes": 7676
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+        "sha256": "2d6cef5feb9466b61164a0a50b2424a52387b2dc2fc8ac39a638878f09ec3e6d",
+        "bytes": 7676
+      },
+      "reviewed_ranges": [
+        {
+          "first": 142,
+          "last": 199,
+          "meaning": "Copy optical settings and AIR flag; density load failure excludes affected draw"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+        "sha256": "cdc58a8c9725ef32797c603ae49b3a5442ae90a8c46c6b83f62f262694aceb5b",
+        "bytes": 20722
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+        "sha256": "cdc58a8c9725ef32797c603ae49b3a5442ae90a8c46c6b83f62f262694aceb5b",
+        "bytes": 20722
+      },
+      "reviewed_ranges": [
+        {
+          "first": 480,
+          "last": 583,
+          "meaning": "Per-instance optical buffer, worldToIndex inverse instance mapping, terminal IOR"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+        "sha256": "d5291cb373f6631f5dcf0e760eecfe3fe4f75f8f4afe6eee528848e9097d9eea",
+        "bytes": 38102
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+        "sha256": "d5291cb373f6631f5dcf0e760eecfe3fe4f75f8f4afe6eee528848e9097d9eea",
+        "bytes": 38102
+      },
+      "reviewed_ranges": [
+        {
+          "first": 368,
+          "last": 387,
+          "meaning": "Matching ordered per-instance medium identity"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+        "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+        "bytes": 33307
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+        "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+        "bytes": 33307
+      },
+      "reviewed_ranges": [
+        {
+          "first": 197,
+          "last": 227,
+          "meaning": "Preserve loaded positions and normals"
+        },
+        {
+          "first": 513,
+          "last": 532,
+          "meaning": "Only opt-in auxiliary meshlets; no index optimize in gallery"
+        },
+        {
+          "first": 761,
+          "last": 866,
+          "meaning": "Auxiliary meshlet generation"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+        "sha256": "b69233d2535a68aa937f536889f4fc4151aa2206330f8f859eff60666b314566",
+        "bytes": 31129
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+        "sha256": "b69233d2535a68aa937f536889f4fc4151aa2206330f8f859eff60666b314566",
+        "bytes": 31129
+      },
+      "reviewed_ranges": [
+        {
+          "first": 349,
+          "last": 384,
+          "meaning": "Pure-boundary branch separate from unflagged physical host"
+        },
+        {
+          "first": 423,
+          "last": 454,
+          "meaning": "Host boundary IOR/medium pair"
+        },
+        {
+          "first": 573,
+          "last": 603,
+          "meaning": "Host stack push/pop only on actual accepted transmission"
+        },
+        {
+          "first": 658,
+          "last": 679,
+          "meaning": "Camera tent and primary medium seed"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+        "sha256": "b1676daf97a0ccdffea4ca4c9d4cebafa4f5319616853a6eda5a715bacad66df",
+        "bytes": 82429
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+        "sha256": "b1676daf97a0ccdffea4ca4c9d4cebafa4f5319616853a6eda5a715bacad66df",
+        "bytes": 82429
+      },
+      "reviewed_ranges": [
+        {
+          "first": 809,
+          "last": 878,
+          "meaning": "Terminal optical medium lookup/IOR"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+        "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+        "bytes": 14745
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+        "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+        "bytes": 14745
+      },
+      "reviewed_ranges": [
+        {
+          "first": 238,
+          "last": 278,
+          "meaning": "Geometric and interpolated shading normal processing"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Medium.hlsli",
+        "sha256": "d2a7136fc68a5e88fdcd0f41456fa7f4c8b191a37f427f03cfb16b875447cfaa",
+        "bytes": 27128
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Medium.hlsli",
+        "sha256": "d2a7136fc68a5e88fdcd0f41456fa7f4c8b191a37f427f03cfb16b875447cfaa",
+        "bytes": 27128
+      },
+      "reviewed_ranges": [
+        {
+          "first": 156,
+          "last": 202,
+          "meaning": "Trilinear FloatGrid reconstruction"
+        },
+        {
+          "first": 226,
+          "last": 263,
+          "meaning": "Gray extinction times density scale"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+        "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+        "bytes": 28223
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+        "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+        "bytes": 28223
+      },
+      "reviewed_ranges": [
+        {
+          "first": 137,
+          "last": 152,
+          "meaning": "Sphere flux to radiance shared by NEE/hit"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+        "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+        "bytes": 13059
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+        "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+        "bytes": 13059
+      },
+      "reviewed_ranges": [
+        {
+          "first": 147,
+          "last": 166,
+          "meaning": "Tent sample support .5"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+        "sha256": "bf4d9317439257446a108b3c0f751bc40ecc7cdf2d9ac06ec371a4b48aeac66e",
+        "bytes": 19733
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+        "sha256": "bf4d9317439257446a108b3c0f751bc40ecc7cdf2d9ac06ec371a4b48aeac66e",
+        "bytes": 19733
+      },
+      "reviewed_ranges": [
+        {
+          "first": 1,
+          "last": 220,
+          "meaning": "Primary host/air replay source remains separate runtime validation"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.h",
+        "sha256": "1a2cff30aa355a08a419dc2abde4979df59276c4559ac4c52fb09a9ba90505ed",
+        "bytes": 30836
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.h",
+        "sha256": "1a2cff30aa355a08a419dc2abde4979df59276c4559ac4c52fb09a9ba90505ed",
+        "bytes": 30836
+      },
+      "reviewed_ranges": [
+        {
+          "first": 615,
+          "last": 647,
+          "meaning": "NanoVDB inverse world map, linear sampler and density times coefficients"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+        "sha256": "a4ab401fda687f35f36b3e190885bcefbe0bbb027801790e181151a1654e1850",
+        "bytes": 32151
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+        "sha256": "a4ab401fda687f35f36b3e190885bcefbe0bbb027801790e181151a1654e1850",
+        "bytes": 32151
+      },
+      "reviewed_ranges": [
+        {
+          "first": 510,
+          "last": 542,
+          "meaning": "Density-scale spectra and native world bbox"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+        "sha256": "0c083d080e2fbd8c6f02b94f193e4821c74c4db147538720311ec6814a03be6b",
+        "bytes": 17944
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+        "sha256": "0c083d080e2fbd8c6f02b94f193e4821c74c4db147538720311ec6814a03be6b",
+        "bytes": 17944
+      },
+      "reviewed_ranges": [
+        {
+          "first": 23,
+          "last": 59,
+          "meaning": "PLY vertices/normals transformed without new normalization in constructor"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+        "sha256": "3d6be69cb98f335e18b8b298d3c29ae511b4daed39b8d1ada2ba4ce18d8e92d2",
+        "bytes": 63701
+      },
+      "archive": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+        "sha256": "3d6be69cb98f335e18b8b298d3c29ae511b4daed39b8d1ada2ba4ce18d8e92d2",
+        "bytes": 63701
+      },
+      "reviewed_ranges": [
+        {
+          "first": 291,
+          "last": 353,
+          "meaning": "Triangle frame/geometric normal behavior"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "New review paths only",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\preparation_receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\install_stage3_assets_paths_v3.py",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_0.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_1.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_2.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_0.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_1.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\glass_sphere.ply",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.envcdf.bin",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.exr",
+    "Exactly four installed source variants",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+    "Six mesh surfaces and two finite lights: gallery_medium_stage3_glass_smoke_pilot_lighting_v3",
+    "Physical host, not pure boundary",
+    "Smooth ideal dielectric host values",
+    "Neutral dielectric factors",
+    "Engine neutral optical coefficients",
+    "Engine density scale and isotropic phase",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+    "Host uses exact pinned NanoVDB",
+    "Source contract explicitly retains wavelength jitter and no stage pass",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "PBRT dielectric interior/exterior match",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Engine camera pos",
+    "Engine camera target",
+    "Engine camera up",
+    "Engine vertical FOV30",
+    "Exact camera LookAt numbers",
+    "Parameter exists: fov",
+    "Parameter exists: screenwindow",
+    "Parameter exists: lensradius",
+    "Square pinhole perspective mapping",
+    "Parameter exists: xresolution",
+    "Parameter exists: yresolution",
+    "Matching film dimensions",
+    "Parameter exists: iso",
+    "Float32 RGB sensor film",
+    "Tent radius .5 reference filter",
+    "Both source depth32; tail sufficiency remains an image test",
+    "Parameter exists: filename",
+    "PBRT exact NanoVDB bytes",
+    "Parameter exists: sigma_a",
+    "Gray optical spectrum sigma_a",
+    "Parameter exists: sigma_s",
+    "Gray optical spectrum sigma_s",
+    "Parameter exists: scale",
+    "Parameter exists: g",
+    "Parameter exists: Lescale",
+    "PBRT scale/phase/no thermal emission",
+    "Parameter exists: gridname",
+    "Parameter exists: temperaturename",
+    "Identity density mapping and named FloatGrid",
+    "Actual constant .5 environment texels",
+    "Current two-pixel environment CDF",
+    "White source with .5 scale",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+    "Six mesh surfaces and two finite lights: gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control",
+    "Physical host, not pure boundary",
+    "Smooth ideal dielectric host values",
+    "Neutral dielectric factors",
+    "Engine neutral optical coefficients",
+    "Engine density scale and isotropic phase",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+    "Host uses exact pinned NanoVDB",
+    "Source contract explicitly retains wavelength jitter and no stage pass",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "PBRT dielectric interior/exterior match",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Engine camera pos",
+    "Engine camera target",
+    "Engine camera up",
+    "Engine vertical FOV30",
+    "Exact camera LookAt numbers",
+    "Parameter exists: fov",
+    "Parameter exists: screenwindow",
+    "Parameter exists: lensradius",
+    "Square pinhole perspective mapping",
+    "Parameter exists: xresolution",
+    "Parameter exists: yresolution",
+    "Matching film dimensions",
+    "Parameter exists: iso",
+    "Float32 RGB sensor film",
+    "Tent radius .5 reference filter",
+    "Both source depth32; tail sufficiency remains an image test",
+    "Parameter exists: filename",
+    "PBRT exact NanoVDB bytes",
+    "Parameter exists: sigma_a",
+    "Gray optical spectrum sigma_a",
+    "Parameter exists: sigma_s",
+    "Gray optical spectrum sigma_s",
+    "Parameter exists: scale",
+    "Parameter exists: g",
+    "Parameter exists: Lescale",
+    "PBRT scale/phase/no thermal emission",
+    "Parameter exists: gridname",
+    "Parameter exists: temperaturename",
+    "Identity density mapping and named FloatGrid",
+    "Actual constant .5 environment texels",
+    "Current two-pixel environment CDF",
+    "White source with .5 scale",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\contract.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+    "Six mesh surfaces and two finite lights: gallery_medium_stage3_glass_smoke_hero_lighting_v3",
+    "Physical host, not pure boundary",
+    "Smooth ideal dielectric host values",
+    "Neutral dielectric factors",
+    "Engine neutral optical coefficients",
+    "Engine density scale and isotropic phase",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+    "Host uses exact pinned NanoVDB",
+    "Source contract explicitly retains wavelength jitter and no stage pass",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "PBRT dielectric interior/exterior match",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Engine camera pos",
+    "Engine camera target",
+    "Engine camera up",
+    "Engine vertical FOV30",
+    "Exact camera LookAt numbers",
+    "Parameter exists: fov",
+    "Parameter exists: screenwindow",
+    "Parameter exists: lensradius",
+    "Square pinhole perspective mapping",
+    "Parameter exists: xresolution",
+    "Parameter exists: yresolution",
+    "Matching film dimensions",
+    "Parameter exists: iso",
+    "Float32 RGB sensor film",
+    "Tent radius .5 reference filter",
+    "Both source depth32; tail sufficiency remains an image test",
+    "Parameter exists: filename",
+    "PBRT exact NanoVDB bytes",
+    "Parameter exists: sigma_a",
+    "Gray optical spectrum sigma_a",
+    "Parameter exists: sigma_s",
+    "Gray optical spectrum sigma_s",
+    "Parameter exists: scale",
+    "Parameter exists: g",
+    "Parameter exists: Lescale",
+    "PBRT scale/phase/no thermal emission",
+    "Parameter exists: gridname",
+    "Parameter exists: temperaturename",
+    "Identity density mapping and named FloatGrid",
+    "Actual constant .5 environment texels",
+    "Current two-pixel environment CDF",
+    "White source with .5 scale",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\contract.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+    "Six mesh surfaces and two finite lights: gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control",
+    "Physical host, not pure boundary",
+    "Smooth ideal dielectric host values",
+    "Neutral dielectric factors",
+    "Engine neutral optical coefficients",
+    "Engine density scale and isotropic phase",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+    "Host uses exact pinned NanoVDB",
+    "Source contract explicitly retains wavelength jitter and no stage pass",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "PBRT dielectric interior/exterior match",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Parameter exists: filename",
+    "Same installed absolute PLY path",
+    "Same actual PLY bytes",
+    "No texture/alpha/thin-interface source confound",
+    "PLY geometry transform is identity",
+    "Background is achromatic diffuse",
+    "Background leaf material values",
+    "Parameter exists: reflectance",
+    "PBRT flat diffuse spectrum and exterior vacuum",
+    "Engine camera pos",
+    "Engine camera target",
+    "Engine camera up",
+    "Engine vertical FOV30",
+    "Exact camera LookAt numbers",
+    "Parameter exists: fov",
+    "Parameter exists: screenwindow",
+    "Parameter exists: lensradius",
+    "Square pinhole perspective mapping",
+    "Parameter exists: xresolution",
+    "Parameter exists: yresolution",
+    "Matching film dimensions",
+    "Parameter exists: iso",
+    "Float32 RGB sensor film",
+    "Tent radius .5 reference filter",
+    "Both source depth32; tail sufficiency remains an image test",
+    "Parameter exists: filename",
+    "PBRT exact NanoVDB bytes",
+    "Parameter exists: sigma_a",
+    "Gray optical spectrum sigma_a",
+    "Parameter exists: sigma_s",
+    "Gray optical spectrum sigma_s",
+    "Parameter exists: scale",
+    "Parameter exists: g",
+    "Parameter exists: Lescale",
+    "PBRT scale/phase/no thermal emission",
+    "Parameter exists: gridname",
+    "Parameter exists: temperaturename",
+    "Identity density mapping and named FloatGrid",
+    "Actual constant .5 environment texels",
+    "Current two-pixel environment CDF",
+    "White source with .5 scale",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Engine sphere source parameters",
+    "Parameter exists: radius",
+    "PBRT sphere geometry",
+    "Parameter exists: scale",
+    "One-sided sphere emission with opaque black backing",
+    "Flux equals float32 Le*pi*area; radius clamp inactive",
+    "Clear changes only scene ID and engine density scale",
+    "Clear PBRT changes only medium density scale",
+    "Clear changes only scene ID and engine density scale",
+    "Clear PBRT changes only medium density scale",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\glass_sphere.ply",
+    "Decoded triangle PLY dimensions",
+    "All host triangles nondegenerate",
+    "Every host triangle winds outward",
+    "Closed two-incident-edge host topology",
+    "Every smooth vertex normal is in geometric hemisphere",
+    "Native grid world bbox lies strictly inside closed host",
+    "Completed independent white/.05 calibration cohort",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\receipt.json",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\radiance.exr",
+    "Calibration normal child completion",
+    "Actual calibration CPU command keeps wavelength/pixel jitter",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Pinned bytes: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Recorded source calibration analysis completion",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Archived exact source bytes",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\preparation_receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\install_stage3_assets_paths_v3.py",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_0.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_1.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_2.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_0.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_1.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\glass_sphere.ply",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.envcdf.bin",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\contract.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\contract.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\protocol.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\queue.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\analysis\\summary.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\receipt.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\radiance.exr",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Medium.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Medium.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.h",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.h",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_physics_crosscheck.json",
+    "Final input unchanged: D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\review_stage3_installed_sources_v4.py"
+  ],
+  "input_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+      "sha256": "85354c29ebbfa6bf8ebd5f35d53fc1e09e99035b9b33f83189b765ec8aaadb35",
+      "bytes": 31941
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v4\\preparation_receipt.json",
+      "sha256": "9db27450aaa86dabf2f7c693b4966b161be93fce224cce66d352cd2196eb8d00",
+      "bytes": 8762
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\install_stage3_assets_paths_v3.py",
+      "sha256": "76fafc4594119b55ee795d97b61faa673913da630bc9412b1ee6e5c30ef89c94",
+      "bytes": 4496
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_0.ply",
+      "sha256": "f0ab8bd92088eca30235219afa4fb44a585f3d53517deee287a53c616b221660",
+      "bytes": 444
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_1.ply",
+      "sha256": "f68f4bfa6aa614d1fc145823f12703645ee06fc076dbde65434536b5926c3df0",
+      "bytes": 442
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\backdrop_2.ply",
+      "sha256": "34a6129655a702b96f0ab86dd32be8ce7c65b7e561b8d3ace0d1840b52a06173",
+      "bytes": 440
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_0.ply",
+      "sha256": "82a57b4e3063e12e96d119e950e88eb19b546eb5168cc19fc04770db54215905",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\checker_1.ply",
+      "sha256": "9161d556880c269e4413d74f13b01481165abe50755252db02c7eeac1a91a842",
+      "bytes": 17243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\meshes\\glass_sphere.ply",
+      "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+      "bytes": 1588396
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.envcdf.bin",
+      "sha256": "c4159467aa8e49e31713da22303188a9c4446be4e057c5b9baf53414adf0889a",
+      "bytes": 32
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_shared\\lighting_v2\\uniform_grey_05.exr",
+      "sha256": "0598c5baf75d20011655dc6271bbcf81dac89604df8345f1313be3c7a257898c",
+      "bytes": 344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\contract.json",
+      "sha256": "e4a8e5b9b97e4645c7c25c654c65f32c42332906ad1e765ecb683f169b6ca6cd",
+      "bytes": 12161
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.baamboo",
+      "sha256": "e3e781f396b81bf39967cbb7a4332800d09d29b2fc8a9d591be66d2837516258",
+      "bytes": 2633
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\scene.pbrt",
+      "sha256": "6b2624aefefef0cac1c9d8d05b885c6500e375259a13000d81f312afb1333a3e",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\volume_smoke_v1\\smoke_density.nvdb",
+      "sha256": "8e61891af773293a8480942537b4f5f4b91957f9f580b61bf7d6b096221b488c",
+      "bytes": 27563912
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\contract.json",
+      "sha256": "3fd6a6816a8fedb389a74c23d5f8d6a3edb4948fb38a5f3c98dfc29c588abff7",
+      "bytes": 12243
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.baamboo",
+      "sha256": "d5b867aba4f117ed10ac4a4c08bbf9e4e6514f95326a0dd9ee43e800062d90b8",
+      "bytes": 2629
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\scene.pbrt",
+      "sha256": "4de9f40c9f30eed962482477c54f6a422baa4ea5c0185b13931349da42dc49ec",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\contract.json",
+      "sha256": "48c4b4c63ea61e6d33d82dd9bb5031939c5a1e853978504251e1f17cd474b22e",
+      "bytes": 12154
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.baamboo",
+      "sha256": "c9cec9c39c4138a9fdc6718168ed6acfcd9578806b45c96c210954652d8dd106",
+      "bytes": 2632
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\scene.pbrt",
+      "sha256": "f62fe84bbb9def916c09d83c2eeed06782cebc7c1277c2a66ed94a9caffd934c",
+      "bytes": 3344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\contract.json",
+      "sha256": "c4f203e69fee6963fe2dbd47c08e18b4b5d7bf121dd092ecbcbcb320f730cf59",
+      "bytes": 12236
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.baamboo",
+      "sha256": "d1648a12e5dae52d70119b7a3df97fca593341c42840af747ba0817b37863060",
+      "bytes": 2628
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\scene.pbrt",
+      "sha256": "390dcb8f84f2935320009b5c3ae13035af7979a0e24114af265fb98c3220c5a0",
+      "bytes": 3326
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\protocol.json",
+      "sha256": "ee5348890b18282d72804615385965cbf43a341494aa93392b0e9b3739fef7e4",
+      "bytes": 1499
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\queue.json",
+      "sha256": "6aaa36ef138474697319196516522c782a03c8b7d50b303fe4ad994b249dff1c",
+      "bytes": 20396
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\analysis\\summary.json",
+      "sha256": "df3330cc7a5695674d4750e9ef117feb48cab38468c7ae48d3e36abdd1723267",
+      "bytes": 15550
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\receipt.json",
+      "sha256": "38c845206a60825ff351142cbc2a40e9096c0355356020d7b1d54349686b1e87",
+      "bytes": 3726
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "4966dd9921b1bc761427ff6d5088e5ab51d13ed0712a7b0961af47e4723eca63",
+      "bytes": 193300
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\unit_white.pbrt",
+      "sha256": "98e81cc5fe4d11fdbcb86b8ec0067f756dc2d5b2c439e9ae4c59bb80c52cacb7",
+      "bytes": 609
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\build\\Release\\pbrt.exe",
+      "sha256": "f9177d77b89dad891990e8f7a733ae4bd30b90b28b8a7b6cebd40b3c0b8ab674",
+      "bytes": 49437696
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\receipt.json",
+      "sha256": "1c1807e25e30abbe03ddb11aa0d7bc23409e9e08a98c8d7b3e2dcd034303b01e",
+      "bytes": 3733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "632b6a55767241d51eb2200336d5f18824f1242903a2925e751fa669b7101f51",
+      "bytes": 185576
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "a27e1a4a64f166b13bbd10442222d562561ccf018a31bdb22a7f27acab186b92",
+      "bytes": 3740
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "c9074b5f3c23c4375528099487c0bde4596d0ed22179fbacea91dfaa5e4a15c6",
+      "bytes": 159066
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\receipt.json",
+      "sha256": "54b63eb902fbfc6a473b0d1e36782e44ad0771768ff74be2590ed4fa962365a7",
+      "bytes": 3728
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "badb29f96cfe0fcfb2c02cde6f2585d78ec747c61a571276502d4e02bdcfb0c3",
+      "bytes": 193206
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\receipt.json",
+      "sha256": "1490fc6f3c9cd3658fc49d57a6a4beaac159a16831c14bacb19397b8a138fc0a",
+      "bytes": 3734
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "f1cdf75d2aa06babf9afe0fe48378d443c51651ee677c447b617a77dad2339ca",
+      "bytes": 185609
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "a68c84cee08aa3494c7e2d9a905e7c5796d6f283838c6dd1b41c31310d7a9504",
+      "bytes": 3741
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "33ff8b40a817ac5a5e83ec80708a208a941655f83437198e74081b5eb9ec34f8",
+      "bytes": 158810
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\receipt.json",
+      "sha256": "f9dc61dcdfc42ce759a8126f749634194a667e0081dee2c68596b4000d159984",
+      "bytes": 3726
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "866181570348e264bea6f747f9b8ad1527e86614c777fe8c5a4d905e14d3f48f",
+      "bytes": 193141
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\receipt.json",
+      "sha256": "837079c0d3daf310f58f858c31e41bc88f8bffeda03ea5d3ae4a5da1d5782dbb",
+      "bytes": 3733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "a2cc4f878ca6d7331658f1e2e558d2f7469ffdb2b55a4d7e4495a3ad3630f948",
+      "bytes": 185574
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "2575924ccc73ded3641b713aa0565b3589a6737128860115e206ef45a51be21d",
+      "bytes": 3741
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "631bdc824d1bf68556e214b51f22c8c60b46b4cee65e9f13e3a7110558004c6e",
+      "bytes": 158657
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\receipt.json",
+      "sha256": "b21d287fa0234a38d9c4bd892a99f3b3fbd99296bd0a665615a62014d32d6caa",
+      "bytes": 3726
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "77e320613c76370a7f54b517cdef387033b39f6b95b783c8fdcbcd3f99571084",
+      "bytes": 193197
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\receipt.json",
+      "sha256": "94c6197d400da863a82e222685914bd6b58fc9e51a245b951cd10fc0024e731e",
+      "bytes": 3734
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "83f9d778ad5fad55e1e45dd8d5ca6c77eff926e2c1876c3a47b63c829df8dd86",
+      "bytes": 185548
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "8a01909dfe9d44f92ab86bd45e6121895525c17e1fcad6fee0d295cd6a2dde97",
+      "bytes": 3741
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\unit_white\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "93fa57b62ac00320cd0e88cf0828000c6e97f53b5e8894ea0cc33e7e3de3b170",
+      "bytes": 159055
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\receipt.json",
+      "sha256": "0b3ba4331bb61accd962ba25755917b89299d1681fb09e212d4f41496513ddb5",
+      "bytes": 3849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_64\\radiance.exr",
+      "sha256": "d6e88067592c1288a4a3c78d8b08d56dd4b1f767f3b4ad7ca3b3b46566f8f2e2",
+      "bytes": 192846
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\white_calibration\\environment_white.pbrt",
+      "sha256": "8c00ab2664631ed3a66eb193935507de96c9c075e0dfb0a47e0f9f6232513dfd",
+      "bytes": 627
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\receipt.json",
+      "sha256": "0b812108ae900e50e2c927662cd0b753ed682e3368f4252a49446c6e583e383f",
+      "bytes": 3855
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_256\\radiance.exr",
+      "sha256": "7a697f80cc7c0de4c1e399879f44cfcdbe4e978e3c8785404434ca4f5a996fa5",
+      "bytes": 181404
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\receipt.json",
+      "sha256": "ede7fa3c047ab8bd1ff7825f367fd4d129fab336d0f0bdf6d7dead5f6a5e3649",
+      "bytes": 3863
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_11\\spp_1024\\radiance.exr",
+      "sha256": "d711e01347f6a0abe4fcda81b33491674e3a16e7fe3efeaf632f987266aad9a9",
+      "bytes": 154681
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\receipt.json",
+      "sha256": "361fe0b20cfa7c79abea00563ed9dfe0f1dc3a5e90c9d28cd79f9045f46699e4",
+      "bytes": 3850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_64\\radiance.exr",
+      "sha256": "dcdf359bc63a98232013277b9d6b0e52d0632b12aa72f4b5ee3ef953afe80125",
+      "bytes": 192955
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\receipt.json",
+      "sha256": "3fc8b40a68d8bd234e2548894e2408f9dc6699f2127c8d129e80951bbb454e2d",
+      "bytes": 3857
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_256\\radiance.exr",
+      "sha256": "5f8559feb2e35eefde00b36b4f9680cbdfbdda4e05b2b95371f5dc5bc37ab539",
+      "bytes": 181536
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\receipt.json",
+      "sha256": "5658928cf21e3458bac341e2afbe767b1e730b839887d4cf1b34a5ce0b862351",
+      "bytes": 3861
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_29\\spp_1024\\radiance.exr",
+      "sha256": "3074736dd24dd0db33fd7064d0c3a61ee4cf4807177f06cefd9c8e2893dc74df",
+      "bytes": 154251
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\receipt.json",
+      "sha256": "37564543163da0ccd1c96dec986a72b214c1f7403a929d778f04f420e87c0e3a",
+      "bytes": 3849
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_64\\radiance.exr",
+      "sha256": "a5e90a785a83deb353b17a6b7da142b2f09942687528ca00c40fed085b544a0c",
+      "bytes": 192920
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\receipt.json",
+      "sha256": "fc021a5c01ac715f7356c2ba7576ace6433549314c305a8a9a34199cff0c3e30",
+      "bytes": 3856
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_256\\radiance.exr",
+      "sha256": "0f3612ed9d12bbbc7d60638dac9df7a56c72ea6b1f2b51c1e74d6050826fb860",
+      "bytes": 181641
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\receipt.json",
+      "sha256": "750f657b3e702c2dafb79695fe736948624590ca4279a8fc7a96757cc770eb05",
+      "bytes": 3861
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_47\\spp_1024\\radiance.exr",
+      "sha256": "9aafd7dece9f3956c66ff0af07627e40d79fb155cb0604a657f10225b3be375f",
+      "bytes": 154229
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\receipt.json",
+      "sha256": "225407a734f9f7beff20e0a44c948015f92eff9f4aac411d35742cef7270c81d",
+      "bytes": 3850
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_64\\radiance.exr",
+      "sha256": "4eacc899bb4928dddc8c39e94d5c46522b36c40c7231230749695ad9b575570a",
+      "bytes": 192933
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\receipt.json",
+      "sha256": "97fc0dd20384bd098fbc038d6580cddb686600d918b3c59e8d2b86401e9d0591",
+      "bytes": 3858
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_256\\radiance.exr",
+      "sha256": "70810bb5be226b3ef644d28dcceaa5abe799a5f4bef8d89ec7bee92bf0852dc6",
+      "bytes": 181450
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\receipt.json",
+      "sha256": "126a83347e1542e5939108ed12f4925c9b404f28e315b24f9e5c1b0e735e6efe",
+      "bytes": 3863
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\environment_white\\seed_83\\spp_1024\\radiance.exr",
+      "sha256": "5aa90e85be0d840d470307983b93d5cbfa76f1ff07a23fb634dfd9bd556cee6c",
+      "bytes": 154743
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+      "bytes": 97084
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Application\\Applications\\RayTracingApp.cpp",
+      "sha256": "9849f130715a17dbb497c8018484437eda2aa05110b19cf5c549e5647b08f246",
+      "bytes": 97084
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+      "sha256": "2d6cef5feb9466b61164a0a50b2424a52387b2dc2fc8ac39a638878f09ec3e6d",
+      "bytes": 7676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\Systems\\MediumSystem.cpp",
+      "sha256": "2d6cef5feb9466b61164a0a50b2424a52387b2dc2fc8ac39a638878f09ec3e6d",
+      "bytes": 7676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+      "sha256": "cdc58a8c9725ef32797c603ae49b3a5442ae90a8c46c6b83f62f262694aceb5b",
+      "bytes": 20722
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooCommon\\RenderCommon\\RenderResources.cpp",
+      "sha256": "cdc58a8c9725ef32797c603ae49b3a5442ae90a8c46c6b83f62f262694aceb5b",
+      "bytes": 20722
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+      "sha256": "d5291cb373f6631f5dcf0e760eecfe3fe4f75f8f4afe6eee528848e9097d9eea",
+      "bytes": 38102
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\Dx12Renderer\\RenderResource\\Dx12SceneResource.cpp",
+      "sha256": "d5291cb373f6631f5dcf0e760eecfe3fe4f75f8f4afe6eee528848e9097d9eea",
+      "bytes": 38102
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+      "bytes": 33307
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Projects\\BaambooEngine\\BaambooScene\\ModelLoader.cpp",
+      "sha256": "af5e3814e946f69b2a3517578942704efa65928e2c48e5023b321f9a0a153b5b",
+      "bytes": 33307
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "b69233d2535a68aa937f536889f4fc4151aa2206330f8f859eff60666b314566",
+      "bytes": 31129
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "b69233d2535a68aa937f536889f4fc4151aa2206330f8f859eff60666b314566",
+      "bytes": 31129
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "sha256": "b1676daf97a0ccdffea4ca4c9d4cebafa4f5319616853a6eda5a715bacad66df",
+      "bytes": 82429
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathComposite.hlsli",
+      "sha256": "b1676daf97a0ccdffea4ca4c9d4cebafa4f5319616853a6eda5a715bacad66df",
+      "bytes": 82429
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+      "bytes": 14745
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSurface.hlsli",
+      "sha256": "a365a472bb89f0a710e1f3da19cab8dc2927a7a741b144d6b97eb43ac7d59560",
+      "bytes": 14745
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Medium.hlsli",
+      "sha256": "d2a7136fc68a5e88fdcd0f41456fa7f4c8b191a37f427f03cfb16b875447cfaa",
+      "bytes": 27128
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Medium.hlsli",
+      "sha256": "d2a7136fc68a5e88fdcd0f41456fa7f4c8b191a37f427f03cfb16b875447cfaa",
+      "bytes": 27128
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+      "bytes": 28223
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+      "bytes": 28223
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+      "bytes": 13059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+      "bytes": 13059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+      "sha256": "bf4d9317439257446a108b3c0f751bc40ecc7cdf2d9ac06ec371a4b48aeac66e",
+      "bytes": 19733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\Assets\\Shader\\HLSL\\PrimaryMediumQueryCS.hlsl",
+      "sha256": "bf4d9317439257446a108b3c0f751bc40ecc7cdf2d9ac06ec371a4b48aeac66e",
+      "bytes": 19733
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.h",
+      "sha256": "1a2cff30aa355a08a419dc2abde4979df59276c4559ac4c52fb09a9ba90505ed",
+      "bytes": 30836
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.h",
+      "sha256": "1a2cff30aa355a08a419dc2abde4979df59276c4559ac4c52fb09a9ba90505ed",
+      "bytes": 30836
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+      "sha256": "a4ab401fda687f35f36b3e190885bcefbe0bbb027801790e181151a1654e1850",
+      "bytes": 32151
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\media.cpp",
+      "sha256": "a4ab401fda687f35f36b3e190885bcefbe0bbb027801790e181151a1654e1850",
+      "bytes": 32151
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+      "sha256": "0c083d080e2fbd8c6f02b94f193e4821c74c4db147538720311ec6814a03be6b",
+      "bytes": 17944
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\util\\mesh.cpp",
+      "sha256": "0c083d080e2fbd8c6f02b94f193e4821c74c4db147538720311ec6814a03be6b",
+      "bytes": 17944
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+      "sha256": "3d6be69cb98f335e18b8b298d3c29ae511b4daed39b8d1ada2ba4ce18d8e92d2",
+      "bytes": 63701
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4_inputs\\External\\pbrt-v4\\src\\pbrt\\shapes.cpp",
+      "sha256": "3d6be69cb98f335e18b8b298d3c29ae511b4daed39b8d1ada2ba4ce18d8e92d2",
+      "bytes": 63701
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+      "sha256": "08849004e18e89b040f38a52e859fe9725d49aa421b3e0038d8f36213bc8e222",
+      "bytes": 2194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_physics_crosscheck.json",
+      "sha256": "4a1fc82981e8edb35dff00b4d74f090d3600ead38eea9c6e9113c09d1333321d",
+      "bytes": 18581
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\review_stage3_installed_sources_v4.py",
+      "sha256": "1b6d5c4f49825d270cd63aeb48769df28d17395fde203b8f0402eb3e3c685760",
+      "bytes": 21639
+    }
+  ],
+  "limitations": [
+    "Actual GPU-uploaded medium IDs, flags, IOR and host state are not read back by this source review; normal completion and full source-frozen image tests remain required.",
+    "This is one solid dielectric host containing smoke, not a hollow glass shell with an air cavity.",
+    "Shared smooth PLY normals all lie in their geometric hemispheres, but renderer shading-normal transport conventions and finite-precision intersection/offset behavior are not proven identical.",
+    "Engine/PBRT density and coefficient multiplication order, majorants, spectral sampling, and estimators differ. Gray optical spectra and scalar eta remove chromatic material mismatch; white-source calibration does not prove the heterogeneous transport implementation.",
+    "Depth32 source values match but convergence sufficiency remains the precommitted32-to64 rendered tail test. Source identity is not a claim of identical random samples/variance.",
+    "No normal maps/material textures are present. Ray-cone LOD does not select source texture values here, but ray offsets and normal handling still apply.",
+    "Old contract unmet text and installation INSTALLED_NOT_RENDERED are preserved historical preparation statements; this report closes only static source checks and confirms existing white-calibration provenance.",
+    "The v5 auxiliary meshlet fix applies only to bAirContributor=true pure boundaries. All four Stage3 hosts have false, retaining original loading behavior. Actual Stage2 v5 recovery remains separate."
+  ],
+  "blockers": []
+}

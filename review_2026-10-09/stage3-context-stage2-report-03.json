@@ -1,0 +1,898 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_SCATTER_REVALIDATION_SCOPED",
+  "stage_pass": false,
+  "resolution": [
+    128,
+    128
+  ],
+  "seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "spp_levels": [
+    64,
+    256,
+    1024
+  ],
+  "max_depth": 16,
+  "diagnostic_max_depth": 32,
+  "diagnostic_spp": 1024,
+  "engine_samples_per_frame": 1,
+  "scenes": [
+    {
+      "scene": "gallery_medium_stage2_constant_scatter_g0",
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\summary.json",
+        "sha256": "a6b3bd1070e74c1240d6eeb9bb54d2e12903faab6f8b64b279f3168f9a06302e",
+        "bytes": 411208
+      },
+      "analysis_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\analysis_receipt.json",
+        "sha256": "41bffbe05f580f62a13ca4c588a23c9960fb69b647baf646caa7b5796f533acf",
+        "bytes": 253374
+      },
+      "mean_equivalence_status": "PASS_SCOPED",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "stage_pass": false,
+      "global_normalized_Y": {
+        "engine": 1.014976284174793,
+        "pbrt": 1.0150892727174003,
+        "delta": -0.00011298854260743951,
+        "interval95": [
+          -0.00024155599164044352,
+          1.5578906425564495e-05
+        ],
+        "band": 0.020301785454348006,
+        "engine_over_pbrt_pixel_variance": 1.7536248262366352
+      },
+      "convergence": {
+        "engine": {
+          "low": 0.00198467104001567,
+          "high": 0.00012291214055674369,
+          "ratio": 0.061930737174344636,
+          "draws": 20000,
+          "valid_draws": 19686,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.06026454208588685,
+          "upper95": 0.06522000350787648,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        },
+        "pbrt": {
+          "low": 0.0011415109877749995,
+          "high": 7.009032873953988e-05,
+          "ratio": 0.061401361432497414,
+          "draws": 20000,
+          "valid_draws": 19677,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.06029989619981552,
+          "upper95": 0.06334083268973617,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        }
+      },
+      "depth_tail_global": {
+        "engine": {
+          "delta32_minus16": [
+            1.1621976758746655e-07,
+            1.1621976758746655e-07,
+            1.1621976758746655e-07,
+            1.1621976758746655e-07
+          ],
+          "bootstrap95": [
+            [
+              -1.0761700197647883e-08,
+              -1.0761700197647883e-08,
+              -1.0761700197647883e-08,
+              -1.0761700197647883e-08
+            ],
+            [
+              2.0279199519634972e-07,
+              2.0279199519634972e-07,
+              2.0279199519634972e-07,
+              2.0279199519634972e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              -9.868320035425252e-08,
+              -9.868320035425252e-08,
+              -9.868320035425252e-08,
+              -9.868320035425252e-08
+            ],
+            [
+              3.311227355291856e-07,
+              3.311227355291856e-07,
+              3.311227355291856e-07,
+              3.311227355291856e-07
+            ]
+          ],
+          "interval95": [
+            [
+              -9.868320035425252e-08,
+              -9.868320035425252e-08,
+              -9.868320035425252e-08,
+              -9.868320035425252e-08
+            ],
+            [
+              3.311227355291856e-07,
+              3.311227355291856e-07,
+              3.311227355291856e-07,
+              3.311227355291856e-07
+            ]
+          ],
+          "band": [
+            0.02029952800789121,
+            0.02029952800789121,
+            0.02029952800789121,
+            0.02029952800789121
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "delta32_minus16": [
+            3.5577623025417893e-07,
+            3.5576897161604393e-07,
+            3.557696512945796e-07,
+            3.5577056456403966e-07
+          ],
+          "bootstrap95": [
+            [
+              2.451007856674181e-07,
+              2.4510271678934714e-07,
+              2.450999412317856e-07,
+              2.451021057225944e-07
+            ],
+            [
+              4.358952372385261e-07,
+              4.3587006492984415e-07,
+              4.35882780980279e-07,
+              4.358763345813088e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              1.7596041178703324e-07,
+              1.7595964886981127e-07,
+              1.7596197918050614e-07,
+              1.759599823542704e-07
+            ],
+            [
+              5.355920487213246e-07,
+              5.355782943622766e-07,
+              5.355773234086531e-07,
+              5.355811467738089e-07
+            ]
+          ],
+          "interval95": [
+            [
+              1.7596041178703324e-07,
+              1.7595964886981127e-07,
+              1.7596197918050614e-07,
+              1.759599823542704e-07
+            ],
+            [
+              5.355920487213246e-07,
+              5.355782943622766e-07,
+              5.355773234086531e-07,
+              5.355811467738089e-07
+            ]
+          ],
+          "band": [
+            0.020301791877467574,
+            0.02030179283795464,
+            0.02030179195158654,
+            0.020301792569759298
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        }
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gm05",
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\summary.json",
+        "sha256": "f147ad12d72af6322b329b3f15a9c73e90be41bfc7694081b64f90d0c6a025f9",
+        "bytes": 409580
+      },
+      "analysis_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\analysis_receipt.json",
+        "sha256": "44784db80ac3b7d930dd565dacceadac2cbca430778ec1133b5fc4f6099be295",
+        "bytes": 253356
+      },
+      "mean_equivalence_status": "PASS_SCOPED",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "stage_pass": false,
+      "global_normalized_Y": {
+        "engine": 0.9943289304162976,
+        "pbrt": 0.9943617947165343,
+        "delta": -3.286430023674569e-05,
+        "interval95": [
+          -0.00018106555023006588,
+          0.0001153369497565745
+        ],
+        "band": 0.019887235894330686,
+        "engine_over_pbrt_pixel_variance": 1.6970134227762077
+      },
+      "convergence": {
+        "engine": {
+          "low": 0.0009872517115709857,
+          "high": 6.054852928188723e-05,
+          "ratio": 0.06133038674153127,
+          "draws": 20000,
+          "valid_draws": 19686,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.05873549796127018,
+          "upper95": 0.06292322320805804,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        },
+        "pbrt": {
+          "low": 0.0005713213402486179,
+          "high": 3.567946397432357e-05,
+          "ratio": 0.06245078112922789,
+          "draws": 20000,
+          "valid_draws": 19677,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.059801896486770645,
+          "upper95": 0.06514325389978005,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        }
+      },
+      "depth_tail_global": {
+        "engine": {
+          "delta32_minus16": [
+            6.882212977288305e-08,
+            6.882212977288305e-08,
+            6.882212977288305e-08,
+            6.882212977288305e-08
+          ],
+          "bootstrap95": [
+            [
+              1.955205142234462e-08,
+              1.955205142234462e-08,
+              1.955205142234462e-08,
+              1.955205142234462e-08
+            ],
+            [
+              1.0857652743556656e-07,
+              1.0857652743556656e-07,
+              1.0857652743556656e-07,
+              1.0857652743556656e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08
+            ],
+            [
+              1.5640034372355608e-07,
+              1.5640034372355608e-07,
+              1.5640034372355608e-07,
+              1.5640034372355608e-07
+            ]
+          ],
+          "interval95": [
+            [
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08,
+              -1.8756084177789992e-08
+            ],
+            [
+              1.5640034372355608e-07,
+              1.5640034372355608e-07,
+              1.5640034372355608e-07,
+              1.5640034372355608e-07
+            ]
+          ],
+          "band": [
+            0.019886579984768546,
+            0.019886579984768546,
+            0.019886579984768546,
+            0.019886579984768546
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "delta32_minus16": [
+            1.2658896231254602e-07,
+            1.265866980126873e-07,
+            1.2658616543870238e-07,
+            1.2658714088065182e-07
+          ],
+          "bootstrap95": [
+            [
+              1.07498954737828e-07,
+              1.0750183054852869e-07,
+              1.0749372536533741e-07,
+              1.0750063395015275e-07
+            ],
+            [
+              1.4063541786679679e-07,
+              1.406184391150589e-07,
+              1.406246571411529e-07,
+              1.4062249775737e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              9.385955843445713e-08,
+              9.387554246758284e-08,
+              9.386144194956145e-08,
+              9.387112725135044e-08
+            ],
+            [
+              1.593183661906349e-07,
+              1.5929785355779173e-07,
+              1.593108889278433e-07,
+              1.5930315450995318e-07
+            ]
+          ],
+          "interval95": [
+            [
+              9.385955843445713e-08,
+              9.387554246758284e-08,
+              9.386144194956145e-08,
+              9.387112725135044e-08
+            ],
+            [
+              1.593183661906349e-07,
+              1.5929785355779173e-07,
+              1.593108889278433e-07,
+              1.5930315450995318e-07
+            ]
+          ],
+          "band": [
+            0.019887237877396855,
+            0.01988723863438239,
+            0.019887237978236775,
+            0.019887238426073504
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        }
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_ramp_scatter_gp05",
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\summary.json",
+        "sha256": "fa91c3acc9df56d5881cbb9038d9c5886890f07dff1e1963f38a9028848c44bf",
+        "bytes": 403859
+      },
+      "analysis_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\analysis_receipt.json",
+        "sha256": "b89641ae0bec5affbfc29afa71b3752ce7bd412d6aae5756e85b9bc4b779d0bc",
+        "bytes": 253356
+      },
+      "mean_equivalence_status": "PASS_SCOPED",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "stage_pass": false,
+      "global_normalized_Y": {
+        "engine": 1.0187328719238624,
+        "pbrt": 1.0187851282332168,
+        "delta": -5.225630935434822e-05,
+        "interval95": [
+          -0.000193389565886617,
+          8.887694717792056e-05
+        ],
+        "band": 0.020375702564664335,
+        "engine_over_pbrt_pixel_variance": 1.5325650836450155
+      },
+      "convergence": {
+        "engine": {
+          "low": 0.0016288919880445563,
+          "high": 9.63239839024541e-05,
+          "ratio": 0.059134666146948525,
+          "draws": 20000,
+          "valid_draws": 19686,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.05630130329879351,
+          "upper95": 0.061231314379874294,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        },
+        "pbrt": {
+          "low": 0.000996475560542531,
+          "high": 6.285148012987414e-05,
+          "ratio": 0.06307377984830322,
+          "draws": 20000,
+          "valid_draws": 19677,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.058887364363966396,
+          "upper95": 0.06692663632834284,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        }
+      },
+      "depth_tail_global": {
+        "engine": {
+          "delta32_minus16": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bootstrap95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "interval95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "band": [
+            0.02037465743847725,
+            0.02037465743847725,
+            0.02037465743847725,
+            0.02037465743847725
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "delta32_minus16": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bootstrap95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "interval95": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "band": [
+            0.020375702016006816,
+            0.0203757027804334,
+            0.020375702042871195,
+            0.020375702564664335
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        }
+      }
+    },
+    {
+      "scene": "gallery_medium_stage2_smoke_scatter_g0",
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\summary.json",
+        "sha256": "335cd548d1f62ffcdeb2d54f80a821d045cdec1383df4f8ffad8586dc8ea4f4e",
+        "bytes": 407227
+      },
+      "analysis_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\analysis_receipt.json",
+        "sha256": "d015b8d5169f9eb86a353902e74d3479e5dc81e90696a15ff7c62dac482d998b",
+        "bytes": 253346
+      },
+      "mean_equivalence_status": "PASS_SCOPED",
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "depth_tail_status": "PASS_SCOPED",
+      "source_contract_status": "MATCHED_SCOPED",
+      "stage_pass": false,
+      "global_normalized_Y": {
+        "engine": 0.9986045802560966,
+        "pbrt": 0.9986382489420897,
+        "delta": -3.366868599319339e-05,
+        "interval95": [
+          -6.76958479318234e-05,
+          3.5847594543661195e-07
+        ],
+        "band": 0.019972764978841796,
+        "engine_over_pbrt_pixel_variance": 1.5244388690478408
+      },
+      "convergence": {
+        "engine": {
+          "low": 0.0001385220621250441,
+          "high": 8.586114268514978e-06,
+          "ratio": 0.06198373123238866,
+          "draws": 20000,
+          "valid_draws": 19686,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.054636782608087374,
+          "upper95": 0.07042050398508604,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        },
+        "pbrt": {
+          "low": 9.016376159405057e-05,
+          "high": 5.6323113001427405e-06,
+          "ratio": 0.06246757234354769,
+          "draws": 20000,
+          "valid_draws": 19677,
+          "method": "Paired whole-run percentile bootstrap; one-sided95 percent bounds",
+          "lower95": 0.0580472931631606,
+          "upper95": 0.06647237234866686,
+          "status": "PASS_VARIANCE_DECREASE_ONLY"
+        }
+      },
+      "depth_tail_global": {
+        "engine": {
+          "delta32_minus16": [
+            1.1550467060583713e-07,
+            1.1550467060583713e-07,
+            1.1550467060583713e-07,
+            1.1550467060583713e-07
+          ],
+          "bootstrap95": [
+            [
+              -1.0483960499740874e-07,
+              -1.0483960499740874e-07,
+              -1.0483960499740874e-07,
+              -1.0483960499740874e-07
+            ],
+            [
+              4.280384940935633e-07,
+              4.280384940935633e-07,
+              4.280384940935633e-07,
+              4.280384940935633e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              -3.865553265908355e-07,
+              -3.865553265908355e-07,
+              -3.865553265908355e-07,
+              -3.865553265908355e-07
+            ],
+            [
+              6.175646678025098e-07,
+              6.175646678025098e-07,
+              6.175646678025098e-07,
+              6.175646678025098e-07
+            ]
+          ],
+          "interval95": [
+            [
+              -3.865553265908355e-07,
+              -3.865553265908355e-07,
+              -3.865553265908355e-07,
+              -3.865553265908355e-07
+            ],
+            [
+              6.175646678025098e-07,
+              6.175646678025098e-07,
+              6.175646678025098e-07,
+              6.175646678025098e-07
+            ]
+          ],
+          "band": [
+            0.019972093915215344,
+            0.019972093915215344,
+            0.019972093915215344,
+            0.019972093915215344
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        },
+        "pbrt": {
+          "delta32_minus16": [
+            2.1867300792344224e-07,
+            2.1866332355902074e-07,
+            2.186657479530396e-07,
+            2.186655575497909e-07
+          ],
+          "bootstrap95": [
+            [
+              6.463575208393024e-08,
+              6.462490775849261e-08,
+              6.462820634212108e-08,
+              6.462745161250893e-08
+            ],
+            [
+              3.4969663020856245e-07,
+              3.4971080387080633e-07,
+              3.4969737860990335e-07,
+              3.49706821500817e-07
+            ]
+          ],
+          "jackknife_paired_t95": [
+            [
+              -3.995495722982097e-08,
+              -3.997323619111937e-08,
+              -3.9958816768744115e-08,
+              -3.9968307875321895e-08
+            ],
+            [
+              4.773009730767055e-07,
+              4.772998833091608e-07,
+              4.772903126748234e-07,
+              4.772994229749037e-07
+            ]
+          ],
+          "interval95": [
+            [
+              -3.995495722982097e-08,
+              -3.997323619111937e-08,
+              -3.9958816768744115e-08,
+              -3.9968307875321895e-08
+            ],
+            [
+              4.773009730767055e-07,
+              4.772998833091608e-07,
+              4.772903126748234e-07,
+              4.772994229749037e-07
+            ]
+          ],
+          "band": [
+            0.019972769126670488,
+            0.019972769433214552,
+            0.019972769213127257,
+            0.019972769352152947
+          ],
+          "channels": {
+            "R": "PASS_SCOPED",
+            "G": "PASS_SCOPED",
+            "B": "PASS_SCOPED",
+            "Y": "PASS_SCOPED"
+          },
+          "status": "PASS_SCOPED"
+        }
+      }
+    }
+  ],
+  "orchestration_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_orchestration_receipt.json",
+    "sha256": "6f34bbf7deaf55144ae504c835f94ab69c88ba2ec3fe6e5c434abf731501520e",
+    "bytes": 16796
+  },
+  "completion_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\completion_receipt.json",
+    "sha256": "4a5eb328e415e39810fe7fa54bb7fad7c9ef5e5d0c07ed271c18f87423c984ba",
+    "bytes": 258890
+  },
+  "qa_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_artifact_qa.json",
+    "sha256": "e4547d7e158324531d97b81f658cf22255fe409cd814df6f62e12204e82c52a9",
+    "bytes": 9427
+  },
+  "context": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+    "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+    "bytes": 10330
+  },
+  "protocol": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scatter_protocol.json",
+    "sha256": "4fcdd9d14f3f09b060491e1035d219120b200baa8463c9894b090b7601f16b02",
+    "bytes": 3080040
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\convergence.png",
+      "sha256": "08c2dc4a4071300b09042ba568a435b7d314859fc5088f8a17505207d5e1ee83",
+      "bytes": 100928
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\geometry_masks.png",
+      "sha256": "0dcb841ea71caad8c1336327d748b8be551f8189a7e5ee9e4a69c414556c99b6",
+      "bytes": 21642
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "997bee32c023b8624e224f5f2c334b9ee753e82c9bf6ef7a823318de22ecd18b",
+      "bytes": 171421
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\normalized_radiance.png",
+      "sha256": "6e52364eb972c1344d1c0b3edb36c1ed0a112e045429e4f80fad1be5df8a2eb1",
+      "bytes": 66190
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\regional_uncertainty.png",
+      "sha256": "48530335d5308a59111eb282c7933d49d994db3782cf803070bbd7dfad479f54",
+      "bytes": 114749
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "81eb50c5cacf9b81e697ca7b2f4c3ffc8e21b90a6943d4761b7373b6a1917bfc",
+      "bytes": 93276
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\convergence.png",
+      "sha256": "3c790a1dc67dac636ee8e38ead67450c5d6b91c6f485fed46d04964b919da1c0",
+      "bytes": 105485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\noise_stddev_rgb_y.png",
+      "sha256": "0ef04253f108c74824feee005a52b772d684357a03b2ce114965e157774591c7",
+      "bytes": 145270
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\normalized_radiance.png",
+      "sha256": "6356c8840e70a4782d209f7f4b2b268c6fd62af84f6fc55b82cd5d4c99232080",
+      "bytes": 56823
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\regional_uncertainty.png",
+      "sha256": "e30b72271acc97182147d35848e483769eed5a9ccef8df09a1981dc657d5be2b",
+      "bytes": 132308
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\signed_residual_rgb_y.png",
+      "sha256": "748b330cbd2eddb442c9ce9cf3b26e160fc925f3ab5f6ec0c544550bb20d86ef",
+      "bytes": 82104
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\convergence.png",
+      "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+      "bytes": 109676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\noise_stddev_rgb_y.png",
+      "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+      "bytes": 146912
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\normalized_radiance.png",
+      "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+      "bytes": 58690
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\regional_uncertainty.png",
+      "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+      "bytes": 114919
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\signed_residual_rgb_y.png",
+      "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+      "bytes": 79811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\convergence.png",
+      "sha256": "0780cf065806c598b802e096dabb7a32734d6142b90bc2b636a8415b1f93f2ee",
+      "bytes": 102171
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\geometry_masks.png",
+      "sha256": "1242ca434bb5293a0cc8c4acd087acf9f6526ff809f37f3ed511de215860320a",
+      "bytes": 22397
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "7a519e27f344e65c00657852ceca75ad6e33dbf3e18b9d204d4981550d5d2d01",
+      "bytes": 100179
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\normalized_radiance.png",
+      "sha256": "32b38034f320fccd0b0a7e40165b45eab5ad32591619a163cdb15ca38a9751d6",
+      "bytes": 43073
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\regional_uncertainty.png",
+      "sha256": "3c9cd085d31ac524b2245507ac38ce2cd62fc1716ae7f912bd81dd1e82cfc355",
+      "bytes": 131955
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "f57f0a64a164a3b611f7e58fbc72855ba9ce30a83f4e61b69c209c174612af42",
+      "bytes": 53472
+    }
+  ],
+  "scope": "Frozen practical mean/depth equivalence and variance decrease only; unequal renderer noise is measured, not gated to equality."
+}

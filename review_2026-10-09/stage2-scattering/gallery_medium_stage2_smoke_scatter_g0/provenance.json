@@ -7,7 +7,7 @@
   "source_contract_status": "MATCHED_SCOPED",
   "visual_approved": false,
   "visual_approved_images": 0,
-  "visual_approval_scope": "New Stage2 images await explicit user review",
+  "visual_approval_scope": "Stage2 diagnostic visual review waived by user; not visual approval. Stage3 actual beauty still requires review.",
   "note": "단일 air-contributor 경계, 중성 optical coefficients, 동일한 density/camera/광원 조건입니다. 평균·노이즈·depth16→32를 각각 평가합니다. 알려진 boundary tangent 결함으로 전체 판정은 INCONCLUSIVE입니다.",
   "images": [
     {
@@ -88,5 +88,11 @@
     "sha256": "21f623407e20b86232a8a29855bd7d3ee77e8858dce1e67d3cdae441ce51226d",
     "bytes": 412186
   },
-  "stage_pass": false
+  "stage_pass": false,
+  "visual_review_status": "WAIVED_BY_USER",
+  "visual_review_waiver": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\user_stage2_visual_waiver.json",
+    "sha256": "57481c33efe8ce120a617a1eb62b2f5ea36c4e3d10767382f7cc177889c80c78",
+    "bytes": 980
+  }
 }

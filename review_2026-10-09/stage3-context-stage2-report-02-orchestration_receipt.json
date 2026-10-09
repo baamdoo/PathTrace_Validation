@@ -1,0 +1,187 @@
+{
+  "status": "COMPLETE_CPU_ANALYSES_NO_STAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "artifact_qa": "PENDING_INDIVIDUAL_VISUAL_REVIEW",
+  "analyses": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\analysis_receipt.json",
+      "sha256": "fbf4781887a2139e6ab1bafd2cea34bf33fde9a85b30796a482dd5bf25e763b9",
+      "bytes": 109163
+    }
+  ],
+  "jobs": [
+    {
+      "kind": "ramp",
+      "command": [
+        "D:\\JS\\Projects\\BaambooRenderer\\Tools\\.venv\\Scripts\\python.exe",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_boundary_ramp_revalidation.py",
+        "--plan",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_plan.json",
+        "--queue",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_queue.json",
+        "--oracle",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\oracle_ramp128",
+        "--known-issue-context",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+        "--output-dir",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp"
+      ],
+      "exit_code": 0,
+      "cpu_analysis_process_seconds": 5.84122650000063,
+      "log": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_cpu_analysis.log",
+        "sha256": "fbe45c3f9cb619663d71965ef478b1a8df062ac4695353eff5315636b5c50892",
+        "bytes": 17628
+      }
+    }
+  ],
+  "aggregates": {
+    "cohort": {
+      "plan": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_plan.json",
+        "sha256": "4dda5aba7da08f91308757d45a42b5d02cbc0295aef63fbefd40f076c81517c4",
+        "bytes": 94468
+      },
+      "queue": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_queue.json",
+        "sha256": "08eafb8a48d8c4b9998ec02c202eb39c9f56752da72f2d59f04839aa1ec0a2b2",
+        "bytes": 36726
+      },
+      "archive_manifest": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_source_archives.json",
+        "sha256": "28bbcbdf1a989fe8af5aecafc829f839cfbaefc4f86524ac401dd21ec45acb4b",
+        "bytes": 5020
+      },
+      "jobs": 18
+    }
+  },
+  "context": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+    "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+    "bytes": 10330
+  },
+  "source_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\run_boundary_revalidation_analysis.py",
+      "sha256": "93970dc5b4c7f016cb7d52af97ab3a330e274260d105bac27881e705a22b0b55",
+      "bytes": 7597
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_revalidation_provenance.py",
+      "sha256": "343e47babce3279ccaead74d63fab5f8cb43d8a512d4797da461c12cb97c6a42",
+      "bytes": 11597
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\merge_boundary_revalidation_v2.py",
+      "sha256": "b55ca9eafa0eacd747f54167a4e05b403cb5f2959acdb648224f6bdad48d3fda",
+      "bytes": 5552
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+      "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+      "bytes": 10330
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_boundary_constant_revalidation.py",
+      "sha256": "b9f2b567be61915c1c740a7968e05f632c49fa9dfb60409a35968e7d736a4bc1",
+      "bytes": 14344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_boundary_ramp_revalidation.py",
+      "sha256": "fd7b1c9a49787e54df510c6a8d751f1ff33a2e7e95343d35fa4f0ceecc796fef",
+      "bytes": 36081
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_absorption.py",
+      "sha256": "f22aec7bbaa33e863c5881a3d324f7b18d71bdc30a5a3d7ae92c6b429a9550ec",
+      "bytes": 22946
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_scattering.py",
+      "sha256": "5884dfed25ef5cce4c66099dfa8e5247e75c6aaa5b5261b356058792d5fe1881",
+      "bytes": 33882
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_analysis_protocol.json",
+      "sha256": "9550c2d210296b1304f802c607d05234dcf2c05d9fe925251475385fb2c0e0c4",
+      "bytes": 10798
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption_analysis_protocol.json",
+      "sha256": "763f3b6ad056fc83033940568dffce40a49e2456c44168e9ecb6e0596064eb68",
+      "bytes": 4722
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scatter_protocol.json",
+      "sha256": "4fcdd9d14f3f09b060491e1035d219120b200baa8463c9894b090b7601f16b02",
+      "bytes": 3080040
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\validate_pathtracer_replicates.py",
+      "sha256": "be165fbfa3aa6fef9910f6f2c1b667e57f32d5f32ee71d390cb4dac220d0bb59",
+      "bytes": 26460
+    }
+  ],
+  "validated_gpu_observation_audit": {
+    "gating_rows": 65,
+    "observational_rows": [
+      {
+        "case": "foreign_at_query_end_plus3ulp",
+        "kind": "advance_observation",
+        "channel": "-1",
+        "samples": "1",
+        "measured": "1",
+        "expected": "-1",
+        "tolerance": "0",
+        "pass": "-1",
+        "hit": "1",
+        "NoW": "-1.52587890625e-05",
+        "instance": "0",
+        "primitive": "1",
+        "traced_primitive": "1",
+        "hit_t": "1",
+        "hit_t_bits": "1065353216",
+        "resume_t": "1.0000002384185791",
+        "resume_t_bits": "1065353218"
+      }
+    ],
+    "scope": "Only the authored foreign_at_query_end_plus3ulp row has expected/pass=-1. All other 65 rows must pass; this observation never clears a failure."
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\convergence.png",
+      "sha256": "bfb866139c51b6dfe5abf2d73e0b2372580217c36035333816f49c16bbf9d965",
+      "bytes": 143305
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\geometry_masks.png",
+      "sha256": "864aca26dd2bba5837f6c5389cb0de67b3b6bd6cea13fc4a498687b23d216b40",
+      "bytes": 30397
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\linear_residuals.png",
+      "sha256": "86e525cea031794f1a8d584b18246f4b04b3264a0db90ee130892faa82280f32",
+      "bytes": 129990
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\noise_and_oracle_bounds.png",
+      "sha256": "8428f7427d33d722d5a57e3a386e21f171d2a1c82f53dd6be3495f539b84a38f",
+      "bytes": 133636
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\regional_uncertainty.png",
+      "sha256": "175781470287d74f63e1e71dfc71eefd0bb509edcd44ea1e9131e8bc91e6f08e",
+      "bytes": 63309
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\transmittance_comparison.png",
+      "sha256": "3ba96569357665f062eb9eb4301d5ed6b8bbbd91c52d056f9aeb4649f353285a",
+      "bytes": 63303
+    }
+  ],
+  "limitations": [
+    "Original PBRT images were reused without rerendering.",
+    "Numeric gates are unchanged; bounded source repair and numeric results remain separate.",
+    "CPU analysis process times are not renderer timings or Stage4 measurements."
+  ]
+}

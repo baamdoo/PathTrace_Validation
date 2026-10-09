@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_ARTIFACT_QA_NO_USER_ACCEPTANCE",
+  "artifact_qa": "INDIVIDUALLY_VIEWED",
+  "reviewed_utc": "2026-10-09T13:01:59.401419+00:00",
+  "reviewer": "publish_inventory",
+  "method": "Each of 24 actual PNGs viewed individually via view_image with detail original. Display service resized wide charts up to 2100px to 2048px; all labels remained legible. Native 512px RGBs viewed without resizing.",
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+    "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+    "bytes": 771924
+  },
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\analysis_receipt.json",
+    "sha256": "da390a670b41f336d7df0776454b963694bcd065416a0c63a78a2e59b50d136e",
+    "bytes": 14579
+  },
+  "statistics_arrays": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\statistics_arrays.npz",
+    "sha256": "f12744e9a7e51b21b15b3bbdf8f27a3698d619e6eb942f2d1e1f5e2f0306f392",
+    "bytes": 15866272
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_64.png",
+      "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+      "bytes": 213969,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_256.png",
+      "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+      "bytes": 190437,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_1024.png",
+      "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+      "bytes": 166319,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_single_seed11_1024.png",
+      "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+      "bytes": 188825,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_seed11_2048.png",
+      "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+      "bytes": 1347335,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_engine_RGB.png",
+      "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+      "bytes": 154811,
+      "role": "primary_actual_RGB_native512",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_pbrt_RGB.png",
+      "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+      "bytes": 325724,
+      "role": "primary_actual_RGB_native512",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_smoke_pair.png",
+      "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+      "bytes": 764297,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_signed_residual_RGB_Y.png",
+      "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+      "bytes": 181598,
+      "role": "supplemental_residual",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_stddev_RGB_Y.png",
+      "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+      "bytes": 421609,
+      "role": "supplemental_noise",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_RGB_Y.png",
+      "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+      "bytes": 365613,
+      "role": "supplemental_noise",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_convergence.png",
+      "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+      "bytes": 194136,
+      "role": "supplemental_convergence",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_regional_mean_CI.png",
+      "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+      "bytes": 134306,
+      "role": "supplemental_uncertainty",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_depth_tail_Y_CI.png",
+      "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+      "bytes": 70018,
+      "role": "supplemental_depth",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_engine_RGB.png",
+      "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+      "bytes": 140012,
+      "role": "primary_actual_RGB_native512",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_pbrt_RGB.png",
+      "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+      "bytes": 302703,
+      "role": "primary_actual_RGB_native512",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_clear_pair.png",
+      "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+      "bytes": 708286,
+      "role": "primary_actual_RGB",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_signed_residual_RGB_Y.png",
+      "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+      "bytes": 165634,
+      "role": "supplemental_residual",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_stddev_RGB_Y.png",
+      "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+      "bytes": 417370,
+      "role": "supplemental_noise",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_RGB_Y.png",
+      "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+      "bytes": 366402,
+      "role": "supplemental_noise",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_convergence.png",
+      "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+      "bytes": 196927,
+      "role": "supplemental_convergence",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_regional_mean_CI.png",
+      "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+      "bytes": 133555,
+      "role": "supplemental_uncertainty",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_depth_tail_Y_CI.png",
+      "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+      "bytes": 68635,
+      "role": "supplemental_depth",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\geometry_ROIs.png",
+      "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+      "bytes": 27437,
+      "role": "supplemental_protocol",
+      "viewed": true,
+      "caption_and_scale_legible": true
+    }
+  ],
+  "findings": [
+    "Smoke and clear actual RGB share camera, globe silhouette, glass reflection/refraction and backdrop alignment. The plume is visible in smoke and absent in clear.",
+    "128px mean4/seed11 and 512px single-seed labels distinguish sample counts and independent-run scope.",
+    "Residual RGB/Y zero-centered scale, shared noise scales with three explicit log ticks, convergence axes, marginal CI bands, depth labels and geometry-only masks are readable; no label overlap or missing panels observed.",
+    "Pixel residual structure and stochastic grain remain visible; artifact QA does not erase numerical limitations or imply exact image equality."
+  ],
+  "changes_to_statistics_or_figures": false,
+  "stage_pass": false,
+  "user_visual_acceptance": "PENDING_USER_REVIEW"
+}

@@ -1,0 +1,299 @@
+{
+  "status": "COMPLETE_CPU_ANALYSES_NO_STAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "artifact_qa": "PENDING_INDIVIDUAL_VISUAL_REVIEW",
+  "analyses": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\completion_receipt.json",
+      "sha256": "4a5eb328e415e39810fe7fa54bb7fad7c9ef5e5d0c07ed271c18f87423c984ba",
+      "bytes": 258890
+    }
+  ],
+  "jobs": [
+    {
+      "kind": "scatter",
+      "command": [
+        "D:\\JS\\Projects\\BaambooRenderer\\Tools\\.venv\\Scripts\\python.exe",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_scattering.py",
+        "--plan",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_plan.json",
+        "--queue",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_queue.json",
+        "--depth-plan",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_depth32_plan.json",
+        "--depth-queue",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_depth32_queue.json",
+        "--protocol",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scatter_protocol.json",
+        "--context",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+        "--output-dir",
+        "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter"
+      ],
+      "exit_code": 0,
+      "cpu_analysis_process_seconds": 13.79993779999495,
+      "log": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_cpu_analysis.log",
+        "sha256": "2b6740a50f6aa631a07c028c23d4b3eece4457a5184eed59fe650538f1f3f73c",
+        "bytes": 2247
+      }
+    }
+  ],
+  "aggregates": {
+    "cohort": {
+      "plan": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_plan.json",
+        "sha256": "4dda5aba7da08f91308757d45a42b5d02cbc0295aef63fbefd40f076c81517c4",
+        "bytes": 94468
+      },
+      "queue": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_queue.json",
+        "sha256": "08eafb8a48d8c4b9998ec02c202eb39c9f56752da72f2d59f04839aa1ec0a2b2",
+        "bytes": 36726
+      },
+      "archive_manifest": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_cohort_source_archives.json",
+        "sha256": "28bbcbdf1a989fe8af5aecafc829f839cfbaefc4f86524ac401dd21ec45acb4b",
+        "bytes": 5020
+      },
+      "jobs": 18
+    },
+    "depth32": {
+      "plan": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_depth32_plan.json",
+        "sha256": "07278b803f8fbbe84569105e3460192f3b5433b75a4abe119cf9f91eebb2f35d",
+        "bytes": 35450
+      },
+      "queue": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_depth32_queue.json",
+        "sha256": "b83c470eff84af08b02db002b0c7437056c62d9a738628dde019f8cfe0c2bba4",
+        "bytes": 28693
+      },
+      "archive_manifest": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\combined_depth32_source_archives.json",
+        "sha256": "28bbcbdf1a989fe8af5aecafc829f839cfbaefc4f86524ac401dd21ec45acb4b",
+        "bytes": 5020
+      },
+      "jobs": 14
+    }
+  },
+  "context": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+    "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+    "bytes": 10330
+  },
+  "source_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\run_boundary_revalidation_analysis.py",
+      "sha256": "93970dc5b4c7f016cb7d52af97ab3a330e274260d105bac27881e705a22b0b55",
+      "bytes": 7597
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_revalidation_provenance.py",
+      "sha256": "343e47babce3279ccaead74d63fab5f8cb43d8a512d4797da461c12cb97c6a42",
+      "bytes": 11597
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\merge_boundary_revalidation_v2.py",
+      "sha256": "b55ca9eafa0eacd747f54167a4e05b403cb5f2959acdb648224f6bdad48d3fda",
+      "bytes": 5552
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+      "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+      "bytes": 10330
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_boundary_constant_revalidation.py",
+      "sha256": "b9f2b567be61915c1c740a7968e05f632c49fa9dfb60409a35968e7d736a4bc1",
+      "bytes": 14344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_boundary_ramp_revalidation.py",
+      "sha256": "fd7b1c9a49787e54df510c6a8d751f1ff33a2e7e95343d35fa4f0ceecc796fef",
+      "bytes": 36081
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_absorption.py",
+      "sha256": "f22aec7bbaa33e863c5881a3d324f7b18d71bdc30a5a3d7ae92c6b429a9550ec",
+      "bytes": 22946
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analyze_stage2_scattering.py",
+      "sha256": "5884dfed25ef5cce4c66099dfa8e5247e75c6aaa5b5261b356058792d5fe1881",
+      "bytes": 33882
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2_analysis_protocol.json",
+      "sha256": "9550c2d210296b1304f802c607d05234dcf2c05d9fe925251475385fb2c0e0c4",
+      "bytes": 10798
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\ramp_absorption_analysis_protocol.json",
+      "sha256": "763f3b6ad056fc83033940568dffce40a49e2456c44168e9ecb6e0596064eb68",
+      "bytes": 4722
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\scatter_protocol.json",
+      "sha256": "4fcdd9d14f3f09b060491e1035d219120b200baa8463c9894b090b7601f16b02",
+      "bytes": 3080040
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\validate_pathtracer_replicates.py",
+      "sha256": "be165fbfa3aa6fef9910f6f2c1b667e57f32d5f32ee71d390cb4dac220d0bb59",
+      "bytes": 26460
+    }
+  ],
+  "validated_gpu_observation_audit": {
+    "gating_rows": 65,
+    "observational_rows": [
+      {
+        "case": "foreign_at_query_end_plus3ulp",
+        "kind": "advance_observation",
+        "channel": "-1",
+        "samples": "1",
+        "measured": "1",
+        "expected": "-1",
+        "tolerance": "0",
+        "pass": "-1",
+        "hit": "1",
+        "NoW": "-1.52587890625e-05",
+        "instance": "0",
+        "primitive": "1",
+        "traced_primitive": "1",
+        "hit_t": "1",
+        "hit_t_bits": "1065353216",
+        "resume_t": "1.0000002384185791",
+        "resume_t_bits": "1065353218"
+      }
+    ],
+    "scope": "Only the authored foreign_at_query_end_plus3ulp row has expected/pass=-1. All other 65 rows must pass; this observation never clears a failure."
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\convergence.png",
+      "sha256": "08c2dc4a4071300b09042ba568a435b7d314859fc5088f8a17505207d5e1ee83",
+      "bytes": 100928
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\geometry_masks.png",
+      "sha256": "0dcb841ea71caad8c1336327d748b8be551f8189a7e5ee9e4a69c414556c99b6",
+      "bytes": 21642
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "997bee32c023b8624e224f5f2c334b9ee753e82c9bf6ef7a823318de22ecd18b",
+      "bytes": 171421
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\normalized_radiance.png",
+      "sha256": "6e52364eb972c1344d1c0b3edb36c1ed0a112e045429e4f80fad1be5df8a2eb1",
+      "bytes": 66190
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\regional_uncertainty.png",
+      "sha256": "48530335d5308a59111eb282c7933d49d994db3782cf803070bbd7dfad479f54",
+      "bytes": 114749
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "81eb50c5cacf9b81e697ca7b2f4c3ffc8e21b90a6943d4761b7373b6a1917bfc",
+      "bytes": 93276
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\convergence.png",
+      "sha256": "3c790a1dc67dac636ee8e38ead67450c5d6b91c6f485fed46d04964b919da1c0",
+      "bytes": 105485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\noise_stddev_rgb_y.png",
+      "sha256": "0ef04253f108c74824feee005a52b772d684357a03b2ce114965e157774591c7",
+      "bytes": 145270
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\normalized_radiance.png",
+      "sha256": "6356c8840e70a4782d209f7f4b2b268c6fd62af84f6fc55b82cd5d4c99232080",
+      "bytes": 56823
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\regional_uncertainty.png",
+      "sha256": "e30b72271acc97182147d35848e483769eed5a9ccef8df09a1981dc657d5be2b",
+      "bytes": 132308
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\signed_residual_rgb_y.png",
+      "sha256": "748b330cbd2eddb442c9ce9cf3b26e160fc925f3ab5f6ec0c544550bb20d86ef",
+      "bytes": 82104
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\convergence.png",
+      "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+      "bytes": 109676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\noise_stddev_rgb_y.png",
+      "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+      "bytes": 146912
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\normalized_radiance.png",
+      "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+      "bytes": 58690
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\regional_uncertainty.png",
+      "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+      "bytes": 114919
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\signed_residual_rgb_y.png",
+      "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+      "bytes": 79811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\convergence.png",
+      "sha256": "0780cf065806c598b802e096dabb7a32734d6142b90bc2b636a8415b1f93f2ee",
+      "bytes": 102171
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\geometry_masks.png",
+      "sha256": "1242ca434bb5293a0cc8c4acd087acf9f6526ff809f37f3ed511de215860320a",
+      "bytes": 22397
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "7a519e27f344e65c00657852ceca75ad6e33dbf3e18b9d204d4981550d5d2d01",
+      "bytes": 100179
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\normalized_radiance.png",
+      "sha256": "32b38034f320fccd0b0a7e40165b45eab5ad32591619a163cdb15ca38a9751d6",
+      "bytes": 43073
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\regional_uncertainty.png",
+      "sha256": "3c9cd085d31ac524b2245507ac38ce2cd62fc1716ae7f912bd81dd1e82cfc355",
+      "bytes": 131955
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "f57f0a64a164a3b611f7e58fbc72855ba9ce30a83f4e61b69c209c174612af42",
+      "bytes": 53472
+    }
+  ],
+  "limitations": [
+    "Original PBRT images were reused without rerendering.",
+    "Numeric gates are unchanged; bounded source repair and numeric results remain separate.",
+    "CPU analysis process times are not renderer timings or Stage4 measurements."
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "status": "RECORDED_SCOPES_ONLY_NOT_STAGE4",
+  "rows": [
+    {
+      "kind": "base",
+      "job": "smoke_engine",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 5.415315625,
+      "min_seconds": 5.37965918,
+      "max_seconds": 5.5642066,
+      "process_seconds": 431.3773177000039,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\receipt.json",
+        "sha256": "05eac8b99b0dcfc568a5d674635fb374445cf485bebbee1fcef86c6d54fbeb76",
+        "bytes": 11586
+      }
+    },
+    {
+      "kind": "base",
+      "job": "smoke_pbrt",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 11.333433799998602,
+      "min_seconds": 11.170761000001221,
+      "max_seconds": 11.497362499998417,
+      "process_seconds": 59.85174839999672,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\receipt.json",
+        "sha256": "59e0cf299f07eeac6ea7d0b1b32479744e481526ba6fa528acad728421bd424f",
+        "bytes": 10406
+      }
+    },
+    {
+      "kind": "base",
+      "job": "clear_engine",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 1.691565395,
+      "min_seconds": 1.68439329,
+      "max_seconds": 1.82963264,
+      "process_seconds": 145.16675289999694,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\receipt.json",
+        "sha256": "08c20e31be998d72d6a6e4ca1f1b5cfe1c5ff5c7cb54c2a17b68748150ee0c30",
+        "bytes": 11984
+      }
+    },
+    {
+      "kind": "base",
+      "job": "clear_pbrt",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 10.5133283499963,
+      "min_seconds": 10.452419799999916,
+      "max_seconds": 10.61671529999876,
+      "process_seconds": 55.601874100000714,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\base\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\receipt.json",
+        "sha256": "64bd5e7bef0004d378049d9d0c58e5f9083404b3d91ab4aac197d3cb82df62d9",
+        "bytes": 10798
+      }
+    },
+    {
+      "kind": "depth",
+      "job": "smoke_engine",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 5.49922085,
+      "min_seconds": 5.47437859,
+      "max_seconds": 5.65670061,
+      "process_seconds": 436.52277909999975,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\engine\\receipt.json",
+        "sha256": "0e676724da6b623b629845d17cee051c10f54aa45b4d1e5d96d2af5b339aa33a",
+        "bytes": 5890
+      }
+    },
+    {
+      "kind": "depth",
+      "job": "smoke_pbrt",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 11.161042750001798,
+      "min_seconds": 11.142585099994903,
+      "max_seconds": 11.390102599994862,
+      "process_seconds": 45.02047609999863,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3\\pbrt\\receipt.json",
+        "sha256": "1c3dc37b57c1d08a047fd76fb93e4d1709a887050dab243a57667c3c129b7e14",
+        "bytes": 4678
+      }
+    },
+    {
+      "kind": "depth",
+      "job": "clear_engine",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 1.6869355449999999,
+      "min_seconds": 1.67396414,
+      "max_seconds": 1.81739724,
+      "process_seconds": 151.74860839999747,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\engine\\receipt.json",
+        "sha256": "cfa56bcbd77ef12384fcb8095d0ce870e42be470a8ff68480cf12f3a22dce0dd",
+        "bytes": 6060
+      }
+    },
+    {
+      "kind": "depth",
+      "job": "clear_pbrt",
+      "spp": 1024,
+      "replicates": 4,
+      "median_seconds": 10.504883949997748,
+      "min_seconds": 10.43598750000092,
+      "max_seconds": 10.614751999994041,
+      "process_seconds": 42.20885220000491,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\depth\\gallery_medium_stage3_glass_smoke_pilot_lighting_v3_clear_control\\pbrt\\receipt.json",
+        "sha256": "2aa7519d8ea58e006ccef6802587bb48f92b10ca78074e7aea567e6cb4daf2b6",
+        "bytes": 4845
+      }
+    },
+    {
+      "kind": "hero",
+      "job": "smoke_engine",
+      "spp": 2048,
+      "replicates": 1,
+      "median_seconds": 54.0863495,
+      "min_seconds": 54.0863495,
+      "max_seconds": 54.0863495,
+      "process_seconds": 147.84414770000149,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\engine\\receipt.json",
+        "sha256": "d2fdcab2f69c31774946d4b2be503e5410c6d104d9c0e6e31801c8e3195126fe",
+        "bytes": 3696
+      }
+    },
+    {
+      "kind": "hero",
+      "job": "smoke_pbrt",
+      "spp": 2048,
+      "replicates": 1,
+      "median_seconds": 345.032761500006,
+      "min_seconds": 345.032761500006,
+      "max_seconds": 345.032761500006,
+      "process_seconds": 345.17709629999445,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3\\pbrt\\receipt.json",
+        "sha256": "f343b8a6cddfd8aaded04d9cbb2384cf566b33648f5fa7897bc6413a53e2f582",
+        "bytes": 2277
+      }
+    },
+    {
+      "kind": "hero",
+      "job": "clear_engine",
+      "spp": 2048,
+      "replicates": 1,
+      "median_seconds": 23.1972828,
+      "min_seconds": 23.1972828,
+      "max_seconds": 23.1972828,
+      "process_seconds": 158.70486570000503,
+      "scopes": [
+        "cumulative steady_clock wall time within the current seed, from first accumulation dispatch through current radiance EXR readback and write; includes earlier checkpoint readback, metadata and AOV writes, frame scheduling, validation drain, and CPU work; excludes scene loading and current subsequent AOV writes; indices are zero-based; not GPU-only time and not a one-shot performance measurement"
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\engine\\receipt.json",
+        "sha256": "bf77c55cab8d2caf3721d069df4a6f1252787db005808da471e3943471b657c6",
+        "bytes": 3782
+      }
+    },
+    {
+      "kind": "hero",
+      "job": "clear_pbrt",
+      "spp": 2048,
+      "replicates": 1,
+      "median_seconds": 326.3104863999979,
+      "min_seconds": 326.3104863999979,
+      "max_seconds": 326.3104863999979,
+      "process_seconds": 326.45589719999407,
+      "scopes": [
+        "Whole isolated CPU PBRT process including startup/loading/render/output; no GPU/render-only assertion."
+      ],
+      "receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\renders\\hero\\gallery_medium_stage3_glass_smoke_hero_lighting_v3_clear_control\\pbrt\\receipt.json",
+        "sha256": "2a1db4dc27bb14f0d5c6faf9e8259a770c3475c2ee588775d1d1e98bbf1fa7d1",
+        "bytes": 2362
+      }
+    }
+  ],
+  "source_summary": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+    "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+    "bytes": 771924
+  },
+  "stage_pass": false
+}

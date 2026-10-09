@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "status": "SOURCE_CONTEXT_VERIFIED_BOUNDED_PREPARED_SCOPE",
+  "created_utc": "2026-10-09T12:25:42.771856+00:00",
+  "stage_pass": false,
+  "source_contract_verified": true,
+  "unresolved_blocking_issues": [],
+  "radiance_status": "PENDING_FORMAL_STAGE3_IMAGES",
+  "user_visual_acceptance": "PENDING_USER_REVIEW",
+  "scope": "Current installed lighting_v3 solid dielectric smoke/clear host, frozen v5 application and reused v4 shaders, plus completed bounded Stage2 controls. Enables analysis of the planned Stage3 cohorts; does not supply Stage3 numerical or visual acceptance.",
+  "evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4.json",
+      "sha256": "f67d236242bd0da57be506217583eb573f6bb97c419d22a8a93444ab14e543eb",
+      "bytes": 122485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\intake_preflight.json",
+      "sha256": "4a3e30f7bd7c5952601c121a53e154bd774622bac49ee73e86f8df72fe967145",
+      "bytes": 42970
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_completion_receipt.json",
+      "sha256": "3182691185cf658e7830e5406fc625e4c04908727ad95edd7d4b7778a6b79561",
+      "bytes": 4009
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_summary.json",
+      "sha256": "bd97f990cd255c3977ca15a54a5227c7025367b19ed70f229a9815fda82affc9",
+      "bytes": 88118
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_report.md",
+      "sha256": "08291a4055cffd2eb6814b3f665ea9aa8061526c1f29d3edfddf90f510809be2",
+      "bytes": 7794
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\independent_final_statistics_review.json",
+      "sha256": "90229cb4c182b0e5ae9e56aa58d87f90e398818b4923d223508cc199278b53bc",
+      "bytes": 172059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\main_inputs.json",
+      "sha256": "0cde31861eb4d0d6869130e8b8d9b1b125ac3793e106ad523a36908f5f3a1edf",
+      "bytes": 49830
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_protocol.json",
+      "sha256": "d638beccbfd36bf1afbd28ee322352b35630bf9a5e2ea1bf772a4aed40919de2",
+      "bytes": 14430
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+      "sha256": "85354c29ebbfa6bf8ebd5f35d53fc1e09e99035b9b33f83189b765ec8aaadb35",
+      "bytes": 31941
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+      "sha256": "08849004e18e89b040f38a52e859fe9725d49aa421b3e0038d8f36213bc8e222",
+      "bytes": 2194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+      "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+      "bytes": 27641
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+      "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+      "bytes": 23031
+    }
+  ],
+  "stage2_prepared_gate": {
+    "status": "READY_FOR_STAGE3_PREPARED_SCOPE",
+    "scene_count": 11,
+    "medium_scene_count": 6,
+    "vacuum_control_count": 5,
+    "numeric_mean": "PASS_SCOPED_EQUIVALENCE",
+    "variance": "PASS_VARIANCE_DECREASE_ONLY",
+    "depth": "PASS_SCOPED_16_VS_32",
+    "source_and_application": "VERIFIED_BOUNDED_CONTACT_AND_ACTUAL_LOADER_INTEGRATION",
+    "scope": "These authored neutral single-boundary fixtures only; no universal geometry or Stage3/4 acceptance."
+  },
+  "stage2_independent_scope": {
+    "scenes": 11,
+    "unique_exrs": 320,
+    "engine_exrs": 160,
+    "pbrt_exrs": 160,
+    "numerical_comparisons": 3440,
+    "blockers": []
+  },
+  "stage3_source_model": {
+    "host": "single solid dielectric host containing smoke; not a hollow shell/air cavity",
+    "ior": 1.5,
+    "scattering": "neutral sigma_a=.1, sigma_s=.9, g=0, densityScale=.18; clear only densityScale=0",
+    "reference": "PBRT wavelength jitter enabled; white calibration is source-only, never a hero correction factor",
+    "geometry": "Identical shared closed PLY and fixed camera/film; static source review does not directly read back GPU optical buffers"
+  },
+  "current_source_crosscheck": {
+    "frozen_file_count": 139,
+    "all_current_hashes_match": true,
+    "archive_fallback_used": 0,
+    "protocol_fields_preserved": [
+      "acquisition",
+      "mean_gate",
+      "noise_gate",
+      "depth_gate",
+      "visual",
+      "regions",
+      "performance"
+    ]
+  },
+  "limits": [
+    "Actual GPU-uploaded medium IDs, flags, IOR and host state are not read back by this source review; normal completion and full source-frozen image tests remain required.",
+    "This is one solid dielectric host containing smoke, not a hollow glass shell with an air cavity.",
+    "Shared smooth PLY normals all lie in their geometric hemispheres, but renderer shading-normal transport conventions and finite-precision intersection/offset behavior are not proven identical.",
+    "Engine/PBRT density and coefficient multiplication order, majorants, spectral sampling, and estimators differ. Gray optical spectra and scalar eta remove chromatic material mismatch; white-source calibration does not prove the heterogeneous transport implementation.",
+    "Depth32 source values match but convergence sufficiency remains the precommitted32-to64 rendered tail test. Source identity is not a claim of identical random samples/variance.",
+    "No normal maps/material textures are present. Ray-cone LOD does not select source texture values here, but ray offsets and normal handling still apply.",
+    "Old contract unmet text and installation INSTALLED_NOT_RENDERED are preserved historical preparation statements; this report closes only static source checks and confirms existing white-calibration provenance.",
+    "The v5 auxiliary meshlet fix applies only to bAirContributor=true pure boundaries. All four Stage3 hosts have false, retaining original loading behavior. Actual Stage2 v5 recovery remains separate.",
+    "All formal all-region/channel gates use original protocols; no threshold widening or empirical medium brightness fitting.",
+    "Four independent seeds only; SPP checkpoints are dependent. Regional intervals are not simultaneous95% coverage.",
+    "Variance PASS means variance decreases with SPP. Engine/PBRT variance equality is not required and is not claimed.",
+    "Exact shared-edge repair is bounded: supported coordinate range, edge interior, manifold pair, max8 meshlets/256 triangles and guarded near-hit interval. Vertex/nonmanifold/general subepsilon geometry is not certified.",
+    "v4 GPU shader PASS did not prove application integration: actual loader omitted meshlets; failed v4 image evidence remains preserved. v5 changes the auxiliary loader topology, not authored BLAS indices.",
+    "Raw GPU meshlet readback was not performed; source/build provenance plus actual repaired image controls establish this scoped integration.",
+    "Timing includes differing scopes, concurrent CPU analysis and initialization/post-output shutdown delay. No Stage4 causal overhead or normal-slowdown conclusion.",
+    "Stage2 diagnostic visual review waived by user does not approve Stage3 actual RGB images.",
+    "Empty unresolved_blocking_issues means no identified blocker for these authored scoped contracts after actual v5 controls, not universal medium/geometry correctness.",
+    "Stage2 ratio-normalized neutral controls do not replace Stage3 raw RGB/spectral-noise/32-to64 depth-tail checks.",
+    "Source matching does not imply equal variance or identical Monte Carlo samples.",
+    "Base/hero/depth execution order may differ; frozen68-image acquisition and statistical definitions are unchanged."
+  ],
+  "required_remaining": [
+    "All base/depth/hero child batches normal exit, fixed source hashes,68finiteEXRs and exact metadata",
+    "Four-seed radiance/noise/variance and paired32-to64 tail under the existing frozen protocol",
+    "Actual24PNG artifact QA, independent numerical review and separate user visual review",
+    "Separate isolated performance validation before any Stage4 causal slowdown claim"
+  ],
+  "analysis_executed": false,
+  "renderer_executed_by_context_preparation": false
+}

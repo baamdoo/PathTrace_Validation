@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_RAW_APPLICATION_CHECK",
+  "stage_pass": false,
+  "shader_reused": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+    "sha256": "e87d910d46c17f9522779522159cfcf0c86fc0ef9c7928d915a076e47a0687be",
+    "bytes": 1618928
+  },
+  "loader_build": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\build\\receipt.json",
+    "sha256": "a387abf7a9df26d30a07496f5bf44708f3c76cb57f2203ebe29e291172ccbaab",
+    "bytes": 2800
+  },
+  "source_before": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\RayTracingApp.before.cpp",
+    "sha256": "1f3263a1690dffc71a0a90ce704bdd78206558da594366eccf6440b1e962692d",
+    "bytes": 96773
+  },
+  "app_before": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\build\\Application_before_meshlet_integration.exe",
+    "sha256": "d81bd3d7dc77763ab92b4bb566195a29112e5c622ba025d4693e4309073c63c9",
+    "bytes": 1465344
+  },
+  "previous_failed_result": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+    "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+    "bytes": 23031
+  },
+  "previous_loader_triage": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\meshlet_loader_source_triage.json",
+    "sha256": "52b3c2d093597050341604f00d43c20c1a2ca4b0f733e58441cca5833700106a",
+    "bytes": 7320
+  },
+  "plan": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\constant_plan.json",
+    "sha256": "a3fdca8ecb71bad8dd6c200d63ded9861a6d6d3eddcbdb0c55ae4a0d4ed088ac",
+    "bytes": 2473
+  },
+  "queue": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\constant_queue.json",
+    "sha256": "f2b665fe99eea488c4f8caba2c80b1bc41c1a7ba0a92d825a6f141b2072d38f6",
+    "bytes": 5098
+  },
+  "records": [
+    {
+      "variant": "absorption",
+      "seed": 11,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_256\\radiance.exr",
+        "sha256": "532981cfd1ac37f92508146decc46bb23861810524aaae59f3e1534b60e6be06",
+        "bytes": 14831
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_256\\receipt.json",
+        "sha256": "e84c669f77255e50f74620d3c2c9b941efd0191e56ee9515329bac61795af86d",
+        "bytes": 2897
+      },
+      "minimum_rgb": [
+        0.12890625,
+        0.12890625,
+        0.12890625
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 11,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_1024\\radiance.exr",
+        "sha256": "3686038cfc2615e1cee13d33c820f0ee01cc3e31593ae79547fda1f9d2b51446",
+        "bytes": 18342
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_1024\\receipt.json",
+        "sha256": "9b59330a2e7446fbd1f2d6e78a1f0ec72821cdf0cbf00afd232a5f4c11b1d86b",
+        "bytes": 2903
+      },
+      "minimum_rgb": [
+        0.18359375,
+        0.18359375,
+        0.18359375
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 11,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_4096\\radiance.exr",
+        "sha256": "d41f2f54a178bc9538c286c3ec8dcf0de162eabb30de994f85ce0e1af091b5cd",
+        "bytes": 20644
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_11\\spp_4096\\receipt.json",
+        "sha256": "c460edaea3e25a57ee55530d5f0596b12f1f664b414e84367500f57561d4c82b",
+        "bytes": 2903
+      },
+      "minimum_rgb": [
+        0.203369140625,
+        0.203369140625,
+        0.203369140625
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 29,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_256\\radiance.exr",
+        "sha256": "1ccebb7f784751f48ec131a997b89adb8274ca77b5e1bf41b6030144d36a39ef",
+        "bytes": 14873
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_256\\receipt.json",
+        "sha256": "d6eddaa509212fe956885da2a6ed960a108e103fbeaf5fe93d6b74f51b03f9c4",
+        "bytes": 2899
+      },
+      "minimum_rgb": [
+        0.1484375,
+        0.1484375,
+        0.1484375
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 29,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_1024\\radiance.exr",
+        "sha256": "e1f99b0a5d9b93ebe96d2d3d54e7c8db743d7b311d485e180ada3d27d1561aa0",
+        "bytes": 18320
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_1024\\receipt.json",
+        "sha256": "c68c5301dc96dc1d55a5be8cf04361d294281909ea82d8fb37e560badf8a789f",
+        "bytes": 2903
+      },
+      "minimum_rgb": [
+        0.1826171875,
+        0.1826171875,
+        0.1826171875
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 29,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_4096\\radiance.exr",
+        "sha256": "2b9b7777e585cdce9a229055888571bc6706996b19e7509b102669ce3d2d2964",
+        "bytes": 20595
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_29\\spp_4096\\receipt.json",
+        "sha256": "b98785e49e94e6452c93fd791e9912879afbc0bd60936081c517e607addfd177",
+        "bytes": 2903
+      },
+      "minimum_rgb": [
+        0.207275390625,
+        0.207275390625,
+        0.207275390625
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 47,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_256\\radiance.exr",
+        "sha256": "c114f923e54f51d4e337bece3d9dfe67368b7ef75c95b1f71b089e7fd83ed90f",
+        "bytes": 14788
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_256\\receipt.json",
+        "sha256": "bf213e45516eabae1c285e0af9bbcb654e289b344ff915099ee7ecdea563a7e9",
+        "bytes": 2899
+      },
+      "minimum_rgb": [
+        0.13671875,
+        0.13671875,
+        0.13671875
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 47,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_1024\\radiance.exr",
+        "sha256": "a551a2b4c982b5351db2b80913eba27cc0986a9aef9ffc72e0b3803a31fb3d73",
+        "bytes": 18335
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_1024\\receipt.json",
+        "sha256": "cfb157593d0f3dd390cb4340f68debd527d169b5d99e9f96a4e43cd053a0f08d",
+        "bytes": 2903
+      },
+      "minimum_rgb": [
+        0.1875,
+        0.1875,
+        0.1875
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 47,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_4096\\radiance.exr",
+        "sha256": "a1e5a60986d06903260c32cc9e39a41794a61e3f757e8343a6acf022448ef08c",
+        "bytes": 20462
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_47\\spp_4096\\receipt.json",
+        "sha256": "360ac5f3e99151d7016112c79b284e66fbb5df79c48a47c84230ceb0ea6e1ae1",
+        "bytes": 2901
+      },
+      "minimum_rgb": [
+        0.208740234375,
+        0.208740234375,
+        0.208740234375
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 83,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_256\\radiance.exr",
+        "sha256": "3a66b3ec0e4ee79e975dbc8bfd003f189cda2d90f1b29458d55c20af26b029bd",
+        "bytes": 14753
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_256\\receipt.json",
+        "sha256": "54195ff551ecd5fb58552d33a6591148987381b6acd5e9ab9e6a74ba80ec85a1",
+        "bytes": 2899
+      },
+      "minimum_rgb": [
+        0.1484375,
+        0.1484375,
+        0.1484375
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 83,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_1024\\radiance.exr",
+        "sha256": "7ee425e89c19ccb310dfb6c89859f27820616eee353225a0df5681b4b02dccd2",
+        "bytes": 18411
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_1024\\receipt.json",
+        "sha256": "17885a1886cb095e30c7964d5432e3a3c9224fc7d1e7423590c444061df46d56",
+        "bytes": 2904
+      },
+      "minimum_rgb": [
+        0.1875,
+        0.1875,
+        0.1875
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "absorption",
+      "seed": 83,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_4096\\radiance.exr",
+        "sha256": "8d3995efc32fd9a366565fcdb8366e18fb3e4a4e57eb9f1f525ba1be13ee0f65",
+        "bytes": 20704
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_absorption_128\\engine\\seed_83\\spp_4096\\receipt.json",
+        "sha256": "900bd8d8c6c2595204b9caf5b6ceea2373e05337c9cd45facefc1f6acf7c3ecd",
+        "bytes": 2902
+      },
+      "minimum_rgb": [
+        0.206787109375,
+        0.206787109375,
+        0.206787109375
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "variant": "vacuum",
+      "seed": 11,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_256\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_256\\receipt.json",
+        "sha256": "5de3d323521580b0eaf507ad23be6ab09dd422d15b919fff95e8a44cc2cd4683",
+        "bytes": 2826
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 11,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_1024\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_1024\\receipt.json",
+        "sha256": "904d2f9910e743d2374638791062542d2c25db2634014fa7a9e626d5226098c9",
+        "bytes": 2832
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 11,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_4096\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_11\\spp_4096\\receipt.json",
+        "sha256": "9f8b2fb5606a5bd57cc76744917ca8e3052c15c5626b6df08a32f5b28f9fd334",
+        "bytes": 2832
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 1,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 29,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_256\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_256\\receipt.json",
+        "sha256": "0c377ab8c44c51d3ed0bb215891c50f23139d9119dd4563dc7a38842ee1aab2e",
+        "bytes": 2828
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 29,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_1024\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_1024\\receipt.json",
+        "sha256": "bcd2f60a88c242df4facb8c5d3c5f0c4e4ef150e4e7ed0f14c57a3b83841b396",
+        "bytes": 2834
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 1,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 29,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_4096\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_29\\spp_4096\\receipt.json",
+        "sha256": "b4ae71d1520677ec1aaa19d1bf8de65ac0715bebb9e6c8e9842d690d27105796",
+        "bytes": 2832
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 2,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 47,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_256\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_256\\receipt.json",
+        "sha256": "cd36c319584f0ff66fbcccd03f42daa9047b1cbcbd5c8aa390d916fa26c2c044",
+        "bytes": 2828
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 47,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_1024\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_1024\\receipt.json",
+        "sha256": "fb9a8fbf3a5f8fe86e75f5b9b6affa3c75772394d6ebe53e382e4ce7ebced895",
+        "bytes": 2832
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 1,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 47,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_4096\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_47\\spp_4096\\receipt.json",
+        "sha256": "215b67bf0d0ad3e874137003493aea12e4ddf69f60cc1e05f29791fefe30d974",
+        "bytes": 2832
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 5,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 83,
+      "spp": 256,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_256\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_256\\receipt.json",
+        "sha256": "254898edfca30ad135a7a40e341b3e5facd6e39d1521f237d9d7eae9117601a7",
+        "bytes": 2828
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 83,
+      "spp": 1024,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_1024\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_1024\\receipt.json",
+        "sha256": "4c508d2d6c1067e0db578628c79cc9f8cb816eeb5b6ea5a2c59d50d6bda18f17",
+        "bytes": 2835
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 0,
+      "all_previous_loss_locations_exactly_one": true
+    },
+    {
+      "variant": "vacuum",
+      "seed": 83,
+      "spp": 4096,
+      "image": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_4096\\radiance.exr",
+        "sha256": "338251ac60809dbf161f4da326707b84426303aa861991a4a9dc150e68773392",
+        "bytes": 849
+      },
+      "child_receipt": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\renders\\constant\\gallery_medium_stage2_constant_vacuum_128\\engine\\seed_83\\spp_4096\\receipt.json",
+        "sha256": "5369bcdec337666d858c4ccce4f8585d3be5b3b61a8ccb5adbe98fd035f9b4d7",
+        "bytes": 2833
+      },
+      "minimum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "maximum_rgb": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "nonunit_pixel_count": 0,
+      "previous_loss_locations_checked": 7,
+      "all_previous_loss_locations_exactly_one": true
+    }
+  ],
+  "all_raw_vacuum_rgb_exactly_one": true,
+  "limitation": "Actual application image witnesses, not direct GPU topology-buffer readback. Does not establish mean/noise/variance/depth acceptance."
+}

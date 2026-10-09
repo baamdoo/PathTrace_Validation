@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_ARTIFACT_QA_NO_STAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "artifact_qa": "INDIVIDUALLY_VIEWED",
+  "orchestration_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_orchestration_receipt.json",
+    "sha256": "fa1ab64fc2bce0d2f5af1fa0149f911cfefd6c9e9d2e058aa01b81fbdd723246",
+    "bytes": 9411
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\before_after_boundary_contact.png",
+      "sha256": "3da9d644fd15e827242381d6fb995c237ad44545d288adf59e2eb76cf3a95bfa",
+      "bytes": 78251
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\convergence.png",
+      "sha256": "4480c941fd65e79cd86bf9ade62f8322870a57feb44a402c20b9dd38873eccc9",
+      "bytes": 152866
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\geometry_masks.png",
+      "sha256": "7c7cbf3006f6ed72511e3eee5968f59926826960acb1ac932f429dc92bfe370c",
+      "bytes": 33042
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\linear_residuals.png",
+      "sha256": "a7e31cc73e8c6c0279fc22c24bfafc43af37c322cf054f66ca0b92a01936eed0",
+      "bytes": 153778
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\noise_and_oracle_bounds.png",
+      "sha256": "364404d5ddc77438ffdae5aaef43ac3223187c17af3b4628c994b4d582da1c96",
+      "bytes": 146194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\regional_uncertainty.png",
+      "sha256": "6d9edf05087d600094cc995c8df6890be982c2e23c338450d3f3a5894dc236b2",
+      "bytes": 63050
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_oracle\\transmittance_comparison.png",
+      "sha256": "be079247a18b73d16954b099645aebc57d3159b36004c655c441209737a560b1",
+      "bytes": 66330
+    }
+  ],
+  "findings": [
+    "All seven PNGs were individually viewed at readable resolution. Titles, axes, legends, scales, 4-seed counts and SPP labels are legible.",
+    "Before/after map displays removal of all 15 old 4096-SPP vacuum losses. Absorption changes are confined to the fixed geometry-edge mask; interior and outside arrays are unchanged.",
+    "Mean/noise/oracle uncertainty are labeled separately. The statistical mean/variance outcomes do not claim a general boundary or stage PASS."
+  ],
+  "limitations": [
+    "Artifact readability QA, not user visual approval. Stage2 diagnostic review is separately waived by the user; this receipt does not change that policy.",
+    "The previous v4 failed image result and source-loader triage remain preserved."
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "status": "POSTFIX_SCOPED_SOURCE_REVIEW",
+  "stage_pass": false,
+  "source_contract_status": "MATCHED_SCOPED",
+  "scope": "Final v4 bounded contact shaders with v5 pure-air-boundary gallery meshlet generation. Loader build and actual completed constant application vacuum witnesses are checked separately from the reused v4 GPU fixture. Original numerical protocols and PBRT reference bytes remain unchanged.",
+  "unresolved_blockers": [],
+  "scope_limits": [
+    "Contact proof is restricted to guarded binary32 coordinates, exact edge-interior coplanarity, two incident nondegenerate faces, geometry zero/nonvoxel LOD0, at most eight meshlets and 256 triangles.",
+    "The caller advances by two binary32 hit-distance ULPs only after exact geometric proof and the guarded local query. This is not a general hardware intersection-error bound.",
+    "Vertex contacts, unsupported topology/transforms/ranges, and general sub-epsilon positive-chord transport retain strict failure behavior or existing epsilon policy; no universal repair is claimed.",
+    "Image radiance/noise/variance/depth outcomes require their own completed cohorts. No Stage3 acceptance or isolated Stage4 performance conclusion.",
+    "Review is independent CPU recalculation of recorded values and source/artifact coherence; reviewer also authored the test harness, not an independent test author.",
+    "Raw per-path GPU arrays and sample variances were not persisted. Recorded mean-vs-target comparisons and analytic targets were recomputed; six-SE tolerances cannot be independently regenerated from CSV alone. Host checks finite raw values and computes ddof1 variance before reporting.",
+    "Homogeneous AIR absorption fixture only; no image jitter, heterogeneous density, spectral reference, or final image-stage acceptance.",
+    "One-ULP positive chord is predicate rejection only; existing epsilon traversal for such very small nonzero chords is not certified.",
+    "Topology fallback scope is the production bounded LOD0 support; larger/unsupported/nonmanifold/vertex configurations are not universally repaired.",
+    "Primary full outside/inside state checks and authored-anchor replay are covered. Inside primary seed transport was not included; four exterior/replay seed-to-path cases were.",
+    "foreign+3ULP is a hardware query-end observation, excluded from all acceptance counts.",
+    "Debug layer enabled and host error/corruption scan passed; INFO/WARNING messages are not separately saved.",
+    "582.88s process includes driver PSO compilation and overlap with CPU shader compilation, not isolated render performance.",
+    "v4 application image failure remains immutable evidence; its pre-image context never implied full application integration.",
+    "Meshlet generation is enabled only for generic-gallery pure air-boundary contributors; no BLAS-index optimization or general mesh topology regeneration is introduced.",
+    "No direct GPU meshlet-buffer readback. Actual application integration is evidenced by completed frozen-input image controls and independently reviewed loader data flow."
+  ],
+  "applicable_engine_shader": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Shader\\cso\\PathTracerLIB.cso",
+    "sha256": "e87d910d46c17f9522779522159cfcf0c86fc0ef9c7928d915a076e47a0687be",
+    "bytes": 1618928
+  },
+  "evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\install_receipt_v4.json",
+      "sha256": "a061797bdf3e868fd152c63625e684ade4f613b99aab3fd6bd9ea7ceef85729a",
+      "bytes": 2933
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\production_compile_v4\\receipt.json",
+      "sha256": "fc337df49d604badd8e7d9a7b67414639a460d6aeacdce544fffcdd2d950656e",
+      "bytes": 43554
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\run_receipt.json",
+      "sha256": "426b97e577a1de7f5a13879d583111c84bb987f15f1805723bda586ba9bb6c0a",
+      "bytes": 4174
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\tests_optimized_v4\\compile_receipt.json",
+      "sha256": "464e5acc88b9aa4e49c30c18857e7eb9a9a7c6a1066b0441561cad244495752b",
+      "bytes": 6934
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\independent_review.json",
+      "sha256": "69c2388457959fd647b5f2bd5572d20ae0aafd0bc9dcc95e383bdd2f5f92d717",
+      "bytes": 89908
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\revalidation_inputs.json",
+      "sha256": "0d390f8aec1e7976cf3ebea0edfe2cb85c47d241beb21fd154e0095c9f3b76ed",
+      "bytes": 82847
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_boundary_v4_postfix_context.py",
+      "sha256": "13ce89ca530446ef8cf3d7174706920a92baf961c5962c4142756a241fae2a4e",
+      "bytes": 6610
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\build\\receipt.json",
+      "sha256": "a387abf7a9df26d30a07496f5bf44708f3c76cb57f2203ebe29e291172ccbaab",
+      "bytes": 2800
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\RayTracingApp.before.cpp",
+      "sha256": "1f3263a1690dffc71a0a90ce704bdd78206558da594366eccf6440b1e962692d",
+      "bytes": 96773
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\build\\Application_before_meshlet_integration.exe",
+      "sha256": "d81bd3d7dc77763ab92b4bb566195a29112e5c622ba025d4693e4309073c63c9",
+      "bytes": 1465344
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+      "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+      "bytes": 23031
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\meshlet_loader_source_triage.json",
+      "sha256": "52b3c2d093597050341604f00d43c20c1a2ca4b0f733e58441cca5833700106a",
+      "bytes": 7320
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+      "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+      "bytes": 27641
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_boundary_v5_postfix_context.py",
+      "sha256": "9b73080f94f04513388408f447ed29c0389f7b55a0f5f4ae268e4063468fc412",
+      "bytes": 10281
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\revalidation_inputs.json",
+      "sha256": "ace5ed078a8471d7d73424f9a3ad03088d1e792764672cef9407dd7afad13afd",
+      "bytes": 83605
+    }
+  ],
+  "gpu_validation": {
+    "receipt": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\run_receipt.json",
+      "sha256": "426b97e577a1de7f5a13879d583111c84bb987f15f1805723bda586ba9bb6c0a",
+      "bytes": 4174
+    },
+    "expected_fixture": "v4: 38 cases, 66 CSV rows, exactly 65 gating pass=1 rows plus the named +3ULP endpoint observation",
+    "observational_case": "foreign_at_query_end_plus3ulp: kind=advance_observation, expected=-1, pass=-1; record it without treating it as an acceptance gate",
+    "required_case_names": [
+      "captured_driver_choice",
+      "captured_entry_face",
+      "captured_exit_face",
+      "one_ulp_miss",
+      "one_ulp_positive_chord_entry",
+      "one_ulp_positive_chord_exit",
+      "shallow_contact_entry_face",
+      "shallow_contact_exit_face",
+      "shallow_contact_path",
+      "shadow_exact_contact",
+      "shadow_reverse_contact",
+      "shadow_shallow_contact",
+      "primary_replay_contact",
+      "primary_replay_reverse_contact",
+      "primary_replay_shallow_contact",
+      "nearby_distinct_closed_boundaries"
+    ]
+  },
+  "independent_review": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\independent_review.json",
+    "sha256": "69c2388457959fd647b5f2bd5572d20ae0aafd0bc9dcc95e383bdd2f5f92d717",
+    "bytes": 89908
+  },
+  "cleared_issue": "v4 fixed-ray shader tests passed but actual gallery loading omitted topology and retained all 15 loss witnesses. v5 changes only auxiliary pure-air-boundary meshlet generation; complete actual application vacuum checkpoints are now exactly one, including those witnesses.",
+  "image_revalidation_status": "RAW_VACUUM_INTEGRATION_CONFIRMED_STATISTICAL_ANALYSES_PENDING",
+  "applicable_application": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\Binaries\\Release\\windows\\Application\\Application.exe",
+    "sha256": "f6a54021f53b435fbf3b48469ac250811c4abc7e998ddab59533241b6c3e4c0f",
+    "bytes": 1465856
+  },
+  "application_integration": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+    "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+    "bytes": 27641
+  },
+  "historical_pre_image_context": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\postfix_context.json",
+    "sha256": "81946e35aea8ab0a17a656c6f8b1db36c06089d42293eb57d2af9a318c54b453",
+    "bytes": 6576
+  }
+}

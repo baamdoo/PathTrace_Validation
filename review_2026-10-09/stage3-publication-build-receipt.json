@@ -1,0 +1,445 @@
+{
+  "status": "LOCAL_STAGE3_BUNDLE_CREATED_NO_GIT",
+  "manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle_stage3_v2\\manifest.json",
+    "sha256": "28f627261f72e5a074fd63e013e729c741421dbc9fd22cc1d0e8d56f5dbc1e15",
+    "bytes": 223289
+  },
+  "index": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle_stage3_v2\\INDEX.md",
+    "sha256": "4bbeb08fe0c97d1b7499e6c4dea0ed367e347ace510fa6dbd77886bcb0363ce5",
+    "bytes": 16697
+  },
+  "readme": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle_stage3_v2\\README.md",
+    "sha256": "8bb4a7d45743fabf090a9f556588da661ea4f76e7f43ec5031aa18b2b488e3d2",
+    "bytes": 20825
+  },
+  "source_bundle_unchanged": true,
+  "preserved_pngs": 371,
+  "new_pngs": 24,
+  "input_evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\publication_cpu_v1\\input.json",
+      "sha256": "5b5ec55b6992a6e36b5c1517cf67200e53b79890ffe959fa6f21e21d6d8b5a03",
+      "bytes": 20939
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle\\manifest.json",
+      "sha256": "aee381d5804d1fa6fca6d37c36ff079949db2091165403a3755fdb5645c75f98",
+      "bytes": 174105
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\user_stage2_visual_waiver.json",
+      "sha256": "57481c33efe8ce120a617a1eb62b2f5ea36c4e3d10767382f7cc177889c80c78",
+      "bytes": 980
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_277.json",
+      "sha256": "f08ec4ca5e575009c8433dbd6e35e5e3c9c4ab176983cb4f2841f736679f0800",
+      "bytes": 72157
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_sphere_fix.json",
+      "sha256": "315226e7f33ae80755fff5258d0215fb4d1e97e1768948b241324b60b541fcf2",
+      "bytes": 9716
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\publication_analysis_receipt.json",
+      "sha256": "c96f716b1b759b7c7bed8c266b3eb27f3d856d0df3d45db4050818e753427c62",
+      "bytes": 16403
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+      "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+      "bytes": 771924
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\statistics_arrays.npz",
+      "sha256": "f12744e9a7e51b21b15b3bbdf8f27a3698d619e6eb942f2d1e1f5e2f0306f392",
+      "bytes": 15866272
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_64_mean4.exr",
+      "sha256": "30c29823402858829d3cf1c08bec959cdfccad15309c91a0a22ca6a8374427ca",
+      "bytes": 67076
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_64_mean4.exr",
+      "sha256": "c0141d3b1d48d491f4ab29b2929c6dddaecf89e37e4aa3e11294043b0734f3c9",
+      "bytes": 195447
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_256_mean4.exr",
+      "sha256": "387ec7e5c9c76470a28131d9329cfe9bafdef5857c99af2380547f8898e0eaf0",
+      "bytes": 67078
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_256_mean4.exr",
+      "sha256": "d758d686633d15c06bef4141a0cabcf5e85e30d0cf0f04d4abfd2b99504ee86f",
+      "bytes": 195369
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_engine_1024_mean4.exr",
+      "sha256": "20b189fc64fb20a16fc401ab8356519fec39cb50ecdf45c6022c209970188c2b",
+      "bytes": 67090
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_pbrt_1024_mean4.exr",
+      "sha256": "0ebdb615149b4815ef3e20861359fc2567979c04d0c680f94939e075c171fffd",
+      "bytes": 195245
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_64_mean4.exr",
+      "sha256": "338323496888ca058d181dde52100b00f283774186723844d0ce1668758c2c82",
+      "bytes": 67123
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_64_mean4.exr",
+      "sha256": "37db729d614ecca0a910de269f4a4587c505d7dc81024d2a616ed92dcd785b52",
+      "bytes": 195260
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_256_mean4.exr",
+      "sha256": "c2b346dac4a710667f8d2f89e22a77fa4a6f580061a3f521c67fdd35a2c440ac",
+      "bytes": 67124
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_256_mean4.exr",
+      "sha256": "3c61240eb79f6a1679198ef828b90bf61766297171566703acd2d213a1b5a65a",
+      "bytes": 195252
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_engine_1024_mean4.exr",
+      "sha256": "01f0e1f7280556278acaaffa37dc5ca12b62172ee721fb406d38e0e76eabbe92",
+      "bytes": 67094
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_pbrt_1024_mean4.exr",
+      "sha256": "660eb47089ae8fb2f90cdbadd748c95f050719679b863c4ad3e32abd1ee0bf9b",
+      "bytes": 195271
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_64.png",
+      "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+      "bytes": 213969
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_256.png",
+      "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+      "bytes": 190437
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_mean4_1024.png",
+      "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+      "bytes": 166319
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_single_seed11_1024.png",
+      "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+      "bytes": 188825
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_seed11_2048.png",
+      "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+      "bytes": 1347335
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_engine_RGB.png",
+      "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+      "bytes": 154811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_smoke_pbrt_RGB.png",
+      "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+      "bytes": 325724
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_smoke_pair.png",
+      "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+      "bytes": 764297
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_signed_residual_RGB_Y.png",
+      "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+      "bytes": 181598
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_stddev_RGB_Y.png",
+      "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+      "bytes": 421609
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_RGB_Y.png",
+      "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+      "bytes": 365613
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_variance_convergence.png",
+      "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+      "bytes": 194136
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_regional_mean_CI.png",
+      "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+      "bytes": 134306
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\smoke_depth_tail_Y_CI.png",
+      "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+      "bytes": 70018
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_engine_RGB.png",
+      "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+      "bytes": 140012
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\hero512_clear_pbrt_RGB.png",
+      "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+      "bytes": 302703
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\beauty_hero512_clear_pair.png",
+      "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+      "bytes": 708286
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_signed_residual_RGB_Y.png",
+      "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+      "bytes": 165634
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_stddev_RGB_Y.png",
+      "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+      "bytes": 417370
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_RGB_Y.png",
+      "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+      "bytes": 366402
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_variance_convergence.png",
+      "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+      "bytes": 196927
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_regional_mean_CI.png",
+      "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+      "bytes": 133555
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\clear_depth_tail_Y_CI.png",
+      "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+      "bytes": 68635
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\geometry_ROIs.png",
+      "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+      "bytes": 27437
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\artifact_qa.json",
+      "sha256": "3ff438dd73015c778eff3940842538f1579612ea6c16472564372174d4f681aa",
+      "bytes": 11668
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\independent_statistics_review.json",
+      "sha256": "d2032bf874ff0ab03a0948ef666ef9e2ab516959ed5cfdc427cf135cebbfb576",
+      "bytes": 146582
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\analysis_receipt.json",
+      "sha256": "da390a670b41f336d7df0776454b963694bcd065416a0c63a78a2e59b50d136e",
+      "bytes": 14579
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
+      "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
+      "bytes": 771924
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\publication_documents_final_stage2_v1\\technical_report.md",
+      "sha256": "bae6cca41ea286ece8a2ce349365c796578499264fd5b50ccf7b1dca0e0ca3fe",
+      "bytes": 4305
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\publication_complete_stage2_documents\\stage2_final_report_for_publication.md",
+      "sha256": "603221416dc1ae6de99b31f66a290cdb3c33a0729c7baa873018af98c9b110a2",
+      "bytes": 6903
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_summary.json",
+      "sha256": "bd97f990cd255c3977ca15a54a5227c7025367b19ed70f229a9815fda82affc9",
+      "bytes": 88118
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_completion_receipt.json",
+      "sha256": "3182691185cf658e7830e5406fc625e4c04908727ad95edd7d4b7778a6b79561",
+      "bytes": 4009
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\final_image_inventory.json",
+      "sha256": "6a3e7ac7cb580e62f2ca3c9a654f1232dcee7a98c9379d4bca98f4b71a64b642",
+      "bytes": 229473
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\independent_final_statistics_review.json",
+      "sha256": "90229cb4c182b0e5ae9e56aa58d87f90e398818b4923d223508cc199278b53bc",
+      "bytes": 172059
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\gpu_optimized_v4a\\independent_review.json",
+      "sha256": "69c2388457959fd647b5f2bd5572d20ae0aafd0bc9dcc95e383bdd2f5f92d717",
+      "bytes": 89908
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\postfix_context.json",
+      "sha256": "0ebb5f7b69ebb0d84ee45c20612ef82aa4e7c16de2f29d0454ee9490aa328f14",
+      "bytes": 10330
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\source_context.json",
+      "sha256": "041337c401633653734f9622585a97aef2ffe11b889de786f992eb5d463514be",
+      "bytes": 9189
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\intake_preflight.json",
+      "sha256": "4a3e30f7bd7c5952601c121a53e154bd774622bac49ee73e86f8df72fe967145",
+      "bytes": 42970
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v4\\analysis_cpu_v1\\constant_result_blocker.json",
+      "sha256": "5407d1f3995b88c06b20735200131f527e6b8f9a4cb0bd0db1bb234c72ddaf66",
+      "bytes": 23031
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\application_integration_raw_check.json",
+      "sha256": "46c507da38620c1aacbd2daa56759658c49a5599184a7ea6e8b0d882430cd83a",
+      "bytes": 27641
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\loader_integration_v5\\source_delta_independent_review.json",
+      "sha256": "08849004e18e89b040f38a52e859fe9725d49aa421b3e0038d8f36213bc8e222",
+      "bytes": 2194
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4.json",
+      "sha256": "f67d236242bd0da57be506217583eb573f6bb97c419d22a8a93444ab14e543eb",
+      "bytes": 122485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\source_contract_independent_review_v4.md",
+      "sha256": "5fc464ba6fd6065a290abc47971658a9d2ac6fa460c3a65d2fd48c54cf27e582",
+      "bytes": 1982
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\main_inputs.json",
+      "sha256": "0cde31861eb4d0d6869130e8b8d9b1b125ac3793e106ad523a36908f5f3a1edf",
+      "bytes": 49830
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_protocol.json",
+      "sha256": "d638beccbfd36bf1afbd28ee322352b35630bf9a5e2ea1bf772a4aed40919de2",
+      "bytes": 14430
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\base_plan.json",
+      "sha256": "4c74da8fe960a0b0a6e5b2e817f548f7e2da08283013465e224bb4b13a9ae637",
+      "bytes": 4313
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\depth_plan.json",
+      "sha256": "44614bc9316cc43cac6b8f5ecafd0cd6ca8720a6aeda19a139d37a0560f936ba",
+      "bytes": 4785
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\hero_plan.json",
+      "sha256": "c6073d994162fa3f162a5d1dcfa744bf5fa013aaa6256abfd59f1333e8920df6",
+      "bytes": 4033
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_publication_summary.json",
+      "sha256": "e9e48d58723a8c80579ad41f1d4be47c847405463705eae5da0c8a44ae8c2f18",
+      "bytes": 4837
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_independent\\completion_receipt.json",
+      "sha256": "30cde66fc8f2b1e86fe9abbc5e3a6cf02952d87a9e4752161f0520028f98c4e8",
+      "bytes": 2954
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_orchestration_receipt.json",
+      "sha256": "fa1ab64fc2bce0d2f5af1fa0149f911cfefd6c9e9d2e058aa01b81fbdd723246",
+      "bytes": 9411
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\constant_artifact_qa.json",
+      "sha256": "36ae2141e29cea1738576935f69693d0afc65f0a045b96951ab7e603843310a7",
+      "bytes": 3407
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_publication_summary.json",
+      "sha256": "81eec1e4834ee58d24ba688179587ef9ed64ba0ce6834a3b30103cf575398d10",
+      "bytes": 4008
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp\\analysis_receipt.json",
+      "sha256": "fbf4781887a2139e6ab1bafd2cea34bf33fde9a85b30796a482dd5bf25e763b9",
+      "bytes": 109163
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_orchestration_receipt.json",
+      "sha256": "7955115594fb95e5cb7288bb87c65928608ca5dd36c51ce6ed4f63f6b2231976",
+      "bytes": 9132
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\ramp_artifact_qa.json",
+      "sha256": "f6c7e00512d2ce636801ab9b54d714d482d2d9c1b312e15159a8d0270cf8a880",
+      "bytes": 2791
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_publication_summary.json",
+      "sha256": "36a5082ad0dc4971f115bd2d82e0ec1856adff88a4b7a50fce4f1bcfa58ca09f",
+      "bytes": 32487
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_orchestration_receipt.json",
+      "sha256": "6f34bbf7deaf55144ae504c835f94ab69c88ba2ec3fe6e5c434abf731501520e",
+      "bytes": 16796
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_artifact_qa.json",
+      "sha256": "e4547d7e158324531d97b81f658cf22255fe409cd814df6f62e12204e82c52a9",
+      "bytes": 9427
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\publication_cpu_v1\\Stage3report.md",
+      "sha256": "6ffff715e43e39cfe350a4d69f2c1be399cc2d676fadc9005c230c716ad588df",
+      "bytes": 8391
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\artifact_qa.json",
+      "sha256": "3ff438dd73015c778eff3940842538f1579612ea6c16472564372174d4f681aa",
+      "bytes": 11668
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\independent_statistics_review.json",
+      "sha256": "d2032bf874ff0ab03a0948ef666ef9e2ab516959ed5cfdc427cf135cebbfb576",
+      "bytes": 146582
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\analysis_receipt.json",
+      "sha256": "da390a670b41f336d7df0776454b963694bcd065416a0c63a78a2e59b50d136e",
+      "bytes": 14579
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\publication_cpu_v1\\timing_summary.json",
+      "sha256": "6f9cac6bff06025bf6d9273b95ec5c16e7662d316973f86dfb445ad5550cec88",
+      "bytes": 11505
+    }
+  ],
+  "external_writes": false,
+  "stage_pass": false
+}

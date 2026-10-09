@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_FORMAL_STAGE3_COHORT",
+  "prepared_utc": "2026-10-09T10:19:41.665753+00:00",
+  "generator": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_stage3_analysis_protocol.py",
+    "sha256": "6f320dbd33e452bb49385223bf78358aa0c76021fbd86da625020a008eb73703",
+    "bytes": 9887
+  },
+  "render_images_read": 0,
+  "requires_root_acceptance_before_numeric_use": false,
+  "source_plan": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\plan_draft.json",
+    "sha256": "8075ccbbb91c87549896e30197a13d4d7b7e16e067b1948eb12c59cbfccedaeb",
+    "bytes": 14204
+  },
+  "white_calibration": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\white_calibration_runs\\analysis\\summary.json",
+    "sha256": "df3330cc7a5695674d4750e9ef117feb48cab38468c7ae48d3e36abdd1723267",
+    "bytes": 15550
+  },
+  "regions": [
+    {
+      "resolution": [
+        128,
+        128
+      ],
+      "source_contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\gallery_medium_stage3_glass_smoke_pilot\\contract.json",
+        "sha256": "10150c8e1f0ba7d7576f74923d4efa0994ede65b37db668a65597037b864a488",
+        "bytes": 7092
+      },
+      "mesh": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\meshes\\glass_sphere.ply",
+        "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+        "bytes": 1588396
+      },
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "masks": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\geometry_masks_128.npz",
+        "sha256": "17d378cba1450ee50caab9863c5d7f06419e790d1bfd1135747500abc81278f1",
+        "bytes": 128880
+      },
+      "pixel_counts": {
+        "full_frame": 16384,
+        "glass_foreground": 7340,
+        "glass_interior": 6215,
+        "glass_rim": 1125,
+        "background_far": 7840
+      },
+      "rim_width_pixels": 3.84,
+      "construction": "Project all vertices of the verified convex closed shared glass PLY through the fixed pinhole camera. Test pixel centers against the projected convex hull. Signed Euclidean raster distance defines interior/rim/exterior; no rendered pixels are read.",
+      "semantics": "Geometry-only labels, not segmentation of refracted smoke. Background can still contain caustics/shadows; it is not an error-free control. Tent edge filtering crosses the center-defined silhouette."
+    },
+    {
+      "resolution": [
+        512,
+        512
+      ],
+      "source_contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\gallery_medium_stage3_glass_smoke_hero\\contract.json",
+        "sha256": "30ee6cc6c6bc530ff0f1f35236708a469dc41f39d3c217aed134e9225cbbc560",
+        "bytes": 7089
+      },
+      "mesh": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3_preparation_draft\\ready_sources_v3\\meshes\\glass_sphere.ply",
+        "sha256": "87870ffaf409c33a5da909b5fb9aa2701f5a0d33b7e7e6e956d0dea2ba1fd51d",
+        "bytes": 1588396
+      },
+      "camera": {
+        "eye": [
+          130.48780822753906,
+          68.70732116699219,
+          -260.0
+        ],
+        "target": [
+          0.4878048896789551,
+          31.707317352294922,
+          -1.1013412404281553e-13
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "fov_y": 30.0,
+        "tent_radius": 0.5
+      },
+      "masks": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\geometry_masks_512.npz",
+        "sha256": "b04dd43f1e737753012f5defa4dd0b7f983ad8c4d6f3b2c93d5a6e3344204e40",
+        "bytes": 2002286
+      },
+      "pixel_counts": {
+        "full_frame": 262144,
+        "glass_foreground": 117418,
+        "glass_interior": 99524,
+        "glass_rim": 17894,
+        "background_far": 125306
+      },
+      "rim_width_pixels": 15.36,
+      "construction": "Project all vertices of the verified convex closed shared glass PLY through the fixed pinhole camera. Test pixel centers against the projected convex hull. Signed Euclidean raster distance defines interior/rim/exterior; no rendered pixels are read.",
+      "semantics": "Geometry-only labels, not segmentation of refracted smoke. Background can still contain caustics/shadows; it is not an error-free control. Tent edge filtering crosses the center-defined silhouette."
+    }
+  ],
+  "acquisition": {
+    "pilot_resolution": [
+      128,
+      128
+    ],
+    "hero_resolution": [
+      512,
+      512
+    ],
+    "independent_seeds": [
+      11,
+      29,
+      47,
+      83
+    ],
+    "pilot_spp": [
+      64,
+      256,
+      1024
+    ],
+    "baseline_depth": 32,
+    "paired_depth_control": 64,
+    "depth_control_spp": 1024,
+    "hero_seed": 11,
+    "hero_spp": 2048,
+    "engine_samples_per_frame": 1,
+    "pbrt_threads": 8,
+    "pbrt_wavelength_jitter": true,
+    "sampler": "PBRT paddedsobol/fastowen, engine frozen sampler; equal seed labels across backends are independent estimators, not paired random streams."
+  },
+  "intake": [
+    "Require normal renderer exit, completed receipts, exact EXR dimensions128x128 or512x512 and finite linear RGB. Engine actual metadata must equal targetSPP, seed, maxdepth and dimensions.",
+    "Verify current or explicitly archived frozen source/binary/shader/assets hashes; never accept unguarded changed source by path alone. Preserve actual launch hashes and limitations of outer guards.",
+    "Verify host medium belongs to actual glass mesh draw, IOR1.5, transmission1, roughness0, pure-boundary=false and air-contributor=false; density transform identity and native stored bbox.",
+    "Smoke/clear geometry, camera, film, optical interface, lights and medium binding identical; densityScale only. Preserve raw RGB and all four seed EXRs.",
+    "Shader validation and white calibration are prerequisites, not substitutes for scene transport matching."
+  ],
+  "mean_gate": {
+    "budgets_evaluated": [
+      64,
+      256,
+      1024
+    ],
+    "acceptance_budget": 1024,
+    "metrics": [
+      "R",
+      "G",
+      "B",
+      "Y_BT709_0.2126_0.7152_0.0722"
+    ],
+    "regions": [
+      "full_frame",
+      "glass_foreground",
+      "glass_interior",
+      "glass_rim",
+      "background_far"
+    ],
+    "estimator": "For each backend/seed/region/channel compute the spatial mean in float64; average four whole-run values. Difference = engine mean minus PBRT mean. No per-renderer normalization and no fitted exposure.",
+    "confidence": 0.95,
+    "CI": "Union of independent-backend Welch t interval and 20000 percentile whole-run bootstrap interval. Backend bootstrap counts independent; pixels not resampled as independent observations.",
+    "practical_band": "max(0.003,0.02*abs(PBRT region/channel mean)) in linear radiance units, frozen definition.",
+    "PASS_SCOPED": "For every nonempty primary region and everyRGB/Y channel at1024SPP, the full two-sided95% differenceCI is inside [-band,+band].",
+    "FAIL": "At least one95% differenceCI is wholly outside its band; retain diagnostic figures.",
+    "INCONCLUSIVE": "Other cases, including CI overlapping a band boundary. Mean zero-in-CI is reported separately; a CI excludingzero but insideband is not proof of unbiasedness.",
+    "multiple_comparisons": "Intervals are marginal95%, not simultaneous familywise95%. No global confidence probability is claimed. The all-regions rule is an engineering screen."
+  },
+  "noise_gate": {
+    "estimator": "Float64 per-pixel sample variance ddof1 across four seeds. Spatial average within each geometry region, separately RGB channel andY; also whole-run region-mean variance.",
+    "bootstrap_draws": 20000,
+    "bootstrap_seed": 20261009,
+    "within_backend_spp_pairing": "Resample the same seed indices at low/highSPP; repeated checkpoints share random streams.",
+    "gate": "For each backend separately, all nonzero-observed region/channel endpoint1024/64 variance ratios have one-sided95% upper bound<1. Adjacent256/64 and1024/256 are diagnostics. Zero variance is NOT_EVALUABLE, not PASS.",
+    "cross_backend": "Report engine/PBRT variance ratio and independent-backend95% bootstrapCI at everySPP. No mandatory ratio\u22481: spectral sampling, light selection and tracking estimators legitimately have different variance. An unexplained large ratio remains a limitation and motivates a targeted efficiency control.",
+    "spectral_scope": "PBRT wavelength jitter contributes noise; no attempt to subtract it using the unit-white scene because path-dependent sample correlation can differ."
+  },
+  "depth_gate": {
+    "estimator": "Within each backend pair identical seed labels for maxdepth32 and64 at1024SPP, using region means. Bootstrap counts paired byseed, union with paired-t95% interval.",
+    "practical_band": "max(0.0015,0.01*abs(depth64 backend region/channel mean))",
+    "gate": "Entire95% depth64-minus32CI lies within band in everyregion/channel. Otherwise preserve32 results and classify truncation as unresolved; do not claim the depth32 cross-backend residual is a renderer bug.",
+    "scope": "If depth64 is not run, depth adequacy is PENDING and overall numerical acceptance remains OPEN. No assumption that32mustsuffice for glass/TIR."
+  },
+  "visual": {
+    "primary": "Side-by-side actual RGB mean4 at128, same-seed128 andhero512 rawRGB images. One fixed common exposure1, Reinhard x/(1+x), then standard sRGB transfer; negatives only clamped for display and counted/reported in raw numerical diagnostics.",
+    "supplemental": [
+      "SignedRGB/Y residual",
+      "Shared-scale per-pixel noise/stddev/variance",
+      "Variance versusSPP"
+    ],
+    "SSIM": "Report common-display SSIM diagnostically with fixed settings; no SSIM threshold selected after viewing images, and no SSIM-only transport PASS.",
+    "hero": "Single seed at2048SPP is display evidence only; no independent-run variance or95%CI. Do not combine it with pilot four seeds or treat higherSPP prefix as an extra independent run.",
+    "human_review": "Stage3 representative image review still required; Stage2 test-scene visual review was waived, not approved."
+  },
+  "performance": {
+    "control": "Same glass/geometry/lights/camera; densityScale0 clear control vs.18 smoke.",
+    "recording": "Retain exact cumulative engine checkpoint timing scopes and PBRT whole child process scopes. Concurrent CPU calibration is excluded from performance judgment.",
+    "comparison": "For causal slowdown, run isolated one-shot smoke/clear at identical resolutionSPPdepth and compute within-renderer paired/median ratios. Compare ratios between renderers cautiously; never relabel CPU wall time as pure GPU or compare raw seconds with different scopes.",
+    "stage4": "This protocol prepares measurement; no slowdown evidence is produced here."
+  },
+  "nonacceptance": [
+    "Known unresolved boundary/transport source defect invalidates an overall numericalPASS even if engineering bands fit. Record exact current source status rather than inherit an obsolete issue.",
+    "A source/model mismatch cannot be repaired by a statistical band, fitted exposure, image crop chosen from residuals, or replacing the source scene silently.",
+    "Do not loosen thresholds after observing data. Any new protocol version needs a written source/measurement rationale, preserves this version and reruns its declared analysis."
+  ],
+  "stage_pass": false,
+  "original_draft": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol_draft\\protocol.json",
+    "sha256": "9a6390ce9c41e1943e92b82b4e3f1ee95c16e39beae909979322e6eb3177fd01",
+    "bytes": 12557
+  },
+  "installed_scene_contracts": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\installation_lighting_v3_receipt.json",
+    "sha256": "85354c29ebbfa6bf8ebd5f35d53fc1e09e99035b9b33f83189b765ec8aaadb35",
+    "bytes": 31941
+  },
+  "root_review_note": "Accepted unchanged numerical bands and geometry masks. Root saw only excluded low-SPP composition previews; no formal cohort was rendered or analyzed. V4 lighting changes preserve camera/geometry/masks. No image-derived exposure or source correction is used.",
+  "scope_note": "Acceptance is limited to rendered contracts and their tested numerical robustness. General nonmanifold/vertex contacts, unproven transform rounding, and sub-epsilon finite-interval transport are not certified.",
+  "installation_path_update": {
+    "parent_protocol": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\analysis_protocol.json",
+      "sha256": "8bd0cca387e954518410312e893830c3b097d96f33202622073c262677698608",
+      "bytes": 13635
+    },
+    "reason": "lighting_v3 changes installed scene identities and mesh paths only; numerical gates, acquisition, geometry ROI, white calibration and physical settings are unchanged.",
+    "generator": {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_stage3_final_v5.py",
+      "sha256": "c85a5dece172a5759f39129adbbd386f6f1cccafa3bc596848c8b1be965ad68a",
+      "bytes": 5555
+    },
+    "stage_pass": false
+  }
+}

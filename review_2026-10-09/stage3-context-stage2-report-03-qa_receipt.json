@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_ARTIFACT_QA_NO_STAGE_ACCEPTANCE",
+  "stage_pass": false,
+  "artifact_qa": "INDIVIDUALLY_VIEWED",
+  "orchestration_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter_orchestration_receipt.json",
+    "sha256": "6f34bbf7deaf55144ae504c835f94ab69c88ba2ec3fe6e5c434abf731501520e",
+    "bytes": 16796
+  },
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\convergence.png",
+      "sha256": "08c2dc4a4071300b09042ba568a435b7d314859fc5088f8a17505207d5e1ee83",
+      "bytes": 100928
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\geometry_masks.png",
+      "sha256": "0dcb841ea71caad8c1336327d748b8be551f8189a7e5ee9e4a69c414556c99b6",
+      "bytes": 21642
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "997bee32c023b8624e224f5f2c334b9ee753e82c9bf6ef7a823318de22ecd18b",
+      "bytes": 171421
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\normalized_radiance.png",
+      "sha256": "6e52364eb972c1344d1c0b3edb36c1ed0a112e045429e4f80fad1be5df8a2eb1",
+      "bytes": 66190
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\regional_uncertainty.png",
+      "sha256": "48530335d5308a59111eb282c7933d49d994db3782cf803070bbd7dfad479f54",
+      "bytes": 114749
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_constant_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "81eb50c5cacf9b81e697ca7b2f4c3ffc8e21b90a6943d4761b7373b6a1917bfc",
+      "bytes": 93276
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\convergence.png",
+      "sha256": "3c790a1dc67dac636ee8e38ead67450c5d6b91c6f485fed46d04964b919da1c0",
+      "bytes": 105485
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\noise_stddev_rgb_y.png",
+      "sha256": "0ef04253f108c74824feee005a52b772d684357a03b2ce114965e157774591c7",
+      "bytes": 145270
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\normalized_radiance.png",
+      "sha256": "6356c8840e70a4782d209f7f4b2b268c6fd62af84f6fc55b82cd5d4c99232080",
+      "bytes": 56823
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\regional_uncertainty.png",
+      "sha256": "e30b72271acc97182147d35848e483769eed5a9ccef8df09a1981dc657d5be2b",
+      "bytes": 132308
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gm05\\signed_residual_rgb_y.png",
+      "sha256": "748b330cbd2eddb442c9ce9cf3b26e160fc925f3ab5f6ec0c544550bb20d86ef",
+      "bytes": 82104
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\convergence.png",
+      "sha256": "9a859cd4b9dc7ab9dcfef21b40fbbf0742eb3170556e04894c7540e1c0d90d7a",
+      "bytes": 109676
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\geometry_masks.png",
+      "sha256": "ea4dc85e09773be1d7d03ab74d5c5c8dc01c6b69837471410ea0da6cf7e3d19c",
+      "bytes": 22287
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\noise_stddev_rgb_y.png",
+      "sha256": "b9501472cab3a2f072324f4589db9c307b84ae616c2cebbf398d5f302c4577ec",
+      "bytes": 146912
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\normalized_radiance.png",
+      "sha256": "8e86e000d9f37a76184c738c6b5024a72c8d15de4a697da30f0f9a0bed7e33b8",
+      "bytes": 58690
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\regional_uncertainty.png",
+      "sha256": "bab83bd522f635373201aa4ae01921675608fefaa90a4ce2d903fbb329fa0dcb",
+      "bytes": 114919
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_ramp_scatter_gp05\\signed_residual_rgb_y.png",
+      "sha256": "4cc20c4d374cf28d12354a65bb76a2fe134013cc0209f43cddf424fda55321f0",
+      "bytes": 79811
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\convergence.png",
+      "sha256": "0780cf065806c598b802e096dabb7a32734d6142b90bc2b636a8415b1f93f2ee",
+      "bytes": 102171
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\geometry_masks.png",
+      "sha256": "1242ca434bb5293a0cc8c4acd087acf9f6526ff809f37f3ed511de215860320a",
+      "bytes": 22397
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\noise_stddev_rgb_y.png",
+      "sha256": "7a519e27f344e65c00657852ceca75ad6e33dbf3e18b9d204d4981550d5d2d01",
+      "bytes": 100179
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\normalized_radiance.png",
+      "sha256": "32b38034f320fccd0b0a7e40165b45eab5ad32591619a163cdb15ca38a9751d6",
+      "bytes": 43073
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\regional_uncertainty.png",
+      "sha256": "3c9cd085d31ac524b2245507ac38ce2cd62fc1716ae7f912bd81dd1e82cfc355",
+      "bytes": 131955
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\boundary_contact_fix\\v5\\analysis_cpu_v1\\scatter\\gallery_medium_stage2_smoke_scatter_g0\\signed_residual_rgb_y.png",
+      "sha256": "f57f0a64a164a3b611f7e58fbc72855ba9ce30a83f4e61b69c209c174612af42",
+      "bytes": 53472
+    }
+  ],
+  "findings": [
+    "All24 PNGs were individually viewed at readable resolution: six figures per scene.",
+    "1024SPP x4-seed labels, scene identifiers, axes, color bars and legends are legible; no clipping found.",
+    "Own-vacuum normalized radiance, signed RGB/Y residual, seed noise, convergence, regional intervals and geometry masks are separately labeled.",
+    "The stronger engine noise and decreasing variance curves agree with the retained numerical results.",
+    "Logarithmic display floors affect visualization only; zero outside variance/residual was not changed in numerical data."
+  ],
+  "limitations": [
+    "Artifact readability QA, not user visual approval or stage acceptance.",
+    "Stage2 diagnostic visual review is waived by user; actual Stage3 RGB images require separate review."
+  ]
+}
