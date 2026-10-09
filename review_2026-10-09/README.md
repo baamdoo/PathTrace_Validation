@@ -14,13 +14,14 @@ Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fr
 |---|---:|---|
 | [complex_room_envmap_mis](engine-surface-fixes/complex_room_envmap_mis/README.md) | +0.028259% | PASS |
 | [gallery_breakfast_room](engine-surface-fixes/gallery_breakfast_room/README.md) | +0.035808% | INCONCLUSIVE |
+| [gallery_grey_white_room](engine-surface-fixes/gallery_grey_white_room/README.md) | +0.419345% | PASS |
 
 ## 최신 수정 및 진단
 
 - [Many-lights: 발광체 차폐 조건 수정 전후](corrected-many-lights/cornell_many_lights_matched/README.md) — PBRT 평균 Y −0.0147%, 기존 SSIM 기준·분산 수렴 PASS.
 - [Many-lights: Mitsuba spot 감쇠식 교정 전후](corrected-many-lights-spot/cornell_many_lights_matched/README.md) — 평균 Y +0.4742% → +0.0192%; 노이즈 차이는 별도 표시.
 - [Normal-map: 필터링 원인 대조](normal-map-filter-diagnostic/cornell_normal_map/README.md) — 평균 Y +2.4576% → +0.0758%; production 기본 필터 선택 대기.
-- [N-layered: 지정 Guo 레퍼런스](layered-guo/gallery_nlayer_sphere_alpha01_n2/README.md) — 평균 Y +0.04379%, 양쪽 분산 수렴 PASS.
+- [N-layered: 최종 엔진 / 지정 Guo 레퍼런스](layered-guo-surface-fixes/gallery_nlayer_sphere_alpha01_n2/README.md) — 평균 Y +0.04379%, 양쪽 분산 수렴 PASS.
 
 아래 7개 RGB 보충 비교는 기존 전체 영상 SSIM .99 기준과 양쪽 분산 감소 검사를 통과했습니다. 재질 모델의 정확한 동등성 및 전체 단계 승인을 뜻하지 않습니다.
 
@@ -45,7 +46,7 @@ Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fr
 
 ## N-layered: Guo renderer
 
-[N2 이미지·중앙 표면 ROI·독립 seed 노이즈 비교](layered-guo/gallery_nlayer_sphere_alpha01_n2/README.md)
+[최종 N2 이미지·중앙 표면 ROI·독립 seed 노이즈 비교](layered-guo-surface-fixes/gallery_nlayer_sphere_alpha01_n2/README.md) · [수정 전 엔진 baseline](layered-guo/gallery_nlayer_sphere_alpha01_n2/README.md)
 
 128 SPP 평균 Y 차이 +0.04379%; 테스트한 RGB/Y 평균 차이 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS. 전체 단계와 사용자 육안 승인은 별도입니다.
 

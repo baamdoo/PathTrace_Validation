@@ -1,0 +1,37 @@
+{
+  "scene": "gallery_nlayer_sphere_alpha01_n2",
+  "category": "layered-guo-surface-fixes",
+  "reference": "Guo EfficientComplexLayered Mitsuba 0.6 fork / multilayered_guo2018",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "환경맵/금속 반사율 수정 후 최종 production shader(0be9f4cf...)로 다시 렌더한 N2입니다. 지정 Guo reference와 사전 선택한 중심64 ROI를 그대로 사용했습니다. 128 SPP x 4 global Y +0.0437867%, 중심 +0.180217%; 여섯 고정 영역의 RGB/Y Welch 95% 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS, engine/Guo Y variance ratio global 0.0997893, 중심 0.2618415입니다. 기존 엔진 baseline은 별도 보존했습니다. 이 결과는 정확한 BSDF/filter 모델 동등성이나 전체 단계 승인을 의미하지 않습니다.",
+  "images": [
+    {
+      "file": "convergence.png",
+      "sha256": "785f271b8ec359f92102e6bac5d8c35137c1c9fa30b820730c752cf75bed2897",
+      "bytes": 276951
+    },
+    {
+      "file": "mean_difference.png",
+      "sha256": "d4b5841f426bf6072108d83393dc46bc4b9a2bebb05a18f35314afb010af1b47",
+      "bytes": 3010457
+    },
+    {
+      "file": "noise_stddev.png",
+      "sha256": "d002c66f34b67e06ed7819c3b36616e138f12bf4569c404e439ccc26512da405",
+      "bytes": 2664067
+    },
+    {
+      "file": "radiance_uncertainty.png",
+      "sha256": "1933b5d83b635f85e2bd5823c5fb53c489596ea58944a1913c9cff5c83d1d9b4",
+      "bytes": 269621
+    },
+    {
+      "file": "surface_roi.png",
+      "sha256": "cc5b849b08f5ca5d798fb2e715fe4fe9c94b8c651e278129aacd4197f37e20e3",
+      "bytes": 231240
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_surface_fixes"
+}

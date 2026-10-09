@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T05:29:30.043358+00:00",
+  "generated_utc": "2026-10-09T05:39:54.251995+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 232,
+  "images": 244,
   "rows": [
     {
       "scene": "cornell_box",
@@ -1199,6 +1199,43 @@
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_camera_matched"
     },
     {
+      "scene": "gallery_nlayer_sphere_alpha01_n2",
+      "category": "layered-guo-surface-fixes",
+      "reference": "Guo EfficientComplexLayered Mitsuba 0.6 fork / multilayered_guo2018",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "환경맵/금속 반사율 수정 후 최종 production shader(0be9f4cf...)로 다시 렌더한 N2입니다. 지정 Guo reference와 사전 선택한 중심64 ROI를 그대로 사용했습니다. 128 SPP x 4 global Y +0.0437867%, 중심 +0.180217%; 여섯 고정 영역의 RGB/Y Welch 95% 구간은 모두 0을 포함합니다. 양쪽 분산 수렴 PASS, engine/Guo Y variance ratio global 0.0997893, 중심 0.2618415입니다. 기존 엔진 baseline은 별도 보존했습니다. 이 결과는 정확한 BSDF/filter 모델 동등성이나 전체 단계 승인을 의미하지 않습니다.",
+      "images": [
+        {
+          "file": "convergence.png",
+          "sha256": "785f271b8ec359f92102e6bac5d8c35137c1c9fa30b820730c752cf75bed2897",
+          "bytes": 276951
+        },
+        {
+          "file": "mean_difference.png",
+          "sha256": "d4b5841f426bf6072108d83393dc46bc4b9a2bebb05a18f35314afb010af1b47",
+          "bytes": 3010457
+        },
+        {
+          "file": "noise_stddev.png",
+          "sha256": "d002c66f34b67e06ed7819c3b36616e138f12bf4569c404e439ccc26512da405",
+          "bytes": 2664067
+        },
+        {
+          "file": "radiance_uncertainty.png",
+          "sha256": "1933b5d83b635f85e2bd5823c5fb53c489596ea58944a1913c9cff5c83d1d9b4",
+          "bytes": 269621
+        },
+        {
+          "file": "surface_roi.png",
+          "sha256": "cc5b849b08f5ca5d798fb2e715fe4fe9c94b8c651e278129aacd4197f37e20e3",
+          "bytes": 231240
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_nlayer_sphere_alpha01_n2/analysis_guo_surface_fixes"
+    },
+    {
       "scene": "complex_room_envmap_mis",
       "category": "remaining-native-rgb",
       "reference": "Mitsuba 3.9.1 RGB",
@@ -1620,6 +1657,53 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_breakfast_room/analysis_surface_fixes"
+    },
+    {
+      "scene": "gallery_grey_white_room",
+      "category": "engine-surface-fixes",
+      "reference": "Mitsuba 3.9.1 native RGB",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.419345%, renderer당 4 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_spp16.png",
+          "sha256": "4c6a84ada64a2bf861fa27d28753c3989c8856b57130b68d433ac6993250fb34",
+          "bytes": 1828458
+        },
+        {
+          "file": "radiance_mean4_spp64.png",
+          "sha256": "e4ccd268810377f7cea3e2676c6b41595e2b649f938a9c784f5aa73afbe0a40f",
+          "bytes": 1707991
+        },
+        {
+          "file": "radiance_mean4_spp128.png",
+          "sha256": "80f675eff7b632e225331dae73ce861e8956e0cbcab84b495eaf02caa1c8022a",
+          "bytes": 1645657
+        },
+        {
+          "file": "radiance_seed11_spp128.png",
+          "sha256": "4bf188734a5433496fde44aab29e4eef8571138b269a265aea293d6aeb989bc4",
+          "bytes": 1765217
+        },
+        {
+          "file": "signed_residuals.png",
+          "sha256": "887057fe0ef2f5f09b5c6168568504cdf9a21766784ff66d4237f5522c3217a9",
+          "bytes": 1851175
+        },
+        {
+          "file": "noise_variance.png",
+          "sha256": "583c52963f81e1774942ddba50d111124289d3608f02620087faba77589e48e9",
+          "bytes": 3428232
+        },
+        {
+          "file": "convergence_uncertainty.png",
+          "sha256": "aca31cbf8e83a939ca5e7b411ea992f072ef7e92e9f275e2beee8e671f079a38",
+          "bytes": 178566
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/gallery_grey_white_room/analysis_surface_fixes"
     }
   ],
   "authorization": "User explicitly requested GitHub publication even when validation does not pass."
