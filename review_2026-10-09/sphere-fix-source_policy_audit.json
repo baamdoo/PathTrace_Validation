@@ -1,0 +1,313 @@
+{
+  "status": "SOURCE_POLICY_AUDIT_COMPLETE",
+  "created_utc": "2026-10-09T07:48:55.940652+00:00",
+  "stage_pass": false,
+  "scope": "Code and estimator contract only; GPU and rendered-image results require separate execution receipts.",
+  "baseline_archive": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_archive.json",
+    "sha256": "07e25bad91b0c13c862c495dc38e90dfd30519cae64246689e60919ec43346f4",
+    "bytes": 55219
+  },
+  "source_files": [
+    {
+      "relative_path": "Assets/Shader/HLSL/Sampling.hlsli",
+      "baseline": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_inputs\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+        "sha256": "69b232a4c93c6fb70912fb4b983dc7c12a9567ba2172646da83567cc8e2dbfac",
+        "bytes": 12305
+      },
+      "current": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+        "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+        "bytes": 13059
+      }
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "baseline": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_inputs\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+        "sha256": "d4068ff7f52e46e5096bf613da08e3eaacf6697a961dc282b4a2e0314757cbc8",
+        "bytes": 28558
+      },
+      "current": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+        "sha256": "af8036b639ac21e18731645e50dbd7b38fbe95f2f7ad5ac058ae034216409d24",
+        "bytes": 30465
+      }
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "baseline": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_inputs\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+        "sha256": "d4f3cc8ec02a7d61a87a5e10aa764f415aa8abb20a037ff08dae26a1c91d9217",
+        "bytes": 25847
+      },
+      "current": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+        "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+        "bytes": 28223
+      }
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathTracerLIB.hlsl",
+      "baseline": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_inputs\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+        "sha256": "b3513c25f35fa0872d081e7ee87be01a9982521fe8b291918c9f6689d782bdf4",
+        "bytes": 28551
+      },
+      "current": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+        "sha256": "61162d6e633262d91efd6891718e08bdb8d2007c92157d7da89b113b0626247e",
+        "bytes": 30214
+      }
+    }
+  ],
+  "source_patch": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\sphere_only_source.patch",
+    "sha256": "0161339259bd1a5d893409daae8a125302bc31f14e730c0e154e503c1714e75d",
+    "bytes": 11933
+  },
+  "unchanged_policy_functions": [
+    {
+      "relative_path": "Assets/Shader/HLSL/Sampling.hlsli",
+      "function": "SampleSphereLight",
+      "unchanged": true,
+      "normalized_function_sha256": "9fdb4fe819bbbf11d80f2ea5619ebb248621d02f79ad451083ece9e62d4df943"
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "function": "SphereLightRadiance",
+      "unchanged": true,
+      "normalized_function_sha256": "fe1b34dc2da2107450553de7d4255ecba781bcec7a13c51214c3c9bfa620af6a"
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "function": "LightSelectionCDFLowerBound",
+      "unchanged": true,
+      "normalized_function_sha256": "09d90355e7a2ca340186dd1afc148b7315eed0524170d3ae510c1de4b8c796c1"
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "function": "LightSelectionPMF",
+      "unchanged": true,
+      "normalized_function_sha256": "b896ce824fb928641d5f3fde96049eabf68f61630de4581ecc5ac5ec0988d3e7"
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "function": "PdfAreaToSolidAngle",
+      "unchanged": true,
+      "normalized_function_sha256": "d1d40cdf4b31758b9c7daf3cb629e2eb3db90bc3ed5d54bcb7744d67593eada4"
+    },
+    {
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "function": "CalculateMISWeight",
+      "unchanged": true,
+      "normalized_function_sha256": "a764758d61b2cead78be2b3bfbce5830e40a050f2f8bede7644e0053b7abbf97"
+    },
+    {
+      "relative_path": "Projects/BaambooEngine/BaambooScene/RenderNodes/PathTracerNode.cpp",
+      "function": "ComputeLightPowerWeights",
+      "unchanged": true,
+      "basis": "Current whole-file SHA equals the earlier campaign snapshot; this file is outside the narrow representative92 archive.",
+      "historical_snapshot": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\current_inputs_rng_fixed.json",
+        "sha256": "0fffbdc4fb95b6d119b9d5b2d4cd9c4707cee0f4b8bccd06d8a4867c831e85cd",
+        "bytes": 52252
+      },
+      "baseline_file": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNode.cpp",
+        "sha256": "70fe3298f9392f84ca7ac6cfdc0f4250ab74732bfc9deb419ca2a483b172cc6d",
+        "bytes": 28099,
+        "mtime_ns": 1791512959415262500
+      },
+      "normalized_function_sha256": "6ba079a7dc02f197524be2538813cd19947b7f172d6d671d958f27da7b77dfdd"
+    },
+    {
+      "relative_path": "Projects/BaambooEngine/BaambooScene/RenderNodes/PathTracerNode.cpp",
+      "function": "UpdateLightSelectionDistribution",
+      "unchanged": true,
+      "basis": "Current whole-file SHA equals the earlier campaign snapshot; this file is outside the narrow representative92 archive.",
+      "historical_snapshot": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\current_inputs_rng_fixed.json",
+        "sha256": "0fffbdc4fb95b6d119b9d5b2d4cd9c4707cee0f4b8bccd06d8a4867c831e85cd",
+        "bytes": 52252
+      },
+      "baseline_file": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Projects\\BaambooEngine\\BaambooScene\\RenderNodes\\PathTracerNode.cpp",
+        "sha256": "70fe3298f9392f84ca7ac6cfdc0f4250ab74732bfc9deb419ca2a483b172cc6d",
+        "bytes": 28099,
+        "mtime_ns": 1791512959415262500
+      },
+      "normalized_function_sha256": "d86acbb28554f5944c6371f2f7cbe84353b465a8b6c0b274182efeb4927007f1"
+    }
+  ],
+  "claims": [
+    "PBRT CPU PathIntegrator and Guo pathwsampler both include NEE power weights and the complementary BSDF-hit emitter term. The former engine analytic sphere route lacked that hit term; this is an omitted estimator contribution, not merely a different valid MIS policy.",
+    "Existing engine power-CDF selection PMFs, power heuristic, uniform sphere-area sampling and radiance conversion remain unchanged. The references may use projected-cone sphere sampling; that valid difference can change variance and is retained.",
+    "The PBRT evidence here is PathIntegrator only. PBRT VolPath spectral/ratio MIS is a separate estimator; this audit does not claim identical policies across all integrators or renderers.",
+    "Analytic spheres are black opaque emitting geometry, matching the authored Guo spheres whose omitted BSDF defaults to zero-reflectance diffuse. Front hits emit, inside/back hits block with zero emission.",
+    "The nearest analytic sphere is found over the original RayDesc interval before alpha traversal; a copy clips TLAS traversal to its distance. A nearer accepted mesh or boundary wins, exact equal distance chooses one analytic endpoint. No epsilon tie merges distinct surfaces.",
+    "Medium transport first reaches the provisional nearest mesh/sphere endpoint or scatters earlier. Pure boundaries preserve the previous scattering vertex and remaining full ray range. Sphere emission uses the updated medium throughput.",
+    "The analytic PDF uses exact sphere identity, actual selection PMF, the same unclamped 1/(4*pi*r*r) area density and near-field rejection support as NEE. It does not use the 1e-3 positional mesh matching tolerance.",
+    "Shadow connections test analytic opaque spheres in their existing [TMin, target-distance-PT_RAY_EPS] interval. The sampled endpoint is excluded, while other spheres and zero-flux/back-facing spheres block. Existing boundary/medium traversal remains in use for unblocked connections.",
+    "GetSceneRayLength also encloses the current sphere centers/radii from g_Lights. All existing camera/continuation/phase/environment-directional shadow call sites use this helper, avoiding stale CPU draw-only bounds on light-radius edits.",
+    "A paired emissive mesh and LightComponent do not create two CDF entries: the CDF enumerates LightComponents only. A single nearest endpoint prevents adding the paired mesh and analytic emission simultaneously. No arbitrary nearby geometry or faceted proxy is removed.",
+    "Exactly coincident SphereLight components are separate additive emission terms at one opaque endpoint. Each term uses its own unchanged NEE selection PMF and complementary hit weight; no summed-PMF mixture silently replaces the existing component estimators.",
+    "Only sphere analytic transport is repaired. Disk/tube/area analytic intersection policies, normal interpolation, material/BSDF/ray-cone behavior and source scene assets are unchanged. The existing Killeroo normal-field discrepancy remains separately open."
+  ],
+  "evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\cpu\\integrators.cpp",
+      "sha256": "6f3dce2458cae4813d3a183baa14a3e3085feacc874390a857c88c63381d4d6e",
+      "bytes": 162414,
+      "relative_path": "External/pbrt-v4/src/pbrt/cpu/integrators.cpp",
+      "start_line": 665,
+      "end_line": 674,
+      "excerpt": "            if (depth == 0 || specularBounce)\n                L += beta * Le;\n            else {\n                // Compute MIS weight for area light\n                Light areaLight(si->intr.areaLight);\n                Float p_l = lightSampler.PMF(prevIntrCtx, areaLight) *\n                            areaLight.PDF_Li(prevIntrCtx, ray.d, true);\n                Float w_l = PowerHeuristic(1, p_b, 1, p_l);\n\n                L += beta * w_l * Le;"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\cpu\\integrators.cpp",
+      "sha256": "6f3dce2458cae4813d3a183baa14a3e3085feacc874390a857c88c63381d4d6e",
+      "bytes": 162414,
+      "relative_path": "External/pbrt-v4/src/pbrt/cpu/integrators.cpp",
+      "start_line": 764,
+      "end_line": 805,
+      "excerpt": "SampledSpectrum PathIntegrator::SampleLd(const SurfaceInteraction &intr, const BSDF *bsdf,\n                                         SampledWavelengths &lambda,\n                                         Sampler sampler) const {\n    // Initialize _LightSampleContext_ for light sampling\n    LightSampleContext ctx(intr);\n    // Try to nudge the light sampling position to correct side of the surface\n    BxDFFlags flags = bsdf->Flags();\n    if (IsReflective(flags) && !IsTransmissive(flags))\n        ctx.pi = intr.OffsetRayOrigin(intr.wo);\n    else if (IsTransmissive(flags) && !IsReflective(flags))\n        ctx.pi = intr.OffsetRayOrigin(-intr.wo);\n\n    // Choose a light source for the direct lighting calculation\n    Float u = sampler.Get1D();\n    pstd::optional<SampledLight> sampledLight = lightSampler.Sample(ctx, u);\n    Point2f uLight = sampler.Get2D();\n    if (!sampledLight)\n        return {};\n\n    // Sample a point on the light source for direct lighting\n    Light light = sampledLight->light;\n    DCHECK(light && sampledLight->p > 0);\n    pstd::optional<LightLiSample> ls = light.SampleLi(ctx, uLight, lambda, true);\n    if (!ls || !ls->L || ls->pdf == 0)\n        return {};\n\n    // Evaluate BSDF for light sample and check light visibility\n    Vector3f wo = intr.wo, wi = ls->wi;\n    SampledSpectrum f = bsdf->f(wo, wi) * AbsDot(wi, intr.shading.n);\n    if (!f || !Unoccluded(intr, ls->pLight))\n        return {};\n\n    // Return light's contribution to reflected radiance\n    Float p_l = sampledLight->p * ls->pdf;\n    if (IsDeltaLight(light.Type()))\n        return ls->L * f / p_l;\n    else {\n        Float p_b = bsdf->PDF(wo, wi);\n        Float w_l = PowerHeuristic(1, p_l, 1, p_b);\n        return w_l * ls->L * f / p_l;\n    }\n}"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\External\\pbrt-v4\\src\\pbrt\\shapes.h",
+      "sha256": "3838478d67eac7312b41d8247910bbfcc55caff45506824767cfb162db710355",
+      "bytes": 64910,
+      "relative_path": "External/pbrt-v4/src/pbrt/shapes.h",
+      "start_line": 293,
+      "end_line": 330,
+      "excerpt": "    pstd::optional<ShapeSample> Sample(const ShapeSampleContext &ctx, Point2f u) const {\n        // Sample uniformly on sphere if $\\pt{}$ is inside it\n        Point3f pCenter = (*renderFromObject)(Point3f(0, 0, 0));\n        Point3f pOrigin = ctx.OffsetRayOrigin(pCenter);\n        if (DistanceSquared(pOrigin, pCenter) <= Sqr(radius)) {\n            // Sample shape by area and compute incident direction _wi_\n            pstd::optional<ShapeSample> ss = Sample(u);\n            DCHECK(ss.has_value());\n            ss->intr.time = ctx.time;\n            Vector3f wi = ss->intr.p() - ctx.p();\n            if (LengthSquared(wi) == 0)\n                return {};\n            wi = Normalize(wi);\n\n            // Convert area sampling PDF in _ss_ to solid angle measure\n            ss->pdf /= AbsDot(ss->intr.n, -wi) / DistanceSquared(ctx.p(), ss->intr.p());\n            if (IsInf(ss->pdf))\n                return {};\n\n            return ss;\n        }\n\n        // Sample sphere uniformly inside subtended cone\n        // Compute quantities related to the $\\theta_\\roman{max}$ for cone\n        Float sinThetaMax = radius / Distance(ctx.p(), pCenter);\n        Float sin2ThetaMax = Sqr(sinThetaMax);\n        Float cosThetaMax = SafeSqrt(1 - sin2ThetaMax);\n        Float oneMinusCosThetaMax = 1 - cosThetaMax;\n\n        // Compute $\\theta$ and $\\phi$ values for sample in cone\n        Float cosTheta = (cosThetaMax - 1) * u[0] + 1;\n        Float sin2Theta = 1 - Sqr(cosTheta);\n        if (sin2ThetaMax < 0.00068523f /* sin^2(1.5 deg) */) {\n            // Compute cone sample via Taylor series expansion for small angles\n            sin2Theta = sin2ThetaMax * u[0];\n            cosTheta = std::sqrt(1 - sin2Theta);\n            oneMinusCosThetaMax = sin2ThetaMax / 2;\n        }"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\devplugins\\integrators\\pathwsampler.cpp",
+      "sha256": "ad4eb42bae11b81461dcdd4bcc5b17834ad08535a466a284bc45487131077c61",
+      "bytes": 14856,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/devplugins/integrators/pathwsampler.cpp",
+      "start_line": 173,
+      "end_line": 201,
+      "excerpt": "\n            if (rRec.type & RadianceQueryRecord::EDirectSurfaceRadiance &&\n                (bsdf->getType() & BSDF::ESmooth)) {\n                Spectrum value = scene->sampleEmitterDirect(dRec, rRec.nextSample2D());\n                if (!value.isZero()) {\n                    const Emitter *emitter = static_cast<const Emitter *>(dRec.object);\n\n                    /* Allocate a record for querying the BSDF */\n                    BSDFSamplingRecord bRec(its, its.toLocal(dRec.d), ERadiance);\n\t\t    bRec.sampler=rRec.sampler;\n\n                    /* Evaluate BSDF * cos(theta) */\n                    const Spectrum bsdfVal = bsdf->eval(bRec);\n\n                    /* Prevent light leaks due to the use of shading normals */\n                    if (!bsdfVal.isZero() && (!m_strictNormals\n                            || dot(its.geoFrame.n, dRec.d) * Frame::cosTheta(bRec.wo) > 0)) {\n\n                        /* Calculate prob. of having generated that direction\n                           using BSDF sampling */\n                        Float bsdfPdf = (emitter->isOnSurface() && dRec.measure == ESolidAngle)\n                            ? bsdf->pdf(bRec) : 0;\n\n                        /* Weight using the power heuristic */\n                        Float weight = miWeight(dRec.pdf, bsdfPdf);\n                        Li += throughput * value * bsdfVal * weight;\n                    }\n                }\n            }"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\devplugins\\integrators\\pathwsampler.cpp",
+      "sha256": "ad4eb42bae11b81461dcdd4bcc5b17834ad08535a466a284bc45487131077c61",
+      "bytes": 14856,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/devplugins/integrators/pathwsampler.cpp",
+      "start_line": 222,
+      "end_line": 266,
+      "excerpt": "            bool hitEmitter = false;\n            Spectrum value;\n\n            /* Trace a ray in this direction */\n            ray = Ray(its.p, wo, ray.time);\n            if (scene->rayIntersect(ray, its)) {\n                /* Intersected something - check if it was a luminaire */\n                if (its.isEmitter()) {\n                    value = its.Le(-ray.d);\n                    dRec.setQuery(ray, its);\n                    hitEmitter = true;\n                }\n            } else {\n                /* Intersected nothing -- perhaps there is an environment map? */\n                const Emitter *env = scene->getEnvironmentEmitter();\n\n                if (env) {\n                    if (m_hideEmitters && !scattered)\n                        break;\n\n                    value = env->evalEnvironment(ray);\n                    if (!env->fillDirectSamplingRecord(dRec, ray))\n                        break;\n                    hitEmitter = true;\n                } else {\n                    break;\n                }\n            }\n\n            /* Keep track of the throughput and relative\n               refractive index along the path */\n            throughput *= bsdfWeight;\n            eta *= bRec.eta;\n\n            /* If a luminaire was hit, estimate the local illumination and\n               weight using the power heuristic */\n            if (hitEmitter &&\n                (rRec.type & RadianceQueryRecord::EDirectSurfaceRadiance)) {\n                /* Compute the prob. of generating that direction using the\n                   implemented direct illumination sampling technique */\n                const Float lumPdf = (!(bRec.sampledType & BSDF::EDelta)) ?\n                    scene->pdfEmitterDirect(dRec) : 0;\n                Li += throughput * value * miWeight(bsdfPdf, lumPdf);\n            }\n"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\shapes\\sphere.cpp",
+      "sha256": "038d948aec4711b971a40ade1b11f24305066aa37c4092766e72c5b3f89cb703",
+      "bytes": 18471,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/shapes/sphere.cpp",
+      "start_line": 286,
+      "end_line": 304,
+      "excerpt": "    void sampleDirect(DirectSamplingRecord &dRec, const Point2 &sample) const {\n        const Vector refToCenter = m_center - dRec.ref;\n        const Float refDist2 = refToCenter.lengthSquared();\n        const Float invRefDist = static_cast<Float>(1) / std::sqrt(refDist2);\n\n        /* Sine of the angle of the cone containing the\n           sphere as seen from 'dRec.ref' */\n        const Float sinAlpha = m_radius * invRefDist;\n\n        if (sinAlpha < 1-Epsilon) {\n            /* The reference point lies outside of the sphere.\n               => sample based on the projected cone. */\n\n            Float cosAlpha = math::safe_sqrt(1.0f - sinAlpha * sinAlpha);\n\n            dRec.d = Frame(refToCenter * invRefDist).toWorld(\n                warp::squareToUniformCone(cosAlpha, sample));\n            dRec.pdf = warp::squareToUniformConePdf(cosAlpha);\n"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Tools\\tmp\\EfficientComplexLayered\\src\\librender\\shape.cpp",
+      "sha256": "408f5da3cf1ad927348047ebb32275841f3edb8fecc5414785eaa9cd172091e6",
+      "bytes": 9633,
+      "relative_path": "Tools/tmp/EfficientComplexLayered/src/librender/shape.cpp",
+      "start_line": 48,
+      "end_line": 64,
+      "excerpt": "void Shape::configure() {\n    if (m_bsdf == NULL) {\n        ref<BSDF> bsdf = NULL;\n        if (isEmitter() || isSensor() || hasSubsurface()) {\n            /* Light source / sensor and no BSDF! -> set an all-absorbing BSDF */\n            Properties props(\"diffuse\");\n            props.setSpectrum(\"reflectance\", Spectrum(0.0f));\n            bsdf = static_cast<BSDF *> (PluginManager::getInstance()->\n                createObject(MTS_CLASS(BSDF), props));\n        } else if (!isMediumTransition()) {\n            /* A surface without BSDF, which is not a medium\n               transition/sensor/emitter/subsurface emitter doesn't make\n               much sense. Assign it a 0.5 Lambertian BRDF for convenience */\n            Properties props(\"diffuse\");\n            props.setSpectrum(\"reflectance\", Spectrum(0.5f));\n            bsdf = static_cast<BSDF *> (PluginManager::getInstance()->\n                createObject(MTS_CLASS(BSDF), props));"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+      "bytes": 13059,
+      "relative_path": "Assets/Shader/HLSL/Sampling.hlsli",
+      "start_line": 247,
+      "end_line": 262,
+      "excerpt": "void SampleSphereLight(float2 u, SphereLight light, out float3 y, out float3 normalAtY, out float pdfA)\n{\n    float3 position = float3(light.posX, light.posY, light.posZ);\n\n    float cosTheta = 1.0 - 2.0 * u.x;\n    float sinTheta = safeSqrt(1.0 - cosTheta * cosTheta);\n    float phi      = 2.0 * PI * u.y;\n\n    float3 dir = float3(sinTheta * cos(phi),\n                        sinTheta * sin(phi),\n                        cosTheta);\n\n    y         = position + light.radius * dir;\n    normalAtY = dir; // sphere outward normal at the surface point\n    pdfA      = 1.0 / (4.0 * PI * light.radius * light.radius);\n}"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\Sampling.hlsli",
+      "sha256": "de08dad2a304545fad6a770a071ef2dab9866b4153215845b709e29e9f6aed88",
+      "bytes": 13059,
+      "relative_path": "Assets/Shader/HLSL/Sampling.hlsli",
+      "start_line": 325,
+      "end_line": 363,
+      "excerpt": "bool IntersectRaySphereLight(RayDesc ray, SphereLight light, out float tHit, out float3 normalAtHit)\n{\n    tHit = -1.0;\n    normalAtHit = 0.0;\n    float3 center = float3(light.posX, light.posY, light.posZ);\n    float directionLength2 = dot(ray.Direction, ray.Direction);\n    if (!all(isfinite(ray.Origin)) || !all(isfinite(ray.Direction)) || !all(isfinite(center)) ||\n        !isfinite(ray.TMin) || !isfinite(ray.TMax) || ray.TMin > ray.TMax ||\n        !isfinite(directionLength2) || directionLength2 <= 0.0 ||\n        !isfinite(light.radius) || light.radius <= 0.0)\n        return false;\n\n    float3 offset = ray.Origin - center;\n    float centerT = -dot(offset, ray.Direction) / directionLength2;\n    float3 closestOffset = offset + centerT * ray.Direction;\n    float radialLength2 = light.radius * light.radius - dot(closestOffset, closestOffset);\n    if (!isfinite(radialLength2) || radialLength2 < 0.0)\n        return false;\n\n    float halfChordT = sqrt(radialLength2 / directionLength2);\n    float entryT = centerT - halfChordT;\n    float exitT = centerT + halfChordT;\n    float t = entryT >= ray.TMin ? entryT : exitT;\n    if (!isfinite(t) || t < ray.TMin || t > ray.TMax)\n        return false;\n\n    // Back faces still intersect: a one-sided emitter is opaque from inside.\n    float3 localHit = closestOffset + (t - centerT) * ray.Direction;\n    float normalLength2 = dot(localHit, localHit);\n    if (!isfinite(normalLength2) || normalLength2 <= 0.0)\n        return false;\n    tHit = t;\n    normalAtHit = localHit * rsqrt(normalLength2);\n    return true;\n}\n\n\n// BSDF pdf evaluator for cross-evaluation\nfloat EvaluateBSDFPdf(float3 dir, float3 n, uint strategy)"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "sha256": "af8036b639ac21e18731645e50dbd7b38fbe95f2f7ad5ac058ae034216409d24",
+      "bytes": 30465,
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "start_line": 25,
+      "end_line": 79,
+      "excerpt": "float GetSceneRayLength(float3 originWS, float3 sceneBoundsCenter, float sceneBoundsRadius)\n{\n    if (!all(isfinite(originWS)) || !all(isfinite(sceneBoundsCenter)) ||\n        !isfinite(sceneBoundsRadius) || sceneBoundsRadius <= 0.0)\n        return 0.0;\n\n    float sceneDistance = length(originWS - sceneBoundsCenter) + sceneBoundsRadius;\n#ifdef _LIGHT\n    // Analytic emitters need not have a draw/AABB. Read the current light data\n    // so radius-only changes cannot leave a stale CPU geometry bound.\n    [loop]\n    for (uint i = 0u; i < g_Lights.numSpheres; ++i)\n    {\n        SphereLight light = g_Lights.spheres[i];\n        float3 center = float3(light.posX, light.posY, light.posZ);\n        if (all(isfinite(center)) && isfinite(light.radius) && light.radius > 0.0)\n            sceneDistance = max(sceneDistance, length(originWS - center) + light.radius);\n    }\n#endif\n    float coordinateScale = max(max(abs(originWS.x), max(abs(originWS.y), abs(originWS.z))), sceneDistance);\n    float rayLength = sceneDistance + max(4.0 * PT_RAY_EPS, 1.0e-5 * coordinateScale);\n    return isfinite(rayLength) ? rayLength : 0.0;\n}\n\n#ifdef _LIGHT\n// Shader-local endpoint data; no payload or CPU/GPU record layout changes.\nstruct AnalyticSphereLightHit\n{\n    uint sphereIndex;\n    float dist;\n    float3 normal;\n};\n\nbool FindClosestAnalyticSphereLight(RayDesc ray, out AnalyticSphereLightHit hit)\n{\n    hit = (AnalyticSphereLightHit)0;\n    hit.sphereIndex = INVALID_INDEX;\n    hit.dist = ray.TMax;\n    [loop]\n    for (uint i = 0u; i < g_Lights.numSpheres; ++i)\n    {\n        float distance;\n        float3 normal;\n        if (IntersectRaySphereLight(ray, g_Lights.spheres[i], distance, normal) &&\n            (hit.sphereIndex == INVALID_INDEX || distance < hit.dist))\n        {\n            hit.sphereIndex = i;\n            hit.dist = distance;\n            hit.normal = normal;\n        }\n    }\n    return hit.sphereIndex != INVALID_INDEX;\n}\n#endif\n"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "sha256": "af8036b639ac21e18731645e50dbd7b38fbe95f2f7ad5ac058ae034216409d24",
+      "bytes": 30465,
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "start_line": 560,
+      "end_line": 581,
+      "excerpt": "bool TraceShadowVisibility(RayDesc ray, uint alphaSeed)\n{\n#ifdef _LIGHT\n    AnalyticSphereLightHit lightHit;\n    if (FindClosestAnalyticSphereLight(ray, lightHit))\n        return false;\n#endif\n    ShadowPayload sp;\n    sp.visible   = 0u;\n    sp.alphaSeed = alphaSeed;\n    TraceRay(\n        g_Scene,\n        RAY_FLAG_ACCEPT_FIRST_HIT_AND_END_SEARCH | RAY_FLAG_SKIP_CLOSEST_HIT_SHADER,\n        0xFF,\n        1,\n        0,\n        1,\n        ray,\n        sp);\n\n    return sp.visible != 0u;\n}"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathUtils.hlsli",
+      "sha256": "af8036b639ac21e18731645e50dbd7b38fbe95f2f7ad5ac058ae034216409d24",
+      "bytes": 30465,
+      "relative_path": "Assets/Shader/HLSL/PathUtils.hlsli",
+      "start_line": 776,
+      "end_line": 786,
+      "excerpt": "    ray.TMin      = PT_RAY_EPS;\n    ray.TMax      = maxLength - PT_RAY_EPS;\n\n#ifdef _LIGHT\n    // The sampled endpoint is excluded by TMax, but every earlier sphere\n    // (including a zero-flux or back-facing one) is an opaque blocker.\n    AnalyticSphereLightHit lightHit;\n    if (FindClosestAnalyticSphereLight(ray, lightHit))\n        return true; // A valid blocked connection, estimatedT remains zero.\n#endif\n"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathSampling.hlsli",
+      "sha256": "5da34870be5de0084670a3ad3401587d1802b14a39258e1526626a3e15c68d52",
+      "bytes": 28223,
+      "relative_path": "Assets/Shader/HLSL/PathSampling.hlsli",
+      "start_line": 420,
+      "end_line": 463,
+      "excerpt": "float SphereLightPDFAtHit(uint sphereIndex, float3 refP, float3 hitP, float3 normal, float3 wiWS)\n{\n    SphereLight light = g_Lights.spheres[sphereIndex];\n    float cosLight = saturate(dot(normal, -wiWS));\n    float3 toLight = hitP - refP;\n    float dist2 = dot(toLight, toLight);\n    // Match SampleOneLight's near-field rejection: no competing NEE density\n    // exists there, so the BSDF-hit branch must retain unit MIS weight.\n    if (!isfinite(dist2) || dist2 <= EPSILON_MIN || !isfinite(cosLight) || cosLight <= 0.0 || light.radius <= 0.0)\n        return 0.0;\n    uint sphereBase = g_Lights.numDirectionals + g_Lights.numSpots + g_Lights.numAreas + g_Lights.numDisks;\n    float selectionPdf = LightSelectionPMF(sphereBase + sphereIndex);\n    float pdfA = 1.0 / (4.0 * PI * light.radius * light.radius); // Same density as SampleSphereLight.\n    if (!isfinite(pdfA) || pdfA <= 0.0)\n        return 0.0;\n    return PdfAreaToSolidAngle(selectionPdf * pdfA, dist2, cosLight);\n}\n\nfloat3 EvaluateAnalyticSphereEmission(\n    AnalyticSphereLightHit hit, float3 refP, float3 hitP, float3 wiWS,\n    uint depth, float scatterPDF, uint wasDelta)\n{\n    if (dot(hit.normal, -wiWS) <= 0.0)\n        return 0.0;\n\n    SphereLight endpoint = g_Lights.spheres[hit.sphereIndex];\n    float3 result = 0.0;\n    [loop]\n    for (uint i = 0u; i < g_Lights.numSpheres; ++i)\n    {\n        SphereLight light = g_Lights.spheres[i];\n        // Exactly coincident LightComponents remain separate emission terms.\n        // Each has its own unchanged NEE selection PMF and complementary MIS\n        // weight; they share one opaque endpoint, not two path vertices.\n        if (light.posX != endpoint.posX || light.posY != endpoint.posY ||\n            light.posZ != endpoint.posZ || light.radius != endpoint.radius)\n            continue;\n        float pdfLight = SphereLightPDFAtHit(i, refP, hitP, hit.normal, wiWS);\n        float misWeight = depth == 0u ? 1.0 : CalculateMISWeight(scatterPDF, pdfLight, wasDelta);\n        result += SphereLightRadiance(light) * misWeight;\n    }\n    return result;\n}\n"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "61162d6e633262d91efd6891718e08bdb8d2007c92157d7da89b113b0626247e",
+      "bytes": 30214,
+      "relative_path": "Assets/Shader/HLSL/PathTracerLIB.hlsl",
+      "start_line": 117,
+      "end_line": 171,
+      "excerpt": "        // Preserve this candidate before alpha traversal advances ray.TMin.\n        // A null triangle behind the emitter must not skip the nearer sphere.\n        AnalyticSphereLightHit sphereHit;\n        bool hasSphereHit = FindClosestAnalyticSphereLight(ray, sphereHit);\n\n        [loop]\n        for (;;)\n        {\n            RayDesc surfaceRay = ray;\n            if (hasSphereHit)\n                surfaceRay.TMax = sphereHit.dist;\n            if (surfaceRay.TMin > surfaceRay.TMax)\n            {\n                hp = (SurfaceData)0;\n                break;\n            }\n            SurfacePayload sp = (SurfacePayload)0;\n            TraceRay(g_Scene, RAY_FLAG_NONE, 0xFF, 0, 0, 0, surfaceRay, sp);\n\n            // An exact tie is one analytic endpoint; never add mesh emission\n            // as well. No distance tolerance may hide a genuinely nearer mesh.\n            if (sp.hitKind == 0u || (hasSphereHit && sphereHit.dist <= sp.dist))\n            {\n                hp = (SurfaceData)0;\n                break;\n            }\n            hitConeRadius = rayCone.radius + sp.dist * rayCone.tanHalfAngle;\n\n            hp = ResolvePathSurface(sp, ray.Direction, abs(hitConeRadius));\n\n            materialID = Instances[hp.instanceID].materialID;\n            StructuredBuffer< MaterialData > Materials = GetResource(g_Materials.index);\n            if (materialID != INVALID_INDEX && (Materials[materialID].materialFlags & MATERIAL_FLAG_MEDIUM_BOUNDARY) != 0u)\n            {\n                // Artificial enclosures have no surface texture/BSDF/alpha evaluation.\n                sm.materialFlags = Materials[materialID].materialFlags;\n                sm.layerCount = max(Materials[materialID].layerCount, 1u);\n                break;\n            }\n            sm = LoadSurfaceMaterial(materialID, hp.uv, hp.ddxUV, hp.ddyUV, hp.tangent.w);\n\n            bool isAlphaBlend = (sm.materialFlags & MATERIAL_FLAG_ALPHA_BLEND) != 0;\n            bool isNullBranch = isAlphaBlend && NextFloat(alphaRng) >= sm.opacity;\n\n            if (!isNullBranch)\n            {\n                OrientOpaqueSurfaceNormalForPath(hp, sm, -ray.Direction);\n                break;\n            }\n\n            // null intersection event: only ray segment range(min) updated for next trace\n            ray.TMin = hp.dist + PT_RAY_EPS;\n        }\n\n        bool isSphereEndpoint = hp.hitKind == 0u && hasSphereHit;"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "61162d6e633262d91efd6891718e08bdb8d2007c92157d7da89b113b0626247e",
+      "bytes": 30214,
+      "relative_path": "Assets/Shader/HLSL/PathTracerLIB.hlsl",
+      "start_line": 194,
+      "end_line": 205,
+      "excerpt": "\n        if (media.count != 0u)\n        {\n            float mediumSegmentLength = hp.hitKind != 0u ? hp.dist :\n                (isSphereEndpoint ? sphereHit.dist : ray.TMax);\n\n            uint mediumSeed = rng.seed ^ 0x4D454449u;\n            if (boundaryCrossings != 0u)\n                mediumSeed = PCGHash(mediumSeed ^ PCGHash(boundaryCrossings));\n            RngState mediumRng = InitRng(uint2(0, 0), mediumSeed, depth);\n\n            MediumInteractionSample mediumSample = (MediumInteractionSample)0;"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Shader\\HLSL\\PathTracerLIB.hlsl",
+      "sha256": "61162d6e633262d91efd6891718e08bdb8d2007c92157d7da89b113b0626247e",
+      "bytes": 30214,
+      "relative_path": "Assets/Shader/HLSL/PathTracerLIB.hlsl",
+      "start_line": 298,
+      "end_line": 317,
+      "excerpt": "        // Analytic geometry is provisional until the medium walk reaches it.\n        // A black/back-facing sphere still terminates the path and hides the sky.\n        if (isSphereEndpoint)\n        {\n            float3 lightPosition = ray.Origin + sphereHit.dist * ray.Direction;\n            float3 emittedContribution = beta * EvaluateAnalyticSphereEmission(\n                sphereHit, prevVertexPositionWS, lightPosition, ray.Direction,\n                depth, prevMarginalPDF, wasDelta);\n            if (IsPathFinite3(emittedContribution))\n            {\n                L += emittedContribution;\n#if PT_VALIDATION\n                AccumulatePathContribution(contribution, prevBSDFFlags, emittedContribution);\n#endif\n            }\n            break;\n        }\n\n        // \u2500\u2500 Case B: miss \u2014 the path escapes to the environment \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n        if (hp.hitKind == 0u)"
+    }
+  ],
+  "independent_review": {
+    "agent": "/root/publish_inventory",
+    "status": "NO_REMAINING_SOURCE_BLOCKER",
+    "scope": "Code/MIS/nearest endpoint/alpha/medium/shadow/bounds; not actual GPU validation.",
+    "repairs_during_review": [
+      "Matched tiny-radius area PDF to SampleSphereLight without EPSILON_MIN area clamp.",
+      "Matched NEE near-field dist^2<=EPSILON_MIN rejection support and saturated cosine."
+    ]
+  }
+}

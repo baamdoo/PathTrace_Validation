@@ -1,0 +1,631 @@
+{
+  "status": "COMPLETE_SPHERE_MIS_REPAIR_AND_SHOWCASE_VALIDATION",
+  "utc": "2026-10-09T08:31:08.319673+00:00",
+  "repair_status": "PASS_FOCUSED_PRODUCTION_GPU_TRANSPORT",
+  "new_engine_exr_count": 25,
+  "unchanged_guo_reference_exr_reused": 25,
+  "baseline_engine_exr_compared": 25,
+  "new_showcase_png_count": 31,
+  "additional_pbrt_control_png": 1,
+  "production_changes": "Four HLSL files plus rebuilt PathTracerLIB.cso; sampler selection PMF, area sampling and power heuristic retained. Scene/material/PLY/normal/raycone/application unchanged.",
+  "fixed_tracepath": {
+    "status": "PASS",
+    "api": "DXR",
+    "adapter": "NVIDIA GeForce RTX 4080",
+    "debug_layer": true,
+    "debug_errors": 0,
+    "cases": 31,
+    "paths": 2100992,
+    "checks": 6304019,
+    "failed_radiance_checks": 0,
+    "scope": "Production TracePath, TLAS, SampleLd, medium tracking. Analytic sphere visibility/MIS/opaque shadows; no image-stage acceptance."
+  },
+  "fixed_pdf": {
+    "status": "PASS",
+    "api": "DXR",
+    "valid_sampled_pdf_pairs": 10951,
+    "near_field_pdf": 0,
+    "near_field_emission": 1,
+    "checks": 21970,
+    "debug_errors": 0,
+    "scope": "Production SampleOneLight vs SphereLightPDFAtHit, plus near-field BSDF emission"
+  },
+  "rows": [
+    {
+      "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
+      "hero": false,
+      "analysis": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\analysis_sphere_fixed\\analysis_receipt.json",
+        "sha256": "cb30a16dfa0b5d0be03d3633c05373efd93d1dbb8cfa4977c1ddbdc0bff818f7"
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\analysis_sphere_fixed\\summary.json",
+        "sha256": "ce81205f804233ae8bd62037dcc59bdd9a04f446ff7ea466ca13efbf0fd0b73d"
+      },
+      "ssim_screen": {
+        "value": 0.9992480684959983,
+        "threshold": 0.99,
+        "status": "PASSED",
+        "scope": "Existing default unblurred SSIM screen on separate four-run means at128SPP; not radiance equivalence or stage acceptance."
+      },
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "before_after": {
+        "spp": 128,
+        "pixel_arrays_identical": false,
+        "max_abs_rgb_change": 3.46415913105011,
+        "regions": {
+          "global": {
+            "before_mean_y": 0.03521868431607524,
+            "after_mean_y": 0.036292545114766046,
+            "paired_run_differences_y": [
+              0.0010764830023979738,
+              0.0010718988137746119,
+              0.001067208946279631,
+              0.0010798524323109918
+            ],
+            "mean_change_y": 0.0010738607986908021,
+            "before_vs_guo_percent": -2.5082308591517686,
+            "after_vs_guo_percent": 0.46441252910747965,
+            "paired_difference_t95": [
+              0.0010651031833455807,
+              0.0010826184140360236
+            ],
+            "after_over_before_variance_y": 1.006224474967924,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0032609197890336,
+              1.0089952841087904
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "top_left": {
+            "before_mean_y": 0.04200901119141835,
+            "after_mean_y": 0.04364443739984893,
+            "paired_run_differences_y": [
+              0.001630302549083737,
+              0.0016381724872631884,
+              0.0016214756055586213,
+              0.0016517541918167691
+            ],
+            "mean_change_y": 0.001635426208430579,
+            "before_vs_guo_percent": -3.7724583525261934,
+            "after_vs_guo_percent": -0.026284874030412613,
+            "paired_difference_t95": [
+              0.0016149862405357726,
+              0.0016558661763253853
+            ],
+            "after_over_before_variance_y": 1.013023461355435,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              0.9887359060323335,
+              1.0761955130061445
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "top_right": {
+            "before_mean_y": 0.046712729110449665,
+            "after_mean_y": 0.04725335679617128,
+            "paired_run_differences_y": [
+              0.0005372583906558398,
+              0.0005384001823687812,
+              0.0005499837076269262,
+              0.0005368684622348852
+            ],
+            "mean_change_y": 0.0005406276857216081,
+            "before_vs_guo_percent": 0.759018468465354,
+            "after_vs_guo_percent": 1.9251484721606862,
+            "paired_difference_t95": [
+              0.0005306489348337384,
+              0.0005506064366094778
+            ],
+            "after_over_before_variance_y": 1.0113162859316638,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0086658177828949,
+              1.0173181794923853
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "bottom_left": {
+            "before_mean_y": 0.019985677760206925,
+            "after_mean_y": 0.02063072703051529,
+            "paired_run_differences_y": [
+              0.0006284305281663814,
+              0.0006521854876419785,
+              0.0006405543572339523,
+              0.0006590267081911551
+            ],
+            "mean_change_y": 0.0006450492703083668,
+            "before_vs_guo_percent": -1.8079728005937583,
+            "after_vs_guo_percent": 1.3612314793425684,
+            "paired_difference_t95": [
+              0.0006236478374585477,
+              0.0006664507031581859
+            ],
+            "after_over_before_variance_y": 1.0044888984272837,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0034129758247545,
+              1.0056570447156543
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "bottom_right": {
+            "before_mean_y": 0.03216731920222302,
+            "after_mean_y": 0.03364165923252513,
+            "paired_run_differences_y": [
+              0.001509940541685753,
+              0.001458837097823469,
+              0.001456822114699205,
+              0.0014717603669999954
+            ],
+            "mean_change_y": 0.0014743400303021056,
+            "before_vs_guo_percent": -5.746979554856249,
+            "after_vs_guo_percent": -1.4270360698065252,
+            "paired_difference_t95": [
+              0.0014351335774346163,
+              0.001513546483169595
+            ],
+            "after_over_before_variance_y": 1.0054834009147395,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.004446717667741,
+              1.0083650133922708
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "foreground": {
+            "before_mean_y": 0.1204886808523167,
+            "after_mean_y": 0.12959958810216402,
+            "paired_run_differences_y": [
+              0.009159583380821318,
+              0.00907389657455554,
+              0.009021059705875245,
+              0.009189089338137113
+            ],
+            "mean_change_y": 0.009110907249847304,
+            "before_vs_guo_percent": -7.179745076664567,
+            "after_vs_guo_percent": -0.16102159549175415,
+            "paired_difference_t95": [
+              0.008987911512472194,
+              0.009233902987222414
+            ],
+            "after_over_before_variance_y": 1.0068770633943656,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0035533446265503,
+              1.0097874830010636
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "killeroo_red_n4": {
+            "before_mean_y": 0.12155545444463725,
+            "after_mean_y": 0.12954703488355046,
+            "paired_run_differences_y": [
+              0.00812553641761235,
+              0.007936799381667456,
+              0.007915791991255625,
+              0.007988193965117393
+            ],
+            "mean_change_y": 0.007991580438913206,
+            "before_vs_guo_percent": -7.080885213265762,
+            "after_vs_guo_percent": -0.9719813921788831,
+            "paired_difference_t95": [
+              0.007841463269766707,
+              0.008141697608059705
+            ],
+            "after_over_before_variance_y": 1.0066625418128998,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.005323442347609,
+              1.010373775905165
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "killeroo_green_n4": {
+            "before_mean_y": 0.11922357035577372,
+            "after_mean_y": 0.12966191213134265,
+            "paired_run_differences_y": [
+              0.010385882641030103,
+              0.010422405390923803,
+              0.010331821237021463,
+              0.010613257833300402
+            ],
+            "mean_change_y": 0.010438341775568943,
+            "before_vs_guo_percent": -7.2989976893895,
+            "after_vs_guo_percent": 0.8172224688260261,
+            "paired_difference_t95": [
+              0.010243569775032322,
+              0.010633113776105563
+            ],
+            "after_over_before_variance_y": 1.007189274366727,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0009003852110734,
+              1.0203925867367065
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          }
+        }
+      },
+      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN",
+      "radiance": "OPEN"
+    },
+    {
+      "scene": "gallery_nlayer_shaderball_n3",
+      "hero": false,
+      "analysis": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_shaderball_n3\\analysis_sphere_fixed\\analysis_receipt.json",
+        "sha256": "1385f4a0718071eb2a10f16c916ba58546b114001b63189fcc7a121afa5949da"
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_shaderball_n3\\analysis_sphere_fixed\\summary.json",
+        "sha256": "506b62e7163a5b58689d8af5cd1e6891c67b938943a32fa08a95295bcec53799"
+      },
+      "ssim_screen": {
+        "value": 0.9975725923422857,
+        "threshold": 0.99,
+        "status": "PASSED",
+        "scope": "Existing default unblurred SSIM screen on separate four-run means at128SPP; not radiance equivalence or stage acceptance."
+      },
+      "variance_status": "PASS_VARIANCE_DECREASE_ONLY",
+      "before_after": {
+        "spp": 128,
+        "pixel_arrays_identical": true,
+        "max_abs_rgb_change": 0.0,
+        "regions": {
+          "global": {
+            "before_mean_y": 0.1150675529377328,
+            "after_mean_y": 0.1150675529377328,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.3873508923535114,
+            "after_vs_guo_percent": 0.3873508923535114,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "top_left": {
+            "before_mean_y": 0.22479680817226938,
+            "after_mean_y": 0.22479680817226938,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.24737466156342322,
+            "after_vs_guo_percent": 0.24737466156342322,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "top_right": {
+            "before_mean_y": 0.07259546501121747,
+            "after_mean_y": 0.07259546501121747,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.5851258841808891,
+            "after_vs_guo_percent": 0.5851258841808891,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "bottom_left": {
+            "before_mean_y": 0.07295856180947216,
+            "after_mean_y": 0.07295856180947216,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.49547247972322994,
+            "after_vs_guo_percent": 0.49547247972322994,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "bottom_right": {
+            "before_mean_y": 0.08991937675797182,
+            "after_mean_y": 0.08991937675797182,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.4908935824258502,
+            "after_vs_guo_percent": 0.4908935824258502,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "foreground": {
+            "before_mean_y": 0.16927157598211506,
+            "after_mean_y": 0.16927157598211506,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.3846107354767489,
+            "after_vs_guo_percent": 0.3846107354767489,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "shaderball_base": {
+            "before_mean_y": 0.18889291690651389,
+            "after_mean_y": 0.18889291690651389,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.2999381285087444,
+            "after_vs_guo_percent": 0.2999381285087444,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          },
+          "shaderball_material_surface": {
+            "before_mean_y": 0.16957118372873575,
+            "after_mean_y": 0.16957118372873575,
+            "paired_run_differences_y": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_change_y": 0.0,
+            "before_vs_guo_percent": 0.38659410877970196,
+            "after_vs_guo_percent": 0.38659410877970196,
+            "paired_difference_t95": [
+              0.0,
+              0.0
+            ],
+            "after_over_before_variance_y": 1.0,
+            "paired_variance_ratio_bootstrap95_conditional": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_valid_fraction": 0.98475
+          }
+        }
+      },
+      "source_contract_status": "MATCHED_WITH_DISCLOSED_MODEL_FILTER_LIMITS",
+      "radiance": "OPEN"
+    },
+    {
+      "scene": "gallery_nlayer_killeroo_n4_alpha01_bright10x",
+      "hero": true,
+      "analysis": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\analysis_sphere_fixed_hero1024\\analysis_receipt.json",
+        "sha256": "26403652aa92c658e8851999cddc2769c9fcdf02abd50262c59576835e8eba73"
+      },
+      "summary": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage1\\gallery_nlayer_killeroo_n4_alpha01_bright10x\\analysis_sphere_fixed_hero1024\\summary.json",
+        "sha256": "4abec117580bdec081ee8cabd1dcfca077590de5a8adca6ef8a0dd894031e19e"
+      },
+      "ssim_screen": {
+        "value": 0.9994228811616189,
+        "threshold": 0.99,
+        "status": "PASSED",
+        "scope": "Single1024SPP informational screen; not a replacement for four-run variance/uncertainty."
+      },
+      "variance_status": "NOT_APPLICABLE_SINGLE_SEED",
+      "before_after": {
+        "spp": 1024,
+        "pixel_arrays_identical": false,
+        "max_abs_rgb_change": 2.430511713027954,
+        "regions": {
+          "global": {
+            "before_mean_y": 0.03521931222119255,
+            "after_mean_y": 0.036292988150517305,
+            "paired_run_differences_y": [
+              0.0010736759293247522
+            ],
+            "mean_change_y": 0.0010736759293247522,
+            "before_vs_guo_percent": -2.616903197276093,
+            "after_vs_guo_percent": 0.3518625271514036
+          },
+          "top_left": {
+            "before_mean_y": 0.04201335330161508,
+            "after_mean_y": 0.043631622876747635,
+            "paired_run_differences_y": [
+              0.0016182695751325513
+            ],
+            "mean_change_y": 0.0016182695751325513,
+            "before_vs_guo_percent": -3.329073185067102,
+            "after_vs_guo_percent": 0.3944958083761694
+          },
+          "top_right": {
+            "before_mean_y": 0.0467225260549287,
+            "after_mean_y": 0.0472736643048662,
+            "paired_run_differences_y": [
+              0.0005511382499375009
+            ],
+            "mean_change_y": 0.0005511382499375009,
+            "before_vs_guo_percent": 0.8617480195477022,
+            "after_vs_guo_percent": 2.0515117584298537
+          },
+          "bottom_left": {
+            "before_mean_y": 0.02013680086377336,
+            "after_mean_y": 0.02079308535497045,
+            "paired_run_differences_y": [
+              0.00065628449119709
+            ],
+            "mean_change_y": 0.00065628449119709,
+            "before_vs_guo_percent": -1.8591587380813812,
+            "after_vs_guo_percent": 1.339378731150134
+          },
+          "bottom_right": {
+            "before_mean_y": 0.032004568664453045,
+            "after_mean_y": 0.03347358006548491,
+            "paired_run_differences_y": [
+              0.0014690114010318667
+            ],
+            "mean_change_y": 0.0014690114010318667,
+            "before_vs_guo_percent": -6.85829959184029,
+            "after_vs_guo_percent": -2.5830905975990475
+          },
+          "foreground": {
+            "before_mean_y": 0.12053102415697411,
+            "after_mean_y": 0.12965988995689456,
+            "paired_run_differences_y": [
+              0.00912886579992045
+            ],
+            "mean_change_y": 0.00912886579992045,
+            "before_vs_guo_percent": -7.783978781844563,
+            "after_vs_guo_percent": -0.7996551341271115
+          },
+          "killeroo_red_n4": {
+            "before_mean_y": 0.12110709993631415,
+            "after_mean_y": 0.12911583311946753,
+            "paired_run_differences_y": [
+              0.008008733183153385
+            ],
+            "mean_change_y": 0.008008733183153385,
+            "before_vs_guo_percent": -8.438621427409823,
+            "after_vs_guo_percent": -2.383727443034146
+          },
+          "killeroo_green_n4": {
+            "before_mean_y": 0.11984784309541321,
+            "after_mean_y": 0.13030509904408913,
+            "paired_run_differences_y": [
+              0.010457255948675914
+            ],
+            "mean_change_y": 0.010457255948675914,
+            "before_vs_guo_percent": -6.987028785583177,
+            "after_vs_guo_percent": 1.1287655534240582
+          }
+        }
+      },
+      "source_contract_status": "SPHERE_FIXED_NORMAL_AND_MODEL_DIFFERENCES_REMAIN",
+      "radiance": "OPEN"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\baseline_archive.json",
+      "sha256": "07e25bad91b0c13c862c495dc38e90dfd30519cae64246689e60919ec43346f4"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\fixed_inputs.json",
+      "sha256": "7cfcdff5ccf4b6a0169d8996a1951a8628d3f9bee959e35b5ab9043caf73f76b"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\production_build_v2\\receipt.json",
+      "sha256": "26b19d3222c98b77ae6cd79b6db79c64ae0d8e374ca6d7332b18ba75c3cea214"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\source_policy_audit.json",
+      "sha256": "260782746fb8d92e07328553a85ccca5c74a4a1fde1868c7a7dfb68bbd378559"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\source_and_analysis_review.json",
+      "sha256": "997a333f05466d7898dc1199424b911a579c2e9d5270172a3a8b9c4b58e57e01"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\analyzer_provenance_delta_review.json",
+      "sha256": "9bbb270064b2b2ac824ad8a229386ebdc07cee6e09313c6b6d4466d74f76f421"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\focused_test_receipt.json",
+      "sha256": "376cba838ecaae218d09c01eeefbbbde78628e4af231668f8082231e3f95d413"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\gpu_independent_review.json",
+      "sha256": "8173acadcd7a0e618cb9de79443fce89c0637599fb9bc62327c5afe0edeeb7a8"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\outputs_independent_review.json",
+      "sha256": "e0998ae8d67446ebfe232aed5836a059b9f9317fcc28c90d0fe4237de6c9ff4e"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\pbrt_control\\completion_receipt.json",
+      "sha256": "a2443e4d3d1167f56421701ab867f4204da711fb579a70bb1edc31ad13866e80"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\pbrt_control\\supplement_receipt_v2.json",
+      "sha256": "1de50e2ce9fa1312e8b857f6e0992290e1e75fcc52cfee31d5b74698a6908cf2"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\pbrt_control\\independent_review.json",
+      "sha256": "758f623bd7b407fbb6dbe29fd2f46187af13ef3daeba8a8f0c97563c84012794"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\analytic_sphere_mis_fix\\timings.json",
+      "sha256": "23a9ec2dbfa6ad554bc667110a985d24cf0cfe285008216a40478973d88201c7"
+    }
+  ],
+  "user_visual_review": "PENDING_NEW_IMAGES",
+  "stage_pass": false,
+  "next_stage": "Wait for user visual review of newly published fix comparisons before heterogeneous-medium stage 2.",
+  "limits": [
+    "N4 raw vertex-normal interpolation/orientation, layered BSDF model and environment filtering differences remain; source repair is not a claim of exact renderer equivalence.",
+    "N3 no-sphere regression and same-seed N4 changes are reported separately.",
+    "Single-seed hero is not another independent cohort and has no variance/CI claim.",
+    "Timing is observational; historical baseline/reference runs were not isolated. Stage-4 matched medium/control performance remains separate.",
+    "Analytic finite emitters other than spheres are outside this repair scope."
+  ]
+}

@@ -6,7 +6,20 @@
 
 Guo의 독립 seed·film·카메라를 검증한 비교를 아래 N-layered 목록에 추가했습니다. 사용자의 후속 요청에 따라 기존 Shaderball N3와 Killeroo N4 대표 씬을 추가 검증합니다.
 
-## 추가 요청: Shaderball · Killeroo
+## 최신: 구형 광원 MIS 누락 수정
+
+광원 선택 후보가 빠진 문제가 아니라 BSDF/phase 광선의 구형 발광체 도달 기여가 빠진 문제였습니다. PBRT와 Guo 모두 이 보완 항을 포함합니다. 기존 PMF·power heuristic 정책은 유지하고 도달·차폐·매질 endpoint를 복구했습니다. [소스 비교와 수정 범위](sphere-fix-source_policy_audit.md).
+
+| Scene / 이미지 종류 | 분산 수렴 | 사용자 육안 확인 |
+|---|---|---|
+| [gallery_nlayer_killeroo_n4_alpha01_bright10x (수정 전후 반복 검증)](sphere-mis-fixed-regression/gallery_nlayer_killeroo_n4_alpha01_bright10x/README.md) | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_nlayer_shaderball_n3 (수정 전후 반복 검증)](sphere-mis-fixed-regression/gallery_nlayer_shaderball_n3/README.md) | PASS_VARIANCE_DECREASE_ONLY | 대기 |
+| [gallery_nlayer_killeroo_n4_alpha01_bright10x (1024 SPP 대표)](sphere-mis-fixed-hero/gallery_nlayer_killeroo_n4_alpha01_bright10x/README.md) | NOT_APPLICABLE_SINGLE_SEED | 대기 |
+| [lambertian_sphere_scalar (PBRT 해석해 대조)](sphere-mis-pbrt-control/lambertian_sphere_scalar/README.md) | OBSERVED_DECREASE_FOUR_SEEDS | 대기 |
+
+Killeroo의 vertex normal/BSDF/filter 차이와 남은 radiance 잔차는 각 비교에 공개합니다. 수정 전 baseline과 이전 사용자 승인 범위는 유지합니다. [실행 시간 기록](sphere-fix-timings.md).
+
+## 수정 전 baseline: Shaderball · Killeroo
 
 | Scene / 이미지 종류 | 밝기·씬 매칭 판정 | 분산 수렴 | 사용자 육안 확인 |
 |---|---|---|---|
