@@ -1,3 +1,17 @@
+# 실제 대표 이미지와 Stage4 측정 결과
+
+총404 PNG/63 entries. 기존402 PNG는 그대로 보존하고, 신규 공개자료는 성능 비교그래프2장과 측정 결과입니다. 전체 내부 증거는 로컬에 보관합니다.
+
+[실제 연기/clear 대표 이미지](stage3-showcase/color_dense_v1/README.md) · [Stage4 측정 결과](stage4/performance_v1/README.md)
+
+![실제 대표 이미지](stage3-showcase/color_dense_v1/smoke_pair.png)
+
+Stage4 관측비교 완료: engine 매질추가 비율 hero7.2022x/bare15.5634x,PBRT1.1721x/1.2940x. 성능 개선 과제이며 정상overhead PASS는 아닙니다. 정확SHA 승인333/Stage2 waived38/superseded 미승인24는 유지하고 새대표7/새진단2의 별도승인을 주장하지 않습니다.
+
+Stage2 최신11씬 PASS_SCOPED는 [최종보고서](stage3-stage2-final-report.md)를 참조하세요. 아래 Stage2 실패/미결정 행은 수정 전 보존 기록이고 Stage1 OPEN 기본값은 기존 보고서를 안내합니다.
+
+## 기존 공개 기록
+
 # 최신 실제 대표 이미지
 
 총402 PNG/62 entries. 기존395 PNG bytes 보존; 정확SHA 승인333, Stage2 waived38, superseded 미승인24, 요청에 따른 새 대표7(별도 승인 주장 없음).

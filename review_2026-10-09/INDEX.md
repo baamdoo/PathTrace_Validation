@@ -1,20 +1,19 @@
-# 최신 실제 대표 이미지
+# 실제 대표 이미지와 Stage4 측정 결과
 
-총402 PNG/62 entries. 기존395 PNG bytes 보존; 정확SHA 승인333, Stage2 waived38, superseded 미승인24, 요청에 따른 새 대표7(별도 승인 주장 없음).
+총404 PNG/63 entries. 기존402 PNG는 그대로 보존하고, 신규 공개자료는 성능 비교그래프2장과 측정 결과입니다. 전체 내부 증거는 로컬에 보관합니다.
 
-[채도·연기량 변경 대표 비교](stage3-showcase/color_dense_v1/README.md)
+[실제 연기/clear 대표 이미지](stage3-showcase/color_dense_v1/README.md) · [Stage4 측정 결과](stage4/performance_v1/README.md)
 
-![Dense smoke engine/PBRT](stage3-showcase/color_dense_v1/smoke_pair.png)
+![실제 대표 이미지](stage3-showcase/color_dense_v1/smoke_pair.png)
 
-기존 Stage3 수치·육안 승인과 새 대표 이미지 구성은 구분합니다. 사용자의 최신 지시는 새 대표 렌더를 마친 뒤Stage4로 진행하는 것입니다. Stage4 성능 판정은 여기서 만들지 않습니다.
+Stage4 관측비교 완료: engine 매질추가 비율 hero7.2022x/bare15.5634x,PBRT1.1721x/1.2940x. 성능 개선 과제이며 정상overhead PASS는 아닙니다. 정확SHA 승인333/Stage2 waived38/superseded 미승인24는 유지하고 새대표7/새진단2의 별도승인을 주장하지 않습니다.
 
-[기존24 승인 원문/정확SHA](stage3-user-visual-acceptance.json) · [Stage3 기존 정식 결과](stage3-result-report.md) · [Stage2 최신 준비11씬 PASS_SCOPED](stage3-stage2-final-report.md)
+Stage2 최신11씬 PASS_SCOPED는 [최종보고서](stage3-stage2-final-report.md)를 참조하세요. 아래 Stage2 실패/미결정 행은 수정 전 보존 기록이고 Stage1 OPEN 기본값은 기존 보고서를 안내합니다.
 
-아래 Stage2 실패/미결정 행은 수정 전 보존 기록입니다. 과거 Stage1 OPEN 기본 표기는 기존 보고서 참조로 안내하며 실제 원값은 manifest에 보존합니다.
-
-| Category / scene | PNG | Radiance | Variance | 사용자 육안 |
+| Category / scene | PNG | Radiance / scope | Variance | 사용자 육안 |
 |---|---:|---|---|---|
-| [stage3-showcase / color_dense_v1](stage3-showcase/color_dense_v1/README.md) | 7 | REPRESENTATIVE_RENDER_ONLY_NO_NEW_NUMERICAL_GATE | N/A_SINGLE_SEED | 별도 승인 주장 없음 · 진행 허용 |
+| [stage3-showcase / color_dense_v1](stage3-showcase/color_dense_v1/README.md) | 7 | REPRESENTATIVE_RENDER_ONLY_NO_NEW_NUMERICAL_GATE | N/A_SINGLE_SEED | 별도승인 주장 없음 · 진행허용 |
+| [stage4 / performance_v1](stage4/performance_v1/README.md) | 2 | NOT_A_NEW_RADIANCE_GATE | DESCRIPTIVE_FOUR_SEED_ESTIMATES | 진단 · 새승인 주장 없음 |
 | [stage3-representative / glass_smoke_lighting_v3](stage3-representative/glass_smoke_lighting_v3/README.md) | 24 | {"smoke": "PASS_SCOPED", "clear": "PASS_SCOPED"} | {'smoke': 'PASS_SCOPED', 'clear': 'PASS_SCOPED'} | 승인 · 정확한 SHA |
 | [feature-regressions / cornell_box](feature-regressions/cornell_box/README.md) | 11 | 기존 보고서 참조 | See report | 승인 · 정확한 SHA |
 | [historical-pbrt-gallery / gallery_breakfast_room](historical-pbrt-gallery/gallery_breakfast_room/README.md) | 8 | 기존 보고서 참조 | See report | 승인 · 정확한 SHA |

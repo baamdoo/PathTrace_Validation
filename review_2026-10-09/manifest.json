@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-09T13:46:29.971687+00:00",
-  "status": "SHOWCASE_REFRESH_COMPLETE_PROCEED_AUTHORIZED",
+  "generated_utc": "2026-10-09T15:34:59.908747+00:00",
+  "status": "STAGE4_OBSERVED_RESULTS_COMPLETE_PERFORMANCE_FINDING_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
   "previous_visual_acceptance": {
@@ -8,7 +8,7 @@
     "images": 277,
     "sha256": "f08ec4ca5e575009c8433dbd6e35e5e3c9c4ab176983cb4f2841f736679f0800"
   },
-  "images": 402,
+  "images": 404,
   "rows": [
     {
       "category": "stage3-showcase",
@@ -117,6 +117,43 @@
           "caption": "clear / pbrt, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
           "role": "primary_actual_RGB_native512"
         }
+      ]
+    },
+    {
+      "category": "stage4",
+      "scene": "performance_v1",
+      "reference": "PBRT CPU8threads; own matched medium/clear timings.",
+      "radiance_status": "NOT_A_NEW_RADIANCE_GATE",
+      "variance_status": "DESCRIPTIVE_FOUR_SEED_ESTIMATES",
+      "stage_pass": false,
+      "normal_overhead_pass": false,
+      "timing_status": "COMPLETE_OBSERVED_MATCHED_SCOPE",
+      "performance_finding": "LARGER_ENGINE_MEDIUM_OVERHEAD_OPTIMIZATION_OPPORTUNITY",
+      "visual_approved": false,
+      "visual_approved_images": 0,
+      "visual_review_status": "DIAGNOSTIC_NO_USER_APPROVAL_CLAIM",
+      "visual_approval_scope": "Chart artifactQA only; no new user approval inferred.",
+      "note": "80 normal EXRs/64 timed; hero ratio7.2022x/1.1721x;bare15.5634x/1.2940x. Observed performance weakness; no normal-overhead PASS.",
+      "images": [
+        {
+          "file": "render_loop_times.png",
+          "sha256": "d0b2b3df5479eb8c329e61a5b23d45cfd57d55050162276560ebb89428dc32d9",
+          "bytes": 130002,
+          "caption": "Renderer-local clear/medium times; all8 measured points, median and range. Log seconds; timer scopes differ.",
+          "role": "diagnostic_timing_plot"
+        },
+        {
+          "file": "matched_slowdown_ratios.png",
+          "sha256": "bd200dce3afd89e734e19e514cd098a26f0e8521e45321262588881aca610119",
+          "bytes": 121425,
+          "caption": "Matched same-seed ratios in two order blocks;8 points per workload/renderer, median and range; independent subplot axis scales, no confidence interval.",
+          "role": "diagnostic_timing_plot"
+        }
+      ],
+      "public_documents": [
+        "README.md",
+        "summary.json",
+        "verification_summary.json"
       ]
     },
     {
@@ -3885,7 +3922,8 @@
       "separate_reapproval_gate": false
     },
     "new_showcase_unreviewed_images": 7,
-    "showcase_separate_reapproval_gate": false
+    "showcase_separate_reapproval_gate": false,
+    "stage4_unapproved_diagnostic_images": 2
   },
   "stage2_input": {
     "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage2\\publication_input_v2.json",
@@ -4302,5 +4340,10 @@
     "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_stage3.json",
     "sha256": "088c3383a7f98c52ea512118005b513cce5e5670fb765ae53533c54f7dc5301d",
     "bytes": 8691
+  },
+  "stage4_public_results": {
+    "summary": "stage4/performance_v1/summary.json",
+    "verification": "stage4/performance_v1/verification_summary.json",
+    "internal_evidence": "Retained locally; not included in new public additions."
   }
 }
