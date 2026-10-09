@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_SHOWCASE_BUNDLE_CREATED_NO_EXTERNAL_WRITE",
+  "generator": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\append_stage3_showcase_publication.py",
+    "sha256": "f5dc04a56f27367b5dda58846a5172593b781945cfe25279a9525da0c7d463f1",
+    "bytes": 8030
+  },
+  "manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\pub_s3_showcase_v1\\manifest.json",
+    "sha256": "9cdf0781fd235f76fa09aeb62f2d17d454f828c9523641d4cb4a13d0340896fb",
+    "bytes": 231550
+  },
+  "base_manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\pub_s3_approved_v1\\manifest.json",
+    "sha256": "b14796f2c21e331c8265aff8ade07ac636b89470c54f2950b9774d9559deeef8",
+    "bytes": 224790
+  },
+  "receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\receipt.json",
+    "sha256": "613bc5b399a41b5a6bf775c213ae6c6b53f660272c1fe610c07d704dfb65dda6",
+    "bytes": 12342
+  },
+  "artifact_qa": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\artifact_qa.json",
+    "sha256": "499aa733404b60a7d9b0815bac46880efb36332a85136c6dbffb5f5413af4072",
+    "bytes": 6138
+  },
+  "preserved_pngs": 395,
+  "new_pngs": 7,
+  "approved_exact": 333,
+  "new_images_approved": false,
+  "separate_reapproval_gate": false,
+  "stage_pass": false,
+  "external_writes": false
+}

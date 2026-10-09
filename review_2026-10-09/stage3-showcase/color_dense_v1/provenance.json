@@ -1,0 +1,109 @@
+{
+  "category": "stage3-showcase",
+  "scene": "color_dense_v1",
+  "reference": "PBRT v4 CPU volpath, wavelength jitter enabled, matched new authored showcase sources.",
+  "radiance_status": "REPRESENTATIVE_RENDER_ONLY_NO_NEW_NUMERICAL_GATE",
+  "variance_status": "N/A_SINGLE_SEED",
+  "stage_pass": false,
+  "visual_approved": false,
+  "visual_approved_images": 0,
+  "visual_review_status": "NOT_SEPARATELY_REVIEWED_PROCEED_AUTHORIZED",
+  "visual_approval_scope": "Original24 exact PNGs were approved. These new7 bytes were requested separately; no separate approval stop was requested, but no new approval is inferred.",
+  "note": "채도를 높인 주변 배경과8배 짙은 smoke(밀도 배율1.44), 동일 glass clear 대조. 512²/2048SPP/seed11/depth64 실제 렌더. 이전68EXR의 수치 통과를 새 scene에 옮기지 않는다.",
+  "source_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\receipt.json",
+    "sha256": "613bc5b399a41b5a6bf775c213ae6c6b53f660272c1fe610c07d704dfb65dda6",
+    "bytes": 12342
+  },
+  "artifact_qa": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\artifact_qa.json",
+    "sha256": "499aa733404b60a7d9b0815bac46880efb36332a85136c6dbffb5f5413af4072",
+    "bytes": 6138
+  },
+  "images": [
+    {
+      "file": "smoke_pair.png",
+      "sha256": "8a440f038ef976a3cbf2e43627ac20ea2bf71ca4d190c5917fefeab72329bb5c",
+      "bytes": 681304,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_pair.png",
+        "sha256": "8a440f038ef976a3cbf2e43627ac20ea2bf71ca4d190c5917fefeab72329bb5c",
+        "bytes": 681304
+      },
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "smoke_clear_quad.png",
+      "sha256": "f9a91336bdd84408fd2cf38f306ca8675a4e08edfd802c465ab255469ee413d3",
+      "bytes": 1254791,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_clear_quad.png",
+        "sha256": "f9a91336bdd84408fd2cf38f306ca8675a4e08edfd802c465ab255469ee413d3",
+        "bytes": 1254791
+      },
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "clear_pair.png",
+      "sha256": "b028c1994488ee2538361e83a59989caf467e71849b72263277ce2bc53360423",
+      "bytes": 585884,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_pair.png",
+        "sha256": "b028c1994488ee2538361e83a59989caf467e71849b72263277ce2bc53360423",
+        "bytes": 585884
+      },
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "file": "smoke_engine_RGB.png",
+      "sha256": "3028c2dd189f0ac72f0b8aff1e1ee5253fcc50fb5547aa538b970bf142d2b2c6",
+      "bytes": 304293,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_engine_RGB.png",
+        "sha256": "3028c2dd189f0ac72f0b8aff1e1ee5253fcc50fb5547aa538b970bf142d2b2c6",
+        "bytes": 304293
+      },
+      "caption": "smoke / engine, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "smoke_pbrt_RGB.png",
+      "sha256": "18f41885ee5d01ac68f9eb4afbcec329c6c0c27707e9ab53dc54263132fe21cb",
+      "bytes": 351011,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_pbrt_RGB.png",
+        "sha256": "18f41885ee5d01ac68f9eb4afbcec329c6c0c27707e9ab53dc54263132fe21cb",
+        "bytes": 351011
+      },
+      "caption": "smoke / pbrt, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "clear_engine_RGB.png",
+      "sha256": "9bcc611edc116da1401e8a8b2f7a8115d6506bc42be90bbf01b9dd29453dadbe",
+      "bytes": 249126,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_engine_RGB.png",
+        "sha256": "9bcc611edc116da1401e8a8b2f7a8115d6506bc42be90bbf01b9dd29453dadbe",
+        "bytes": 249126
+      },
+      "caption": "clear / engine, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "file": "clear_pbrt_RGB.png",
+      "sha256": "456232500ba2ba0d0bcbb2f4bc3f470567eded5a12931a12cce628d2985125ce",
+      "bytes": 308763,
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_pbrt_RGB.png",
+        "sha256": "456232500ba2ba0d0bcbb2f4bc3f470567eded5a12931a12cce628d2985125ce",
+        "bytes": 308763
+      },
+      "caption": "clear / pbrt, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    }
+  ]
+}

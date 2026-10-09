@@ -1,6 +1,6 @@
 # glass_smoke_lighting_v3
 
-**Radiance: {"smoke": "PASS_SCOPED", "clear": "PASS_SCOPED"} · Variance: {"smoke": "PASS_SCOPED", "clear": "PASS_SCOPED"} · 육안: 사용자 검토 대기**
+**Radiance: {"smoke": "PASS_SCOPED", "clear": "PASS_SCOPED"} · Variance: {"smoke": "PASS_SCOPED", "clear": "PASS_SCOPED"} · 육안: 승인 · 정확한 SHA**
 
 실제 유리구슬 내부 smoke와 동일 glass clear 대조. 68 EXR 정상완료; smoke/clear 평균·분산 감소·depth 기준 PASS_SCOPED. 독립 검산2456항목 일치. 사용자 육안 검토 PENDING, 전체 stage_pass=false.
 

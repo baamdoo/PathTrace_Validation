@@ -299,10 +299,10 @@
     "bytes": 16403
   },
   "stage_pass": false,
-  "visual_approved": false,
-  "visual_approved_images": 0,
-  "visual_review_status": "PENDING_USER_REVIEW",
-  "visual_approval_scope": "New actual Stage3 images require user review. Numerical outcomes are separate.",
+  "visual_approved": true,
+  "visual_approved_images": 24,
+  "visual_review_status": "APPROVED_EXACT_SHA",
+  "visual_approval_scope": "Explicit user approval covers these exact24 existing PNGs only; new colored/dense showcase bytes are excluded.",
   "source_summary": {
     "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\formal_v5\\analysis_cpu_v1\\summary.json",
     "sha256": "cb2cb6ab01486086f751e03c4b45ad15b7a4c9fc805f08b5de849cb830b3e1ea",
@@ -464,5 +464,9 @@
     "renderer_executed_by_context_preparation": false
   },
   "timing_scope": "Raw metadata scopes retained verbatim. These cumulative/checkpoint and whole-process records are not a Stage4 isolated slowdown comparison.",
-  "publication_scope": "Primary actual RGB first; uncertainty/noise/depth are supplementary. Original linear EXRs remain unchanged in source evidence."
+  "publication_scope": "Primary actual RGB first; uncertainty/noise/depth are supplementary. Original linear EXRs remain unchanged in source evidence.",
+  "visual_approval_source_commit": "f70db46668c17c798306fedc358c56ffe32c2c38",
+  "visual_approval_source_commits": [
+    "f70db46668c17c798306fedc358c56ffe32c2c38"
+  ]
 }

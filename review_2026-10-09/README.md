@@ -1,3 +1,29 @@
+# 최신 실제 대표 이미지
+
+총402 PNG/62 entries. 기존395 PNG bytes 보존; 정확SHA 승인333, Stage2 waived38, superseded 미승인24, 요청에 따른 새 대표7(별도 승인 주장 없음).
+
+[채도·연기량 변경 대표 비교](stage3-showcase/color_dense_v1/README.md)
+
+![Dense smoke engine/PBRT](stage3-showcase/color_dense_v1/smoke_pair.png)
+
+기존 Stage3 수치·육안 승인과 새 대표 이미지 구성은 구분합니다. 사용자의 최신 지시는 새 대표 렌더를 마친 뒤Stage4로 진행하는 것입니다. Stage4 성능 판정은 여기서 만들지 않습니다.
+
+[기존24 승인 원문/정확SHA](stage3-user-visual-acceptance.json) · [Stage3 기존 정식 결과](stage3-result-report.md) · [Stage2 최신 준비11씬 PASS_SCOPED](stage3-stage2-final-report.md)
+
+아래 Stage2 실패/미결정 행은 수정 전 보존 기록입니다. 과거 Stage1 OPEN 기본 표기는 기존 보고서 참조로 안내하며 실제 원값은 manifest에 보존합니다.
+
+## 이전 게시·승인 기록
+
+# Stage3 기존 이미지 육안 승인; 추가 대표 이미지 준비
+
+기존24 Stage3 PNG는 사용자에게 명시 승인받았습니다. 누적 정확SHA 승인333, Stage2 waived38, superseded 미승인24를 분리합니다. [승인 원문과 정확 목록](stage3-user-visual-acceptance.json).
+
+주변 배경 채도와 내부 연기량을 높인 별도 대표 이미지가 요청되었습니다. 기존68 EXR와 통계는 보존하며 새 이미지가 이미 승인되었다고 기록하지 않습니다. 사용자는 새 대표 이미지를 마친 뒤 별도 재승인 대기 없이 Stage4로 진행하도록 요청했습니다. 아직 이 base에는 새 대표 이미지가 없습니다.
+
+[현재 색인](INDEX.md)
+
+## 이전 게시 당시 기록
+
 # PathTracing 실제 대표 이미지 비교
 
 [새 실제 RGB 비교와 전체 상태](INDEX.md)

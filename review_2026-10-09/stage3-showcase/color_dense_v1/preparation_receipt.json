@@ -1,0 +1,91 @@
+{
+  "status": "PREPARED_AND_PBRT_FORMAT_CHECKED",
+  "assets": [
+    {
+      "scene": "gallery_medium_stage3_showcase_color_dense_v1_preview",
+      "kind": "preview",
+      "mode": "smoke",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview\\scene.baamboo",
+        "sha256": "b67a735f100f06e1fe8229252824f8d4df1b9c27ce004aa382bf42828c57e991",
+        "bytes": 2699
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview\\scene.pbrt",
+        "sha256": "b0d2aec5c11020f4be747120ad82b67fc15d6d573df1089c997a65fdd4b82b52",
+        "bytes": 3413
+      },
+      "contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview\\contract.json",
+        "sha256": "7d94b60590ada4a8780ad38d7b8852412d4f8fb9c3f315bcf7c518444701a4f8",
+        "bytes": 4480
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_showcase_color_dense_v1_preview_clear_control",
+      "kind": "preview",
+      "mode": "clear",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview_clear_control\\scene.baamboo",
+        "sha256": "01edf98af9407269a8de45fe1596963a2f0c6b2959c84731d0db02a3b69e711d",
+        "bytes": 2697
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview_clear_control\\scene.pbrt",
+        "sha256": "206da3f1406f33c62b670921c3924f1d624c3bc157d141c6d16aecdba51f67e3",
+        "bytes": 3397
+      },
+      "contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_preview_clear_control\\contract.json",
+        "sha256": "ee7cc6435784935f7a9eb7cc986e9e74027a2cdddc3244bce892caaec6c1126e",
+        "bytes": 4508
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_showcase_color_dense_v1_hero",
+      "kind": "hero",
+      "mode": "smoke",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero\\scene.baamboo",
+        "sha256": "a87c3dd193377d558ca42f1496844286f7a8811386f79eff593a790f50dd67f2",
+        "bytes": 2697
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero\\scene.pbrt",
+        "sha256": "9237da3dce13c72aee1aeacd938a725aedc0f8105c560fb71934a388489dceba",
+        "bytes": 3414
+      },
+      "contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero\\contract.json",
+        "sha256": "9550f184db2753b8e4313172e420d40be4bf5cc645b2859e1fb8d5b6d6fe2427",
+        "bytes": 4471
+      }
+    },
+    {
+      "scene": "gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control",
+      "kind": "hero",
+      "mode": "clear",
+      "engine_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\scene.baamboo",
+        "sha256": "fe0b1c30249a2b2cdaa8103efcc7a6099647d65b1a3fe7dd27debc20539d0e65",
+        "bytes": 2695
+      },
+      "reference_source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\scene.pbrt",
+        "sha256": "7f4a0ba545cc653a7ac85cb06df59e1e71c5fc62f7fefb28f7b10a7b457c5a04",
+        "bytes": 3398
+      },
+      "contract": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Assets\\Generated\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\contract.json",
+        "sha256": "7bbda2a87b82e6d361c7c989929cce54a2c4b931d25c8f18b60108768fa731de",
+        "bytes": 4499
+      }
+    }
+  ],
+  "inputs": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\inputs.json",
+    "sha256": "1610c81555d6360e3274dd4f1290d1274059e553f0fc88a2d5b1d93cee340d6d",
+    "bytes": 54479
+  },
+  "stage_pass": false
+}

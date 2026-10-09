@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_SHOWCASE_ONLY",
+  "artifact_qa": "PENDING_INDIVIDUAL_VIEW",
+  "generator": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\create_stage3_showcase_beauty.py",
+    "sha256": "c63ea26cd28510aef614aecc459f965068da020faa7205a89cc511ab4f9bb327",
+    "bytes": 6808
+  },
+  "evidence": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\hero_plan.json",
+      "sha256": "0d3986eac30f80c6f5ec33222ac9985421e190de3048c25c23a5c86dc00a8d54",
+      "bytes": 3767
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\hero_queue.json",
+      "sha256": "85ff3377e9a4bfb3551b64d6829a0d59a46d55f1606e0a9bc16fe822a8d3b6b2",
+      "bytes": 7921
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\inputs.json",
+      "sha256": "1610c81555d6360e3274dd4f1290d1274059e553f0fc88a2d5b1d93cee340d6d",
+      "bytes": 54479
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\run_stage3_matrix.py",
+      "sha256": "ed8a517597453b1d5d754af802caa1b7f5be9f3de11bf7c4f2871c6ba2ac60cf",
+      "bytes": 5811
+    }
+  ],
+  "preparation_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\preparation_receipt.json",
+    "sha256": "1de70b884305550d7da2e30e6c4978e31f1db57b74b8d49cbfed9fda300da1f3",
+    "bytes": 4449
+  },
+  "original_visual_acceptance": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_stage3.json",
+    "sha256": "088c3383a7f98c52ea512118005b513cce5e5670fb765ae53533c54f7dc5301d",
+    "bytes": 8691
+  },
+  "actual_EXR_count": 4,
+  "raw_images": [
+    {
+      "mode": "smoke",
+      "backend": "engine",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\engine\\seed_11\\spp_2048\\radiance.exr",
+        "sha256": "7cd5719940a44ffbcbe73d43aff13fb9c037def23471b5b1997fde7e93f1e1f5",
+        "bytes": 2999512
+      },
+      "batch": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\engine\\receipt.json",
+        "sha256": "f880826e709786da837aa024aad21c422b5fede1b8ab16c85b2b0c44d49ccd00",
+        "bytes": 3752
+      },
+      "child": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\engine\\seed_11\\spp_2048\\receipt.json",
+        "sha256": "16cbd04b97ee79c95147984eaaba52df91cac8f10329e93a770ab3f3df9943bc",
+        "bytes": 2948
+      },
+      "mean_rgb_descriptive_only": [
+        0.23197720082450957,
+        0.14532097655539644,
+        0.1336032757500405
+      ],
+      "resolution": [
+        512,
+        512
+      ],
+      "seed": 11,
+      "spp": 2048,
+      "max_depth": 64,
+      "process_seconds": 589.2670091999971
+    },
+    {
+      "mode": "smoke",
+      "backend": "pbrt",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\pbrt\\seed_11\\spp_2048\\radiance.exr",
+        "sha256": "3ae0fafe988e88343daffde147fc7df80a26db06983293d3d8806e5fb809c2bd",
+        "bytes": 3034037
+      },
+      "batch": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\pbrt\\receipt.json",
+        "sha256": "bf76a363f093e453f6a23dc45261f57d6461aabf79be83c6c1ba9f3e23aa1984",
+        "bytes": 2319
+      },
+      "child": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero\\pbrt\\seed_11\\spp_2048\\receipt.json",
+        "sha256": "b882eba14e8339ff0c29a08940afeb52bef48790639518fd563655862ffd5474",
+        "bytes": 1868
+      },
+      "mean_rgb_descriptive_only": [
+        0.23181700505165992,
+        0.1451324152270672,
+        0.13351501406704358
+      ],
+      "resolution": [
+        512,
+        512
+      ],
+      "seed": 11,
+      "spp": 2048,
+      "max_depth": 64,
+      "process_seconds": 424.6414342999997
+    },
+    {
+      "mode": "clear",
+      "backend": "engine",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\engine\\seed_11\\spp_2048\\radiance.exr",
+        "sha256": "1aecc5e6728ba6e1ea39b82b8749fce23e3f4ed20decd666809991335c910916",
+        "bytes": 2994813
+      },
+      "batch": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\engine\\receipt.json",
+        "sha256": "5fc16b7a1df1adbad02bc6881a34fad7d8e3003ba86e5764ade60a62fac90c10",
+        "bytes": 3837
+      },
+      "child": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\engine\\seed_11\\spp_2048\\receipt.json",
+        "sha256": "6487df15218c215939325efc24bd5a59df90e964580e7609c55b3f4145907109",
+        "bytes": 3030
+      },
+      "mean_rgb_descriptive_only": [
+        0.24109185802742417,
+        0.12745730522947696,
+        0.1133184688832678
+      ],
+      "resolution": [
+        512,
+        512
+      ],
+      "seed": 11,
+      "spp": 2048,
+      "max_depth": 64,
+      "process_seconds": 145.3434438999975
+    },
+    {
+      "mode": "clear",
+      "backend": "pbrt",
+      "source": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\pbrt\\seed_11\\spp_2048\\radiance.exr",
+        "sha256": "e44b426aa29aca78991f06ae251f2b57d245c9dfdbc07440ed1a2d4c87643dd0",
+        "bytes": 3030305
+      },
+      "batch": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\pbrt\\receipt.json",
+        "sha256": "4a478a8826b90259252aa06be0fab66f3dc7fb7b58fb42aaf9c9d44312cb460f",
+        "bytes": 2402
+      },
+      "child": {
+        "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\renders\\hero\\gallery_medium_stage3_showcase_color_dense_v1_hero_clear_control\\pbrt\\seed_11\\spp_2048\\receipt.json",
+        "sha256": "b5e6a752e76bbb510943115100c1ade54f3006b46ef64cf08885e0368f40ea1a",
+        "bytes": 1923
+      },
+      "mean_rgb_descriptive_only": [
+        0.2407683315364686,
+        0.12722971553804285,
+        0.11318003082864081
+      ],
+      "resolution": [
+        512,
+        512
+      ],
+      "seed": 11,
+      "spp": 2048,
+      "max_depth": 64,
+      "process_seconds": 362.8920539999963
+    }
+  ],
+  "figures": [
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_engine_RGB.png",
+      "sha256": "3028c2dd189f0ac72f0b8aff1e1ee5253fcc50fb5547aa538b970bf142d2b2c6",
+      "bytes": 304293,
+      "caption": "smoke / engine, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_pbrt_RGB.png",
+      "sha256": "18f41885ee5d01ac68f9eb4afbcec329c6c0c27707e9ab53dc54263132fe21cb",
+      "bytes": 351011,
+      "caption": "smoke / pbrt, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_engine_RGB.png",
+      "sha256": "9bcc611edc116da1401e8a8b2f7a8115d6506bc42be90bbf01b9dd29453dadbe",
+      "bytes": 249126,
+      "caption": "clear / engine, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_pbrt_RGB.png",
+      "sha256": "456232500ba2ba0d0bcbb2f4bc3f470567eded5a12931a12cce628d2985125ce",
+      "bytes": 308763,
+      "caption": "clear / pbrt, native512,2048SPP,seed11,depth64. Actual RGB at common exposure1/Reinhard/sRGB; single-seed showcase only.",
+      "role": "primary_actual_RGB_native512"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_pair.png",
+      "sha256": "8a440f038ef976a3cbf2e43627ac20ea2bf71ca4d190c5917fefeab72329bb5c",
+      "bytes": 681304,
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\clear_pair.png",
+      "sha256": "b028c1994488ee2538361e83a59989caf467e71849b72263277ce2bc53360423",
+      "bytes": 585884,
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    },
+    {
+      "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\stage3\\showcase_color_dense_v1\\beauty_comparison\\smoke_clear_quad.png",
+      "sha256": "f9a91336bdd84408fd2cf38f306ca8675a4e08edfd802c465ab255469ee413d3",
+      "bytes": 1254791,
+      "caption": "Actual engine/PBRT beauty comparison. Saturated background and density8x are new authored changes; original68-EXR formal gates are not rerun or transferred.",
+      "role": "primary_actual_RGB"
+    }
+  ],
+  "display": "Actual RGB, exposure1, Reinhard+sRGB, no denoising",
+  "numerical_status": "NOT_RERUN_DISPLAY_REVISION_ONLY",
+  "variance": "NOT_APPLICABLE_SINGLE_SEED",
+  "stage_pass": false,
+  "new_images_visually_approved": false,
+  "separate_reapproval_gate": false,
+  "proceed_to_stage4_after_showcase": true,
+  "scope": "User-requested aesthetic source revision. Prior formal68 EXRs and their numerical/visual acceptance remain immutable; new colors/density/depth do not inherit old numerical gate claims. Whole-process times are descriptive only, not Stage4 performance validation."
+}

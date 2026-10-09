@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_APPROVED_BASE_PREPARED_NO_EXTERNAL_WRITE",
+  "source": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\prepare_stage3_approved_base.py",
+    "sha256": "5ad3d53537e190e13ead13a9254cdffe886dec54f68243997cb7ec34c4a3605d",
+    "bytes": 5183
+  },
+  "original_manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle_stage3_v2\\manifest.json",
+    "sha256": "28f627261f72e5a074fd63e013e729c741421dbc9fd22cc1d0e8d56f5dbc1e15",
+    "bytes": 223289
+  },
+  "manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\pub_s3_approved_v1\\manifest.json",
+    "sha256": "b14796f2c21e331c8265aff8ade07ac636b89470c54f2950b9774d9559deeef8",
+    "bytes": 224790
+  },
+  "acceptance": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\user_visual_acceptance_stage3.json",
+    "sha256": "088c3383a7f98c52ea512118005b513cce5e5670fb765ae53533c54f7dc5301d",
+    "bytes": 8691
+  },
+  "preserved_pngs": 395,
+  "new_pngs": 0,
+  "exact_approved_images": 333,
+  "stage2_waived": 38,
+  "superseded_unapproved": 24,
+  "future_showcase_images_approved": false,
+  "original_source_unchanged": true,
+  "external_writes": false
+}

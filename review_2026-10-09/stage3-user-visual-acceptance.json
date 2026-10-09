@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "status": "USER_VISUAL_ACCEPTANCE_RECORDED_EXACT24",
+  "recorded_utc": "2026-10-09T13:17:34.479567+00:00",
+  "user_statement": "응. 육안은 통과했어. \n다만 대표 이미지인 만큼 주변 배경의 채도를 좀 올리고 유리 구체 안에 연기의 양을 많이 늘려서 clear 상태와 확연히 차이나도록 씬을 구성해서 렌더링해줘. 대표 이미지 렌더링만 마저하고 4단계로 넘어가자.",
+  "evidence_source": "Exact latest human user message relayed by parent /root in this active task, with explicit instruction to record the approval. Line break retained.",
+  "approved_commit": "f70db46668c17c798306fedc358c56ffe32c2c38",
+  "manifest": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_review_bundle_stage3_v2\\manifest.json",
+    "sha256": "28f627261f72e5a074fd63e013e729c741421dbc9fd22cc1d0e8d56f5dbc1e15",
+    "bytes": 223289
+  },
+  "publication_receipt": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_update_f70db46668c1.json",
+    "sha256": "0e87c476c22d6d6b4c3e544c5297f617854abfc568ba55c3201a610be7b91164",
+    "bytes": 250927
+  },
+  "git_blob_verification": {
+    "path": "D:\\JS\\Projects\\BaambooRenderer\\Output\\ValidationRuns\\reference_campaign_20261009\\publication_update_f70db46668c1_blob_verification.json",
+    "sha256": "fc84fac99e7531b75bb583b84ddafdee77fa53abe66993fd9a664531111c555f",
+    "bytes": 49839
+  },
+  "approved_images": [
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_hero512_smoke_pair.png",
+      "sha256": "b94126a7c82531eb36c7a2b650a7cec8c17f7ad85a80cbba2bbc9d47d2d91ef3",
+      "bytes": 764297
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_hero512_seed11_2048.png",
+      "sha256": "f11ac474dce23de32a730f2b7ad5016ec604bd38d62f00c6c2c47f2403db4649",
+      "bytes": 1347335
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_hero512_clear_pair.png",
+      "sha256": "d898855f4b0532671ce48ebbd17b8bf3181390bfd77f0b0a5e45598aec3ced6d",
+      "bytes": 708286
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "hero512_clear_engine_RGB.png",
+      "sha256": "0101bea86d832803aa1436135d53d419f3ee2282ed570a98f009d584ccc90b7d",
+      "bytes": 140012
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "hero512_clear_pbrt_RGB.png",
+      "sha256": "e20e99b003723c45d56330aa35a37cd730dc04e540dd4a32a991664bbbd9e72b",
+      "bytes": 302703
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "hero512_smoke_engine_RGB.png",
+      "sha256": "a952534f2e6374c8673fc74298518ec02146e620cf2b96274e1f832f39e8892c",
+      "bytes": 154811
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "hero512_smoke_pbrt_RGB.png",
+      "sha256": "ed2a0085a5c460cde8dcef8297723b1a43404b406ccf69b93bd8a8357ce1f4e6",
+      "bytes": 325724
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_single_seed11_1024.png",
+      "sha256": "c0d79c7d0bab94cb743cbc5e9927cd175564b4319218c4a90b5dd8464f7ea148",
+      "bytes": 188825
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_mean4_1024.png",
+      "sha256": "201517327a449dba36a62d7670fd3fb6ed80bcdedd909e4525f29beef9cf41cf",
+      "bytes": 166319
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_mean4_256.png",
+      "sha256": "5681fab057ad97d036c9acb7ea3d045c5809783b9bd060da0cda1227f7bb96af",
+      "bytes": 190437
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "beauty_mean4_64.png",
+      "sha256": "96d093fdaf3cb3c3f06cd64018d83577ae0fb567fdc4e1666d8e5cc7e42d7d19",
+      "bytes": 213969
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_depth_tail_Y_CI.png",
+      "sha256": "2c4e243407fe29f5b35be6186742391fac7baf07ecf8169481721ef48916a1e1",
+      "bytes": 68635
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_regional_mean_CI.png",
+      "sha256": "476ad189d4d1d1e7220e7c852f8bf126bb647d1b8d01ea65565c985ecb41a83c",
+      "bytes": 133555
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_signed_residual_RGB_Y.png",
+      "sha256": "f97f3721ba9eb8fac30422a261bd8c12719673f8e6bf206186497aa0803864cb",
+      "bytes": 165634
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_stddev_RGB_Y.png",
+      "sha256": "850bb37d612ecddeda974485e232287c0c378229403bdbd07fa8c21f920eb68d",
+      "bytes": 417370
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_variance_RGB_Y.png",
+      "sha256": "78f8eac546e4f57eb3f75fd84cff16595e4cfa32748aeca755c305d38f8e2b5f",
+      "bytes": 366402
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "clear_variance_convergence.png",
+      "sha256": "513e8362c0261b7eeb973b31d84200845853f1c3631769f6de6df3828939492b",
+      "bytes": 196927
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "geometry_ROIs.png",
+      "sha256": "39556b07f1cc553494e790b9b7a8add02a317cbe8ef397658c40a194cf9d6713",
+      "bytes": 27437
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_depth_tail_Y_CI.png",
+      "sha256": "72b515d73e83a1060547620a7035a12e100e1f2f95bbac498d619720dd030ba8",
+      "bytes": 70018
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_regional_mean_CI.png",
+      "sha256": "b394a3e4d1408e235db920270d195beee8ebe9d647be3ba1b8decef675886039",
+      "bytes": 134306
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_signed_residual_RGB_Y.png",
+      "sha256": "232a86d26ce427505a6f26274d521f19b320fce50130affea5933bb844a69d68",
+      "bytes": 181598
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_stddev_RGB_Y.png",
+      "sha256": "11ac203f54dff97a1bd232a2ec4e4a7ff27a9e4b899878d83ccfb189ec3e6790",
+      "bytes": 421609
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_variance_RGB_Y.png",
+      "sha256": "22ca9a0558fc28fc4fb4914d1cd626af6a72abee8faec57ecf6820b3b1f9cc2f",
+      "bytes": 365613
+    },
+    {
+      "category": "stage3-representative",
+      "scene": "glass_smoke_lighting_v3",
+      "file": "smoke_variance_convergence.png",
+      "sha256": "212296c494d5753a4d01f7b785ecf65e761336832601743ab6766837385fdd4e",
+      "bytes": 194136
+    }
+  ],
+  "approved_count": 24,
+  "scope": "Only the 24 existing Stage3 PNG identities in this receipt are visually approved; the immutable68 EXR experiment and numerical outcomes are unchanged.",
+  "exclusions": [
+    "Future showcase_color_dense_v1 images and sources are not covered by this exact-SHA approval.",
+    "Historical Stage2 test-image visual waiver remains a waiver, not approval.",
+    "No learner mastery or ownership evidence is inferred."
+  ],
+  "new_showcase_request": {
+    "status": "REQUESTED_NOT_YET_RENDERED",
+    "changes": "More saturated surrounding background and much denser smoke inside the glass, clearly distinguishable from clear control.",
+    "preserve_original_68_EXRs": true,
+    "formal_statistics_rerun_requested": false,
+    "proceed_to_stage4_after_showcase": true,
+    "separate_visual_reapproval_gate_requested": false,
+    "new_images_visually_approved": false
+  },
+  "ownership": "UNASSESSED",
+  "stage4_status": "NOT_RUN"
+}
