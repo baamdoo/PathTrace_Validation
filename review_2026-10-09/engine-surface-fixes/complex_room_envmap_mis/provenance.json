@@ -1,0 +1,47 @@
+{
+  "scene": "complex_room_envmap_mis",
+  "category": "engine-surface-fixes",
+  "reference": "Mitsuba 3.9.1 native RGB",
+  "radiance_status": "OPEN",
+  "variance_status": "PASS",
+  "visual_approved": false,
+  "note": "환경맵 U 이음매 및 generic conductor 반사율 수정 후 production shader(0be9f4cf...)의 새 엔진 렌더입니다. 128 SPP 평균 Y 차이 +0.028259%, renderer당 4 seeds. 원본 Mitsuba reference는 보존했고 수정 전 baseline과 비교했습니다. 현재 variance 판정과 남은 material/filter 모델 차이를 함께 보세요. 환경맵 수정은 GPU 이음매/극점 검사에서 재현·검증했으며, 씬에서 실제 사용하는 환경 방향에 따라 영상 변화가 없을 수도 있습니다.",
+  "images": [
+    {
+      "file": "radiance_mean4_spp16.png",
+      "sha256": "100dfef84c564f1a4c7580e225cd70bc24d80cb5114efcdb85ecb6c612defaee",
+      "bytes": 1898506
+    },
+    {
+      "file": "radiance_mean4_spp64.png",
+      "sha256": "47010308a147167c04ce1023258323d0da887f0601359256670d6bf2932db8d8",
+      "bytes": 1746644
+    },
+    {
+      "file": "radiance_mean4_spp128.png",
+      "sha256": "6eeadb9f2ec7b481b8d64684905a05bff8b17baafcc02971e67211d5f30c2875",
+      "bytes": 1678227
+    },
+    {
+      "file": "radiance_seed11_spp128.png",
+      "sha256": "6ab1225393289ce2a74515204a51b1ef9a5f017764c61b14375364b1c8289330",
+      "bytes": 1803845
+    },
+    {
+      "file": "signed_residuals.png",
+      "sha256": "b1f99016cc61e90722ba1704084675809b0aa51cf0df2b41a5fe7425f8ff2b5c",
+      "bytes": 3520366
+    },
+    {
+      "file": "noise_variance.png",
+      "sha256": "6a2c0f2909ebc2aa685c60e8044e24c153183e9dc1eca86022f0cc561f66a5ce",
+      "bytes": 3501244
+    },
+    {
+      "file": "convergence_uncertainty.png",
+      "sha256": "2e06d31f2c9ec02a669ed80afdaf15891a04952979168a4bd15fbbc5a011b6d6",
+      "bytes": 162949
+    }
+  ],
+  "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/complex_room_envmap_mis/analysis_surface_fixes"
+}

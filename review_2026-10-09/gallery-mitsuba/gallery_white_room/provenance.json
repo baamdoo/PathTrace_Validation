@@ -5,7 +5,7 @@
   "radiance_status": "OPEN",
   "variance_status": "PASS",
   "visual_approved": false,
-  "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증했습니다. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
+  "note": "사용자가 지정한 Mitsuba 레퍼런스로 재검증한 엔진 수정 전 baseline입니다. 이후 환경맵/금속 반사율 수정 결과는 최상위 최신 렌더 목록을 사용하세요. 원본 XML의 재질/광원/형상/카메라를 보존했고 film/SPP/depth를 명시적으로 맞췄습니다. importer가 바꾸는 재질 모델 차이는 여전히 결과 해석에 포함됩니다.",
   "images": [
     {
       "file": "radiance_mean4_spp16.png",

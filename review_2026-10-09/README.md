@@ -6,6 +6,15 @@
 
 Guo의 독립 seed·film·카메라를 검증한 최종 비교를 아래 N-layered 목록에 추가했습니다. 다른 회귀 씬의 원인 수정과 재검증도 계속합니다.
 
+## 엔진 수정 후 새 렌더
+
+Production 수정: 환경맵의 U 반복/V 극점 clamp, generic conductor의 Fresnel 외부 반사율 배율. 실제 GPU의 수정 전 실패와 수정 후 통과를 확인했습니다. 아래는 공통 최종 셰이더로 새로 렌더한 완료 항목입니다.
+
+| Scene | 평균 Y 차이 (128 SPP) | 분산 수렴 |
+|---|---:|---|
+| [complex_room_envmap_mis](engine-surface-fixes/complex_room_envmap_mis/README.md) | +0.028259% | PASS |
+| [gallery_breakfast_room](engine-surface-fixes/gallery_breakfast_room/README.md) | +0.035808% | INCONCLUSIVE |
+
 ## 최신 수정 및 진단
 
 - [Many-lights: 발광체 차폐 조건 수정 전후](corrected-many-lights/cornell_many_lights_matched/README.md) — PBRT 평균 Y −0.0147%, 기존 SSIM 기준·분산 수렴 PASS.
