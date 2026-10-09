@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-09T05:04:36.526219+00:00",
+  "generated_utc": "2026-10-09T05:10:58.776634+00:00",
   "status": "REVIEW_OPEN",
   "numerical_stage_pass": false,
   "visual_approved": false,
-  "images": 209,
+  "images": 217,
   "rows": [
     {
       "scene": "cornell_box",
@@ -12,7 +12,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "noise_convergence.png",
@@ -242,7 +242,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -284,7 +284,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -326,7 +326,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -368,7 +368,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -410,7 +410,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -452,7 +452,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -494,7 +494,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -536,7 +536,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -620,7 +620,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -662,7 +662,7 @@
       "radiance_status": "OPEN",
       "variance_status": "See report",
       "visual_approved": false,
-      "note": "현재 엔진 회귀 비교입니다. 분산 감소와 radiance 일치는 별도입니다. many-lights의 광원 차폐 조건과 normal-map의 필터링 조건은 수정/추적 중입니다.",
+      "note": "RNG 수정 후 최초 엔진 회귀 baseline입니다. 이후 수정 비교는 최상위 최신 결과 링크를 사용하세요. 분산 감소와 radiance 일치는 별도입니다. 원본 many-lights 차폐 불일치와 normal-map 필터 차이는 이 baseline에 남아 있습니다.",
       "images": [
         {
           "file": "comparison_spp_16.png",
@@ -1103,6 +1103,58 @@
         }
       ],
       "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_matched"
+    },
+    {
+      "scene": "cornell_many_lights_matched",
+      "category": "corrected-many-lights-spot",
+      "reference": "PBRT primary / Mitsuba cosine-smoothstep spot",
+      "radiance_status": "OPEN",
+      "variance_status": "PASS",
+      "visual_approved": false,
+      "note": "Mitsuba spot의 각도 선형 감쇠를 native emitter의 projected texture로 engine/PBRT의 cosine smoothstep에 맞췄습니다. 엔진/PBRT 영상은 직전 fixture와 동일합니다. 512 SPP x 4 engine-minus-Mitsuba 평균 Y +0.47418% → +0.01924%; 양쪽 분산 수렴 PASS. 원시 Mitsuba SSIM 0.836417은 .99 기준 미달이며 그대로 보고합니다. Residual MSE / mean-image variance 예측은 RGB 0.99819, Y 0.99819로 noise-floor와 일치하는 진단이지만 bias 부재 증명은 아닙니다. 우상단의 작은 +0.1505% 평균 residual 구간은 0을 포함하지 않습니다. Mitsuba의 실제 uniform emitter PMF와 engine power-CDF 선택 차이도 기록했습니다.",
+      "images": [
+        {
+          "file": "radiance_mean4_128.png",
+          "sha256": "8be6a83a3d6faa1bca136cbf1045d5af7c5a72bc474c98cc4739da7dca1e9e60",
+          "bytes": 1901812
+        },
+        {
+          "file": "radiance_mean4_512.png",
+          "sha256": "829185695bb7c3450c53ec7affee70a9bcf7f0bed4f57db2222043f60a602fed",
+          "bytes": 1742525
+        },
+        {
+          "file": "radiance_seed11_128.png",
+          "sha256": "83451a13588cad2a2e3cb63deca036d7f73d6bfb5fbda8ca70942078a966f132",
+          "bytes": 2028120
+        },
+        {
+          "file": "radiance_seed11_512.png",
+          "sha256": "6e0051ae37db2560979005420bb853e2921229ec321b0e4d4d4afb76966b368c",
+          "bytes": 1872030
+        },
+        {
+          "file": "replicate_noise_convergence.png",
+          "sha256": "bdcd0e7a9311090591df1db6f551d2595e52b9904860273fd058ab24b2acd30e",
+          "bytes": 215195
+        },
+        {
+          "file": "replicate_noise_stddev_512.png",
+          "sha256": "16034802cd9c81ade2151bd276fecf68488dfe18f569863ba94ca5be4b1ad776",
+          "bytes": 4726995
+        },
+        {
+          "file": "replicate_noise_variance_512.png",
+          "sha256": "70283a0ae545869c527c70de741a43d8991e9748c08532a4a6ff6f89eb2fb40c",
+          "bytes": 4729876
+        },
+        {
+          "file": "spot_profile_before_after_512.png",
+          "sha256": "116cb2021fc4692d60685ab70a2fa1f5c329af6ebadcc77474e779cf241ddd63",
+          "bytes": 2273493
+        }
+      ],
+      "source_analysis": "Output/ValidationRuns/reference_campaign_20261009/stage1/cornell_many_lights_matched/analysis_spot_matched"
     },
     {
       "scene": "gallery_nlayer_sphere_alpha01_n2",
