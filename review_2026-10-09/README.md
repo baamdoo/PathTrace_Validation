@@ -1,3 +1,21 @@
+# 실제 대표 이미지와 매질 계측 결과
+
+총406 PNG/64 entries. 기존404 PNG를 모두 보존하고 계측 결과 그래프2장과 결과 문서만 추가했습니다.
+
+**전체 내부 증거는 로컬 보관; 공개자료는 비교 이미지와 결과입니다.** 새 공개 항목은 README·측정값 summary·PNG2장뿐입니다. 소스·패치·실행 도구·상세 내부 provenance·학습 기록은 신규 공개하지 않습니다.
+
+[최신 GPU 시간·매질 작업량 결과](stage4/instrumentation_v1/README.md) · [앞선 엔진/PBRT 성능 비교](stage4/performance_v1/README.md) · [실제 smoke/clear 대표 이미지](stage3-showcase/color_dense_v1/README.md)
+
+![실제 연기 대표 비교](stage3-showcase/color_dense_v1/smoke_pair.png)
+
+사용자는 채도와 연기량을 높인 기존 대표 이미지 정확7 PNG의 육안을 명시 승인했습니다. 기존333+7=340장의 승인 범위이며 Stage2 면제38·과거 미승인24·Stage4 진단 그래프4장으로 확대하지 않습니다. Manifest의 기존 행은 게시 당시 이력을 보존하고, 최신 승인은 별도 overlay로 기록합니다.
+
+이번 계측은 counter OFF의 GPU dispatch 시간과 별도 counter ON의 알고리즘 작업량을 구분합니다. seed7은 사전 지정 워밍업으로 제외하며 startup Primary 시간은 미측정입니다. 원인 후보를 좁히는 관측이고 정상 overhead PASS·인과적 시간 비중·새 수렴 통과·최적화 구현을 뜻하지 않습니다.
+
+Stage2 최신 준비11씬 PASS_SCOPED는 [최종 보고서](stage3-stage2-final-report.md)를 참조하세요. 아래 과거 Stage2 실패/미결정 행은 수정 전 보존 기록입니다.
+
+## 이전 게시 당시 기록 — 최신 승인·계측은 위 안내 참조
+
 # 실제 대표 이미지와 Stage4 측정 결과
 
 총404 PNG/63 entries. 기존402 PNG는 그대로 보존하고, 신규 공개자료는 성능 비교그래프2장과 측정 결과입니다. 전체 내부 증거는 로컬에 보관합니다.

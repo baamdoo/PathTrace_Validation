@@ -1,0 +1,895 @@
+{
+  "status": "COMPLETE_SCOPED_INSTRUMENTATION",
+  "stage_pass": false,
+  "normal_overhead_pass": false,
+  "generated_utc": "2026-10-10T05:46:01.520532+00:00",
+  "normal_images": 36,
+  "identity_pairs": 24,
+  "counter_dumps": 12,
+  "measured_seeds": [
+    11,
+    29
+  ],
+  "warmup_seed": 7,
+  "diagnostic_spp": 16,
+  "workloads": [
+    {
+      "pair": "bare_smoke",
+      "label": "Bare smoke",
+      "timing": {
+        "clear": {
+          "gpu_path_seconds": 0.29819712383755,
+          "render_loop_wall_seconds": 0.879501313,
+          "non_dispatch_wall_seconds": 0.5813041891624501,
+          "seed_records": [
+            {
+              "seed": 11,
+              "frames": 4096,
+              "primary_queries": 0,
+              "gpu_path_seconds": 0.2970580517502,
+              "render_loop_wall_seconds": 0.869242072
+            },
+            {
+              "seed": 29,
+              "frames": 4096,
+              "primary_queries": 0,
+              "gpu_path_seconds": 0.29933619592489996,
+              "render_loop_wall_seconds": 0.889760554
+            }
+          ]
+        },
+        "medium": {
+          "gpu_path_seconds": 13.303928544485,
+          "render_loop_wall_seconds": 14.9216628,
+          "non_dispatch_wall_seconds": 1.6177342555149998,
+          "seed_records": [
+            {
+              "seed": 11,
+              "frames": 4096,
+              "primary_queries": 0,
+              "gpu_path_seconds": 13.28931778898,
+              "render_loop_wall_seconds": 14.9038029
+            },
+            {
+              "seed": 29,
+              "frames": 4096,
+              "primary_queries": 0,
+              "gpu_path_seconds": 13.31853929999,
+              "render_loop_wall_seconds": 14.9395227
+            }
+          ]
+        },
+        "median_paired_gpu_ratio": 44.61500730291248,
+        "median_paired_wall_ratio": 16.968121436819814
+      },
+      "work": {
+        "clear": {
+          "totals": {
+            "paths_started": 524288,
+            "surface_vertices": 0,
+            "scatter_vertices": 0,
+            "main_tracking_calls": 109205,
+            "main_tracking_nonempty": 0,
+            "main_candidates": 0,
+            "main_density_calls": 0,
+            "main_null_events": 0,
+            "main_scatter_events": 0,
+            "main_absorb_events": 0,
+            "main_escape_events": 109205,
+            "main_freeflight_draws": 0,
+            "finite_shadow_connections": 0,
+            "environment_shadow_connections": 0,
+            "finite_shadow_tracking_calls": 0,
+            "environment_shadow_tracking_calls": 0,
+            "finite_shadow_candidates": 0,
+            "environment_shadow_candidates": 0,
+            "finite_shadow_density_calls": 0,
+            "environment_shadow_density_calls": 0,
+            "finite_shadow_freeflight_draws": 0,
+            "environment_shadow_freeflight_draws": 0,
+            "finite_shadow_after_tr_lt_005_candidates": 0,
+            "environment_shadow_after_tr_lt_005_candidates": 0,
+            "finite_shadow_after_tr_lt_001_candidates": 0,
+            "environment_shadow_after_tr_lt_001_candidates": 0,
+            "finite_shadow_after_tr_zero_candidates": 0,
+            "environment_shadow_after_tr_zero_candidates": 0,
+            "phase_evaluate_calls": 0,
+            "phase_sample_calls": 0,
+            "phase_evaluate_density_calls": 0,
+            "phase_sample_density_calls": 0,
+            "density_calls_total": 0,
+            "density_trilinear_calls": 0,
+            "density_corner_reads": 0,
+            "medium_property_evaluations": 0,
+            "medium_record_load_calls": 546025,
+            "tracking_active_fields_sum": 109205,
+            "boundary_helper_calls": 218410,
+            "boundary_extra_queries": 218410,
+            "boundary_query_candidates": 218410,
+            "boundary_edge_tests": 655230,
+            "boundary_exact_fallbacks": 26,
+            "boundary_incident_searches": 0,
+            "boundary_incident_triangles": 0,
+            "boundary_contact_proofs": 0,
+            "main_contact_skips": 0,
+            "shadow_contact_skips": 0,
+            "main_surface_traces": 742698,
+            "shadow_surface_queries": 0,
+            "main_medium_failures": 0,
+            "shadow_connection_failures": 0,
+            "finite_shadow_tracking_nonempty": 0,
+            "environment_shadow_tracking_nonempty": 0
+          },
+          "per_path": {
+            "paths_started": 1.0,
+            "surface_vertices": 0.0,
+            "scatter_vertices": 0.0,
+            "main_tracking_calls": 0.20829200744628906,
+            "main_tracking_nonempty": 0.0,
+            "main_candidates": 0.0,
+            "main_density_calls": 0.0,
+            "main_null_events": 0.0,
+            "main_scatter_events": 0.0,
+            "main_absorb_events": 0.0,
+            "main_escape_events": 0.20829200744628906,
+            "main_freeflight_draws": 0.0,
+            "finite_shadow_connections": 0.0,
+            "environment_shadow_connections": 0.0,
+            "finite_shadow_tracking_calls": 0.0,
+            "environment_shadow_tracking_calls": 0.0,
+            "finite_shadow_candidates": 0.0,
+            "environment_shadow_candidates": 0.0,
+            "finite_shadow_density_calls": 0.0,
+            "environment_shadow_density_calls": 0.0,
+            "finite_shadow_freeflight_draws": 0.0,
+            "environment_shadow_freeflight_draws": 0.0,
+            "finite_shadow_after_tr_lt_005_candidates": 0.0,
+            "environment_shadow_after_tr_lt_005_candidates": 0.0,
+            "finite_shadow_after_tr_lt_001_candidates": 0.0,
+            "environment_shadow_after_tr_lt_001_candidates": 0.0,
+            "finite_shadow_after_tr_zero_candidates": 0.0,
+            "environment_shadow_after_tr_zero_candidates": 0.0,
+            "phase_evaluate_calls": 0.0,
+            "phase_sample_calls": 0.0,
+            "phase_evaluate_density_calls": 0.0,
+            "phase_sample_density_calls": 0.0,
+            "density_calls_total": 0.0,
+            "density_trilinear_calls": 0.0,
+            "density_corner_reads": 0.0,
+            "medium_property_evaluations": 0.0,
+            "medium_record_load_calls": 1.0414600372314453,
+            "tracking_active_fields_sum": 0.20829200744628906,
+            "boundary_helper_calls": 0.4165840148925781,
+            "boundary_extra_queries": 0.4165840148925781,
+            "boundary_query_candidates": 0.4165840148925781,
+            "boundary_edge_tests": 1.2497520446777344,
+            "boundary_exact_fallbacks": 4.9591064453125e-05,
+            "boundary_incident_searches": 0.0,
+            "boundary_incident_triangles": 0.0,
+            "boundary_contact_proofs": 0.0,
+            "main_contact_skips": 0.0,
+            "shadow_contact_skips": 0.0,
+            "main_surface_traces": 1.4165840148925781,
+            "shadow_surface_queries": 0.0,
+            "main_medium_failures": 0.0,
+            "shadow_connection_failures": 0.0,
+            "finite_shadow_tracking_nonempty": 0.0,
+            "environment_shadow_tracking_nonempty": 0.0
+          },
+          "density_shares": {
+            "main_density_calls": null,
+            "finite_shadow_density_calls": null,
+            "environment_shadow_density_calls": null,
+            "phase_evaluate_density_calls": null,
+            "phase_sample_density_calls": null
+          },
+          "main_null_fraction": null,
+          "phase_density_per_scatter": null,
+          "shadow_tail_fraction": {
+            "tr_lt_005": null,
+            "tr_lt_001": null,
+            "tr_zero": null
+          },
+          "seed_summaries": [
+            {
+              "seed": 11,
+              "density_per_path": 0.0,
+              "main_null_fraction": null,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 0,
+                  "tracking_intervals": 0,
+                  "candidates": 0,
+                  "candidates_per_connection": null,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                },
+                "environment": {
+                  "connections": 0,
+                  "tracking_intervals": 0,
+                  "candidates": 0,
+                  "candidates_per_connection": null,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                }
+              }
+            },
+            {
+              "seed": 29,
+              "density_per_path": 0.0,
+              "main_null_fraction": null,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 0,
+                  "tracking_intervals": 0,
+                  "candidates": 0,
+                  "candidates_per_connection": null,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                },
+                "environment": {
+                  "connections": 0,
+                  "tracking_intervals": 0,
+                  "candidates": 0,
+                  "candidates_per_connection": null,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                }
+              }
+            }
+          ]
+        },
+        "medium": {
+          "totals": {
+            "paths_started": 524288,
+            "surface_vertices": 0,
+            "scatter_vertices": 24280,
+            "main_tracking_calls": 133374,
+            "main_tracking_nonempty": 133374,
+            "main_candidates": 824963,
+            "main_density_calls": 824963,
+            "main_null_events": 798070,
+            "main_scatter_events": 24280,
+            "main_absorb_events": 2613,
+            "main_escape_events": 106481,
+            "main_freeflight_draws": 931444,
+            "finite_shadow_connections": 11383,
+            "environment_shadow_connections": 24280,
+            "finite_shadow_tracking_calls": 11027,
+            "environment_shadow_tracking_calls": 24271,
+            "finite_shadow_candidates": 63959,
+            "environment_shadow_candidates": 167493,
+            "finite_shadow_density_calls": 63959,
+            "environment_shadow_density_calls": 167493,
+            "finite_shadow_freeflight_draws": 74986,
+            "environment_shadow_freeflight_draws": 191764,
+            "finite_shadow_after_tr_lt_005_candidates": 5577,
+            "environment_shadow_after_tr_lt_005_candidates": 16510,
+            "finite_shadow_after_tr_lt_001_candidates": 1758,
+            "environment_shadow_after_tr_lt_001_candidates": 5879,
+            "finite_shadow_after_tr_zero_candidates": 0,
+            "environment_shadow_after_tr_zero_candidates": 0,
+            "phase_evaluate_calls": 59578,
+            "phase_sample_calls": 24280,
+            "phase_evaluate_density_calls": 59578,
+            "phase_sample_density_calls": 24280,
+            "density_calls_total": 1140273,
+            "density_trilinear_calls": 1140273,
+            "density_corner_reads": 9122184,
+            "medium_property_evaluations": 1140273,
+            "medium_record_load_calls": 1837806,
+            "tracking_active_fields_sum": 168672,
+            "boundary_helper_calls": 277877,
+            "boundary_extra_queries": 277877,
+            "boundary_query_candidates": 277877,
+            "boundary_edge_tests": 833610,
+            "boundary_exact_fallbacks": 26,
+            "boundary_incident_searches": 0,
+            "boundary_incident_triangles": 0,
+            "boundary_contact_proofs": 0,
+            "main_contact_skips": 0,
+            "shadow_contact_skips": 0,
+            "main_surface_traces": 764143,
+            "shadow_surface_queries": 70596,
+            "main_medium_failures": 0,
+            "shadow_connection_failures": 0,
+            "finite_shadow_tracking_nonempty": 11027,
+            "environment_shadow_tracking_nonempty": 24271
+          },
+          "per_path": {
+            "paths_started": 1.0,
+            "surface_vertices": 0.0,
+            "scatter_vertices": 0.0463104248046875,
+            "main_tracking_calls": 0.2543907165527344,
+            "main_tracking_nonempty": 0.2543907165527344,
+            "main_candidates": 1.5734920501708984,
+            "main_density_calls": 1.5734920501708984,
+            "main_null_events": 1.5221977233886719,
+            "main_scatter_events": 0.0463104248046875,
+            "main_absorb_events": 0.0049839019775390625,
+            "main_escape_events": 0.2030963897705078,
+            "main_freeflight_draws": 1.7765884399414062,
+            "finite_shadow_connections": 0.021711349487304688,
+            "environment_shadow_connections": 0.0463104248046875,
+            "finite_shadow_tracking_calls": 0.021032333374023438,
+            "environment_shadow_tracking_calls": 0.04629325866699219,
+            "finite_shadow_candidates": 0.12199211120605469,
+            "environment_shadow_candidates": 0.31946754455566406,
+            "finite_shadow_density_calls": 0.12199211120605469,
+            "environment_shadow_density_calls": 0.31946754455566406,
+            "finite_shadow_freeflight_draws": 0.14302444458007812,
+            "environment_shadow_freeflight_draws": 0.36576080322265625,
+            "finite_shadow_after_tr_lt_005_candidates": 0.010637283325195312,
+            "environment_shadow_after_tr_lt_005_candidates": 0.031490325927734375,
+            "finite_shadow_after_tr_lt_001_candidates": 0.003353118896484375,
+            "environment_shadow_after_tr_lt_001_candidates": 0.011213302612304688,
+            "finite_shadow_after_tr_zero_candidates": 0.0,
+            "environment_shadow_after_tr_zero_candidates": 0.0,
+            "phase_evaluate_calls": 0.11363601684570312,
+            "phase_sample_calls": 0.0463104248046875,
+            "phase_evaluate_density_calls": 0.11363601684570312,
+            "phase_sample_density_calls": 0.0463104248046875,
+            "density_calls_total": 2.174898147583008,
+            "density_trilinear_calls": 2.174898147583008,
+            "density_corner_reads": 17.399185180664062,
+            "medium_property_evaluations": 2.174898147583008,
+            "medium_record_load_calls": 3.5053367614746094,
+            "tracking_active_fields_sum": 0.32171630859375,
+            "boundary_helper_calls": 0.5300083160400391,
+            "boundary_extra_queries": 0.5300083160400391,
+            "boundary_query_candidates": 0.5300083160400391,
+            "boundary_edge_tests": 1.5899848937988281,
+            "boundary_exact_fallbacks": 4.9591064453125e-05,
+            "boundary_incident_searches": 0.0,
+            "boundary_incident_triangles": 0.0,
+            "boundary_contact_proofs": 0.0,
+            "main_contact_skips": 0.0,
+            "shadow_contact_skips": 0.0,
+            "main_surface_traces": 1.4574871063232422,
+            "shadow_surface_queries": 0.13465118408203125,
+            "main_medium_failures": 0.0,
+            "shadow_connection_failures": 0.0,
+            "finite_shadow_tracking_nonempty": 0.021032333374023438,
+            "environment_shadow_tracking_nonempty": 0.04629325866699219
+          },
+          "density_shares": {
+            "main_density_calls": 0.7234785003240453,
+            "finite_shadow_density_calls": 0.05609095365758902,
+            "environment_shadow_density_calls": 0.14688850827828073,
+            "phase_evaluate_density_calls": 0.05224889127428256,
+            "phase_sample_density_calls": 0.02129314646580249
+          },
+          "main_null_fraction": 0.9674009622249725,
+          "phase_density_per_scatter": 3.453789126853377,
+          "shadow_tail_fraction": {
+            "tr_lt_005": 0.09542799370927882,
+            "tr_lt_001": 0.032996042375957005,
+            "tr_zero": 0.0
+          },
+          "seed_summaries": [
+            {
+              "seed": 11,
+              "density_per_path": 2.1809616088867188,
+              "main_null_fraction": 0.967472260589597,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 5729,
+                  "tracking_intervals": 5542,
+                  "candidates": 32012,
+                  "candidates_per_connection": 5.587711642520509,
+                  "after_tr_lt_005_fraction": 0.08674871923028864,
+                  "after_tr_lt_001_fraction": 0.02820817193552418,
+                  "after_tr_zero_fraction": 0.0
+                },
+                "environment": {
+                  "connections": 12186,
+                  "tracking_intervals": 12180,
+                  "candidates": 84219,
+                  "candidates_per_connection": 6.911127523387494,
+                  "after_tr_lt_005_fraction": 0.10038114914686709,
+                  "after_tr_lt_001_fraction": 0.035906386919816194,
+                  "after_tr_zero_fraction": 0.0
+                }
+              }
+            },
+            {
+              "seed": 29,
+              "density_per_path": 2.168834686279297,
+              "main_null_fraction": 0.967329345274831,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 5654,
+                  "tracking_intervals": 5485,
+                  "candidates": 31947,
+                  "candidates_per_connection": 5.65033604527768,
+                  "after_tr_lt_005_fraction": 0.08764516230005948,
+                  "after_tr_lt_001_fraction": 0.026763076345196733,
+                  "after_tr_zero_fraction": 0.0
+                },
+                "environment": {
+                  "connections": 12094,
+                  "tracking_intervals": 12091,
+                  "candidates": 83274,
+                  "candidates_per_connection": 6.8855630891351085,
+                  "after_tr_lt_005_fraction": 0.09674087950620842,
+                  "after_tr_lt_001_fraction": 0.0342844105002762,
+                  "after_tr_zero_fraction": 0.0
+                }
+              }
+            }
+          ]
+        }
+      },
+      "settings": {
+        "resolution": [
+          128,
+          128
+        ],
+        "spp": 4096,
+        "max_depth": 16,
+        "samples_per_frame": 1
+      }
+    },
+    {
+      "pair": "dense_glass_hero",
+      "label": "Dense glass hero",
+      "timing": {
+        "clear": {
+          "gpu_path_seconds": 7.4356729945,
+          "render_loop_wall_seconds": 7.4777629349999994,
+          "non_dispatch_wall_seconds": 0.04208994049999992,
+          "seed_records": [
+            {
+              "seed": 11,
+              "frames": 512,
+              "primary_queries": 0,
+              "gpu_path_seconds": 7.4309558747999995,
+              "render_loop_wall_seconds": 7.47336626
+            },
+            {
+              "seed": 29,
+              "frames": 512,
+              "primary_queries": 0,
+              "gpu_path_seconds": 7.4403901142,
+              "render_loop_wall_seconds": 7.48215961
+            }
+          ]
+        },
+        "medium": {
+          "gpu_path_seconds": 91.485215263,
+          "render_loop_wall_seconds": 91.53280255,
+          "non_dispatch_wall_seconds": 0.04758728699999892,
+          "seed_records": [
+            {
+              "seed": 11,
+              "frames": 512,
+              "primary_queries": 0,
+              "gpu_path_seconds": 91.04085804900001,
+              "render_loop_wall_seconds": 91.0883865
+            },
+            {
+              "seed": 29,
+              "frames": 512,
+              "primary_queries": 0,
+              "gpu_path_seconds": 91.929572477,
+              "render_loop_wall_seconds": 91.9772186
+            }
+          ]
+        },
+        "median_paired_gpu_ratio": 12.30352252619862,
+        "median_paired_wall_ratio": 12.24063582746382
+      },
+      "work": {
+        "clear": {
+          "totals": {
+            "paths_started": 8388608,
+            "surface_vertices": 21811745,
+            "scatter_vertices": 0,
+            "main_tracking_calls": 5333137,
+            "main_tracking_nonempty": 0,
+            "main_candidates": 0,
+            "main_density_calls": 0,
+            "main_null_events": 0,
+            "main_scatter_events": 0,
+            "main_absorb_events": 0,
+            "main_escape_events": 5333137,
+            "main_freeflight_draws": 0,
+            "finite_shadow_connections": 9789230,
+            "environment_shadow_connections": 16353772,
+            "finite_shadow_tracking_calls": 3608365,
+            "environment_shadow_tracking_calls": 5432485,
+            "finite_shadow_candidates": 0,
+            "environment_shadow_candidates": 0,
+            "finite_shadow_density_calls": 0,
+            "environment_shadow_density_calls": 0,
+            "finite_shadow_freeflight_draws": 0,
+            "environment_shadow_freeflight_draws": 0,
+            "finite_shadow_after_tr_lt_005_candidates": 0,
+            "environment_shadow_after_tr_lt_005_candidates": 0,
+            "finite_shadow_after_tr_lt_001_candidates": 0,
+            "environment_shadow_after_tr_lt_001_candidates": 0,
+            "finite_shadow_after_tr_zero_candidates": 0,
+            "environment_shadow_after_tr_zero_candidates": 0,
+            "phase_evaluate_calls": 0,
+            "phase_sample_calls": 0,
+            "phase_evaluate_density_calls": 0,
+            "phase_sample_density_calls": 0,
+            "density_calls_total": 0,
+            "density_trilinear_calls": 0,
+            "density_corner_reads": 0,
+            "medium_property_evaluations": 0,
+            "medium_record_load_calls": 36185732,
+            "tracking_active_fields_sum": 14373987,
+            "boundary_helper_calls": 0,
+            "boundary_extra_queries": 0,
+            "boundary_query_candidates": 0,
+            "boundary_edge_tests": 0,
+            "boundary_exact_fallbacks": 0,
+            "boundary_incident_searches": 0,
+            "boundary_incident_triangles": 0,
+            "boundary_contact_proofs": 0,
+            "main_contact_skips": 0,
+            "shadow_contact_skips": 0,
+            "main_surface_traces": 28320154,
+            "shadow_surface_queries": 25671012,
+            "main_medium_failures": 0,
+            "shadow_connection_failures": 0,
+            "finite_shadow_tracking_nonempty": 0,
+            "environment_shadow_tracking_nonempty": 0
+          },
+          "per_path": {
+            "paths_started": 1.0,
+            "surface_vertices": 2.600162625312805,
+            "scatter_vertices": 0.0,
+            "main_tracking_calls": 0.6357594728469849,
+            "main_tracking_nonempty": 0.0,
+            "main_candidates": 0.0,
+            "main_density_calls": 0.0,
+            "main_null_events": 0.0,
+            "main_scatter_events": 0.0,
+            "main_absorb_events": 0.0,
+            "main_escape_events": 0.6357594728469849,
+            "main_freeflight_draws": 0.0,
+            "finite_shadow_connections": 1.1669671535491943,
+            "environment_shadow_connections": 1.949521541595459,
+            "finite_shadow_tracking_calls": 0.4301506280899048,
+            "environment_shadow_tracking_calls": 0.6476026773452759,
+            "finite_shadow_candidates": 0.0,
+            "environment_shadow_candidates": 0.0,
+            "finite_shadow_density_calls": 0.0,
+            "environment_shadow_density_calls": 0.0,
+            "finite_shadow_freeflight_draws": 0.0,
+            "environment_shadow_freeflight_draws": 0.0,
+            "finite_shadow_after_tr_lt_005_candidates": 0.0,
+            "environment_shadow_after_tr_lt_005_candidates": 0.0,
+            "finite_shadow_after_tr_lt_001_candidates": 0.0,
+            "environment_shadow_after_tr_lt_001_candidates": 0.0,
+            "finite_shadow_after_tr_zero_candidates": 0.0,
+            "environment_shadow_after_tr_zero_candidates": 0.0,
+            "phase_evaluate_calls": 0.0,
+            "phase_sample_calls": 0.0,
+            "phase_evaluate_density_calls": 0.0,
+            "phase_sample_density_calls": 0.0,
+            "density_calls_total": 0.0,
+            "density_trilinear_calls": 0.0,
+            "density_corner_reads": 0.0,
+            "medium_property_evaluations": 0.0,
+            "medium_record_load_calls": 4.313675403594971,
+            "tracking_active_fields_sum": 1.7135127782821655,
+            "boundary_helper_calls": 0.0,
+            "boundary_extra_queries": 0.0,
+            "boundary_query_candidates": 0.0,
+            "boundary_edge_tests": 0.0,
+            "boundary_exact_fallbacks": 0.0,
+            "boundary_incident_searches": 0.0,
+            "boundary_incident_triangles": 0.0,
+            "boundary_contact_proofs": 0.0,
+            "main_contact_skips": 0.0,
+            "shadow_contact_skips": 0.0,
+            "main_surface_traces": 3.376025438308716,
+            "shadow_surface_queries": 3.06022310256958,
+            "main_medium_failures": 0.0,
+            "shadow_connection_failures": 0.0,
+            "finite_shadow_tracking_nonempty": 0.0,
+            "environment_shadow_tracking_nonempty": 0.0
+          },
+          "density_shares": {
+            "main_density_calls": null,
+            "finite_shadow_density_calls": null,
+            "environment_shadow_density_calls": null,
+            "phase_evaluate_density_calls": null,
+            "phase_sample_density_calls": null
+          },
+          "main_null_fraction": null,
+          "phase_density_per_scatter": null,
+          "shadow_tail_fraction": {
+            "tr_lt_005": null,
+            "tr_lt_001": null,
+            "tr_zero": null
+          },
+          "seed_summaries": [
+            {
+              "seed": 11,
+              "density_per_path": 0.0,
+              "main_null_fraction": null,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 4895182,
+                  "tracking_intervals": 1804325,
+                  "candidates": 0,
+                  "candidates_per_connection": 0.0,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                },
+                "environment": {
+                  "connections": 8179168,
+                  "tracking_intervals": 2716547,
+                  "candidates": 0,
+                  "candidates_per_connection": 0.0,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                }
+              }
+            },
+            {
+              "seed": 29,
+              "density_per_path": 0.0,
+              "main_null_fraction": null,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 4894048,
+                  "tracking_intervals": 1804040,
+                  "candidates": 0,
+                  "candidates_per_connection": 0.0,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                },
+                "environment": {
+                  "connections": 8174604,
+                  "tracking_intervals": 2715938,
+                  "candidates": 0,
+                  "candidates_per_connection": 0.0,
+                  "after_tr_lt_005_fraction": null,
+                  "after_tr_lt_001_fraction": null,
+                  "after_tr_zero_fraction": null
+                }
+              }
+            }
+          ]
+        },
+        "medium": {
+          "totals": {
+            "paths_started": 8388608,
+            "surface_vertices": 20109587,
+            "scatter_vertices": 3394956,
+            "main_tracking_calls": 8510901,
+            "main_tracking_nonempty": 7136499,
+            "main_candidates": 210249878,
+            "main_density_calls": 210249878,
+            "main_null_events": 206476748,
+            "main_scatter_events": 3394956,
+            "main_absorb_events": 378174,
+            "main_escape_events": 4737771,
+            "main_freeflight_draws": 213613247,
+            "finite_shadow_connections": 10540897,
+            "environment_shadow_connections": 18529292,
+            "finite_shadow_tracking_calls": 4744289,
+            "environment_shadow_tracking_calls": 8443822,
+            "finite_shadow_candidates": 113207912,
+            "environment_shadow_candidates": 247326668,
+            "finite_shadow_density_calls": 113207912,
+            "environment_shadow_density_calls": 247326668,
+            "finite_shadow_freeflight_draws": 115022198,
+            "environment_shadow_freeflight_draws": 251624158,
+            "finite_shadow_after_tr_lt_005_candidates": 51992774,
+            "environment_shadow_after_tr_lt_005_candidates": 108264776,
+            "finite_shadow_after_tr_lt_001_candidates": 41547308,
+            "environment_shadow_after_tr_lt_001_candidates": 86603530,
+            "finite_shadow_after_tr_zero_candidates": 0,
+            "environment_shadow_after_tr_zero_candidates": 836,
+            "phase_evaluate_calls": 3394954,
+            "phase_sample_calls": 3394954,
+            "phase_evaluate_density_calls": 3394954,
+            "phase_sample_density_calls": 3394954,
+            "density_calls_total": 577574366,
+            "density_trilinear_calls": 577574361,
+            "density_corner_reads": 4620594888,
+            "medium_property_evaluations": 577574366,
+            "medium_record_load_calls": 619382965,
+            "tracking_active_fields_sum": 21699012,
+            "boundary_helper_calls": 0,
+            "boundary_extra_queries": 0,
+            "boundary_query_candidates": 0,
+            "boundary_edge_tests": 0,
+            "boundary_exact_fallbacks": 0,
+            "boundary_incident_searches": 0,
+            "boundary_incident_triangles": 0,
+            "boundary_contact_proofs": 0,
+            "main_contact_skips": 0,
+            "shadow_contact_skips": 0,
+            "main_surface_traces": 30027944,
+            "shadow_surface_queries": 28565920,
+            "main_medium_failures": 0,
+            "shadow_connection_failures": 0,
+            "finite_shadow_tracking_nonempty": 1814286,
+            "environment_shadow_tracking_nonempty": 4297490
+          },
+          "per_path": {
+            "paths_started": 1.0,
+            "surface_vertices": 2.3972495794296265,
+            "scatter_vertices": 0.4047102928161621,
+            "main_tracking_calls": 1.0145784616470337,
+            "main_tracking_nonempty": 0.8507369756698608,
+            "main_candidates": 25.063738584518433,
+            "main_density_calls": 25.063738584518433,
+            "main_null_events": 24.613946437835693,
+            "main_scatter_events": 0.4047102928161621,
+            "main_absorb_events": 0.04508185386657715,
+            "main_escape_events": 0.5647863149642944,
+            "main_freeflight_draws": 25.464683413505554,
+            "finite_shadow_connections": 1.2565728425979614,
+            "environment_shadow_connections": 2.2088637351989746,
+            "finite_shadow_tracking_calls": 0.5655633211135864,
+            "environment_shadow_tracking_calls": 1.0065820217132568,
+            "finite_shadow_candidates": 13.495434761047363,
+            "environment_shadow_candidates": 29.483636379241943,
+            "finite_shadow_density_calls": 13.495434761047363,
+            "environment_shadow_density_calls": 29.483636379241943,
+            "finite_shadow_freeflight_draws": 13.711714506149292,
+            "environment_shadow_freeflight_draws": 29.99593710899353,
+            "finite_shadow_after_tr_lt_005_candidates": 6.198021650314331,
+            "environment_shadow_after_tr_lt_005_candidates": 12.906167030334473,
+            "finite_shadow_after_tr_lt_001_candidates": 4.95282506942749,
+            "environment_shadow_after_tr_lt_001_candidates": 10.32394528388977,
+            "finite_shadow_after_tr_zero_candidates": 0.0,
+            "environment_shadow_after_tr_zero_candidates": 9.965896606445312e-05,
+            "phase_evaluate_calls": 0.404710054397583,
+            "phase_sample_calls": 0.404710054397583,
+            "phase_evaluate_density_calls": 0.404710054397583,
+            "phase_sample_density_calls": 0.404710054397583,
+            "density_calls_total": 68.8522298336029,
+            "density_trilinear_calls": 68.85222923755646,
+            "density_corner_reads": 550.8178339004517,
+            "medium_property_evaluations": 68.8522298336029,
+            "medium_record_load_calls": 73.83620321750641,
+            "tracking_active_fields_sum": 2.586723804473877,
+            "boundary_helper_calls": 0.0,
+            "boundary_extra_queries": 0.0,
+            "boundary_query_candidates": 0.0,
+            "boundary_edge_tests": 0.0,
+            "boundary_exact_fallbacks": 0.0,
+            "boundary_incident_searches": 0.0,
+            "boundary_incident_triangles": 0.0,
+            "boundary_contact_proofs": 0.0,
+            "main_contact_skips": 0.0,
+            "shadow_contact_skips": 0.0,
+            "main_surface_traces": 3.5796098709106445,
+            "shadow_surface_queries": 3.405323028564453,
+            "main_medium_failures": 0.0,
+            "shadow_connection_failures": 0.0,
+            "finite_shadow_tracking_nonempty": 0.2162797451019287,
+            "environment_shadow_tracking_nonempty": 0.5123007297515869
+          },
+          "density_shares": {
+            "main_density_calls": 0.36402217684293836,
+            "finite_shadow_density_calls": 0.19600577633668737,
+            "environment_shadow_density_calls": 0.4282161442047101,
+            "phase_evaluate_density_calls": 0.005877951307832107,
+            "phase_sample_density_calls": 0.005877951307832107
+          },
+          "main_null_fraction": 0.9820540680646673,
+          "phase_density_per_scatter": 1.99999882178149,
+          "shadow_tail_fraction": {
+            "tr_lt_005": 0.4444998035972028,
+            "tr_lt_001": 0.3554467313509844,
+            "tr_zero": 2.318778964281318e-06
+          },
+          "seed_summaries": [
+            {
+              "seed": 11,
+              "density_per_path": 68.83430409431458,
+              "main_null_fraction": 0.9820537754799825,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 5271671,
+                  "tracking_intervals": 2372630,
+                  "candidates": 56586721,
+                  "candidates_per_connection": 10.73411466686749,
+                  "after_tr_lt_005_fraction": 0.45902931891035004,
+                  "after_tr_lt_001_fraction": 0.36687377591643805,
+                  "after_tr_zero_fraction": 0.0
+                },
+                "environment": {
+                  "connections": 9266740,
+                  "tracking_intervals": 4221269,
+                  "candidates": 123609136,
+                  "candidates_per_connection": 13.339009835173966,
+                  "after_tr_lt_005_fraction": 0.43760690957341536,
+                  "after_tr_lt_001_fraction": 0.35008567651504335,
+                  "after_tr_zero_fraction": 1.7474436517378456e-06
+                }
+              }
+            },
+            {
+              "seed": 29,
+              "density_per_path": 68.87015557289124,
+              "main_null_fraction": 0.982054360629887,
+              "shadow_candidates": {
+                "finite": {
+                  "connections": 5269226,
+                  "tracking_intervals": 2371659,
+                  "candidates": 56621191,
+                  "candidates_per_connection": 10.745637215029305,
+                  "after_tr_lt_005_fraction": 0.45950658296820357,
+                  "after_tr_lt_001_fraction": 0.3671262231131804,
+                  "after_tr_zero_fraction": 0.0
+                },
+                "environment": {
+                  "connections": 9262552,
+                  "tracking_intervals": 4222553,
+                  "candidates": 123717532,
+                  "candidates_per_connection": 13.356743584273534,
+                  "after_tr_lt_005_fraction": 0.4378729766448946,
+                  "after_tr_lt_001_fraction": 0.35023121864409645,
+                  "after_tr_zero_fraction": 5.011415843633221e-06
+                }
+              }
+            }
+          ]
+        }
+      },
+      "settings": {
+        "resolution": [
+          512,
+          512
+        ],
+        "spp": 512,
+        "max_depth": 64,
+        "samples_per_frame": 1
+      }
+    }
+  ],
+  "limitations": [
+    "Counter-on elapsed time is not performance eligible.",
+    "Counts do not attribute percentages of GPU time.",
+    "Startup primary GPU time is NOT_MEASURED; zero later query count denotes cached state.",
+    "Two measured seeds describe a range, not a new confidence interval or convergence result."
+  ],
+  "supplemental_control": {
+    "normal_images": 3,
+    "identity_pairs": 3,
+    "median_control_wall_seconds": 92.07435989999999,
+    "median_paired_timestamp_on_off_wall_ratio": 0.9941160656897448,
+    "seed_records": [
+      {
+        "seed": 7,
+        "warmup": true,
+        "render_loop_wall_seconds": 92.1408081,
+        "reference_wall_seconds": 91.2420654,
+        "timestamp_on_off_wall_ratio": 0.9902459863492341
+      },
+      {
+        "seed": 11,
+        "warmup": false,
+        "render_loop_wall_seconds": 92.0275879,
+        "reference_wall_seconds": 91.0883865,
+        "timestamp_on_off_wall_ratio": 0.9897943494833249
+      },
+      {
+        "seed": 29,
+        "warmup": false,
+        "render_loop_wall_seconds": 92.1211319,
+        "reference_wall_seconds": 91.9772186,
+        "timestamp_on_off_wall_ratio": 0.9984377818961645
+      }
+    ],
+    "scope": "Current host with timestamps and counters disabled. Fixed ON then OFF order; historical time drift is not isolated. Separate from the 36-image primary cohort."
+  }
+}
